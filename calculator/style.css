@@ -1,0 +1,62 @@
+table {
+    margin-left:auto; 
+    margin-right:auto;
+	font-family:Helvetica;
+	font-size:19pt;
+}
+
+button {
+	font-size:20pt;
+	text-align:center;
+	padding: 15px 15px;
+}
+
+@media screen and (max-width: 650px){
+	table {
+		width: 80%;
+		height: 80%;
+		margin-left:auto; 
+		margin-right:auto;
+		font-family:Helvetica;
+		font-size:25pt;
+	}
+	button {
+		width: 90%;
+		height: auto;
+		min-width: 48px;
+		height: auto;
+		font-size:25pt;
+		text-align:center;
+		padding: 18px 18px;
+	}
+}
+
+#num0 {
+	font-size:20pt;
+	text-align:center;
+	padding: 15px 41px;
+}
+
+#dotButton {
+	font-size:20pt;
+	text-align:center;
+	padding: 15px 19px;
+}
+
+#xButton {
+	font-size:20pt;
+	text-align:center;
+	padding: 15px 15.5px;
+}
+
+#modButton {
+	font-size:12pt;
+	text-align:center;
+	padding: 21px 7px;
+}
+
+#tworows {
+	font-size:20pt;
+	text-align:center;
+	padding: 48px 11.75px;
+}

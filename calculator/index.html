@@ -1,1 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src = "scriptLibrary.js"></script>
+<link rel = "stylesheet" style = "text/css" href = "style.css">
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+</head>
+<body>
 
+<table>
+	<tr>
+		<td id = "firstBox">0</td>
+		<td id = "operBox"></td>
+		<td id = "nextBox"></td>		
+	</tr>
+</table>
+<table>
+	<tr>
+		<td><button id = "modButton" onclick = "getOper('%')">Mod</button></td>
+		<td><button id = "dotButton" onclick = "getOper('/')">/</button></td>
+		<td><button id = "xButton" onclick = "getOper('*')">x</button></td>
+		<td><button onclick = "getOper('-')">-</button></td>
+	</tr>
+	<tr>
+		<td><button onclick = "pressNumber('7')">7</button></td>
+		<td><button onclick = "pressNumber('8')">8</button></td>
+		<td><button onclick = "pressNumber('9')">9</button></td>
+		<td rowspan = "2"><button id = "tworows" onclick = "getOper('+')">+</button></td>
+	</tr>
+	<tr>
+		<td><button onclick = "pressNumber('4')">4</button></td>
+		<td><button onclick = "pressNumber('5')">5</button></td>
+		<td><button onclick = "pressNumber('6')">6</button></td>
+	</tr>
+	<tr>
+		<td><button onclick = "pressNumber('1')">1</button></td>
+		<td><button onclick = "pressNumber('2')">2</button></td>
+		<td><button onclick = "pressNumber('3')">3</button></td>
+		<td rowspan = "2"><button id = "tworows" onclick = "calculate()">=</button></td>
+	</tr>
+	<tr>
+		<td colspan="2"><button id ="num0" onclick = "pressNumber('0')">0</button></td>
+		<td><button id = "dotButton" onclick = "pressNumber('.')">.</button></td>
+	</tr>
+</table>
+<table>
+	<tr>
+		<td>TOTAL: </td>
+		<td id = "outputBox">0</td>
+	<tr>
+</table>
+<center><button onclick = "clearAll()">CLEAR</button></center>
+</body>
+</html>
