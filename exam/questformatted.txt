@@ -1,0 +1,862 @@
+
+#41.	You are creating a webpage that will collect data and send it to a server. Which element must you implement to be able to send data to the server?
+	choicea: "A. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;nav&gt;", 
+	choiceb: "B. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;form&gt;", 	CORRECT
+	choicec: "C. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;textarea&gt;", 
+	choiced: "D. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;div&gt;", 
+	
+#42.	When you retrieve a webpage from the server that contains Customer information, you want to be able to specify the id of the Customer within the URL. What can you use to provide the id?
+	choicea: "A. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;the PostBack", 
+	choiceb: "B. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;the QueryString", 		CORRECT
+	choicec: "C. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;the domain name", 
+	choiced: "D. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;a label", 
+	
+#43.	You have serialized the form data that has an &lt;input type=&quot;email&quot;&gt; element. You want to deserialized the data to see the email address as entered. Which function can you use?
+	choicea: "A. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;decodeURIComponent", 	CORRECT
+	choiceb: "B. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;deserialize",
+	choicec: "C. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;submit",
+	choiced: "D. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;deserializeEmail",
+	
+#44.	You are creating a webpage that prompts for a new user&apos;s profile information. The profile page requires the user to provide a user name, and if no username is provided, the user will not be able to submit the page to the server. Which attribute must be placed on the user name text box to enforce this requirement?
+	choicea: "A. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;enforced",
+	choiceb: "B. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;mandatory",
+	choicec: "C. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;required",	CORRECT
+	choiced: "D. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;user name",
+	
+#45.	When you want to send form data to the server to update data in the database, which HTTP method should you specify of the &lt;form&gt; element?
+	choicea: "A. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;POST",	CORRECT
+	choiceb: "B. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;GET",
+	choicec: "C. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;CONNECT",
+	choiced: "D. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;SEND",
+	
+#46.	If you want to add a slider control to a webpage, which element do you use?
+	choicea: "A. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;input type=&quot;slider&quot; name=&quot;myslider&quot; /&gt;",
+	choiceb: "B. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;input type=&quot;number&quot; name=&quot;myslider&quot; /&gt;", 
+	choicec: "C. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;input type=&quot;submit&quot; name=&quot;myslider&quot; /&gt;", 
+	choiced: "D. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;input type=&quot;range&quot; name=&quot;myslider&quot; /&gt;", 	CORRECT
+	
+#47.	What can you publish by using npm?
+	choicea: "A. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;a JavaScript file", 
+	choiceb: "B. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;a module", 
+	choicec: "C. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;A JavaScript class", 
+	choiced: "D. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;A package", 	CORRECT
+	
+#48.	What scoping can a package have? (Choose all that apply.)
+	choicea: "A. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Local", 	CORRECT
+	choiceb: "B. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Grouped", 		FALSE
+	choicec: "C. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Named", 		FALSE
+	choiced: "D. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Global", 	CORRECT
+	
+#49.	Why would you install the express package?
+	choicea: "A. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Simplify website creation", 
+	choiceb: "B. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Provide session management", 
+	choicec: "C. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Simplify retrieval of static content", 
+	choiced: "D. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;All of the above", 	CORRECT
+	
+#50.	You want to create a REST service for your internal web service and use the HTTP verbs that match CRUD operations. You know the browser your users will be using is compatible, and the firewall will not be a problem. What are the HTTP verbs that match wtih CRUD (in order)?
+	choicea: "A. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;CREATE, POST, GET, DELETE", 
+	choiceb: "B. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;GET, RETRIEVE, UPDATE, DELETE", 
+	choicec: "C. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;PUT, GET, POST, DELETE", 		CORRECT
+	choiced: "D. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;POST, GET, UPDATE, DELETE", 
+	
+#51.	What is the primary object used to make an asynchronous AJAX call that returns a JSON result?
+	choicea: "A. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;XMLHttpRequest", 	CORRECT
+	choiceb: "B. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;AjaxRequest", 
+	choicec: "C. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;JsonResponse", 
+	choiced: "D. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;AjaxAsync", 
+	
+#52.	You want to use JQuery to make an AJAX call that will use the HTTP POST method. Which JQuery method can you use?
+	choicea: "A. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;$.post()", 	CORRECT
+	choiceb: "B. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;$.getJSON()", 
+	choicec: "C. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;$.get()", 
+	choiced: "D. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;$.param()", 
+	
+#53.	Which method chains asynchronous operations?
+	choicea: "A. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;pipe()", 	CORRECT
+	choiceb: "B. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;done()", 
+	choicec: "C. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;resolve()", 
+	choiced: "D. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;always()", 
+	
+#54.	Which method creates a resolved promise object? 
+	choicea: "A. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;resolve()", 
+	choiceb: "B. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;done()", 
+	choicec: "C. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;$.when()", 	CORRECT
+	choiced: "D. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;$.Deferred()", 
+	
+#55.	Which method do you call to subscribe to the successful completion of an asynchronous operation?
+	choicea: "A. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;done", 	CORRECT
+	choiceb: "B. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;always", 
+	choicec: "C. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;complete", 
+	choiced: "D. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;success", 
+	
+#56.	Which method do you call on the deferred object to indicate a change in progress?
+	choicea: "A. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;progress", 
+	choiceb: "B. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;notify", 		CORRECT
+	choicec: "C. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;done", 
+	choiced: "D. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;resolve", 
+	
+#57.	In the web worker code, you want the asynchronous code to update the DOM. Which method can you use?
+	choicea: "A. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;updateDom()", 
+	choiceb: "B. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;workerUpdate()", 
+	choicec: "C. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;dom()", 
+	choiced: "D. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;You cannot update the DOM from within the asynchronous code.", 	CORRECT
+	
+#58.	Which object can be used when the web worker and the creator need to reference the same object?
+	choicea: "A. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Mutex", 
+	choiceb: "B. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Semaphore", 
+	choicec: "C. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Closure", 
+	choiced: "D. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;The web worker and the creator cannot reference the same object", 		CORRECT
+	
+#59.	When working with the WebSocket object, which event can be used to retrieve the data that was received from the server?
+	choicea: "A. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;onopen", 
+	choiceb: "B. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;onclose", 
+	choicec: "C. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;onmessage", 	CORRECT
+	choiced: "D. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;onerror", 
+	
+#60.	Which library would you use if you are creating a Node.js website and want to write browser-independent code that uses WebSocket?
+	choicea: "A. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;SignalIR", 
+	choiceb: "B. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Socket.IO", 	CORRECT
+	choicec: "C. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;FarmSockets", 
+	choiced: "D. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;AgnosticSocket", 
+	
+#61.	You want to ensure that the WebSocket connection is not disconnected as a result of inactivity. How can you accomplish this?
+	choicea: "A. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Add code to the onclose event to reopen the connection when it&apos;s closed.", 
+	choiceb: "B. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Add code to send an empty message periodically before the connection is closed.", 	CORRECT
+	choicec: "C. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Set the keepAlive property on the WebSocket object to true", 
+	choiced: "D. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Create a new WebSocket object each time you send a message", 
+	
+#62.	You want to include a video on your webpage that has an .avi file extension. If you supply the codec information, what will be displayed in browsers that support the &lt;video&gt; element but don&apos;t have the codec?
+	choicea: "A. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;The browser will show the &lt;video&gt; element, but will not play the video.", 		CORRECT
+	choiceb: "B. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;The browser will automatically download the codec and play the video.", 
+	choicec: "C. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;The browser will display the contents of the &lt;video&gt; element.", 
+	choiced: "D. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;The browser will automatically download a version of the browser that supports the codec.", 
+	
+#63.	You don&apos;t want to supply an .ogg video because you find that the .ogg format is choppy and low quality. What other video formats can you include to be compatible with most browsers?
+	choicea: "A. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;.mjpg",
+	choiceb: "B. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;.avi", 
+	choicec: "C. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;.mpg", 
+	choiced: "D. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;.mp4", 	CORRECT
+	
+#64.	The W3C standardized using which format for video?
+	choicea: "A. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;.webm", 
+	choiceb: "B. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;.avi", 
+	choiced: "C. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;.mp4", 
+	choiced: "D. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;No standard has been selected", 	CORRECT
+	
+#65.	You want to supply an audio file using a format that is compatible with the Internet Explorer, Safari, and Chrome browsers. Which audio format can you include to be compatible with most browsers?
+	choicea: "A. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;.mp4", 
+	choiceb: "B. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;.wav", 
+	choicec: "C. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;.mp3", 	CORRECT
+	choiced: "D. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;.oga", 
+	
+#66.	You don&apos;t want to supply an .mp3 format because you are concerned about potentially paying royalties. What other audio formats can you include to be compatible with most browsers? (Choose all that apply)
+	choicea: "A. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;.mp4", 	CORRECT
+	choiceb: "B. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;.wav", 	CORRECT
+	choicec: "C. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;.h264", 	FALSE
+	choiced: "D. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;.oga", 	CORRECT
+	
+#67.	The &lt;video&gt; and &lt;audio&gt; elements inherit from which object?
+	choicea: "A. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;HTMLMediaElement", 	CORRECT
+	choiceb: "B. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;MediaElement", 
+	choicec: "C. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;MultiMediaElement", 
+	choiced: "D. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;the Multimedia object", 
+	
+#68.	If you want your media to repeat continuously, which property would you set to true?
+	choicea: "A. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;preload", 
+	choiceb: "B. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;readyState", 
+	choicec: "C. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;seekable", 
+	choiced: "D. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;loop", 	CORRECT
+	
+#69.	You want to trigger some code when the media is loaded. Which event should you subscribe to?
+	choicea: "A. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;onstalled", 
+	choiceb: "B. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;onseeked", 
+	choicec: "C. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;onplay", 
+	choiced: "D. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;onloadeddata", 	CORRECT
+	
+#70.	Which code example can be used to draw a rectangle on a &lt;canvas&gt; element that has an id of myCanvas?
+
+	choicea: "A. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;var canvas = document.getElementById(&apos;myCanvas&apos;);
+		var ctx = canvas.getContext();
+		ctx.rectangle(10,10,50,75);
+		
+	choiceb: "B. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;var canvas = document.getElementById(&apos;myCanvas&apos;);
+		canvas.rectangle(10,10,50,75);
+		
+	choicec: "C. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;var canvas = document.getElementById(&apos;myCanvas&apos;);
+		var ctx = canvas.getContext(&apos;2d&apos;);
+		ctx.fillRect(10,10,50,75);		CORRECT
+		
+	choiced: "D. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;var canvas = document.getElementById(&apos;myCanvas&apos;);
+		var ctx = canvas.getContext();
+		ctx.fillRect(10,10,50,75);
+		
+#71.	You want to draw an arc that is approximately three-quarters of a circle. Which method is the easiest to use to accomplish this task?
+	choicea: "A. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;arcTo()", 
+	choiceb: "B. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;arc()", 		CORRECT
+	choicec: "C. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;circle()", 
+	choiced: "D. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;dot()", 
+	
+#72.	The content of the &lt;svg&gt; element is in which format?
+	choicea: "A. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;SGML", 
+	choiceb: "B. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;HTML", 
+	choicec: "C. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;XHMTL", 
+	choiced: "D. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;XML", 		CORRECT
+	
+#73.	On the &lt;svg&gt; element, what attribute provides a window into the drawing and enables zoom capabilities?
+	choicea: "A. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;zoom", 
+	choiceb: "B. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;window", 
+	choicec: "C. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;viewBox", 		CORRECT
+	choiced: "D. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;zoomWindow", 
+	
+
+#74.	Which of the following events triggers continuously during a drag and drop operation?
+	choicea: "A. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;dragstart", 	
+	choiceb: "B. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;drag", 	CORRECT
+	choicec: "C. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;dragend", 		
+	choiced: "D. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;dragenter", 	
+
+	
+#75.	Which of the following events are associated with the item being dragged? (Choose all that apply.)
+	choicea: "A. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;dragstart", 	CORRECT
+	choiceb: "B. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;drag", 		CORRECT
+	choicec: "C. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;dragend", 		CORRECT
+	choiced: "D. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;dragenter", 	FALSE
+	E.	dragover	FALSE
+	F.	dragleave	FALSE
+	G.	drop		FALSE
+	
+#76.	Using the DataTransfer object, what kind of data can you pass to the drop event?
+	choicea: "A. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;any valid string, number, date/time, or Boolean value", 
+	choiceb: "B. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Any URL that is within the same domain as the webpage", 
+	choicec: "C. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Any JSON object", 
+	choiced: "D. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Any object that can be represented as a string or URL", 		CORRECT
+	
+#77.	To which events do you need to subscribe to program file drag and drop? (Choose all that apply)
+	choicea: "A. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;dragstart", 	FALSE
+	choiceb: "B. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;drag", 		FALSE
+	choicec: "C. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;dragend", 		FALSE
+	choiced: "D. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;dragenter", 	CORRECT
+	E.	dragover	CORRECT
+	F.	dragleave	FALSE
+	G.	drop		CORRECT
+	
+#78.	Which of the following is not a property on the File object?
+	choicea: "A. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;name", 
+	choiceb: "B. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;path", 	CORRECT
+	choicec: "C. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;type", 
+	choiced: "D. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;size", 
+	
+#79.	Which method gets your current location once from the Geolocation object?
+	choicea: "A. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;watchPosition()", 
+	choiceb: "B. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;watchLocation()", 
+	choicec: "C. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;getCurrentPosition()", 		CORRECT
+	choiced: "D. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;getCurrentLocation()", 
+	
+#80.	Which of the following is not a valid parameter on the getCurrentPosition method?
+	choicea: "A. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Error callback function
+	choiceb: "B. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Position options object
+	choicec: "C. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Success callback function
+	choiced: "D. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Use GPS only		CORRECT
+	
+#81.	Which method continuously monitors your current location from the Geolocation object?
+	choicea: "A. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;watchPosition()", 		CORRECT
+	choiceb: "B. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;watchLocation()", 
+	choicec: "C. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;getCurrentPosition()", 
+	choiced: "D. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;getCurrentLocation()", 
+	
+#82.	Which of the following formulas can you use to calculate the distance between two samples?
+	choicea: "A. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;haversine", 		CORRECT
+	choiceb: "B. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Pythagorean theorem", 
+	choicec: "C. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;quadratic", 
+	choiced: "D. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;hyperbolic", 
+	
+#83.	Which of the following URLs can access data stored on http://www.example.com/lesson1/page1.html?
+	choicea: "A. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;http://www2.example.com/lesson1/page1.html", 
+	choiceb: "B. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;http://www.example.com:8081/lesson1/page1.html", 
+	choicec: "C. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;https://www.example.com/lesson1/page1.html", 
+	choiced: "D. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;http://www.example.com/lesson2/page1.html", 		CORRECT
+	E.	http://example.com/lesson1/page1.html
+	
+#84.	What is the web storage limit currently recommended by the World Wide Web Consortium (W3C)?
+	choicea: "A. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;4 KB", 
+	choiceb: "B. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;5 MB", 	CORRECT
+	choicec: "C. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;500 MB", 
+	choiced: "D. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;10 MB", 
+	
+#85.	What is the correct syntax for removing all values existing in localStorage?
+	choicea: "A. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;localStorage.clear();", 		CORRECT
+	choiceb: "B. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;localStorage.removalAll();", 
+	choicec: "C. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;localStorage.abandon();", 
+	choiced: "D. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;localStorage.reset();", 
+	
+#86.	Which of the following storage mechanisms has the highest level of cross-browser support?
+	choicea: "A. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Web storage", 		CORRECT
+	choiceb: "B. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Web SQL", 
+	choicec: "C. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;IndexDB", 
+	choiced: "D. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;FileSystem API", 
+	
+#87.	Which of the following features does web storage support?
+	choicea: "A. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Indexing", 
+	choiceb: "B. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Transactions", 
+	choicec: "C. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Asynchronous read/write", 
+	choiced: "D. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Simple key/value pair storage", 		CORRECT
+	
+#88.	Which of the following is not a property of the StorageEvent object?
+	choicea: "A. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;oldValue", 
+	choiceb: "B. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;key", 
+	choicec: "C. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;changeType", 		CORRECT
+	choiced: "D. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;storageArea", 
+	
+#89.	If you modify a value stored in sessionStorage, which of the following could receive notifications of the change (if subscribed)?
+	choicea: "A. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Another tab opened to a page on the same domain", 
+	choiceb: "B. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;A second browser window open to the same page", 
+	choicec: "C. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;An iframe on the same page whose source is within the same domain", 		CORRECT
+	choiced: "D. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;The operating system that is hosting the browser", 
+	
+#90.	Which of the following is the correct way to cancel a storage event?
+	choicea: "A. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;event.returnValue = false;", 
+	choiceb: "B. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;event.preventDefault();", 
+	choicec: "C. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;event.stopPropagation();", 
+	choiced: "D. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Storage events cannot be cancelled after they are triggered.", CORRECT
+	
+#91.	Which of the following would be a good canidate for Web SQL?
+	choicea: "A. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Mobile applications built specifically for Safari on the iOS platform", 	CORRECT
+	choiceb: "B. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Mobile applications built for any mobile device", 
+	choicec: "C. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Public-facing web applications", 
+	choiced: "D. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Mobile applications built specifically for Internet Explorer", 
+	
+#92.	You need to create a new database. Which of the following commands should you use?
+	choicea: "A. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;var db = createDatabase(&apos;mydb&apos;, &apos;1.0&apos;, &apos;My database&apos;,5 * 1024 * 1024);", 
+	choiceb: "B. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;var db = new Database (&apos;mydb&apos;);", 
+	choicec: "C. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;var db = initDatabase(&apos;mydb&apos;,&apos;1.0&apos;,&apos;My database&apos;, 5 * 1024 * 1024);", 
+	choiced: "D. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;vare db = openDatabase(&apos;mydb&apos;, &apos;1.0&apos;,&apos;My database&apos;, 5 * 1024 * 1024);", 	CORRECT
+	
+#93.	Which of the following will correctly insert a new record, using values passed in as SQL arguments to an executeSql() call?
+	choicea: "A. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;t.executeSql(&quot;INSERT INTO books(title) VALUES(?)&quot;, [&quot;A Tale of Two Cities&quot;]);", 	CORRECT
+	choiceb: "B. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;t.executeSql(&quot;INSERT INTO books(title) VALUES([0]&quot;, [&quot;A Tale of Two Cities&quot;]);", 
+	choicec: "C. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;t.executeSql(&quot;INSERT INTO books(title) VALUES([1]&quot;, [&quot;A Tale of Two Cities&quot;]);", 
+	choiced: "D. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;t.executeSql(&quot;INSERT INTO books(title) VALUES({0}), [&quot;A Tale of Two Cities&quot;]);", 
+	
+#94.	Which of the following features is not supported by IndexedDB?
+	choicea: "A. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Transactions", 
+	choiceb: "B. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Cursors", 
+	choicec: "C. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Indexed", 
+	choiced: "D. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;SQL", 		CORRECT
+	
+#95.	What is the correct method for creating a transaction that will add a new record?
+	choicea: "A. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;var trans = db.transaction(&apos;authors&apos;, &apos;readonly&apos;);", 
+	choiceb: "B. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;var trans = db.transaction(&apos;authors&apos;, &apos;readwrite&apos;);", 		CORRECT
+	choicec: "C. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;var trans = db.transaction(&apos;authors&apos;);", 
+	choiced: "D. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;var trnas = db.createTransaction(&apos;authors&apos;, &apos;readwrite&apos;);", 
+	
+#96.	Which object store method retrieves a record by its key value?
+	choicea: "A. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;get(key)	CORRECT", 
+	choiceb: "B. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;find(key)", 
+	choicec: "C. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;single(key)", 
+	choiced: "D. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;first(key)", 
+	
+#97.	Which of the following methods should you use when storing files that are relatively unimportant and can be removed if the browser is low in available space?
+	choicea: "A. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;window.requestFileSystem(LOW, 5 * 1024 * 1024, getDirectory, handleError);", 
+	choiceb: "B. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;window.requestFileSystem(PERSISTENT, 5 * 1024 * 1024, getDirectory, handleError);", 
+	choicec: "C. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;window.requestFileSystem(SIMPLE, 5 * 1024 * 1024, getDirectory, handleError);", 
+	choiced: "D. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;window.requestFileSystem(TEMPORARY, 5 * 1024 * 1024, getDirectory, handleError);", 	CORRECT
+	
+#98.	Which of the following allows FileWriter to append data to the end of the file?
+	choicea: "A. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;fileWriter.seek(fileWriter.length);", 		CORRECT
+	choiceb: "B. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;fileWriter.seek(fileWriter.end);", 
+	choicec: "C. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;fileWriter.moveLast()", 
+	choiced: "D. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;fileWriter.moveToEnd();", 
+	
+#99.	Which of the following removes a directory that contains existing files?
+	choicea: "A. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;directoryEntry.remove(directoryRemoved, handleError);", 
+	choiceb: "B. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;directoryEntry.removeResursively(directoryRemoved, handleError);", 	CORRECT
+	choicec: "C. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;directoryEntry.removeAll(directoryRemoved, handleError);", 
+	choiced: "D. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;directoryEntry.remove(directoryRemoved, ALL, handleError);", 
+	
+	
+#100.	Which of the following is a valid statement for the first line of a manifest file?
+	choicea: "A. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;CACHE", 
+	choiceb: "B. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;CACHE MANIFEST", 		CORRECT
+	choicec: "C. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;CACHE-MANIFEST", 
+	choiced: "D. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;CACHE-ALWAYS", 
+	
+#101.	Which event is fired after an existing cache has been updated with new resource?
+	choicea: "A. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;downloading", 
+	choiceb: "B. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;cached", 
+	choicec: "C. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;updateReady", 		CORRECT
+	choiced: "D. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;completed", 
+	
+	
+	
+#102.	Which of the following elements aren&apos;t introduced in HTML5?
+	choicea: "A. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;article&gt;", 
+	choiceb: "B. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;footer&gt;", 
+	choicec: "C. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;hgroup&gt;", 
+	choiced: "D. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;input&gt;", 		CORRECT
+
+#103.	Which element(s) does the &lt;hgroup&gt; element contain?
+	choicea: "A. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;h1&gt; to &lt;h6&gt;", 		CORRECT
+	choiceb: "B. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;header&gt;", 
+	choicec: "C. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;nav&gt;", 
+	choiced: "D. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;All of the above", 
+
+#104.	Which HTML5 element would you use to organize content so that the page maximizes a search engine&apos;s algorithm?
+	choicea: "A. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;div id=&quot;CompanyNews&quot;&gt;", 
+	choiceb: "B. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;header&gt;Company News&lt;/header&gt;", 
+	choicec: "C. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;article&gt;Company News&lt;/article&gt;", 		CORRECT
+	choiced: "D. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;All of the above", 
+
+#105.	Which HTML5 element should you use to create a more structured layout?
+	choicea: "A. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;div&gt;", 
+	choiceb: "B. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;p&gt;", 
+	choicec: "C. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;table&gt;", 		CORRECT
+	choiced: "D. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;form&gt;", 
+	
+#106.	Which of the following JavaScript methods can&apos;t be used to select an element in the DOM?
+	choicea: "A. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;getElementById", 
+	choiceb: "B. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;querySelector", 
+	choicec: "C. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;getElementByClassName", 
+	choiced: "D. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;queryAll", 	CORRECT
+	
+#107.	Looking at page 59 (question 2) of the exam reference, Which line of JavaScript sucessfully retrieves only the image element with the ID myDog from the following HTML? Choose all that apply.
+
+&lt;form&gt;
+	&lt;div id=&quot;main&quot; class=&quot;mainStyle&quot;&gt;
+		&lt;p id=&quot;dogs&quot;&gt;
+			This is a web page about dogs. Here is my dog picture:
+			&lt;img src=&quot;dog.jpg&quot; id=&quot;myDog&quot; class = &quot;thumb&quot;/&gt;
+			Here is a picture of my friend&apos;s dog:
+			&lt;img src=&quot;dog.jpg&quot; id=&quot;myfriendsDog&quot; class=&quot;thumb&quot;/&gt;
+		&lt;/p&gt;
+	&lt;/div&gt;
+&lt;/form&gt;
+
+	choicea: "A. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;document.getElementbyId(&quot;myDog&quot;);", 	CORRECT
+	choiceb: "B. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;p&gt;.getChildNode(&quot;img&quot;);", 
+	choicec: "C. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;document.getElementbyId(&quot;dogs).querySelector (&quot;thumb&quot;);", 
+	choiced: "D. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;document.querySelectorAll(&quot;thumb&quot;);", 
+	
+#108.	To hide an element in the DOM and still be able to add it back later, what should you do?
+	choicea: "A. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Nothing, because the DOM is always available in a static form.", 
+	choiceb: "B. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Keep a reference to the removed node to be able to add it back.", 		CORRECT
+	choicec: "C. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Call the document.restoreNodes method.", 
+	choiced: "D. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;You can&apos;t add an element back after it&apos;s removed.", 
+	
+#109.	When implementing the HTML5 video element, how do you ensure that the rendering of the element can function in different browsers?
+	choicea: "A. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;You need to do nothing, because HTML5 is now a standard specification.", 
+	choiceb: "B. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Specify all the source video types in the src attribute of the video element.", 
+	choicec: "C. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Include the &lt;source&gt; element for each video type so that each browser can play the version that it supports.", 	CORRECT
+	choiced: "D. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Include the &lt;object&gt; element for each video type so that the browser can play the version that it supports.", 
+	
+#110.	When drawing on the HTML5 canvas element, what method is used on the context to begin drawing at a new point?
+	choicea: "A. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;moveTo", 
+	choiceb: "B. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;lineAt", 
+	choicec: "C. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;beginPath", 	CORRECT
+	choiced: "D. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;stroke", 
+	
+#111.	When performance is critical for an HTML5 graphics application, what should you use?
+	choicea: "A. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;canvas&gt; using a declarative syntax to create the graphics", 
+	choiceb: "B. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;svg&gt; using a declarative syntax to create the graphics", 
+	choicec: "C. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;canvas&gt; using JavaScript to create the graphics", 	CORRECT
+	choiced: "D. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;svg&gt; and &lt;canvas&gt; combination to leverage the best performance of both", 
+	
+#112.	Absolute positioning positions an object relative to what?
+	choicea: "A. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;The top-left corner of the browser window.", 
+	choiceb: "B. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;The top-left corner of its parent element.", 	CORRECT
+	choicec: "C. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Centered inside the window.", 
+	choiced: "D. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Centered inside its parent element.", 
+	
+#113.	Which transformation enables you to change the size of an element?
+	choicea: "A. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;rotate", 
+	choiceb: "B. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;skew", 
+	choicec: "C. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;translate", 
+	choiced: "D. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;scale", 	CORRECT
+	
+#114.	Which syntax preserves the layout of the page when hiding an element in the DOM?
+	choicea: "A. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;display=&apos;hidden&apos;", 
+	choiceb: "B. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;display=&apos;inline&apos;", 
+	choicec: "C. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;visibility=&apos;none&apos;", 
+	choiced: "D. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;visibility=&apos;hidden&apos;", 		CORRECT
+	
+#115.	When using the Web Storage API, where should you store data to ensure that it&apos;s cleared when the user closes the browser?
+	choicea: "A. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;localStorage", 
+	choiceb: "B. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;cookieStorage", 
+	choicec: "C. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;sessionStorage", 		CORRECT
+	choiced: "D. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;A hidden input element", 
+	
+#116.	What do you need to do to designate a page as available offline?
+	choicea: "A. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Specify in JavaScript as document.offLine=true.", 
+	choiceb: "B. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Specify the manifest attribute on the form element.", 
+	choicec: "C. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Specify the manifest attribute on the HTML element.", 		CORRECT
+	choiced: "D. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Tell users to switch to offline mode using their browser. No code is required.", 
+	
+#117.	Which of the following aren&apos;t valid sections of the AppCache manifest?
+	choicea: "A. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Cache manifest", 
+	choiceb: "B. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Session manifest", 	CORRECT
+	choicec: "C. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Network manifest", 
+	choiced: "D. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Fallback manifest", 
+
+#118.	Which event is fired by the AppCache object when the cache download is complete?
+	choicea: "A. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;oncached", 	CORRECT
+	choiceb: "B. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;onupdateready", 
+	choicec: "C. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ondownloading", 
+	choiced: "D. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;onchecking", 
+	
+#119.	When using the Geolocation API, how do you configure the ability to use cached data?
+	choicea: "A. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Set the enableCache property to true on the PositionOptions object", 
+	choiceb: "B. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Set the maximumAge property to a non-zero value on the PositionOptions object", 	CORRECT
+	choicec: "C. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Set the timeout property of the PositionOptions object", 
+	choiced: "D. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Using the cache is always on to save bandwidth, so no configuration is required", 
+	
+#120.	In JavaScript, how do you determine the scope of a variable?
+	choicea: "A. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;The scope of a variable is global within the context of the page", 
+	choiceb: "B. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;The scope of a variable depends on where inside the script it&apos;s declared", 	CORRECT
+	choicec: "C. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;The scope of a variable changes depending on the type it represents", 
+
+#121.	Why is it important to avoid creating custom JavaScript objects in the global namespace?
+	choicea: "A. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;The global namespace is reserved for the browser", 
+	choiceb: "B. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;The global namespace is available to all applications in the session, and using it could result in a naming conflict", 	CORRECT
+	choicec: "C. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;The global namespace creates a security risk to users&apos; systems", 
+	
+#122.	What JavaScript keyword in an event handler can be easily used to reference the object that raised the event?
+	choicea: "A. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;The it keyword provides a reference to the object", 
+	choiceb: "B. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;The document.current property provides a reference to the object", 
+	choicec: "C. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;The this keyword provides a reference to the object", 		CORRECT
+	choiced: "D. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;No way is available other than to use a selector query to retrieve the object from the DOM.", 
+	
+#123.	In JavaScript, which of the following isn&apos;t a native object?
+	choicea: "A. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Function", 
+	choiceb: "B. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Array", 
+	choicec: "C. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Integer", 
+	choiced: "D. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Person", 		CORRECT
+	
+#124.	Which of the following snippets shows the correct way to create a custom book object?
+	choicea: "A. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;var book = &quot;Title: &apos;My book about things&apos;&quot; + &quot;Author: &apos;Jane Doe&apos;&quot; + &quot; Pages:400&quot;;", 
+	choiceb: "B. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;var book = {Title: &quot;My book about things&quot;, Author: &quot;Jane Doe&quot;, Pages: 400};", 		CORRECT
+	choicec: "C. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;var book = (Title= &quot;My book about things&quot;, Author=&quot;Jane Doe&quot;=Pages:400);", 
+	choiced: "D. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;var book = new{Title:&quot;My book about things&quot;, Author: &quot;Jane Doe&quot;, Pages:400};", 
+	
+#125.	Inheritance is accomplished in JavaScript through the use of which construct?
+	choicea: "A. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;inherits keyword", 
+	choiceb: "B. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;implements keyword", 
+	choicec: "C. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;this keyword", 
+	choiced: "D. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Prototypes", 		CORRECT
+	
+#126.	Which of the following keywords provide iterative control flow?
+	choicea: "A. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if statement", 
+	choiceb: "B. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;switch statement", 
+	choicec: "C. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;for", 		CORRECT
+	choiced: "D. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;break", 
+	
+#127.	Which of the following array methods combines two arrays?
+	choicea: "A. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;join", 
+	choiceb: "B. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;combine", 
+	choicec: "C. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;split", 
+	choiced: "D. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;concat", 		CORRECT
+	
+#128.	Which iterative control syntax can guarantee that the loop is processed at least once?
+	choicea: "A. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;for...in loop", 
+	choiceb: "B. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;while loop", 
+	choicec: "C. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;do...while loop", 		CORRECT
+	choiced: "D. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;for loop", 
+	
+#129.	Which keyword is used to exit a loop?
+	choicea: "A. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;continue", 
+	choiceb: "B. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;break", 		CORRECT
+	choicec: "C. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;stop", 
+	choiced: "D. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;next", 
+	
+#130.	Which of the following isn&apos;t a supported way to add an event handler to a DOM element?
+	choicea: "A. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Declaring within the HTML element by assigning the event attribute to a JavaScript function", 
+	choiceb: "B. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Setting the attribute in CSS to a valid JavaScript function", 		CORRECT
+	choicec: "C. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Dynamically through JavaScript by assigning a JavaScript function to the object&apos;s event property", 
+	choiced: "D. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Dynamically through JavaScript via the assign/remove event listener methods", 
+	
+#131.	Which of the following isn&apos;t an attribute of an anonymous function?
+	choicea: "A. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Anonymous functions can&apos;t be called by any other code", 
+	choiceb: "B. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Anonymous functions have a clearly defined name", 
+	choicec: "C. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Anonymous functions can be passed as parameters", 
+	choiced: "D. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Anonymous functions can&apos;t be assigned to a DOM element declaratively", 		CORRECT
+
+#132.	Which code line would successfully cancel an event?
+	choicea: "A. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;window.event.returnValue=false;", 		CORRECT
+	choiceb: "B. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;return false;", 
+	choicec: "C. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;window.event.Return();", 
+	choiced: "D. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;window.Stop();", 
+	
+#133.	Which event occurs when a DOM element receives the cursor?
+	choicea: "A. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;focus", 		CORRECT
+	choiceb: "B. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;change", 
+	choicec: "C. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;keydown", 
+	choiced: "D. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;mouseleave", 
+	
+#134.	Which option provides the correct sequence of events in a drag and drop operation?
+	choicea: "A. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;dragstart, drag, dragenter, drop", 
+	choiceb: "B. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;dragstart, drag, dragenter, dragstop", 
+	choicec: "C. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;drag, dragstart, drop, dragenter", 
+	choiced: "D. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;drag, dragstart, dragenter, dragstop", 
+
+#135.	Which statement correctly describes the proper error handling using try...catch...finally blocks?
+	choicea: "A. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Proper error handling allows code processing to continue and to provide appropriate user feedback.", 		CORRECT
+	choiceb: "B. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Proper error handling allows users to fix problems with the webpage.", 
+	choicec: "C. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Proper error handling allows you to debug the application at run time.", 
+	choiced: "D. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Proper error handling allows you to suppress all the bugs in your scripts.", 
+	
+#136.	Which of the following isn&apos;t a property of the exception object?
+	choicea: "A. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;message", 
+	choiceb: "B. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;description", 		CORRECT
+	choicec: "C. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;number", 
+	choiced: "D. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;name", 
+	
+#137.	Why is checking for null a good practice?
+	choicea: "A. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Checking for null prevents the use of an object before it&apos;s initialized", 		CORRECT
+	choiceb: "B. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Checking for null prevents errors resulting in NaN", 
+	choicec: "C. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Checking for null prevents the need to throw custom errors.", 
+	
+#138.	Which of the following is a valid WebSocket instantiation?
+	choicea: "A. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;wsConnection = new WebSocket(&apos;http://studygroup.70480.com&apos;);", 
+	choiceb: "B. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;wsConnection = new WebSocket(&apos;tcp://studygroup.70480.com&apos;,[&apos;soap&apos;,&apos;xmpp&apos;]);", 
+	choicec: "C. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;wsConnection = new WebSocket(&apos;wss://studygroup.70480.com&apos;,[&apos;soap&apos;,&apos;xmpp&apos;]);", 		CORRECT
+	choiced: "D. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;wsConnection = new WebSocket(&apos;ftp://studygroup.70480.com&apos;,[&apos;soap&apos;,&apos;xmpp&apos;]);", 
+
+#139.	Which of the following statements properly handles the reception of data from a WebSocket?
+	choicea: "A. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;wsConnection.onpost = function(msg){..};", 
+	choiceb: "B. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;wsConnection.onreceive = function(msg){...};", 
+	choicec: "C. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;wsConnection.onmessage = function(msg){...};", 	CORRECT
+	choiced: "D. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;wsConnection.ongetdata = function(msg){...};", 
+
+#140.	Which list identifies the properties that need to be set up to make an AJAX call?
+	choicea: "A. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;cache, datatype, success", 
+	choiceb: "B. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;url, cache, datatype, success", 
+	choicec: "C. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;url, datatype, onsuccess", 	CORRECT
+	choiced: "D. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;url, datatype, oncomplete", 
+	
+#141.	Why is wiring up events with jQuery easier?		CORRECT
+	choicea: "A. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;It allows you to assign the event listener to many elements at once via the selector syntax", 
+	choiceb: "B. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;There is no difference wiring up events with jQuery versus addEventListener", 
+	choicec: "C. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;jQuery works more efficiently in a loop", 
+	choiced: "D. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;jQuery allows both named and anonymous functions to be used as event listeners.", 
+	
+#142.	Which of the following isn&apos;t a valid web worker operation?
+	choicea: "A. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;postMessage", 
+	choiceb: "B. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;onmessage", 
+	choicec: "C. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;close", 		CORRECT
+	choiced: "D. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;terminate", 
+
+#143.	Which method cancels a web worker?
+	choicea: "A. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;close", 
+	choiceb: "B. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;terminate", 		CORRECT
+	choicec: "C. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;suspend", 
+	choiced: "D. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;sleep", 
+
+#144.	Where must you place the JavaScript code to run in the context of a web worker?	
+	choicea: "A. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Between the &lt;head&gt;&lt;/head&gt; elements", 
+	choiceb: "B. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;In any &lt;script&gt; block in the page", 
+	choicec: "C. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;In its own JavaScript file", 		CORRECT
+	choiced: "D. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;As a dynamic function assigned to the self.worker", 
+
+#145.	How many web workers/subworkers can run concurrently?
+	choicea: "A. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;A multitude of four web workers including subworkers, per processor", 
+	choiceb: "B. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;16 workers by default, but you can change that number via self.configuration", 
+	choicec: "C. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;A limitless number of workers", 		CORRECT
+	choiced: "D. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;A limit of eight workers, each with a maximum of eight subworkers", 
+
+#146.	To have a script run continually every 30 seconds, which line of code should be used?
+	choicea: "A. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;wsConnection.repeatWork(&quot;workerFile.js&quot;,30000);", 
+	choiceb: "B. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;setTimeout(function(){worker.postMessage(&quot;&quot;);}, 30000);", 
+	choicec: "C. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;setTimeout(worker.postMessage(&quot;&quot;),30000);", 
+	choiced: "D. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;setInterval(function(){worker.postMessage(&quot;&quot;);}, 30000);", 	CORRECT
+
+#147.	Which input control is better suited for allowing users to make mutiple selections?
+	choicea: "A. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;radio button", 
+	choiceb: "B. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;textarea", 
+	choicec: "C. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;checkbox", 	CORRECT
+	choiced: "D. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;radio or checkbox", 
+	
+#148.	Which input control is designed to allow users to enter secure information in a way that keeps others from seeing what&apos;s typed?
+	choicea: "A. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;text", 
+	choiceb: "B. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;textarea", 
+	choicec: "C. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;url", 
+	choiced: "D. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;password", 	CORRECT
+	
+#149.	Which input control posts form data to a server?
+	choicea: "A. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;button", 
+	choiceb: "B. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Submit", 	CORRECT
+	choicec: "C. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Reset", 
+	choiced: "D. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;radio", 
+
+#150.	Which of the following declarations are valid ways to make a text control non-editable?
+	choicea: "A. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;input type=&quot;text&quot; edit=&quot;false&quot;/&gt;
+	choiceb: "B. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;input type=&quot;text&quot; editable=&quot;false&quot;/&gt;
+	choicec: "C. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;input type=&quot;text&quot; readonly=&quot;yes&quot;/&gt;	
+	choiced: "D. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;input type=&quot;text&quot; readonly/&gt;
+	
+#151.	How can you ensure that all necessary fields are populated before a form can be submitted?
+	choicea: "A. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Write a JavaScript to evaluate all the controls on the form for content.
+	choiceb: "B. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;On the server, evaluate all the controls for data and return an error page for missing content.
+	choicec: "C. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Add the required attribute on each control so that users get a message that the field is requirechoiced: "D. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;CORRECT
+	choiced: "D. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Add a label to the page to let users know which controls they must fill in.
+	
+#152.	Which of the following regular expression characters denote the end of the string?
+	choicea: "A. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;$		CORRECT
+	choiceb: "B. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;%
+	choicec: "C. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;^
+	choiced: "D. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&amp;
+	
+#153.	Which of the following sandbox attributes allows the iFrame to load content from the containing HTML document?
+	choicea: "A. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;allow-script-execution
+	choiceb: "B. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;allow-same-origin
+	choicec: "C. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;allow-forms
+	choiced: "D. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;allow-top-navigation	CORRECT
+	E.	allow-top-document
+	
+#154.	Which function should never be used to run JavaScript?
+	choicea: "A. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;execute", 
+	choiceb: "B. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;JSDynamic", 
+	choicec: "C. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;eval", 		CORRECT
+	choiced: "D. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;evaluate", 
+	
+#155.	Which of the following is a valid JSON string?
+	choicea: "A. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{firstName, Rick, lastname, Delorme, hairColor, brown, eyeColor, brown}", 
+	choiceb: "B. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{firstName: Rick, lastname: Delorme, hairColor: brown, eyeColor: brown}", 
+	choicec: "C. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{firstName: &quot;Rick&quot;; lastname: &quot;Delorme&quot;; hairColor: &quot;brown&quot;; eyeColor: &quot;brown&quot;}", 
+	choiced: "D. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{firstName: &quot;Rick&quot;, lastname: &quot;Delorme&quot;, hairColor: &quot;brown&quot;, eyeColor: &quot;brown&quot;}", 		CORRECT
+	
+#156.	With the XMLHttpRequest object, which of the following properties provides the response in a human readable format?
+	choicea: "A. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Response", 
+	choiceb: "B. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;responseBody", 
+	choicec: "C. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;responseText", 	CORRECT
+	choiced: "D. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;responseXML", 
+	
+#157.	At which stage during an XMLHttpRequest are user credentials sent to the server?
+	choicea: "A. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;When the connection is open", 
+	choiceb: "B. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;When the request is sent", 
+	choicec: "C. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;When the ready state is complete", 
+	choiced: "D. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;When the server sends a security response requesting the credentials	CORRECT", 
+	
+#158.	Which of the following code lines is the correct way to create an object from a JSON string stored in a variable called jsonString?
+	choicea: "A. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;var o = JSON.split(jsonString);", 
+	choiceb: "B. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;var o = JSON.stringify(jsonString);", 
+	choicec: "C. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;var o = JSON.parse(jsonString);", 		CORRECT
+	choiced: "D. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;var o = JSON.join(jsonString);", 
+	
+#159.	Which of the following code lines allows an XMLHttpRequest to return binary data?
+	choicea: "A. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;request.responseType = &apos;binary&apos;;", 
+	choiceb: "B. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;request.responseType = &apos;image/jpg&apos;;", 
+	choicec: "C. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;response.type = &apos;blob&apos;;", 
+	choiced: "D. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;request.responseType = &apos;blob&apos;;", 	CORRECT
+	
+#160.	How do you control what&apos;s sent to the server when submitting a form?
+	choicea: "A. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Add a submit button to the form", 
+	choiceb: "B. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Handle the submit event of the form", 		CORRECT
+	choicec: "C. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Specify the action attribute of the form element", 
+	choiced: "D. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Ensure that all elements on the form have a name", 
+	
+#161.	Which of the following CSS would not change the appearance of text?
+	choicea: "A. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;font-style: italic;", 
+	choiceb: "B. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;font-weight: heavy;", 	CORRECT
+	choicec: "C. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;font:bolder 12px ariel;", 
+	choiced: "D. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;color: green:", 
+	
+#162.	Which of the following aligns text to the full width of the available box?
+	choicea: "A. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;right", 
+	choiceb: "B. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;full", 
+	choicec: "C. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;center", 
+	choiced: "D. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;justify", 		CORRECT
+	
+#163.	Which of the following is a way to configure the amount of space between words?
+	choicea: "A. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;word-margin", 
+	choiceb: "B. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;letter-margin", 
+	choicec: "C. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;word-spacing", 	CORRECT
+	choiced: "D. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;word-padding", 
+	
+#164.	Which of the following is not a valid way to alter the size of an element?
+	choicea: "A. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;div{height: 50px; width: 50%;}", 
+	choiceb: "B. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;div{height: 50px; width: 50px;}", 
+	choicec: "C. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;div{height: 50cm; width: 50px;}", 
+	choiced: "D. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;div{height: 50ft; width: 50ft;}", 		CORRECT
+	
+#165.	Which of the following will successfully style the border of a div element?
+	choicea: "A. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;border-top: 5px dotted blue;		CORRECT
+		border-right: 5px solid green;
+		border-left: 3px dashed red;
+		border-bottom: 10px double black;", 
+	choiceb: "B. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;border-sides: 5px solid green;", 
+	choicec: "C. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;border-all: 1px solid black;", 
+	choiced: "D. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;border: full red;", 
+	
+#166.	When looking from the outside edge of an HTML element and moving to the inside edge, what order does the padding, margin, and border occur in?
+	choicea: "A. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;padding, border, margin", 
+	choiceb: "B. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;margin, border, padding", 		CORRECT
+	choicec: "C. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;border, padding, margin", 
+	choiced: "D. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;margin, padding, border", 
+	
+#167.	Which of the following statements will apply a box shadow to the right and bottom edge of a div element?
+	choicea: "A. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;box-shadow: gray 5px 5px;", 		CORRECT
+	choiceb: "B. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;box-shadow: gray -5px 5px;", 
+	choicec: "C. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;box-shadow: gray 5px -5px;", 
+	choiced: "D. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;box-shadow: gray -5px -5px;", 
+	
+#168.	Which of the following will place an element relative to the browser window?
+	choicea: "A. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;absolute", 
+	choiceb: "B. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;fixed", 		CORRECT
+	choicec: "C. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;relative", 
+	
+#169.	Which of the following layouts is based on columns and rows?
+	choicea: "A. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;flexbox", 
+	choiceb: "B. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;multi-column", 
+	choicec: "C. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;grid layout", 		CORRECT
+	choiced: "D. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;exclusions", 
+	
+#170.	Which of the following is false about a flexbox layout?
+	choicea: "A. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;The direction of the elements in a flexbox can be controlled with the flex-direction property.", 
+	choiceb: "B. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;The elements layout can be configured along the layout axis using the flex-pack property.", 
+	choicec: "C. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Elements in a flexbox are called flexbox items.", 
+	choiced: "D. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Elements in a flexbox can be set into rows and columns.", 		CORRECT
+	
+#171.	Which of the following property values for wrap-flow will allow the text to wrap along both sides of an element?
+	choicea: "A. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;both", 	CORRECT
+	choiceb: "B. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;all", 
+	choicec: "C. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;left and right", 
+	choiced: "D. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;cross", 
+	
+#172.	Which of the following statements will hide an element but keep its space in the over-all flow?
+	choicea: "A. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;display: none;", 		CORRECT
+	choiceb: "B. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;visibility: hidden;", 
+	choicec: "C. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;display: inline;", 
+	choiced: "D. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;visibility: visible;", 
+	
+#173.	Media queries are best suited for what purpose?
+	choicea: "A. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Setting the priority of style sheet references in a webpage", 
+	choiceb: "B. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Creating a responsive user interface based on the screen size of the view port", 		CORRECT
+	choicec: "C. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Modifying the view port to properly fit the content of the page", 
+	choiced: "D. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Connecting to third-party style sheets to alter the layout", 
+	
+#174.	Which of the following transition-timing-function properties makes the transition start slow, speed up, then end slow?
+	choicea: "A. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ease", 		CORRECT
+	choiceb: "B. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ease-in", 
+	choicec: "C. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ease-out", 
+	choiced: "D. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ease-in-out", 
+	
+#175.	Which one of the following is a CSS class selector?
+	choicea: "A. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;.code", 	CORRECT
+	choiceb: "B. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;#code", 
+	choicec: "C. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;div[code]", 
+	choiced: "D. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;:code", 
+	
+#176.	Which one of the following is an attribute selector?
+	choicea: "A. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;.required", 
+	choiceb: "B. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;#required", 
+	choicec: "C. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;input[required]", 		CORRECT
+	choiced: "D. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;:required", 
+	
+#177.	Which of the following statements would alter the style of an anchor element when the mouse is moved over it?
+	choicea: "A. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;a:link", 
+	choiceb: "B. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;a:mouseover", 
+	choicec: "C. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;a:beforeclick", 
+	choiced: "D. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;a:hover", 		CORRECT
+	
+
+
+
+

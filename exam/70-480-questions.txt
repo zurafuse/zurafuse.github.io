@@ -1,0 +1,1235 @@
+#0.	You would like to create a web application by using HTML5, JavaScript, and CSS3. Which of the following Visual Studio 2012 editions can you use? (Choose all that apply.)
+	A.	Visual Studio Professional 2012	CORRECT
+	B.	Visual Studio Premium 2012	CORRECT
+	C.	Visual Studio Ultimate 2012	CORRECT
+	D.	Visual Studio Express 2012 for Web	CORRECT
+	E.	Visual Studio Express 2012 for Windows 8	FALSE
+	
+#1.	You would like to create a Windows 8 application by using HTML5, JavaScript, and CSS3. Which of the following Visual Studio 2012 editions can you use? (Choose all that apply.)
+	A.	Visual Studio Professional 2012	CORRECT
+	B.	Visual Studio Premium 2012	CORRECT
+	C.	Visual Studio Ultimate 2012	CORRECT
+	D.	Visual Studio Express 2012 for Web	FALSE
+	E.	Visual Studio Express 2012 for Windows 8	CORRECT
+	
+#2.	You would like to create web applications and Windows 8 Windows Store applications by using HTML5, JavaScript, and CSS3, but while you&apos;re learning, you don&apos;t want to buy Visual Studio 2012. Which of the following Visual Studio 2012 editions can you use for free to accomplish your goal?
+	A.	Visual Studio Professional 2012
+	B.	Visual Studio Premium 2012
+	C.	Visual Studio Ultimate 2012
+	D.	Visual Studio Express 2012 for Web and Visual Studio Express 2012 for Windows 8	CORRECT
+	
+#3.	You would like to create a Windows 8 application by using Blend and HTML5, JavaScript, and CSS3. Which feature of Blend enables you to pause an application when it reaches a desired state so you can set the style rules for the page and its controls while in this state? (Choose all that apply.)
+	A.	Assets panel	FALSE
+	B.	Projects panel	FALSE
+	C.	Visual Design	CORRECT
+	D.	Interactive mode	CORRECT
+	
+#4.	On which panel can you see a hierarchically structured view of the DOM?
+	A.	Live DOM	CORRECT
+	B.	Projects
+	C.	Assets
+	D.	Device
+	
+#5.	Which panel can you use to access a list of the HTML elements, controls, and media that can be added to an HTML page that is open in the artboard?
+	A.	Projects
+	B.	Assets	CORRECT
+	C.	Device
+	D.	Live DOM
+	
+#6.	You want to create an expando attribute on several &lt;h3&gt; tags that display vehicles for sale. The expando attribute will store the VIN (vehicle identification number) of the vehicle for sale. Which of the following is the most appropriate example of creating the expando attribute?
+	A.	&lt;h3 vin=&apos;current VIN here&apos;&gt;1965 VW Beetle&lt;/h3&gt;
+	B.	&lt;h3 id=&apos;current VIN here&apos;&gt;1965 VW Beetle&lt;/h3&gt;
+	C.	&lt;h3 data-vin=&apos;current VIN here&apos;&gt;1965 VW Beetle&lt;/h3&gt;	CORRECT
+	D.	&lt;h3 datavin=&apos;current VIN here&apos;&gt;1965 VW Beetle&lt;/h3&gt;
+	
+#7.	Which technology is HTML5 preceded by and derived from?
+	A.	HTML 4.01	CORRECT
+	B.	SGML
+	C.	XHTML 1.0
+	D.	XML
+
+#8.	How should you start each HTML5 document?
+	A.	&lt;html&gt;
+	B.	&lt;head&gt;
+	C.	&lt;title&gt;
+	D.	&lt;!DOCTYPE html&gt;	CORRECT
+	
+#9.	You want to use the disabled Boolean attribute on a text box. Which is a WRONG way to accomplish this?
+	A.	&lt;input name=&apos;firstName&apos; type = &apos;text&apos; disabled/&gt;
+	B.	&lt;input name=&apos;firstName&apos; type = &apos;text&apos; disabled=&quot; /&gt;
+	C.	&lt;input name=&apos;firstName&apos; type = &apos;text&apos; disabled=&apos;true&apos; /&gt;	CORRECT
+	D.	&lt;input name=&apos;firstName&apos; type = &apos;text&apos; disabled=&apos;disabled&apos; /&gt;
+
+#10.	You want to embed a Flash file called myFlash.swf in your HTML document. Which is the most appropriate code?
+	A.	&lt;a href=&quot;myFlash.swf&quot; &gt;&lt;/a&gt;
+	B.	&lt;iframe src=&quot;myFlash.swf&quot; &gt;&lt;/iframe&gt;
+	C.	&lt;img src=&quot;myFlash.swf&quot; /&gt;
+	D.	&lt;embed src=&quot;myFlash.swf&quot;&gt;&lt;/embed&gt;	CORRECT
+
+#11.	You want to create a drawing of a machine that Contoso, Ltd. will be selling on its website. The drawing will be embedded in your HTML document, and you want it to maintain its quality when resized. Which is the most appropriate file type to use?
+	A.	SVG	CORRECT
+	B.	GIF
+	C.	JPG
+	D.	PNG
+
+#12.	Your application prompts the user to enter his or her age, which is placed in an age variable. A user ran the application and entered I Don&apos;t Know for the age. The application then multiples age by two. What is the result?
+	A.	undefined
+	B.	null
+	C.	NaN		CORRECT
+	D.	infinity
+	
+#13.	Which of the following does NOT represent a valid variable declaration?
+	A.	var 1to1;		FALSE
+	B.	var myChar;		CORRECT
+	C.	var $cost;		CORRECT
+	D.	var _total;		CORRECT
+	
+#14.	In your application, you want to display a personalized message to the user, if the user&apos;s name is populated, in the userName variable, but if userName is empty, you want to use Valued User instead. How can you accomplish this most efficiently?
+	A.	var personalized = &apos;Hello&apos; + (userName ?? &apos;Valued User&apos;);	
+	B.	var personalized = &apos;Hello&apos; + (userName || &apos;Valued User&apos;);	CORRECT
+	C.	var personalized = &apos;Hello&apos; + (userName &amp;&amp; &apos;Valued User&apos;);
+	D.	var personalized = &apos;Hello&apos; + (userName + &apos;Valued User&apos;);
+	
+#15.	You are creating a new Windows 8 application, and you want to set up TDD for your JavaScript code. Which testing framework will you use?
+	A.	QUnit
+	B.	QUnit-Metro		CORRECT
+	C.	Microsoft Test
+	D.	NUnit
+	
+#16.	What are the steps for TDD?
+	A.	Write the passing test, write the code, run the test again to validate that it still passes.
+	B.	Write the failing test, write the code, run the test again to validate that it passes.		CORRECT
+	C.	Write the code, write the test to validate that it passes, run the test again to validate that it still passes.
+	D.	Write the passing test, write the code, break the code, run the test again to validate that it fails.
+	
+#17.	Where should your JavaScript code be placed?
+	A.	In the &lt;head&gt; element of your HTML document.
+	B.	Just before the &lt;/body&gt; tag.
+	C.	You should always place your JavaScript code in separate files, external to your HTML document.	CORRECT
+	D.	Inside the &lt;body&gt; element, at the top.
+	
+#18.	You have two arrays of strings, customers and employees, and you want to combine them to create a contacts array. Which method would be most suitable for this task?
+	A.	concat	CORRECT
+	B.	join
+	C.	push
+	D.	splice
+	
+#19.	You want to obtain a list of all elements whose tag name is div, and you need to retrieve this list as quickly as possible. Which function is most appropriate for this task?
+	A.	getElementsByName
+	B.	querySelectorAll
+	C.	getElementsByTagName	CORRECT
+	D.	getElementsByClass
+	
+#20.	You want to add a comment to your style sheet that says &quot;temporary&quot;. Which is the proper line to add to the CSS file?
+	A.	//temporary
+	B. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;--temporary
+	C. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;/* temporary */		CORRECT
+	D.	rem temporary
+	
+#21.	You want to maintain separation between structure and presentation. How do you create your style rules?
+	A. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Use inline styles.
+	B. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Use embedded styles.
+	C. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Use external style sheets.	CORRECT
+	D. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;In the HTML document, specify @import to load style sheets.
+	
+#22.	You want your printer.css style sheet to target printers. How would you set up the style sheet link?
+	A. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;link rel=&apos;printer&apos; type=&apos;text/css&apos; href=&apos;Content/printer.css&apos; /&gt;
+	B. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;link rel=&apos;stylesheet&apos; type=&apos;text/css&apos; href=&apos;Content/printer.css&apos; media=&apos;print&apos; /&gt;	CORRECT
+	C. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;link rel=&apos;stylesheet&apos; type=&apos;text/css&apos; href=&apos;Content/printer.css&apos; /&gt;
+	D. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;link rel=&apos;stylesheet&apos; type=&apos;text/css&apos; href=&apos;Content/printer.css&apos; target=&apos;print&apos; /&gt;
+	
+#23.	You want to set the style of the first letter of every paragraph in a &lt;div&gt; element whose id is readingPane. Which style selector is most appropriate?
+	A. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;#readingPane p::first-letter	CORRECT
+	B. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;#readingPane::first-letter
+	C. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;#readingPane p:first-letter
+	D. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;#readingPane:first-child
+	
+#24.	The following style sheet rule is defined in Corporate.css.
+
+div p.highlight{
+	font-size: xx-large;
+	background-color: yellow;
+}
+	
+In Department.css, the following style sheet rule is defined.
+
+div p {
+	background-color: blue;
+}	
+
+Your HTML document contains the following.
+
+&lt;!DOCTYPE html&gt;
+&lt;html xmlns=&quot;http://www.w3.org/1999/xhtml&quot;&gt;
+&lt;head&gt;
+	&lt;title&gt;&lt;/title&gt;
+	&lt;link href=&quot;Corporate.css&quot; rel=&quot;stylesheet&quot; /&gt;
+	&lt;link href=&quot;Department.css&quot; rel=&quot;stylesheet&quot; /&gt;
+&lt;/head&gt;
+&lt;body&gt;
+	&lt;div id=&quot;readingPane&quot;&gt;
+		&lt;p class=&apos;highlight&apos;&gt;
+			Here is a test to see what the background color of a paragraph will be - blue or yellow.
+		&lt;/p&gt;
+	&lt;/div&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+
+What will be the rendered background color of the paragraph?
+	A. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Yellow	CORRECT
+	B. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Blue
+	C. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Transparent
+	D. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;White
+
+#25.	The following style sheet rule is defined in Corporate.css.
+
+div p.highlight{
+	font-size: xx-large;
+	background-color: yellow;
+}
+	
+In Department.css, the following style sheet rule is defined.
+
+div p:first-of-type. {
+	background-color: blue;
+}	
+
+Your HTML document contains the following.
+
+&lt;!DOCTYPE html&gt;
+&lt;html xmlns=&quot;http://www.w3.org/1999/xhtml&quot;&gt;
+&lt;head&gt;
+	&lt;title&gt;&lt;/title&gt;
+	&lt;link href=&quot;Corporate.css&quot; rel=&quot;stylesheet&quot; /&gt;
+	&lt;link href=&quot;Department.css&quot; rel=&quot;stylesheet&quot; /&gt;
+&lt;/head&gt;
+&lt;body&gt;
+	&lt;div id=&quot;readingPane&quot;&gt;
+		&lt;p class=&apos;highlight&apos;&gt;
+			Here is a test to see what the background color of a paragraph will be - blue or yellow.
+		&lt;/p&gt;
+	&lt;/div&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+
+What will be the rendered background color of the paragraph?
+	A. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Yellow
+	B. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Blue	CORRECT
+	C. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Transparent
+	D. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;White
+	
+#26.	You want to find three shades of a color to use on parts of your webpage. Which color function helps you accomplish this task?
+	A. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;rgb()
+	B. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;rgba()
+	C. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;hsl()	CORRECT
+	D. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;color()
+	
+#27.	A font that has curls at the top and bottom of its characters belongs to which font family group?
+	A. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;monospace
+	B. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;serif	CORRECT
+	C. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;sans serif
+	D. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;cursive
+	E.	fantasy
+	
+#28.	You want to position a &lt;div&gt; element in relation to the browser window. Which position setting do you use?
+	A. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;static
+	B. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;relative
+	C. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;absolute
+	D. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;fixed	CORRECT
+	
+#29.	You are creating a webpage that will display short stories, and you want the stories to be shareable on other sites. Which element should each story be wrapped with?
+	A. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;section&gt;
+	B. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;pre&gt;
+	C. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;aside&gt;
+	D. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;article&gt;	CORRECT
+	
+#30.	You want to indicate an important item in your content text. Which element do you use?
+	A. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;b&gt;
+	B. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;em&gt;
+	C. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;strong&gt;	CORRECT
+	D. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;i&gt;
+	
+#31.	You want to identify the author of webpages on your website by providing the author name and email address in the footer of each page. What is the proper way to do this?
+	A. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;address&gt;&lt;a href=&quot;email:author@Contoso.com&quot;&gt;Author Name&lt;/a&gt;&lt;/address&gt;	CORRECT
+	B. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;contact&gt;&lt;a href=&quot;email:author@Contoso.com&quot;&gt;Author Name&lt;/a&gt;&lt;/contact&gt;
+	C. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;author&gt;&lt;a href=&quot;email:author@Contoso.com&quot;&gt;Author Name&lt;/a&gt;&lt;/author&gt;
+	D. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;name&gt;&lt;a href=&quot;email:author@Contoso.com&quot;&gt;Author Name&lt;/a&gt;&lt;/name&gt;
+	
+#32.	You are creating a webpage that will be used to display a list of salespeople with their sales statistics for the years of 2010, 2011, 2012 in two categories: sales of products and sales of services. You want to each of the years to be in the horizontal header, and under each year, you will have a &quot;Products&quot; column and a &quot;Services&quot; column. How will you define the element for year 2011?
+	A. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;th&gt;2011&lt;/th&gt;
+	B. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;th colspan=&quot;2&quot;&gt;2011&lt;/th&gt;	CORRECT
+	C. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;th span=&quot;2&quot;&gt;2011&lt;/th&gt;
+	D. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;th style=&quot;2&quot;&gt;2011&lt;/th&gt;
+	
+#33.	You want to provide the ability to display or show columns, but you don&apos;t want to add a style or other marking to each &lt;td&gt; element. How can you accomplish this?
+	A. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Add a &lt;colgroup&gt; element to the &lt;table&gt; element and define each column by using a &lt;col&gt; element inside the &lt;colgroup&gt; element.	CORRECT
+	B. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Add an id to each &lt;td&gt; element and provide a unique id for each; use the ids in your style sheet rules to obtain the desired style.
+	C. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Add a &lt;col&gt; element to the &lt;table&gt; element and define each column by using a &lt;id&gt; element inside the &lt;col&gt; element.
+	D. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Add a &lt;hidden&gt; element to the &lt;table&gt; element and define each column by using a &lt;col&gt; element inside the &lt;hidden&gt; element.
+	
+#34.	Which element can you add to the &lt;table&gt; element to provide a table caption?
+	A. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;thead&gt;
+	B. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;colgroup&gt;
+	C. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;caption&gt;	CORRECT
+	D. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;th&gt;
+	
+#35.	What is the blueprint for an object called?
+	A. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;property
+	B. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;method
+	C. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;class	CORRECT
+	D. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;event
+	
+#36.	What does javascript use as a starting object when constructing a new object?
+	A. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;prototype	CORRECT
+	B. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;property
+	C. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;class
+	D. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;event
+	
+#37.	How is inheritance supported in JavaScript?
+	A. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;You replace the prototype of the child object with a new instance of the parent object and then replace the prototype constructor with the child constructor.	CORRECT
+	B. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;You call the createChild method on the parent object.
+	C. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;You call the setParent method on the child object.
+	D. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;JavaScript does not support inheritance.
+	
+#38.	You want to locate all the elements on your webpage that are assigned the CSS class name Hidden. Which JQuery statement can you use?
+	A. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;var hidden = $(&apos;#Hidden&apos;);
+	B. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;var hidden = $(&apos;.Hidden&apos;);	CORRECT
+	C. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;var hidden = $(&apos;Hidden&apos;);
+	D. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;var hidden = $(&apos;class=Hidden&apos;);
+	
+#39.	You are interested in writing event-driven JavaScript code that will work on most browsers without writing browser-specific code. How can you accomplish this?
+	A. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;User the JQuery library to help.	CORRECT
+	B. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Use only JavaScript statements that are the same across all browsers.
+	C. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Do not use any JavaScript.
+	D. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;It&apos;s impossible to write event-driven JavaScript code that is not browser-specific.
+	
+#40.	You are interested in locating all &lt;p&gt; elements on your webpage, so your statement is var parapraphs = $(&apos;p&apos;). Which line of code would confirm whether at least one element is found?
+	A. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if(paragraphs.exists)
+	B. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if(paragraphs==null)
+	C. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if(paragraphs.length)	CORRECT
+	D. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if(paragraphs.count &gt; 0)
+	
+#41.	You are creating a webpage that will collect data and send it to a server. Which element must you implement to be able to send data to the server?
+	A. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;nav&gt;
+	B. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;form&gt;	CORRECT
+	C. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;textarea&gt;
+	D. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;div&gt;
+	
+#42.	When you retrieve a webpage from the server that contains Customer information, you want to be able to specify the id of the Customer within the URL. What can you use to provide the id?
+	A. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;the PostBack
+	B. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;the QueryString		CORRECT
+	C. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;the domain name
+	D. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;a label
+	
+#43.	You have serialized the form data that has an &lt;input type=&quot;email&quot;&gt; element. You want to deserialized the data to see the email address as entered. Which function can you use?
+	A. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;decodeURIComponent	CORRECT
+	B. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;deserialize
+	C. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;submit
+	D. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;deserializeEmail
+	
+#44.	You are creating a webpage that prompts for a new user&apos;s profile information. The profile page requires the user to provide a user name, and if no username is provided, the user will not be able to submit the page to the server. Which attribute must be placed on the user name text box to enforce this requirement?
+	A. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;enforced
+	B. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;mandatory
+	C. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;required	CORRECT
+	D. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;user name
+	
+#45.	When you want to send form data to the server to update data in the database, which HTTP method should you specify of the &lt;form&gt; element?
+	A. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;POST	CORRECT
+	B. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;GET
+	C. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;CONNECT
+	D. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;SEND
+	
+#46.	If you want to add a slider control to a webpage, which element do you use?
+	A. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;input type=&quot;slider&quot; name=&quot;myslider&quot; /&gt;
+	B. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;input type=&quot;number&quot; name=&quot;myslider&quot; /&gt;
+	C. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;input type=&quot;submit&quot; name=&quot;myslider&quot; /&gt;
+	D. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;input type=&quot;range&quot; name=&quot;myslider&quot; /&gt;	CORRECT
+	
+#47.	What can you publish by using npm?
+	A. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;a JavaScript file
+	B. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;a module
+	C. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;A JavaScript class
+	D. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;A package	CORRECT
+	
+#48.	What scoping can a package have? (Choose all that apply.)
+	A. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Local	CORRECT
+	B. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Grouped		FALSE
+	C. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Named		FALSE
+	D. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Global	CORRECT
+	
+#49.	Why would you install the express package?
+	A. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Simplify website creation
+	B. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Provide session management
+	C. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Simplify retrieval of static content
+	D. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;All of the above	CORRECT
+	
+#50.	You want to create a REST service for your internal web service and use the HTTP verbs that match CRUD operations. You know the browser your users will be using is compatible, and the firewall will not be a problem. What are the HTTP verbs that match wtih CRUD (in order)?
+	A. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;CREATE, POST, GET, DELETE
+	B. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;GET, RETRIEVE, UPDATE, DELETE
+	C. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;PUT, GET, POST, DELETE		CORRECT
+	D. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;POST, GET, UPDATE, DELETE
+	
+#51.	What is the primary object used to make an asynchronous AJAX call that returns a JSON result?
+	A. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;XMLHttpRequest	CORRECT
+	B. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;AjaxRequest
+	C. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;JsonResponse
+	D. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;AjaxAsync
+	
+#52.	You want to use JQuery to make an AJAX call that will use the HTTP POST method. Which JQuery method can you use?
+	A. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;$.post()	CORRECT
+	B. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;$.getJSON()
+	C. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;$.get()
+	D. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;$.param()
+	
+#53.	Which method chains asynchronous operations?
+	A. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;pipe()	CORRECT
+	B. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;done()
+	C. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;resolve()
+	D. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;always()
+	
+#54.	Which method creates a resolved promise object? 
+	A. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;resolve()
+	B. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;done()
+	C. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;$.when()	CORRECT
+	D. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;$.Deferred()
+	
+#55.	Which method do you call to subscribe to the successful completion of an asynchronous operation?
+	A. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;done	CORRECT
+	B. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;always
+	C. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;complete
+	D. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;success
+	
+#56.	Which method do you call on the deferred object to indicate a change in progress?
+	A. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;progress
+	B. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;notify		CORRECT
+	C. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;done
+	D. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;resolve
+	
+#57.	In the web worker code, you want the asynchronous code to update the DOM. Which method can you use?
+	A. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;updateDom()
+	B. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;workerUpdate()
+	C. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;dom()
+	D. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;You cannot update the DOM from within the asynchronous code.	CORRECT
+	
+#58.	Which object can be used when the web worker and the creator need to reference the same object?
+	A. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Mutex
+	B. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Semaphore
+	C. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Closure
+	D. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;The web worker and the creator cannot reference the same object		CORRECT
+	
+#59.	When working with the WebSocket object, which event can be used to retrieve the data that was received from the server?
+	A. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;onopen
+	B. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;onclose
+	C. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;onmessage	CORRECT
+	D. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;onerror
+	
+#60.	Which library would you use if you are creating a Node.js website and want to write browser-independent code that uses WebSocket?
+	A. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;SignalIR
+	B. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Socket.IO	CORRECT
+	C. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;FarmSockets
+	D. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;AgnosticSocket
+	
+#61.	You want to ensure that the WebSocket connection is not disconnected as a result of inactivity. How can you accomplish this?
+	A. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Add code to the onclose event to reopen the connection when it&apos;s closed.
+	B. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Add code to send an empty message periodically before the connection is closeD. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	CORRECT
+	C. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Set the keepAlive property on the WebSocket object to true
+	D. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Create a new WebSocket object each time you send a message
+	
+#62.	You want to include a video on your webpage that has an .avi file extension. If you supply the codec information, what will be displayed in browsers that support the &lt;video&gt; element but don&apos;t have the codec?
+	A. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;The browser will show the &lt;video&gt; element, but will not play the video.		CORRECT
+	B. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;The browser will automatically download the codec and play the video.
+	C. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;The browser will display the contents of the &lt;video&gt; element.
+	D. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;The browser will automatically download a version of the browser that supports the codec.
+	
+#63.	You don&apos;t want to supply an .ogg video because you find that the .ogg format is choppy and low quality. What other video formats can you include to be compatible with most browsers? (Choose all that apply.)
+	A. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;.webm	CORRECT
+	B. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;.avi
+	C. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;.mpg
+	D. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;.mp4	CORRECT
+	E.	.mjpg
+	
+#64.	The W3C standardized using which format for video?
+	A. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;.webm
+	B. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;.avi
+	C. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;.mpg
+	D. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;.mp4
+	E.	No standard has been selected	CORRECT
+	
+#65.	You want to supply an audio file using a format that is compatible with the Internet Explorer, Safari, and Chrome browsers. Which audio format can you include to be compatible with most browsers?
+	A. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;.mp4
+	B. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;.wav
+	C. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;.mp3	CORRECT
+	D. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;.oga
+	
+#66.	You don&apos;t want to supply an .mp3 format because you are concerned about potentially paying royalties. What other audio formats can you include to be compatible with most browsers? (Choose all that apply)
+	A. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;.mp4	CORRECT
+	B. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;.wav	CORRECT
+	C. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;.h264	FALSE
+	D. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;.oga	CORRECT
+	
+#67.	The &lt;video&gt; and &lt;audio&gt; elements inherit from which object?
+	A. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;HTMLMediaElement	CORRECT
+	B. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;MediaElement
+	C. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;MultiMediaElement
+	D. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;the Multimedia object
+	
+#68.	If you want your media to repeat continuously, which property would you set to true?
+	A. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;preload
+	B. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;readyState
+	C. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;seekable
+	D. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;loop	CORRECT
+	
+#69.	You want to trigger some code when the media is loaded. Which event should you subscribe to?
+	A. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;onstalled
+	B. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;onseeked
+	C. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;onplay
+	D. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;onloadeddata	CORRECT
+	
+#70.	Which code example can be used to draw a rectangle on a &lt;canvas&gt; element that has an id of myCanvas?
+
+	A. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;var canvas = document.getElementById(&apos;myCanvas&apos;);
+		var ctx = canvas.getContext();
+		ctx.rectangle(10,10,50,75);
+		
+	B. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;var canvas = document.getElementById(&apos;myCanvas&apos;);
+		canvas.rectangle(10,10,50,75);
+		
+	C. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;var canvas = document.getElementById(&apos;myCanvas&apos;);
+		var ctx = canvas.getContext(&apos;2d&apos;);
+		ctx.fillRect(10,10,50,75);		CORRECT
+		
+	D. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;var canvas = document.getElementById(&apos;myCanvas&apos;);
+		var ctx = canvas.getContext();
+		ctx.fillRect(10,10,50,75);
+		
+#71.	You want to draw an arc that is approximately three-quarters of a circle. Which method is the easiest to use to accomplish this task?
+	A. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;arcTo()
+	B. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;arc()		CORRECT
+	C. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;circle()
+	D. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;dot()
+	
+#72.	The content of the &lt;svg&gt; element is in which format?
+	A. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;SGML
+	B. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;HTML
+	C. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;XHMTL
+	D. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;XML		CORRECT
+	
+#73.	On the &lt;svg&gt; element, what attribute provides a window into the drawing and enables zoom capabilities?
+	A. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;zoom
+	B. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;window
+	C. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;viewBox		CORRECT
+	D. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;zoomWindow
+	
+
+#74.	Which of the following events trigger continuously during a drag and drop operation? (Choose all that apply)
+	A. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;dragstart	FALSE
+	B. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;drag		CORRECT
+	C. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;dragend		FALSE
+	D. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;dragenter	FALSE
+	E.	dragover	CORRECT
+	F.	dragleave	FALSE
+	G.	drop		FALSE
+	
+#75.	Which of the following events are associated with the item being dragged? (Choose all that apply.)
+	A. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;dragstart	CORRECT
+	B. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;drag		CORRECT
+	C. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;dragend		CORRECT
+	D. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;dragenter	FALSE
+	E.	dragover	FALSE
+	F.	dragleave	FALSE
+	G.	drop		FALSE
+	
+#76.	Using the DataTransfer object, what kind of data can you pass to the drop event?
+	A. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;any valid string, number, date/time, or Boolean value
+	B. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Any URL that is within the same domain as the webpage
+	C. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Any JSON object
+	D. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Any object that can be represented as a string or URL		CORRECT
+	
+#77.	To which events do you need to subscribe to program file drag and drop? (Choose all that apply)
+	A. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;dragstart	FALSE
+	B. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;drag		FALSE
+	C. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;dragend		FALSE
+	D. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;dragenter	CORRECT
+	E.	dragover	CORRECT
+	F.	dragleave	FALSE
+	G.	drop		CORRECT
+	
+#78.	Which of the following is not a property on the File object?
+	A. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;name
+	B. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;path	CORRECT
+	C. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;type
+	D. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;size
+	
+#79.	Which method gets your current location once from the Geolocation object?
+	A. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;watchPosition()
+	B. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;watchLocation()
+	C. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;getCurrentPosition()		CORRECT
+	D. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;getCurrentLocation()
+	
+#80.	Which of the following is not a valid parameter on the getCurrentPosition method?
+	A. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Error callback function
+	B. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Position options object
+	C. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Success callback function
+	D. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Use GPS only		CORRECT
+	
+#81.	Which method continuously monitors your current location from the Geolocation object?
+	A. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;watchPosition()		CORRECT
+	B. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;watchLocation()
+	C. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;getCurrentPosition()
+	D. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;getCurrentLocation()
+	
+#82.	Which of the following formulas can you use to calculate the distance between two samples?
+	A. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;haversine		CORRECT
+	B. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Pythagorean theorem
+	C. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;quadratic
+	D. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;hyperbolic
+	
+#83.	Which of the following URLs can access data stored on http://www.example.com/lesson1/page1.html?
+	A. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;http://www2.example.com/lesson1/page1.html
+	B. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;http://www.example.com:8081/lesson1/page1.html
+	C. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;https://www.example.com/lesson1/page1.html
+	D. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;http://www.example.com/lesson2/page1.html		CORRECT
+	E.	http://example.com/lesson1/page1.html
+	
+#84.	What is the web storage limit currently recommended by the World Wide Web Consortium (W3C)?
+	A. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;4 KB
+	B. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;5 MB		CORRECT
+	C. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;500 MB
+	D. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;10 MB
+	
+#85.	What is the correct syntax for removing all values existing in localStorage?
+	A. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;localStorage.clear();		CORRECT
+	B. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;localStorage.removalAll();
+	C. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;localStorage.abandon();
+	D. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;localStorage.reset();
+	
+#86.	Which of the following storage mechanisms has the highest level of cross-browser support?
+	A. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Web storage		CORRECT
+	B. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Web SQL
+	C. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;IndexDB
+	D. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;FileSystem API
+	
+#87.	Which of the following features does web storage support?
+	A. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Indexing
+	B. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Transactions
+	C. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Asynchronous read/write
+	D. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Simple key/value pair storage		CORRECT
+	
+#88.	Which of the following is not a property of the StorageEvent object?
+	A. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;oldValue
+	B. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;key
+	C. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;changeType		CORRECT
+	D. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;storageArea
+	
+#89.	If you modify a value stored in sessionStorage, which of the following could receive notifications of the change (if subscribed)?
+	A. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Another tab opened to a page on the same domain
+	B. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;A second browser window open to the same page
+	C. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;An iframe on the same page whose source is within the same domain		CORRECT
+	D. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;The operating system that is hosting the browser
+	
+#90.	Which of the following is the correct way to cancel a storage event?
+	A. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;event.returnValue = false;
+	B. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;event.preventDefault();
+	C. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;event.stopPropagation();
+	D. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Storage events cannot be cancelled after they are triggereD. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;CORRECT
+	
+#91.	Which of the following would be a good canidate for Web SQL?
+	A. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Mobile applications built specifically for Safari on the iOS platform	CORRECT
+	B. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Mobile applications built for any mobile device
+	C. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Public-facing web applications
+	D. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Mobile applications built specifically for Internet Explorer
+	
+#92.	You need to create a new database. Which of the following commands should you use?
+	A. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;var db = createDatabase(&apos;mydb&apos;, &apos;1.0&apos;, &apos;My database&apos;,5 * 1024 * 1024);
+	B. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;var db = new Database (&apos;mydb&apos;);
+	C. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;var db = initDatabase(&apos;mydb&apos;,&apos;1.0&apos;,&apos;My database&apos;, 5 * 1024 * 1024);
+	D. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;vare db = openDatabase(&apos;mydb&apos;, &apos;1.0&apos;,&apos;My database&apos;, 5 * 1024 * 1024);	CORRECT
+	
+#93.	Which of the following will correctly insert a new record, using values passed in as SQL arguments to an executeSql() call?
+	A. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;t.executeSql(&quot;INSERT INTO books(title) VALUES(?)&quot;, [&quot;A Tale of Two Cities&quot;]);	CORRECT
+	B. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;t.executeSql(&quot;INSERT INTO books(title) VALUES([0]&quot;, [&quot;A Tale of Two Cities&quot;]);
+	C. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;t.executeSql(&quot;INSERT INTO books(title) VALUES([1]&quot;, [&quot;A Tale of Two Cities&quot;]);
+	D. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;t.executeSql(&quot;INSERT INTO books(title) VALUES({0}), [&quot;A Tale of Two Cities&quot;]);
+	
+#94.	Which of the following features is not supported by IndexedDB?
+	A. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Transactions
+	B. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Cursors
+	C. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Indexed
+	D. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;SQL		CORRECT
+	
+#95.	What is the correct method for creating a transaction that will add a new record?
+	A. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;var trans = db.transaction(&apos;authors&apos;, &apos;readonly&apos;);
+	B. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;var trans = db.transaction(&apos;authors&apos;, &apos;readwrite&apos;);		CORRECT
+	C. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;var trans = db.transaction(&apos;authors&apos;);
+	D. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;var trnas = db.createTransaction(&apos;authors&apos;, &apos;readwrite&apos;);
+	
+#96.	Which object store method retrieves a record by its key value?
+	A. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;get(key)	CORRECT
+	B. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;find(key)
+	C. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;single(key)
+	D. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;first(key)
+	
+#97.	Which of the following methods should you use when storing files that are relatively unimportant and can be removed if the browser is low in available space?
+	A. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;window.requestFileSystem(LOW, 5 * 1024 * 1024, getDirectory, handleError);
+	B. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;window.requestFileSystem(PERSISTENT, 5 * 1024 * 1024, getDirectory, handleError);
+	C. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;window.requestFileSystem(SIMPLE, 5 * 1024 * 1024, getDirectory, handleError);
+	D. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;window.requestFileSystem(TEMPORARY, 5 * 1024 * 1024, getDirectory, handleError);		CORRECT
+	
+#98.	Which of the following allows FileWriter to append data to the end of the file?
+	A. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;fileWriter.seek(fileWriter.length);		CORRECT
+	B. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;fileWriter.seek(fileWriter.end);
+	C. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;fileWriter.moveLast()
+	D. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;fileWriter.moveToEnd();
+	
+#99.	Which of the following removes a directory that contains existing files?
+	A. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;directoryEntry.remove(directoryRemoved, handleError);
+	B. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;directoryEntry.removeResursively(directoryRemoved, handleError);	CORRECT
+	C. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;directoryEntry.removeAll(directoryRemoved, handleError);
+	D. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;directoryEntry.remove(directoryRemoved, ALL, handleError);
+	
+	
+#100.	Which of the following is a valid statement for the first line of a manifest file?
+	A. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;CACHE
+	B. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;CACHE MANIFEST		CORRECT
+	C. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;CACHE-MANIFEST
+	D. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;CACHE-ALWAYS
+	
+#101.	Which event is fired after an existing cache has been updated with new resource?
+	A. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;downloading
+	B. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;cached
+	C. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;updateReady		CORRECT
+	D. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;completed
+	
+	
+	
+#102.	Which of the following elements aren&apos;t introduced in HTML5?
+	A. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;article&gt;
+	B. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;footer&gt;
+	C. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;hgroup&gt;
+	D. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;input&gt;		CORRECT
+
+#103.	Which element(s) does the &lt;hgroup&gt; element contain?
+	A. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;h1&gt; to &lt;h6&gt;		CORRECT
+	B. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;header&gt;
+	C. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;nav&gt;
+	D. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;All of the above
+
+#104.	Which HTML5 element would you use to organize content so that the page maximizes a search engine&apos;s algorithm?
+	A. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;div id=&quot;CompanyNews&quot;&gt;
+	B. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;header&gt;Company News&lt;/header&gt;
+	C. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;article&gt;Company News&lt;/article&gt;		CORRECT
+	D. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;All of the above
+
+#105.	Which HTML5 element should you use to create a more structured layout?
+	A. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;div&gt;
+	B. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;p&gt;
+	C. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;table&gt;		CORRECT
+	D. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;form&gt;
+	
+#106.	Which of the following JavaScript methods can&apos;t be used to select an element in the DOM?
+	A. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;getElementById
+	B. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;querySelector
+	C. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;getElementByClassName
+	D. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;queryAll	CORRECT
+	
+#107.	Which line of JavaScript sucessfully retrieves only the image element with the ID myDog from the following HTML? Choose all that apply.
+
+&lt;form&gt;
+	&lt;div id=&quot;main&quot; class=&quot;mainStyle&quot;&gt;
+		&lt;p id=&quot;dogs&quot;&gt;
+			This is a web page about dogs. Here is my dog picture:
+			&lt;img src=&quot;dog.jpg&quot; id=&quot;myDog&quot; class = &quot;thumb&quot;/&gt;
+			Here is a picture of my friend&apos;s dog:
+			&lt;img src=&quot;dog.jpg&quot; id=&quot;myfriendsDog&quot; class=&quot;thumb&quot;/&gt;
+		&lt;/p&gt;
+	&lt;/div&gt;
+&lt;/form&gt;
+
+	A. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;document.getElementbyId(&quot;myDog&quot;);	CORRECT
+	B. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;p&gt;.getChildNode(&quot;img&quot;);
+	C. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;document.getElementbyId(&quot;dogs).querySelector (&quot;thumb&quot;);
+	D. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;document.querySelectorAll(&quot;thumb&quot;);
+	
+#108.	To hide an element in the DOM and still be able to add it back later, what should you do?
+	A. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Nothing, because the DOM is always available in a static form.
+	B. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Keep a reference to the removed node to be able to add it back.		CORRECT
+	C. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Call the document.restoreNodes method.
+	D. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;You can&apos;t add an element back after it&apos;s removed.
+	
+#109.	When implementing the HTML5 video element, how do you ensure that the rendering of the element can function in different browsers?
+	A. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;You need to do nothing, because HTML5 is now a standard specification.
+	B. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Specify all the source video types in the src attribute of the video element.
+	C. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Include the &lt;source&gt; element for each video type so that each browser can play the version that it supports.	CORRECT
+	D. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Include the &lt;object&gt; element for each video type so that the browser can play the version that it supports.
+	
+#110.	When drawing on the HTML5 canvas element, what method is used on the context to begin drawing at a new point?
+	A. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;moveTo
+	B. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;lineAt
+	C. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;beginPath	CORRECT
+	D. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;stroke
+	
+#111.	When performance is critical for an HTML5 graphics application, what should you use?
+	A. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;canvas&gt; using a declarative syntax to create the graphics
+	B. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;svg&gt; using a declarative syntax to create the graphics
+	C. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;canvas&gt; using JavaScript to create the graphics	CORRECT
+	D. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;svg&gt; and &lt;canvas&gt; combination to leverage the best performance of both
+	
+#112.	Absolute positioning positions an object relative to what?
+	A. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;The top-left corner of the browser window.
+	B. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;The top-left corner of its parent element.	CORRECT
+	C. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Centered inside the window.
+	D. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Centered inside its parent element.
+	
+#113.	Which transformation enables you to change the size of an element?
+	A. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;rotate
+	B. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;skew
+	C. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;translate
+	D. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;scale	CORRECT
+	
+#114.	Which syntax preserves the layout of the page when hiding an element in the DOM?
+	A. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;display=&apos;hidden&apos;
+	B. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;display=&apos;inline&apos;
+	C. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;visibility=&apos;none&apos;
+	D. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;visibility=&apos;hidden&apos;		CORRECT
+	
+#115.	When using the Web Storage API, where should you store data to ensure that it&apos;s cleared when the user closes the browser?
+	A. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;localStorage
+	B. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;cookieStorage
+	C. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;sessionStorage		CORRECT
+	D. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;A hidden input element
+	
+#116.	What do you need to do to designate a page as available offline?
+	A. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Specify in JavaScript as document.offLine=true.
+	B. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Specify the manifest attribute on the form element.
+	C. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Specify the manifest attribute on the HTML element.		CORRECT
+	D. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Tell users to switch to offline mode using their browser. No code is required.
+	
+#117.	Which of the following aren&apos;t valid sections of the AppCache manifest?
+	A. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Cache manifest
+	B. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Session manifest	CORRECT
+	C. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Network manifest
+	D. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Fallback manifest
+
+#118.	Which event is fired by the AppCache object when the cache download is complete?
+	A. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;oncached	CORRECT
+	B. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;onupdateready
+	C. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ondownloading
+	D. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;onchecking
+	
+#119.	When using the Geolocation API, how do you configure the ability to use cached data?
+	A. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Set the enableCache property to true on the PositionOptions object
+	B. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Set the maximumAge property to a non-zero value on the PositionOptions object	CORRECT
+	C. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Set the timeout property of the PositionOptions object
+	D. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Using the cache is always on to save bandwidth, so no configuration is required
+	
+#120.	In JavaScript, how do you determine the scope of a variable?
+	A. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;The scope of a variable is global within the context of the page
+	B. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;The scope of a variable depends on where inside the script it&apos;s declared	CORRECT
+	C. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;The scope of a variable changes depending on the type it represents
+
+#121.	Why is it important to avoid creating custom JavaScript objects in the global namespace?
+	A. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;The global namespace is reserved for the browser
+	B. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;The global namespace is available to all applications in the session, and using it could result in a naming conflict	CORRECT
+	C. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;The global namespace creates a security risk to users&apos; systems
+	
+#122.	What JavaScript keyword in an event handler can be easily used to reference the object that raised the event?
+	A. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;The it keyword provides a reference to the object
+	B. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;The document.current property provides a reference to the object
+	C. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;The this keyword provides a reference to the object		CORRECT
+	D. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;No way is available other than to use a selector query to retrieve the object from the DOM.
+	
+#123.	In JavaScript, which of the following isn&apos;t a native object?
+	A. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Function
+	B. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Array
+	C. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Integer
+	D. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Person		CORRECT
+	
+#124.	Which of the following snippets shows the correct way to create a custom book object?
+	A. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;var book = &quot;Title: &apos;My book about things&apos;&quot; + &quot;Author: &apos;Jane Doe&apos;&quot; + &quot; Pages:400&quot;;
+	B. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;var book = {Title: &quot;My book about things&quot;, Author: &quot;Jane Doe&quot;, Pages: 400};		CORRECT
+	C. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;var book = (Title= &quot;My book about things&quot;, Author=&quot;Jane Doe&quot;=Pages:400);
+	D. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;var book = new{Title:&quot;My book about things&quot;, Author: &quot;Jane Doe&quot;, Pages:400};
+	
+#125.	Inheritance is accomplished in JavaScript through the use of which construct?
+	A. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;inherits keyword
+	B. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;implements keyword
+	C. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;this keyword
+	D. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Prototypes		CORRECT
+	
+#126.	Which of the following keywords provide iterative control flow?
+	A. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if statement
+	B. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;switch statement
+	C. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;for		CORRECT
+	D. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;break
+	
+#127.	Which of the following array methods combines two arrays?
+	A. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;join
+	B. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;combine
+	C. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;split
+	D. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;concat		CORRECT
+	
+#128.	Which iterative control syntax can guarantee that the loop is processed at least once?
+	A. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;for...in loop
+	B. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;while loop
+	C. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;do...while loop		CORRECT
+	D. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;for loop
+	
+#129.	Which keyword is used to exit a loop?
+	A. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;continue
+	B. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;break		CORRECT
+	C. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;stop
+	D. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;next
+	
+#130.	Which of the following isn&apos;t a supported way to add an event handler to a DOM element?
+	A. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Declaring within the HTML element by assigning the event attribute to a JavaScript function
+	B. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Setting the attribute in CSS to a valid JavaScript function		CORRECT
+	C. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Dynamically through JavaScript by assigning a JavaScript function to the object&apos;s event property
+	D. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Dynamically through JavaScript via the assign/remove event listener methods
+	
+#131.	Which of the following isn&apos;t an attribute of an anonymous function?
+	A. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Anonymous functions can&apos;t be called by any other code
+	B. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Anonymous functions have a clearly defined name
+	C. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Anonymous functions can be passed as parameters
+	D. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Anonymous functions can&apos;t be assigned to a DOM element declaratively		CORRECT
+
+#132.	Which code line would successfully cancel an event?
+	A. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;window.event.returnValue=false;		CORRECT
+	B. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;return false;
+	C. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;window.event.Return();
+	D. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;window.Stop();
+	
+#133.	Which event occurs when a DOM element receives the cursor?
+	A. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;focus		CORRECT
+	B. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;change
+	C. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;keydown
+	D. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;mouseleave
+	
+#134.	Which option provides the correct sequence of events in a drag and drop operation?
+	A. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;dragstart, drag, dragenter, drop
+	B. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;dragstart, drag, dragenter, dragstop
+	C. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;drag, dragstart, drop, dragenter
+	D. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;drag, dragstart, dragenter, dragstop
+
+#135.	Which statement correctly describes the proper error handling using try...catch...finally blocks?
+	A. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Proper error handling allows code processing to continue and to provide appropriate user feedback.		CORRECT
+	B. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Proper error handling allows users to fix problems with the webpage.
+	C. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Proper error handling allows you to debug the application at run time.
+	D. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Proper error handling allows you to suppress all the bugs in your scripts.
+	
+#136.	Which of the following isn&apos;t a property of the exception object?
+	A. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;message
+	B. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;description		CORRECT
+	C. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;number
+	D. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;name
+	
+#137.	Why is checking for null a good practice?
+	A. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Checking for null prevents the use of an object before it&apos;s initialized		CORRECT
+	B. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Checking for null prevents errors resulting in NaN
+	C. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Checking for null prevents the need to throw custom errors.
+	
+#138.	Which of the following is a valid WebSocket instantiation?
+	A. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;wsConnection = new WebSocket(&apos;http://studygroup.70480.com&apos;);
+	B. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;wsConnection = new WebSocket(&apos;tcp://studygroup.70480.com&apos;,[&apos;soap&apos;,&apos;xmpp&apos;]);
+	C. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;wsConnection = new WebSocket(&apos;wss://studygroup.70480.com&apos;,[&apos;soap&apos;,&apos;xmpp&apos;]);		CORRECT
+	D. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;wsConnection = new WebSocket(&apos;ftp://studygroup.70480.com&apos;,[&apos;soap&apos;,&apos;xmpp&apos;]);
+
+#139.	Which of the following statements properly handles the reception of data from a WebSocket?
+	A. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;wsConnection.onpost = function(msg){..};
+	B. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;wsConnection.onreceive = function(msg){...};
+	C. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;wsConnection.onmessage = function(msg){...};	CORRECT
+	D. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;wsConnection.ongetdata = function(msg){...};
+
+#140.	Which list identifies the properties that need to be set up to make an AJAX call?
+	A. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;cache, datatype, success
+	B. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;url, cache, datatype, success
+	C. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;url, datatype, onsuccess	CORRECT
+	D. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;url, datatype, oncomplete
+	
+#141.	Why is wiring up events with jQuery easier?		CORRECT
+	A. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;It allows you to assign the event listener to many elements at once via the selector syntax
+	B. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;There is no difference wiring up events with jQuery versus addEventListener
+	C. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;jQuery works more efficiently in a loop
+	D. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;jQuery allows both named and anonymous functions to be used as event listeners.
+	
+#142.	Which of the following isn&apos;t a valid web worker operation?
+	A. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;postMessage
+	B. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;onmessage
+	C. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;close		CORRECT
+	D. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;terminate
+
+#143.	Which method cancels a web worker?
+	A. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;close
+	B. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;terminate		CORRECT
+	C. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;suspend
+	D. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;sleep
+
+#144.	Where must you place the JavaScript code to run in the context of a web worker?	
+	A. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Between the &lt;head&gt;&lt;/head&gt; elements
+	B. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;In any &lt;script&gt; block in the page
+	C. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;In its own JavaScript file		CORRECT
+	D. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;As a dynamic function assigned to the self.worker
+
+#145.	How many web workers/subworkers can run concurrently?
+	A. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;A multitude of four web workers including subworkers, per processor
+	B. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;16 workers by default, but you can change that number via self.configuration
+	C. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;A limitless number of workers		CORRECT
+	D. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;A limit of eight workers, each with a maximum of eight subworkers
+
+#146.	To have a script run continually every 30 seconds, which line of code should be used?
+	A. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;wsConnection.repeatWork(&quot;workerFile.js&quot;,30000);
+	B. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;setTimeout(function(){worker.postMessage(&quot;&quot;);}, 30000);
+	C. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;setTimeout(worker.postMessage(&quot;&quot;),30000);
+	D. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;setInterval(function(){worker.postMessage(&quot;&quot;);}, 30000);	CORRECT
+
+#147.	Which input control is better suited for allowing users to make mutiple selections?
+	A. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;radio button
+	B. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;textarea
+	C. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;checkbox	CORRECT
+	D. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;radio or checkbox
+	
+#148.	Which input control is designed to allow users to enter secure information in a way that keeps others from seeing what&apos;s typed?
+	A. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;text
+	B. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;textarea
+	C. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;url
+	D. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;password	CORRECT
+	
+#149.	Which input control posts form data to a server?
+	A. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;button
+	B. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Submit	CORRECT
+	C. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Reset
+	D. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;radio
+
+#150.	Which of the following declarations are valid ways to make a text control non-editable?
+	A. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;input type=&quot;text&quot; edit=&quot;false&quot;/&gt;
+	B. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;input type=&quot;text&quot; editable=&quot;false&quot;/&gt;
+	C. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;input type=&quot;text&quot; readonly=&quot;yes&quot;/&gt;	
+	D. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;input type=&quot;text&quot; readonly/&gt;
+	
+#151.	How can you ensure that all necessary fields are populated before a form can be submitted?
+	A. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Write a JavaScript to evaluate all the controls on the form for content.
+	B. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;On the server, evaluate all the controls for data and return an error page for missing content.
+	C. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Add the required attribute on each control so that users get a message that the field is requireD. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;CORRECT
+	D. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Add a label to the page to let users know which controls they must fill in.
+	
+#152.	Which of the following regular expression characters denote the end of the string?
+	A. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;$		CORRECT
+	B. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;%
+	C. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;^
+	D. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&amp;
+	
+#153.	Which of the following sandbox attributes allows the iFrame to load content from the containing HTML document?
+	A. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;allow-script-execution
+	B. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;allow-same-origin
+	C. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;allow-forms
+	D. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;allow-top-navigation	CORRECT
+	E.	allow-top-document
+	
+#154.	Which function should never be used to run JavaScript?
+	A. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;execute
+	B. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;JSDynamic
+	C. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;eval		CORRECT
+	D. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;evaluate
+	
+#155.	Which of the following is a valid JSON string?
+	A. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{firstName, Rick, lastname, Delorme, hairColor, brown, eyeColor, brown}
+	B. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{firstName: Rick, lastname: Delorme, hairColor: brown, eyeColor: brown}
+	C. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{firstName: &quot;Rick&quot;; lastname: &quot;Delorme&quot;; hairColor: &quot;brown&quot;; eyeColor: &quot;brown&quot;}
+	D. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{firstName: &quot;Rick&quot;, lastname: &quot;Delorme&quot;, hairColor: &quot;brown&quot;, eyeColor: &quot;brown&quot;}		CORRECT
+	
+#156.	With the XMLHttpRequest object, which of the following properties provides the response in a human readable format?
+	A. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Response
+	B. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;responseBody
+	C. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;responseText	CORRECT
+	D. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;responseXML
+	
+#157.	At which stage during an XMLHttpRequest are user credentials sent to the server?
+	A. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;When the connection is open
+	B. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;When the request is sent
+	C. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;When the ready state is complete
+	D. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;When the server sends a security response requesting the credentials	CORRECT
+	
+#158.	Which of the following code lines is the correct way to create an object from a JSON string stored in a variable called jsonString?
+	A. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;var o = JSON.split(jsonString);
+	B. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;var o = JSON.stringify(jsonString);
+	C. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;var o = JSON.parse(jsonString);		CORRECT
+	D. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;var o = JSON.join(jsonString);
+	
+#159.	Which of the following code lines allows an XMLHttpRequest to return binary data?
+	A. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;request.responseType = &apos;binary&apos;;
+	B. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;request.responseType = &apos;image/jpg&apos;;
+	C. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;response.type = &apos;blob&apos;;
+	D. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;request.responseType = &apos;blob&apos;;	CORRECT
+	
+#160.	How do you control what&apos;s sent to the server when submitting a form?
+	A. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Add a submit button to the form
+	B. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Handle the submit event of the form		CORRECT
+	C. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Specify the action attribute of the form element
+	D. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Ensure that all elements on the form have a name
+	
+#161.	Which of the following CSS would not change the appearance of text?
+	A. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;font-style: italic;
+	B. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;font-weight: heavy;		CORRECT
+	C. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;font:bolder 12px ariel;
+	D. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;color: green:
+	
+#162.	Which of the following aligns text to the full width of the available box?
+	A. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;right
+	B. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;full
+	C. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;center
+	D. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;justify		CORRECT
+	
+#163.	Which of the following is a way to configure the amount of space between words?
+	A. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;word-margin
+	B. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;letter-margin
+	C. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;word-spacing		CORRECT
+	D. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;word-padding
+	
+#164.	Which of the following is not a valid way to alter the size of an element?
+	A. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;div{height: 50px; width: 50%;}
+	B. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;div{height: 50px; width: 50px;}
+	C. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;div{height: 50cm; width: 50px;}
+	D. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;div{height: 50ft; width: 50ft;}		CORRECT
+	
+#165.	Which of the following will successfully style the border of a div element?
+	A. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;border-top: 5px dotted blue;		CORRECT
+		border-right: 5px solid green;
+		border-left: 3px dashed red;
+		border-bottom: 10px double black;
+	B. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;border-sides: 5px solid green;
+	C. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;border-all: 1px solid black;
+	D. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;border: full red;
+	
+#166.	When looking from the outside edge of an HTML element and moving to the inside edge, what order does the padding, margin, and border occur in?
+	A. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;padding, border, margin
+	B. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;margin, border, padding		CORRECT
+	C. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;border, padding, margin
+	D. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;margin, padding, border
+	
+#167.	Which of the following statements will apply a box shadow to the right and bottom edge of a div element?
+	A. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;box-shadow: gray 5px 5px;		CORRECT
+	B. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;box-shadow: gray -5px 5px;
+	C. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;box-shadow: gray 5px -5px;
+	D. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;box-shadow: gray -5px -5px;
+	
+#168.	Which of the following will place an element relative to the browser window?
+	A. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;absolute
+	B. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;fixed		CORRECT
+	C. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;relative
+	
+#169.	Which of the following layouts is based on columns and rows?
+	A. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;flexbox
+	B. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;multi-column
+	C. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;grid layout		CORRECT
+	D. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;exclusions
+	
+#170.	Which of the following is false about a flexbox layout?
+	A. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;The direction of the elements in a flexbox can be controlled with the flex-direction property.
+	B. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;The elements layout can be configured along the layout axis using the flex-pack property.
+	C. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Elements in a flexbox are called flexbox items.
+	D. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Elements in a flexbox can be set into rows and columns.		CORRECT
+	
+#171.	Which of the following property values for wrap-flow will allow the text to wrap along both sides of an element?
+	A. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;both	CORRECT
+	B. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;all
+	C. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;left and right
+	D. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;cross
+	
+#172.	Which of the following statements will hide an element but keep its space in the over-all flow?
+	A. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;display: none;		CORRECT
+	B. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;visibility: hidden;
+	C. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;display: inline;
+	D. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;visibility: visible;
+	
+#173.	Media queries are best suited for what purpose?
+	A. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Setting the priority of style sheet references in a webpage
+	B. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Creating a responsive user interface based on the screen size of the view port		CORRECT
+	C. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Modifying the view port to properly fit the content of the page
+	D. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Connecting to third-party style sheets to alter the layout
+	
+#174.	Which of the following transition-timing-function properties makes the transition start slow, speed up, then end slow?
+	A. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ease		CORRECT
+	B. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ease-in
+	C. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ease-out
+	D. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ease-in-out
+	
+#175.	Which one of the following is a CSS class selector?
+	A. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;.code	CORRECT
+	B. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;#code
+	C. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;div[code]
+	D. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;:code
+	
+#176.	Which one of the following is an attribute selector?
+	A. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;.required
+	B. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;#required
+	C. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;input[required]		CORRECT
+	D. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;:required
+	
+#177.	Which of the following statements would alter the style of an anchor element when the mouse is moved over it?
+	A. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;a:link
+	B. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;a:mouseover
+	C. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;a:beforeclick
+	D. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;a:hover		CORRECT
+	
+#178.	Referencing the HTML listing on page 309 of the exam reference, how would you style only the first paragraph inside the footer element to have a smaller font size?
+	A. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;footer p:first-child {				CORRECT
+			font-size: x-small;
+		}
+	B. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;footer p.first-child {
+			font-size: x-small;
+		}
+	C. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;footer:p:first-child {
+			font-size: x-small;
+		}
+	D. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Footer=&gt;p, first-child{
+			font-size: x-small;
+		}
+	
+#179.	Referencing the HTML listing on page 309 of the exam reference, how would you apply a new font to all the H1 elements?
+		In addition, the &lt;h1&gt; elements in an article should be italic.
+		
+		A. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;h1 {
+				font-family: &apos;Courier New&apos;;
+				article h1 {
+					font-style:italic;
+				}
+		
+			}
+
+		B. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;h1 {				CORRECT
+				font-family: &apos;Courier New&apos;;
+			}
+			article h1 {
+				font-style:italic;
+			}
+			
+		C. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;h1 {
+				font-family: &apos;Courier New&apos;;
+				font-style:italic;
+			}
+			article h1 {
+				font-style:italic;
+			}
+			
+		D. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;h1 {
+				font-family: &apos;Courier New&apos;;
+			}
+			article h1 {
+				font-style:italic;
+			}
+
+			
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+	
