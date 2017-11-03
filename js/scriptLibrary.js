@@ -27,62 +27,44 @@ for (i = 0; i < $(".modBtn").length; i++){
 		{
 			modHead = "FLAG SURVIVAL JAVASCRIPT GAME";
 			modBody = "I created this game using pure javascript code. Use the arrow keys to move and the space bar to shoot.";
-			modFoot = "LINK: <a href='http://zurafuse.com/games/flagsurvival/' target='_blank' style='color: white'>http://zurafuse.com/games/flagsurvival</a>";			
+			modFoot = "LINK: <a href='https://zurafuse.github.io/flagsurvival/' target='_blank' style='color: white'>https://zurafuse.github.io/flagsurvival</a>";			
 		}
 		else if ($(this).attr("id") === "mod_yosef")
 		{
 			modHead = "THE AMAZING YOSEF";
 			modBody = "I created this platform game using only javascript code and some graphics that I created. I added some physics such as gravity and the ability to jump. Use the arrow keys to move around, use the UP arrow key to jump, and use space bar to shoot (Collect the blue soda to gain the power to shoot).";
 		
-			modFoot = "LINK TO MOBILE VERSION: <a href='http://zurafuse.com/games/yosef_mobile/' target='_blank' style='color: white'>http://zurafuse.com/games/yosef_mobile</a><br>LINK TO DESKTOP VERSION: <a href='http://zurafuse.com/games/yosef/' target='_blank' style='color: white'>http://zurafuse.com/games/yosef</a>";			
+			modFoot = "LINK TO MOBILE VERSION: <a href='https://zurafuse.github.io/yosef_mobile/' target='_blank' style='color: white'>https://zurafuse.github.io/yosef_mobile</a><br>LINK TO DESKTOP VERSION: <a href='https://zurafuse.github.io/yosef/' target='_blank' style='color: white'>https://zurafuse.github.io/yosef</a>";			
 		}
 		else if ($(this).attr("id") === "mod_kaio")
 		{
 			modHead = "KAIOMEGA";
 			modBody = "Kaiomega is a role playing video game Engine that I created using javascript. Notice its responsiveness to use on a mobile device.";
-			modFoot = "LINK: <a href='http://zurafuse.com/games/kaiomega/' target='_blank' style='color: white'>http://zurafuse.com/games/kaiomega/</a>";		
+			modFoot = "LINK: <a href='https://zurafuse.github.io/kaiomega/' target='_blank' style='color: white'>https://zurafuse.github.io/kaiomega/</a>";		
 		}
 		else if ($(this).attr("id") === "mod_frogger")
 		{
 			modHead = "FROGGER CLONE";
 			modBody = "I created this javascript game for a Udacity class that I was taking. Graphics and engine provided by Udacity.com";
-			modFoot = "LINK: <a href='http://zurafuse.com/games/frogger/' target='_blank' style='color: white'>http://zurafuse.com/games/frogger</a>";		
+			modFoot = "LINK: <a href='https://zurafuse.github.io/frogger/' target='_blank' style='color: white'>https://zurafuse.github.io/frogger</a>";		
 		}
 		else if ($(this).attr("id") === "mod_calc")
 		{
 			modHead = "JAVASCRIPT CALCULATOR";
 			modBody = "I created this calculator using javascript. Notice how the size of the calculator changes based on your device.";
-			modFoot = "LINK: <a href='http://zurafuse.com/games/calculator/' target='_blank' style='color: white'>http://zurafuse.com/games/calculator</a>";				
-		}
-		else if ($(this).attr("id") === "mod_exam")
-		{
-			modHead = "ONLINE EXAM";
-			modBody = "Example of how to create an online exam with multiple choice questions/answers. This was created using mostly javascript.";
-			modFoot = "LINK: <a href='http://zurafuse.com/games/exam/' target='_blank' style='color: white'>http://zurafuse.com/games/exam</a>";		
+			modFoot = "LINK: <a href='https://zurafuse.github.io/calculator/' target='_blank' style='color: white'>https://zurafuse.github.io/calculator</a>";				
 		}
 		else if ($(this).attr("id") === "mod_resume")
 		{
 			modHead = "TIM HORTON'S RESUME";
 			modBody = "View my online resume to get an idea of past experience, where I have been and what I have done. References provided upon request.";
-			modFoot = "LINK: <a href='resume/index.html' target='_blank' style='color: white'>http://zurafuse.com/portfolio/resume</a>";			
-		}
-		else if ($(this).attr("id") === "mod_zurafuse")
-		{
-			modHead = "ZURAFUSE.COM";
-			modBody = "Zurafuse is a social media based site intended for posting blogs and articles. Take note of the responsive design that changes based on device and the size of the browser window.";
-			modFoot = "LINK: <a href='http://zurafuse.com/' target='_blank' style='color: white'>www.zurafuse.com</a>";		
-		}
-		else if ($(this).attr("id") === "mod_meme")
-		{
-			modHead = "MEME GENERATOR";
-			modBody = "This is a meme creator that I worked on for a Udacity.com class. Choose your image, enter your text, and then create your own meme.";
-			modFoot = "LINK: <a href='meme/index.html' target='_blank' style='color: white'>http://zurafuse.com/portfolio/meme</a>";		
+			modFoot = "LINK: <a href='resume/index.html' target='_blank' style='color: white'>https://zurafuse.github.io/resume</a>";			
 		}
 		else if ($(this).attr("id") === "mod_map")
 		{
 			modHead = "NEIGHBORHOOD MAP OF SLAPOUT";
 			modBody = "This is a project I worked on for a class on Udacity.com. It is an interactive map of Slapout, Alabama implementing the Google Maps API. Visit the Github page at <a href='https://github.com/zurafuse/Udacity-Neighborhood-Map/' target='_blank' style='color: black'>https://github.com/zurafuse/Udacity-Neighborhood-Map</a>.";
-			modFoot = "LINK: <a href='slapout/index.html' target='_blank' style='color: white'>http://zurafuse.com/portfolio/slapout</a>";		
+			modFoot = "LINK: <a href='slapout/index.html' target='_blank' style='color: white'>https://zurafuse.github.io/slapout</a>";		
 		}
 		
 		$(".mod-head").html(modHead);
