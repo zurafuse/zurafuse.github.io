@@ -33,22 +33,22 @@ var imageObj = {
 			up: {sx: 0, sy: 51, swidth: 50, sheight: 50},
 			left: {sx: 0, sy: 101, swidth: 50, sheight: 50},
 			right: {sx: 0, sy: 151, swidth: 50, sheight: 50}
-		},
-		fruit: {
-			img: new Image()
-		},
-		frog: {
-			img: new Image(),
-			down: {sx: 0, sy: 0, swidth: 100, sheight: 100},
-			up: {sx: 0, sy: 101, swidth: 100, sheight: 100},
-			left: {sx: 0, sy: 201, swidth: 100, sheight: 100},
-			right: {sx: 0, sy: 301, swidth: 100, sheight: 100}			
 		}
+	},
+	fruit: {
+		img: new Image()
+	},
+	frog: {
+		img: new Image(),
+		down: {sx: 0, sy: 0, swidth: 100, sheight: 100},
+		up: {sx: 0, sy: 101, swidth: 100, sheight: 100},
+		left: {sx: 0, sy: 201, swidth: 100, sheight: 100},
+		right: {sx: 0, sy: 301, swidth: 100, sheight: 100}			
 	},
 	setPics: function(){
 		this.badGuys.bronster.img.src = "images/bronster.png";
 		this.fruit.img.src = "images/fruit.png";
-		this.frog.img.src = "frog.png";
+		this.frog.img.src = "images/frog.png";
 	}
 }
 imageObj.setPics();
