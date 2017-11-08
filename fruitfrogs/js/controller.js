@@ -20,18 +20,7 @@ function getTouchPos(canvasDom, touchEvent) {
 		{	
 			var thisXPos = touchEvent.touches[i].clientX;
 			var thisYPos = touchEvent.touches[i].clientY;
-			console.log(thisXPos + ", " + thisYPos);
-			for (i in bronsters)
-			{
-				if (thisXPos > bronsters[i].x && thisXPos < bronsters[i].x + bronsters[i].width &&
-				thisYPos > bronsters[i].y && thisYPos < bronsters[i].y + bronsters[i].height)
-				{
-					if (bronsters[i].state != "dead")
-					{
-						bronsters[i].state = "dead";
-					}
-				}
-			}
+			touchMonster(bronsters, thisXPos, thisYPos);
 		}
 }
 	
@@ -40,24 +29,11 @@ function endTouchPos(canvasDom, touchEvent) {
 		{	
 			var thisXPos = touchEvent.changedTouches[i].clientX;
 			var thisYPos = touchEvent.changedTouches[i].clientY;
-			console.log(thisXPos + ", " + thisYPos);
 		}
 }
 
 window.addEventListener("click", function (e) {
 	var clientX = e.pageX;
 	var clientY = e.pageY;
-
-			for (i in bronsters)
-			{
-				if (clientX > bronsters[i].x && clientX < bronsters[i].x + bronsters[i].width &&
-				clientY > bronsters[i].y && clientY < bronsters[i].y + bronsters[i].height)
-				{
-					if (bronsters[i].state != "dead")
-					{
-						bronsters[i].state = "dead";
-					}
-				}
-			}	
-	
+	touchMonster(bronsters, clientX, clientY);
 }, false);

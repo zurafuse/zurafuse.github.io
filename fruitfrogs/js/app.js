@@ -9,11 +9,31 @@ var requestAnimFrame =  window.requestAnimationFrame ||
                     };
 					
 var bronsters = [];
+var frogs = [];
+
 bronsters.push(new brownMonster(imageObj.badGuys.bronster, canvas.width * Math.random(), canvas.height * Math.random(), 50, 50));
 bronsters.push(new brownMonster(imageObj.badGuys.bronster, canvas.width * Math.random(), canvas.height * Math.random(), 50, 50));
 bronsters.push(new brownMonster(imageObj.badGuys.bronster, canvas.width * Math.random(), canvas.height * Math.random(), 50, 50));
 bronsters.push(new brownMonster(imageObj.badGuys.bronster, canvas.width * Math.random(), canvas.height * Math.random(), 50, 50));
 bronsters.push(new brownMonster(imageObj.badGuys.bronster, canvas.width * Math.random(), canvas.height * Math.random(), 50, 50));
 
+frogs.push(new frogClass(imageObj.frog, canvas.width * Math.random(), canvas.height * Math.random(), 50, 50));
+frogs.push(new frogClass(imageObj.frog, canvas.width * Math.random(), canvas.height * Math.random(), 50, 50));
+frogs.push(new frogClass(imageObj.frog, canvas.width * Math.random(), canvas.height * Math.random(), 50, 50));
+frogs.push(new frogClass(imageObj.frog, canvas.width * Math.random(), canvas.height * Math.random(), 50, 50));
 
-
+function touchMonster(array, Xtouch, Ytouch){
+	for (i in array)
+	{
+		//use offSet to show grace and make touch events more likely
+		var offSet = 0.9;
+		if (Xtouch > array[i].x * offSet && Xtouch * offSet < array[i].x + array[i].width &&
+		Ytouch > array[i].y * offSet && Ytouch * offSet < array[i].y + array[i].height)
+		{
+			if (array[i].state != "dead")
+			{
+				array[i].state = "dead";
+			}
+		}
+	}
+}

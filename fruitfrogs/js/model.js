@@ -152,7 +152,39 @@ var brownMonster = function(obj, x, y, width, height){
 	}
 };
 
-
+var frogClass = function(obj, x, y, width, height){
+	this.name = "Frog";
+	this.img = obj.img;
+	this.counter = 0;
+	this.dir = "down";
+	this.state = "norm";
+	this.sx = obj.down.sx;
+	this.sy = obj.down.sy;
+	this.swidth = obj.down.swidth;
+	this.sheight = obj.down.sheight;
+	this.x = x;
+	this.y = y;
+	this.width = width;
+	this.height = height;
+	this.update = function(){
+		this.counter++;
+		if (this.counter > 350)
+		{
+			if (Math.random() * 10 > 6)
+			{
+				this.sx += 100;
+				if (this.sx > 300)
+				{
+					this.sx = 0;
+				}
+			}
+			counter = 0;
+		}
+	}	
+	this.draw = function(){
+		ctx.drawImage(this.img, this.sx, this.sy, this.swidth, this.sheight, this.x, this.y, this.width, this.height);
+	}	
+};
 
 
 

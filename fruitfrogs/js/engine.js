@@ -12,6 +12,12 @@ function update(){
 			}
 		}
 	}
+	
+	for (i = 0; i < frogs.length; i++)
+	{
+		frogs[i].update();
+		frogs[i].draw();
+	}
 	requestAnimFrame(update);
 }
 
