@@ -56,7 +56,7 @@ function frogSeeYou(array, Xtouch, Ytouch){
 		{
 			array[i].sy = 300;
 		}
-		else
+		else if (Ytouch > array[i].y)
 		{
 			array[i].sy = 0;
 		}

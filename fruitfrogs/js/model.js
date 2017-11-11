@@ -36,7 +36,8 @@ var imageObj = {
 		}
 	},
 	fruit: {
-		img: new Image()
+		img: new Image(),
+		pineapple: {sx: 0, sy: 0, swidth: 50, sheight: 50}
 	},
 	frog: {
 		img: new Image(),
@@ -53,8 +54,9 @@ var imageObj = {
 }
 imageObj.setPics();
 
-var Slappy = {
-	gamestate: "play"
+var fruitFrogs = {
+	gamestate: "play",
+	isTouchScreen: false
 };
 
 var brownMonster = function(obj, x, y, width, height){
@@ -168,7 +170,20 @@ var frogClass = function(obj, x, y, width, height){
 	this.height = height;
 	this.update = function(){
 		this.counter++;
-		if (this.counter > 350)
+		if (this.counter > 75)
+		{
+			if (Math.random() * 10 > 6)
+			{
+				this.state = "active";
+			}
+			else
+			{
+				this.sx = 0;
+				this.state = "norm";
+			}
+			this.counter = 0;
+		}
+		if (this.state == "active")
 		{
 			if (Math.random() * 10 > 6)
 			{
@@ -178,7 +193,6 @@ var frogClass = function(obj, x, y, width, height){
 					this.sx = 0;
 				}
 			}
-			counter = 0;
 		}
 	}	
 	this.draw = function(){
