@@ -37,3 +37,28 @@ function touchMonster(array, Xtouch, Ytouch){
 		}
 	}
 }
+
+function frogSeeYou(array, Xtouch, Ytouch){
+	for (i in array)
+	{
+		//Let frogs look at direction of touch point
+		if (Xtouch < array[i].x - canvas.width * .2 && Ytouch < array[i].y + canvas.height * .33
+			&& Ytouch > array[i].y - (canvas.height * 0.2))
+		{
+			array[i].sy = 200;
+		}
+		else if (Xtouch > array[i].x + canvas.width * .2 && Ytouch < array[i].y + canvas.height * .33
+			&& Ytouch > array[i].y - (canvas.height * 0.2))
+		{
+			array[i].sy = 100;
+		}
+		else if (Ytouch < array[i].y)
+		{
+			array[i].sy = 300;
+		}
+		else
+		{
+			array[i].sy = 0;
+		}
+	}
+}

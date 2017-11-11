@@ -21,6 +21,7 @@ function getTouchPos(canvasDom, touchEvent) {
 			var thisXPos = touchEvent.touches[i].clientX;
 			var thisYPos = touchEvent.touches[i].clientY;
 			touchMonster(bronsters, thisXPos, thisYPos);
+			frogSeeYou(frogs, thisXPos, thisYPos);			
 		}
 }
 	
@@ -36,4 +37,5 @@ window.addEventListener("click", function (e) {
 	var clientX = e.pageX;
 	var clientY = e.pageY;
 	touchMonster(bronsters, clientX, clientY);
+	frogSeeYou(frogs, clientX, clientY);	
 }, false);
