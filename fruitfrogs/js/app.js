@@ -41,6 +41,30 @@ function touchMonster(array, Xtouch, Ytouch){
 	}
 }
 
+function touchFruit(array, Xtouch, Ytouch, isEnd){
+	for (i in array)
+	{
+		//use offSet to show grace and make touch events more likely
+		var offSet = 0.9;
+		if (Xtouch > array[i].x * offSet && Xtouch * offSet < array[i].x + array[i].width &&
+		Ytouch > array[i].y * offSet && Ytouch * offSet < array[i].y + array[i].height)
+		{
+			if (isEnd == true)
+			{
+				array[i].isTouched = false;
+			}
+			else
+			{
+				//Give the fruit a status of touched if it is being touched
+				array[i].isTouched = true;
+				//drag fruit
+				array[i].x = Xtouch;
+				array[i].y = Ytouch;
+			}
+		}
+	}
+}
+
 function frogSeeYou(array, Xtouch, Ytouch){
 	for (i in array)
 	{

@@ -9,6 +9,10 @@ var origState = "default";
 		getTouchPos(canvas, e);
 	}, false);
 	
+	window.addEventListener("touchmove", function (e) {
+		getTouchPos(canvas, e);
+	}, false);
+	
 	window.addEventListener("touchend", function (e) {
 	endTouchPos(canvas, e);
 	}, false);
@@ -22,7 +26,8 @@ function getTouchPos(canvasDom, touchEvent) {
 			var thisXPos = touchEvent.touches[i].clientX;
 			var thisYPos = touchEvent.touches[i].clientY;
 			touchMonster(bronsters, thisXPos, thisYPos);
-			frogSeeYou(frogs, thisXPos, thisYPos);			
+			frogSeeYou(frogs, thisXPos, thisYPos);
+			touchFruit(fruit, thisXPos, thisYPos, false);
 		}
 }
 	
@@ -31,6 +36,7 @@ function endTouchPos(canvasDom, touchEvent) {
 		{	
 			var thisXPos = touchEvent.changedTouches[i].clientX;
 			var thisYPos = touchEvent.changedTouches[i].clientY;
+			touchFruit(fruit, thisXPos, thisYPos, true);
 		}
 }
 
@@ -41,5 +47,15 @@ if (fruitFrogs.isTouchScreen == false)
 		var clientY = e.pageY;
 		touchMonster(bronsters, clientX, clientY);
 		frogSeeYou(frogs, clientX, clientY);	
+		touchFruit(fruit, clientX, clientY, false);
+	}, false);
+	
+
+	window.addEventListener("mousemove", function (e) {
+		var clientX = e.pageX;
+		var clientY = e.pageY;
+		touchMonster(bronsters, clientX, clientY);
+		frogSeeYou(frogs, clientX, clientY);	
+		touchFruit(fruit, clientX, clientY, false);
 	}, false);
 }
