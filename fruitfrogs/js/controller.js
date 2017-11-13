@@ -1,5 +1,27 @@
 var origState = "default";
 
+$(window).scroll(function() {
+   if ($(document).scrollTop() >= 1) {
+      $("html").css({
+         "touch-action": "auto"}
+      );
+   } else {
+      $("html").css({
+         "touch-action": "pan-down"
+      });
+   }
+});
+
+function noscroll() {
+  window.scrollTo( 0, 0 );
+}
+
+// add listener to disable scroll
+window.addEventListener('scroll', noscroll);
+
+// Remove listener to disable scroll
+window.removeEventListener('scroll', noscroll);
+
 // touch event handlers
 // Set up touch events for mobile, etc
 // touch event handlers
