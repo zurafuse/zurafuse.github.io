@@ -10,6 +10,7 @@ var requestAnimFrame =  window.requestAnimationFrame ||
 					
 var bronsters = [];
 var frogs = [];
+var fruit = [];
 
 bronsters.push(new brownMonster(imageObj.badGuys.bronster, canvas.width * Math.random(), canvas.height * Math.random(), 50, 50));
 bronsters.push(new brownMonster(imageObj.badGuys.bronster, canvas.width * Math.random(), canvas.height * Math.random(), 50, 50));
@@ -17,10 +18,12 @@ bronsters.push(new brownMonster(imageObj.badGuys.bronster, canvas.width * Math.r
 bronsters.push(new brownMonster(imageObj.badGuys.bronster, canvas.width * Math.random(), canvas.height * Math.random(), 50, 50));
 bronsters.push(new brownMonster(imageObj.badGuys.bronster, canvas.width * Math.random(), canvas.height * Math.random(), 50, 50));
 
-frogs.push(new frogClass(imageObj.frog, canvas.width * Math.random(), canvas.height * Math.random(), 50, 50));
-frogs.push(new frogClass(imageObj.frog, canvas.width * Math.random(), canvas.height * Math.random(), 50, 50));
-frogs.push(new frogClass(imageObj.frog, canvas.width * Math.random(), canvas.height * Math.random(), 50, 50));
-frogs.push(new frogClass(imageObj.frog, canvas.width * Math.random(), canvas.height * Math.random(), 50, 50));
+frogs.push(new frogClass(imageObj.frog, canvas.width * Math.random(), canvas.height * Math.random(), 75, 75));
+frogs.push(new frogClass(imageObj.frog, canvas.width * Math.random(), canvas.height * Math.random(), 75, 75));
+frogs.push(new frogClass(imageObj.frog, canvas.width * Math.random(), canvas.height * Math.random(), 75, 75));
+frogs.push(new frogClass(imageObj.frog, canvas.width * Math.random(), canvas.height * Math.random(), 75, 75));
+
+fruit.push(new fruitClass(imageObj.fruit, canvas.width * Math.random(), canvas.height * Math.random(), 50, 50, imageObj.fruit.pineapple));
 
 function touchMonster(array, Xtouch, Ytouch){
 	for (i in array)

@@ -151,7 +151,7 @@ var brownMonster = function(obj, x, y, width, height){
 	};
 	this.draw = function(){
 		ctx.drawImage(this.img, this.sx, this.sy, this.swidth, this.sheight, this.x, this.y, this.width, this.height);
-	}
+	};
 };
 
 var frogClass = function(obj, x, y, width, height){
@@ -198,6 +198,28 @@ var frogClass = function(obj, x, y, width, height){
 	this.draw = function(){
 		ctx.drawImage(this.img, this.sx, this.sy, this.swidth, this.sheight, this.x, this.y, this.width, this.height);
 	}	
+};
+
+var fruitClass = function(obj, x, y, width, height, type)
+{
+	this.name = "Fruit";
+	this.img = obj.img;
+	this.counter = 0;
+	this.dir = "down";
+	this.sx = type.sx;
+	this.sy = type.sy;
+	this.swidth = type.swidth;
+	this.sheight = type.sheight;
+	this.x = x;
+	this.y = y;
+	this.width = width;
+	this.height = height;
+	this.update = function(){	
+	
+	};
+		this.draw = function(){
+		ctx.drawImage(this.img, this.sx, this.sy, this.swidth, this.sheight, this.x, this.y, this.width, this.height);
+	};
 };
 
 

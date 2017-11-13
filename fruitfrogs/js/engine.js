@@ -18,6 +18,13 @@ function update(){
 		frogs[i].update();
 		frogs[i].draw();
 	}
+	
+	for (i = 0; i < fruit.length; i++)
+	{
+		fruit[i].update();
+		fruit[i].draw();
+	}
+	
 	requestAnimFrame(update);
 }
 
