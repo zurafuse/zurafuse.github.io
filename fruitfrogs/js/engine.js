@@ -1,5 +1,7 @@
 function update(){
 	ctx.clearRect(0, 0, canvas.width, canvas.height);
+	ctx.fillStyle = "#ff9";
+	ctx.fillRect(0, 0, canvas.width, canvas.height);
 	for (i = 0; i < bronsters.length; i++)
 	{
 		bronsters[i].update();
