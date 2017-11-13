@@ -19,9 +19,9 @@ window.addEventListener("orientationchange", function() {
 });
 
 //define canvas
-var canvas = document.createElement('canvas');
+var canvas = document.createElement("canvas");
+document.getElementsByClassName("wrapper")[0].appendChild(canvas);
 var ctx = canvas.getContext("2d");
-document.body.appendChild(canvas);
 canvas.width = window.innerWidth * 0.95;
 canvas.height = window.innerHeight * 0.95;
 
