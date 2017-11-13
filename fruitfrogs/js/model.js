@@ -25,6 +25,8 @@ document.body.appendChild(canvas);
 canvas.width = window.innerWidth * 0.95;
 canvas.height = window.innerHeight * 0.95;
 
+$("#canvas").css("touch-action", "none");
+
 var imageObj = {
 	badGuys: {
 		bronster: {
