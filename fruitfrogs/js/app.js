@@ -23,7 +23,7 @@ frogs.push(new frogClass(imageObj.frog, canvas.width * (Math.random() * .9), can
 frogs.push(new frogClass(imageObj.frog, canvas.width * (Math.random() * .9), canvas.height * (Math.random() * .9), 75, 75));
 frogs.push(new frogClass(imageObj.frog, canvas.width * (Math.random() * .9), canvas.height * (Math.random() * .9), 75, 75));
 
-fruit.push(new fruitClass(imageObj.fruit, canvas.width * (Math.random() * .9), canvas.height * (Math.random() * .9), 50, 50, imageObj.fruit.pineapple));
+fruit.push(new fruitClass(imageObj.fruit, canvas.width * (Math.random() * .9), canvas.height * (Math.random() * .9), 77, 77, imageObj.fruit.pineapple));
 
 function touchMonster(array, Xtouch, Ytouch){
 	for (i in array)
