@@ -39,7 +39,8 @@ var imageObj = {
 	},
 	fruit: {
 		img: new Image(),
-		pineapple: {sx: 0, sy: 0, swidth: 50, sheight: 50}
+		pineapple: {sx: 0, sy: 0, swidth: 50, sheight: 50},
+		lemon: {sx: 51, sy: 0, swidth: 50, sheight: 50}
 	},
 	frog: {
 		img: new Image(),
@@ -205,6 +206,7 @@ var frogClass = function(obj, x, y, width, height){
 var fruitClass = function(obj, x, y, width, height, type)
 {
 	this.name = "Fruit";
+	this.state = "normal";
 	this.img = obj.img;
 	this.counter = 0;
 	this.isTouched = false;
@@ -217,7 +219,14 @@ var fruitClass = function(obj, x, y, width, height, type)
 	this.width = width;
 	this.height = height;
 	this.update = function(){	
-
+		for (var i = 0; i < frogs.length; i++)
+		{
+			if (this.x < frogs[i].x + frogs[i].width && this.x + this.width > frogs[i].width && 
+				this.y + this.height > frogs[i].y && this.y < frogs[i].y + frogs[i].height)
+				{
+					this.state = "delete";
+				}
+		}
 	};
 		this.draw = function(){
 		ctx.drawImage(this.img, this.sx, this.sy, this.swidth, this.sheight, this.x, this.y, this.width, this.height);

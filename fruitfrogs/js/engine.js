@@ -1,6 +1,6 @@
 function update(){
 	ctx.clearRect(0, 0, canvas.width, canvas.height);
-	ctx.fillStyle = "#ff9";
+	ctx.fillStyle = "#cfffca";
 	ctx.fillRect(0, 0, canvas.width, canvas.height);
 	for (i = 0; i < bronsters.length; i++)
 	{
@@ -25,7 +25,12 @@ function update(){
 	{
 		fruit[i].update();
 		fruit[i].draw();
+		if (fruit[i].state == "delete")
+		{
+			fruit.splice(i, 1);
+		}
 	}
+	
 	
 	requestAnimFrame(update);
 }
