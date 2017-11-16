@@ -40,7 +40,13 @@ var imageObj = {
 	fruit: {
 		img: new Image(),
 		pineapple: {sx: 0, sy: 0, swidth: 50, sheight: 50},
-		lemon: {sx: 51, sy: 0, swidth: 50, sheight: 50}
+		lemon: {sx: 51, sy: 0, swidth: 49, sheight: 50},
+		apple: {sx: 101, sy: 0, swidth: 49, sheight: 50},
+		blueberry: {sx: 151, sy: 0, swidth: 49, sheight: 50},
+		strawberry: {sx: 0, sy: 51, swidth: 50, sheight: 50},
+		plumb: {sx: 51, sy: 51, swidth: 49, sheight: 50},
+		cherry: {sx: 101, sy: 51, swidth: 49, sheight: 50},
+		banana: {sx: 151, sy: 51, swidth: 49, sheight: 50}		
 	},
 	frog: {
 		img: new Image(),
