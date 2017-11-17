@@ -49,20 +49,22 @@ function touchMonster(array, Xtouch, Ytouch){
 }
 
 function touchFruit(array, Xtouch, Ytouch, isEnd){
-	for (i in array)
+	if (isEnd == true)
 	{
-		//use offSet to show grace and make touch events more likely
-		var offSet = 0.7;
-		if (Xtouch > array[i].x * offSet && Xtouch * offSet < array[i].x + array[i].width &&
-		Ytouch > array[i].y * offSet && Ytouch * offSet < array[i].y + array[i].height)
+		for (i in array)
 		{
-			if (isEnd == true)
+			array[i].isTouched = false;
+		}	
+	}
+	else
+	{
+		for (i in array)
+		{
+			//use offSet to show grace and make touch events more likely
+			var offSet = .95;
+			if (Xtouch > array[i].x * offSet && Xtouch * offSet < array[i].x + array[i].width &&
+			Ytouch > array[i].y * offSet && Ytouch * offSet < array[i].y + array[i].height)
 			{
-				array[i].isTouched = false;
-			}
-			else
-			{
-				//Give the fruit a status of touched if it is being touched
 				array[i].isTouched = true;
 				//drag fruit
 				array[i].x = Xtouch - array[i].width * .55;

@@ -32,7 +32,7 @@ window.removeEventListener('scroll', noscroll);
 	}, false);
 	
 	window.addEventListener("touchmove", function (e) {
-		getTouchPos(canvas, e);
+		moveTouchPos(canvas, e);
 	}, false);
 	
 	window.addEventListener("touchend", function (e) {
@@ -42,6 +42,18 @@ window.removeEventListener('scroll', noscroll);
 
 // Get the position of a touch relative to the canvas
 function getTouchPos(canvasDom, touchEvent) {	
+		for (i in touchEvent.touches)
+		{	
+			fruitFrogs.isTouchScreen = true;
+			var thisXPos = touchEvent.touches[i].clientX;
+			var thisYPos = touchEvent.touches[i].clientY;
+			touchMonster(bronsters, thisXPos, thisYPos);
+			frogSeeYou(frogs, thisXPos, thisYPos);
+			touchFruit(fruit, thisXPos, thisYPos, false);
+		}
+}
+
+function moveTouchPos(canvasDom, touchEvent) {	
 		for (i in touchEvent.touches)
 		{	
 			fruitFrogs.isTouchScreen = true;

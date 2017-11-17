@@ -227,7 +227,7 @@ var fruitClass = function(obj, x, y, width, height, type)
 	this.update = function(){	
 		for (var i = 0; i < frogs.length; i++)
 		{
-			if (this.x < frogs[i].x + frogs[i].width && this.x + this.width > frogs[i].width && 
+			if (this.x < frogs[i].x + frogs[i].width && this.x + this.width > frogs[i].x && 
 				this.y + this.height > frogs[i].y && this.y < frogs[i].y + frogs[i].height)
 				{
 					this.state = "delete";

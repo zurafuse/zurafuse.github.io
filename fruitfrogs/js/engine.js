@@ -28,6 +28,7 @@ function update(){
 		if (fruit[i].state == "delete")
 		{
 			fruit.splice(i, 1);
+			console.log("gone");
 		}
 	}
 	
