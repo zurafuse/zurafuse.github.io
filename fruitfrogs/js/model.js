@@ -65,7 +65,9 @@ imageObj.setPics();
 
 var fruitFrogs = {
 	gamestate: "play",
-	isTouchScreen: false
+	isTouchScreen: false,
+	touchX: 0,
+	touchY: 0
 };
 
 var brownMonster = function(obj, x, y, width, height){
@@ -232,6 +234,12 @@ var fruitClass = function(obj, x, y, width, height, type)
 				{
 					this.state = "delete";
 				}
+		}
+		if (this.isTouched == true)
+		{
+			//drag fruit
+			this.x = fruitFrogs.touchX - this.width * .55;
+			this.y = fruitFrogs.touchY - this.height * .55;
 		}
 	};
 		this.draw = function(){

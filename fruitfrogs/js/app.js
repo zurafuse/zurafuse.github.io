@@ -58,7 +58,12 @@ function touchFruit(array, Xtouch, Ytouch, isEnd){
 	}
 	else
 	{
-		for (i in array)
+		if (Xtouch != undefined && Ytouch != undefined)
+		{
+			fruitFrogs.touchX = Xtouch;
+			fruitFrogs.touchY = Ytouch;
+		}
+		for (i=0; i < array.length; i++)
 		{
 			//use offSet to show grace and make touch events more likely
 			var offSet = .95;
@@ -66,9 +71,6 @@ function touchFruit(array, Xtouch, Ytouch, isEnd){
 			Ytouch > array[i].y * offSet && Ytouch * offSet < array[i].y + array[i].height)
 			{
 				array[i].isTouched = true;
-				//drag fruit
-				array[i].x = Xtouch - array[i].width * .55;
-				array[i].y = Ytouch - array[i].height * .55;
 			}
 		}
 	}
