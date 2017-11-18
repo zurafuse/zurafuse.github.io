@@ -46,7 +46,7 @@ function touchMonster(array, Xtouch, Ytouch){
 			if (array[i].state != "dead")
 			{
 				array[i].state = "dead";
-				scores.push(new scoreClass(50, Xtouch, Ytouch));
+				addScore(50, Xtouch, Ytouch);
 			}
 		}
 	}
