@@ -28,10 +28,25 @@ function update(){
 		if (fruit[i].state == "delete")
 		{
 			fruit.splice(i, 1);
-			console.log("gone");
 		}
 	}
 	
+	for (i = 0; i < scores.length; i++)
+	{
+		scores[i].update();
+		if (scores[i].alive == false)
+		{
+			scores.splice(i, 1);
+		}
+	}
+	
+	ctx.font="45pt Arial";
+	ctx.strokeStyle = "#000";
+	ctx.lineWidth = 3;
+	ctx.strokeText("Score: " + fruitFrogs.score, canvas.width * .65, canvas.height * .085);
+	ctx.font = "45pt Arial";
+	ctx.fillStyle = "white";
+	ctx.fillText("Score: " + fruitFrogs.score, canvas.width * .65, canvas.height * .085);
 	
 	requestAnimFrame(update);
 }

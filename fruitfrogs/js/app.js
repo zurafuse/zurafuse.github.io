@@ -11,12 +11,13 @@ var requestAnimFrame =  window.requestAnimationFrame ||
 var bronsters = [];
 var frogs = [];
 var fruit = [];
+var scores = [];
 
-bronsters.push(new brownMonster(imageObj.badGuys.bronster, canvas.width * (Math.random() * .9), canvas.height * (Math.random() * .9), 50, 50));
-bronsters.push(new brownMonster(imageObj.badGuys.bronster, canvas.width * (Math.random() * .9), canvas.height * (Math.random() * .9), 50, 50));
-bronsters.push(new brownMonster(imageObj.badGuys.bronster, canvas.width * (Math.random() * .9), canvas.height * (Math.random() * .9), 50, 50));
-bronsters.push(new brownMonster(imageObj.badGuys.bronster, canvas.width * (Math.random() * .9), canvas.height * (Math.random() * .9), 50, 50));
-bronsters.push(new brownMonster(imageObj.badGuys.bronster, canvas.width * (Math.random() * .9), canvas.height * (Math.random() * .9), 50, 50));
+bronsters.push(new brownMonster(imageObj.badGuys.bronster, canvas.width * (Math.random() * .9), canvas.height * (Math.random() * .9), 60, 60));
+bronsters.push(new brownMonster(imageObj.badGuys.bronster, canvas.width * (Math.random() * .9), canvas.height * (Math.random() * .9), 60, 60));
+bronsters.push(new brownMonster(imageObj.badGuys.bronster, canvas.width * (Math.random() * .9), canvas.height * (Math.random() * .9), 60, 60));
+bronsters.push(new brownMonster(imageObj.badGuys.bronster, canvas.width * (Math.random() * .9), canvas.height * (Math.random() * .9), 60, 60));
+bronsters.push(new brownMonster(imageObj.badGuys.bronster, canvas.width * (Math.random() * .9), canvas.height * (Math.random() * .9), 60, 60));
 
 frogs.push(new frogClass(imageObj.frog, canvas.width * (Math.random() * .9), canvas.height * (Math.random() * .9), 75, 75));
 frogs.push(new frogClass(imageObj.frog, canvas.width * (Math.random() * .9), canvas.height * (Math.random() * .9), 75, 75));
@@ -32,6 +33,8 @@ fruit.push(new fruitClass(imageObj.fruit, canvas.width * (Math.random() * .9), c
 fruit.push(new fruitClass(imageObj.fruit, canvas.width * (Math.random() * .9), canvas.height * (Math.random() * .9), 77, 77, imageObj.fruit.banana));
 fruit.push(new fruitClass(imageObj.fruit, canvas.width * (Math.random() * .9), canvas.height * (Math.random() * .9), 77, 77, imageObj.fruit.blueberry));
 
+
+
 function touchMonster(array, Xtouch, Ytouch){
 	for (i in array)
 	{
@@ -43,6 +46,7 @@ function touchMonster(array, Xtouch, Ytouch){
 			if (array[i].state != "dead")
 			{
 				array[i].state = "dead";
+				scores.push(new scoreClass(50, Xtouch, Ytouch));
 			}
 		}
 	}
@@ -99,4 +103,10 @@ function frogSeeYou(array, Xtouch, Ytouch){
 			array[i].sy = 0;
 		}
 	}
+}
+
+function addScore(amount, x, y)
+{
+	fruitFrogs.score += amount;
+	scores.push(new scoreClass(amount, x, y));
 }

@@ -67,7 +67,8 @@ var fruitFrogs = {
 	gamestate: "play",
 	isTouchScreen: false,
 	touchX: 0,
-	touchY: 0
+	touchY: 0,
+	score: 0
 };
 
 var brownMonster = function(obj, x, y, width, height){
@@ -232,6 +233,8 @@ var fruitClass = function(obj, x, y, width, height, type)
 			if (this.x < frogs[i].x + frogs[i].width && this.x + this.width > frogs[i].x && 
 				this.y + this.height > frogs[i].y && this.y < frogs[i].y + frogs[i].height)
 				{
+					frogs[i].state = "active";
+					addScore(100, this.x, this.y);
 					this.state = "delete";
 				}
 		}
@@ -247,5 +250,28 @@ var fruitClass = function(obj, x, y, width, height, type)
 	};
 };
 
-
+var scoreClass = function(amount, x, y)
+{
+	this.amount = amount;
+	this.x = x;
+	this.y = y;
+	this.counter = 0;
+	this.alive = true;
+	this.update = function(){
+		this.y--;
+		this.counter++;
+		// Create gradient
+		var gradient = ctx.createLinearGradient(0,0,canvas.width,0);
+		gradient.addColorStop("0","magenta");
+		gradient.addColorStop("0.5","blue");
+		gradient.addColorStop("1.0","red");
+		// Fill with gradient
+		ctx.strokeStyle=gradient;
+		ctx.strokeText("+ " + this.amount, this.x, this.y);
+		if (this.counter > 50)
+		{
+			this.alive = false;
+		}
+	};
+};
 
