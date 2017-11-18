@@ -60,6 +60,12 @@ for (i = 0; i < $(".modBtn").length; i++){
 			modBody = "View my online resume to get an idea of past experience, where I have been and what I have done. References provided upon request.";
 			modFoot = "LINK: <a href='resume/index.html' target='_blank' style='color: white'>https://zurafuse.github.io/resume</a>";			
 		}
+		else if ($(this).attr("id") === "mod_fruitfrog")
+		{
+			modHead = "FRUIT FROGS";
+			modBody = "I created this game with javascript to make my kids laugh. Feed the frogs by dragging the fruit over to them. Destroy enemies by tapping them.";
+			modFoot = "LINK: <a href='https://zurafuse.github.io/fruitfrogs/' target='_blank' style='color: white'>https://zurafuse.github.io/fruitfrogs</a>";			
+		}
 		else if ($(this).attr("id") === "mod_map")
 		{
 			modHead = "NEIGHBORHOOD MAP OF SLAPOUT";
