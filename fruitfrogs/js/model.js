@@ -55,6 +55,9 @@ var imageObj = {
 		left: {sx: 0, sy: 201, swidth: 100, sheight: 100},
 		right: {sx: 0, sy: 301, swidth: 100, sheight: 100}			
 	},
+	backgroundPics: {number: 5,
+					colors: ["#afa", "#faa", "#aaf", "#cfffca", "#ffa", "#aff", "#faf", "#a33", "#3a3", "#fff", "#33a"]
+	},
 	setPics: function(){
 		this.badGuys.bronster.img.src = "images/bronster.png";
 		this.fruit.img.src = "images/fruit.png";
@@ -238,6 +241,18 @@ var fruitClass = function(obj, x, y, width, height, type)
 					this.state = "delete";
 				}
 		}
+		for (var i = 0; i < bronsters.length; i++)
+		{
+			if (this.x < bronsters[i].x + bronsters[i].width && this.x + this.width > bronsters[i].x && 
+				this.y + this.height > bronsters[i].y && this.y < bronsters[i].y + bronsters[i].height)
+				{
+					if (bronsters[i].state != "dead")
+					{
+						addScore(-50, this.x, this.y, true);
+						this.state = "delete";
+					}
+				}
+		}
 		if (this.isTouched == true)
 		{
 			//drag fruit
@@ -250,7 +265,7 @@ var fruitClass = function(obj, x, y, width, height, type)
 	};
 };
 
-var scoreClass = function(amount, x, y)
+var scoreClass = function(amount, x, y, monster)
 {
 	this.amount = amount;
 	this.x = x;
@@ -258,16 +273,39 @@ var scoreClass = function(amount, x, y)
 	this.counter = 0;
 	this.alive = true;
 	this.update = function(){
-		this.y--;
+		if (monster == true)
+		{
+			this.y++;
+		}
+		else
+		{
+			this.y--;
+		}
 		this.counter++;
 		// Create gradient
 		var gradient = ctx.createLinearGradient(0,0,canvas.width,0);
-		gradient.addColorStop("0","magenta");
-		gradient.addColorStop("0.5","blue");
-		gradient.addColorStop("1.0","red");
+		if (monster == true)
+		{
+			gradient.addColorStop("0","#faa");
+			gradient.addColorStop("0.5","#f5a");
+			gradient.addColorStop("1.0","#f33");			
+		}
+		else
+		{
+			gradient.addColorStop("0","magenta");
+			gradient.addColorStop("0.5","blue");
+			gradient.addColorStop("1.0","green");
+		}
 		// Fill with gradient
 		ctx.strokeStyle=gradient;
-		ctx.strokeText("+ " + this.amount, this.x, this.y);
+		if (monster == true)
+		{
+			ctx.strokeText(this.amount, this.x, this.y);
+		}
+		else
+		{
+			ctx.strokeText("+ " + this.amount, this.x, this.y);			
+		}
 		if (this.counter > 50)
 		{
 			this.alive = false;

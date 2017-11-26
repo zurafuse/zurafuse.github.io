@@ -105,8 +105,16 @@ function frogSeeYou(array, Xtouch, Ytouch){
 	}
 }
 
-function addScore(amount, x, y)
+function addScore(amount, x, y, monster)
 {
 	fruitFrogs.score += amount;
-	scores.push(new scoreClass(amount, x, y));
+	scores.push(new scoreClass(amount, x, y, monster));
+}
+
+function resetGame()
+{
+	imageObj.backgroundPics.number = Math.floor(Math.random() * 10);
+	bronsters = [];
+	frogs = [];
+	fruit = [];	
 }
