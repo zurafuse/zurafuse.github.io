@@ -152,5 +152,5 @@ FlagUI.joyStick.down.height = sprtHtControl * 1.8;
 
 FlagUI.joyStick.shoot.x = sprtHtControl * 24;
 FlagUI.joyStick.shoot.y = sprtHtControl * 10;
-FlagUI.joyStick.shoot.width = sprtHtControl * 1.8;
-FlagUI.joyStick.shoot.height = sprtHtControl * 1.8;
+FlagUI.joyStick.shoot.width = sprtHtControl * 3;
+FlagUI.joyStick.shoot.height = sprtHtControl * 3;
