@@ -132,107 +132,130 @@ window.addEventListener("touchend", function (e) {
 
 // Get the position of a touch relative to the canvas
 function getTouchPos(canvasDom, touchEvent) {
-  var thisXPos = touchEvent.touches[0].clientX;
-  var thisYPos = touchEvent.touches[0].clientY;
+	for (i in touchEvent.touches)
+	{
+		var thisXPos = touchEvent.touches[i].clientX;
+		var thisYPos = touchEvent.touches[i].clientY;
 
  //Listen for the user touching the arrow keys 
-  if (thisXPos < kaioUI.joyStick.left.x + (kaioUI.joyStick.left.width * 1.3) && thisXPos > kaioUI.joyStick.left.x * 0.7 &&
-	thisYPos > kaioUI.joyStick.left.y - (kaioUI.joyStick.left.height * 0.7) && thisYPos < kaioUI.joyStick.left.y + (kaioUI.joyStick.left.height * 0.7))
-  {
-	kaioController.up = false;
-	kaioController.down = false;
-	kaioController.right = false;
-	kaioController.left = true;
-	kaioPlayer.dir = "left";
-  }
-  
-  if (thisXPos < kaioUI.joyStick.right.x + (kaioUI.joyStick.right.width * 1.3) && thisXPos > kaioUI.joyStick.right.x * 0.7 &&
-	thisYPos > kaioUI.joyStick.right.y - (kaioUI.joyStick.right.height * 0.7) && thisYPos < kaioUI.joyStick.right.y + (kaioUI.joyStick.right.height * 0.7))
-  {
-	kaioController.up = false;
-	kaioController.down = false;
-	kaioController.right = true;
-	kaioController.left = false;
-	kaioPlayer.dir = "right";
-  }
-  
-   if (thisXPos < kaioUI.joyStick.up.x + (kaioUI.joyStick.up.width * 0.8) && thisXPos > kaioUI.joyStick.up.x - (kaioUI.joyStick.up.width * 0.8) &&
-	thisYPos > kaioUI.joyStick.up.y * 0.8 && thisYPos < kaioUI.joyStick.up.y + (kaioUI.joyStick.up.height * 1.2))
-  {
-	kaioController.up = true;
-	kaioController.down = false;
-	kaioController.right = false;
-	kaioController.left = false;
-	kaioPlayer.dir = "up";
-  }
-  
-   if (thisXPos < kaioUI.joyStick.down.x + (kaioUI.joyStick.down.width * 0.7) && thisXPos > kaioUI.joyStick.down.x - (kaioUI.joyStick.down.width * 0.7) &&
-	thisYPos > kaioUI.joyStick.down.y * 0.8 && thisYPos < kaioUI.joyStick.down.y + kaioUI.joyStick.down.height * 1.2)
-  {
-	kaioController.up = false;
-	kaioController.down = true;
-	kaioController.right = false;
-	kaioController.left = false;
-	kaioPlayer.dir = "down";
-  }
-
-	//detect user input on title screen
-		if (kaiomega.gamestate == "title")
+		if (thisXPos < kaioUI.joyStick.left.x + (kaioUI.joyStick.left.width * 1.3) && thisXPos > kaioUI.joyStick.left.x * 0.7 &&
+		thisYPos > kaioUI.joyStick.left.y - (kaioUI.joyStick.left.height * 0.7) && thisYPos < kaioUI.joyStick.left.y + (kaioUI.joyStick.left.height * 0.7))
 		{
-			if (kaioTitle.state == "start")
-			{
-				kaioTitle.state = "select";
-			}
-			else if (kaioTitle.state == "select")
-			{
-				if (thisXPos >= kaioTitle.continueGame.x && thisXPos <= kaioTitle.continueGame.x + kaioTitle.continueGame.width &&
-					thisYPos >= kaioTitle.continueGame.y - (kaioTitle.continueGame.height * .8) && thisYPos <= kaioTitle.continueGame.y + (kaioTitle.continueGame.height * .6))
-				{
-					kaiomega.newGame == false;
-					loadGame();
-					kaiomega.start();
-				}
-				else if (thisXPos >= kaioTitle.newGame.x && thisXPos <= kaioTitle.newGame.x + kaioTitle.newGame.width &&
-					thisYPos >= kaioTitle.newGame.y - (kaioTitle.newGame.height * .8) && thisYPos <= kaioTitle.newGame.y + (kaioTitle.newGame.height * .6))
-				{
-					//Let the user enter his or her own name
-					kaioTitle.state = "create";
-					charCreate();
-				}
-			}
-			
+			kaioController.up = false;
+			kaioController.down = false;
+			kaioController.right = false;
+			kaioController.left = true;
+			kaioPlayer.dir = "left";
 		}
   
-	if (kaiomega.gamestate == "play" || kaiomega.gamestate == "map")
-	{
-		origState = kaiomega.gamestate;
-	}
-
- //See if the user is pressing the menu button 
-	if (kaiomega.gamestate == "play" || kaiomega.gamestate == "map")
-	{
-		if (thisXPos >= kaioUI.menu.x && thisXPos <= kaioUI.menu.x + kaioUI.menu.width &&
-			thisYPos >= kaioUI.menu.y && thisYPos <= kaioUI.menu.y + kaioUI.menu.height)
+		if (thisXPos < kaioUI.joyStick.right.x + (kaioUI.joyStick.right.width * 1.3) && thisXPos > kaioUI.joyStick.right.x * 0.7 &&
+		thisYPos > kaioUI.joyStick.right.y - (kaioUI.joyStick.right.height * 0.7) && thisYPos < kaioUI.joyStick.right.y + (kaioUI.joyStick.right.height * 0.7))
 		{
-				origState = kaiomega.gamestate;
-				kaiomega.gamestate = "menu";			
-		}			
-	}
-	//see if the user is pressing the "Back to Game" button.	
-	else if (kaiomega.gamestate == "menu")
-	{
-		if (thisXPos >= kaioUI.menu.backIcon.x && thisXPos <= kaioUI.menu.backIcon.x + kaioUI.menu.backIcon.width &&
-			thisYPos >= kaioUI.menu.backIcon.y && thisYPos <= kaioUI.menu.backIcon.y + kaioUI.menu.backIcon.height)
-		{				
-				kaiomega.gamestate = origState;
-		}		
-	}
+			kaioController.up = false;
+			kaioController.down = false;
+			kaioController.right = true;
+			kaioController.left = false;
+			kaioPlayer.dir = "right";
+		}
   
+		if (thisXPos < kaioUI.joyStick.up.x + (kaioUI.joyStick.up.width * 0.8) && thisXPos > kaioUI.joyStick.up.x - (kaioUI.joyStick.up.width * 0.8) &&
+		thisYPos > kaioUI.joyStick.up.y * 0.8 && thisYPos < kaioUI.joyStick.up.y + (kaioUI.joyStick.up.height * 1.2))
+		{
+			kaioController.up = true;
+			kaioController.down = false;
+			kaioController.right = false;
+			kaioController.left = false;
+			kaioPlayer.dir = "up";
+		}
+  
+		if (thisXPos < kaioUI.joyStick.down.x + (kaioUI.joyStick.down.width * 0.7) && thisXPos > kaioUI.joyStick.down.x - (kaioUI.joyStick.down.width * 0.7) &&
+		thisYPos > kaioUI.joyStick.down.y * 0.8 && thisYPos < kaioUI.joyStick.down.y + kaioUI.joyStick.down.height * 1.2)
+		{
+			kaioController.up = false;
+			kaioController.down = true;
+			kaioController.right = false;
+			kaioController.left = false;
+			kaioPlayer.dir = "down";
+		}
+
+		//detect user input on title screen
+			if (kaiomega.gamestate == "title")
+			{
+				if (kaioTitle.state == "start")
+				{
+					kaioTitle.state = "select";
+				}
+				else if (kaioTitle.state == "select")
+				{
+					if (thisXPos >= kaioTitle.continueGame.x && thisXPos <= kaioTitle.continueGame.x + kaioTitle.continueGame.width &&
+						thisYPos >= kaioTitle.continueGame.y - (kaioTitle.continueGame.height * .8) && thisYPos <= kaioTitle.continueGame.y + (kaioTitle.continueGame.height * .6))
+					{
+						kaiomega.newGame == false;
+						loadGame();
+						kaiomega.start();
+					}
+					else if (thisXPos >= kaioTitle.newGame.x && thisXPos <= kaioTitle.newGame.x + kaioTitle.newGame.width &&
+						thisYPos >= kaioTitle.newGame.y - (kaioTitle.newGame.height * .8) && thisYPos <= kaioTitle.newGame.y + (kaioTitle.newGame.height * .6))
+					{
+						//Let the user enter his or her own name
+						kaioTitle.state = "create";
+						charCreate();
+					}
+				}
+				
+			}
+	
+		if (kaiomega.gamestate == "play" || kaiomega.gamestate == "map")
+		{
+			origState = kaiomega.gamestate;
+		}
+	
+	//See if the user is pressing the menu button 
+		if (kaiomega.gamestate == "play" || kaiomega.gamestate == "map")
+		{
+			if (thisXPos >= kaioUI.menu.x && thisXPos <= kaioUI.menu.x + kaioUI.menu.width &&
+				thisYPos >= kaioUI.menu.y && thisYPos <= kaioUI.menu.y + kaioUI.menu.height)
+			{
+					origState = kaiomega.gamestate;
+					kaiomega.gamestate = "menu";			
+			}			
+		}
+		//see if the user is pressing the "Back to Game" button.	
+		else if (kaiomega.gamestate == "menu")
+		{
+			if (thisXPos >= kaioUI.menu.backIcon.x && thisXPos <= kaioUI.menu.backIcon.x + kaioUI.menu.backIcon.width &&
+				thisYPos >= kaioUI.menu.backIcon.y && thisYPos <= kaioUI.menu.backIcon.y + kaioUI.menu.backIcon.height)
+			{				
+					kaiomega.gamestate = origState;
+			}		
+		}
+	}
 }
 
 function endTouchPos(canvasDom, touchEvent) {
-	kaioController.left = false;
-	kaioController.right = false;
-	kaioController.up = false;
-	kaioController.down = false;
+	for (i in touchEvent.changedTouches)
+	{
+		var thisXPos = touchEvent.changedTouches[i].clientX;
+		var thisYPos = touchEvent.changedTouches[i].clientY;
+		if (thisXPos < kaioUI.joyStick.left.x + (kaioUI.joyStick.left.width * 1.3) && thisXPos > kaioUI.joyStick.left.x * 0.7 &&
+		thisYPos > kaioUI.joyStick.left.y - (kaioUI.joyStick.left.height * 0.7) && thisYPos < kaioUI.joyStick.left.y + (kaioUI.joyStick.left.height * 0.7))
+		{
+			kaioController.left = false;
+		}
+		if (thisXPos < kaioUI.joyStick.right.x + (kaioUI.joyStick.right.width * 1.3) && thisXPos > kaioUI.joyStick.right.x * 0.7 &&
+		thisYPos > kaioUI.joyStick.right.y - (kaioUI.joyStick.right.height * 0.7) && thisYPos < kaioUI.joyStick.right.y + (kaioUI.joyStick.right.height * 0.7))
+		{
+			kaioController.right = false;
+		}
+		if (thisXPos < kaioUI.joyStick.up.x + (kaioUI.joyStick.up.width * 0.8) && thisXPos > kaioUI.joyStick.up.x - (kaioUI.joyStick.up.width * 0.8) &&
+		thisYPos > kaioUI.joyStick.up.y * 0.8 && thisYPos < kaioUI.joyStick.up.y + (kaioUI.joyStick.up.height * 1.2))
+		{		
+			kaioController.up = false;
+		}
+		if (thisXPos < kaioUI.joyStick.down.x + (kaioUI.joyStick.down.width * 0.7) && thisXPos > kaioUI.joyStick.down.x - (kaioUI.joyStick.down.width * 0.7) &&
+		thisYPos > kaioUI.joyStick.down.y * 0.8 && thisYPos < kaioUI.joyStick.down.y + kaioUI.joyStick.down.height * 1.2)
+		{
+			kaioController.down = false;
+		}
+	}
 }
