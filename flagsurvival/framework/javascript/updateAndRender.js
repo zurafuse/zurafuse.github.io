@@ -211,7 +211,6 @@ function restart(){
 	healthPower = [];
 	badDudes = [];
 	badDudes2 = [];
-	breakables = [];
 //declare randomness
 	runPowerLocX = Math.floor((Math.random() * (gridWidth - 1)) + 1);
 	runPowerLocY = Math.floor((Math.random() * (gridHeight - 1)) + 1);
@@ -234,8 +233,6 @@ function restart(){
 	};
 	bulxPos = mySprite.x + (0.444 * spriteSizes);
 	bulyPos = mySprite.y + (0.388 * spriteSizes);
-//recreate breakables
-	createBreakables();
 }
 
 function spitBullets(){
@@ -388,7 +385,10 @@ ctx.fillStyle = mySprite.color;
 		ctx.fillText("GAME OVER", spriteSizes * (gridWidth * 0.4), spriteSizes * (gridHeight * 0.5));
 	}
 	
-
+	if (isMobile == true)
+	{
+		FlagUI.draw();
+	}
 
 	spitBullets();
 	spitBadBullets();
@@ -652,24 +652,50 @@ function damageTaken(){
 }
 
 function run() {
-    update((Date.now() - time) / 1000);
-    render();
-    time = Date.now();
-	createRunPower();
-	createShootPower();
-	createFrequentPower();
-	createHealthPower();
-	createFlag();
-	runDestroy();
-	shootDestroy();
-	frequentDestroy();
-	healthDestroy();
-	bulletDestroy();
-	flagDestroy();
-	createBadGuys();
-	damageTaken();
-	requestAnimFrame(run);
-	localStorage.setItem("prevHighScore", highScore);
+	if (!(window.innerWidth < window.innerHeight))
+	{
+		if (canvasBad == true)
+		{
+			canvasBad = false;
+			canvas.width = window.innerWidth * 0.95;
+			canvas.height = window.innerHeight * 0.95;
+		}
+		update((Date.now() - time) / 1000);
+		render();
+		time = Date.now();
+		createRunPower();
+		createShootPower();
+		createFrequentPower();
+		createHealthPower();
+		createFlag();
+		runDestroy();
+		shootDestroy();
+		frequentDestroy();
+		healthDestroy();
+		bulletDestroy();
+		flagDestroy();
+		createBadGuys();
+		damageTaken();
+		requestAnimFrame(run);
+		localStorage.setItem("prevHighScore", highScore);
+	}
+	else
+	{
+		canvasBad = true;
+		canvas.width = window.innerWidth * 0.95;
+		canvas.height = window.innerHeight * 0.95;
+		ctx.fillStyle = "black";
+		ctx.fillRect(0, 0, canvas.width, canvas.height);
+		ctx.fillStyle = "white";
+		ctx.font = canvas.width * 0.12  + "px Verdana";
+		ctx.fillText("PAUSED", canvas.width * .2, canvas.height * .1);
+		ctx.font = canvas.width * 0.08  + "px Verdana";
+		ctx.fillText("Please rotate Device", canvas.width * .05, canvas.height * .2);
+		ctx.fillText("to continue playing.", canvas.width * .05, canvas.height * .3);
+		ctx.drawImage(rotateImg, canvas.width * .1, canvas.height * .4, canvas.width * .85, canvas.height * .4);
+		time = Date.now();
+		requestAnimFrame(run);
+	}
 }
 
 var time = Date.now();
