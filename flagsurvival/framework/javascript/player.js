@@ -8,8 +8,12 @@ var mySprite = {
     y: (canvas.height / 2) - spriteSizes,
     width: spriteSizes,
     height: spriteSizes,
-    speed: canvas.width * 0.164,
+    speed: canvas.width * 0.144,
     color: '#007000'
 };
 var bulxPos = mySprite.x + (0.444 * spriteSizes);
 var bulyPos = mySprite.y + (0.388 * spriteSizes);
+if (window.innerWidth < 600)
+{
+    mySprite.speed = 2.2	
+}
