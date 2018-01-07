@@ -29,6 +29,12 @@ for (i = 0; i < $(".modBtn").length; i++){
 			modBody = "I created this game using pure javascript code. Use the arrow keys to move and the space bar to shoot.";
 			modFoot = "LINK: <a href='https://zurafuse.github.io/flagsurvival/' target='_blank' style='color: white'>https://zurafuse.github.io/flagsurvival</a>";			
 		}
+		else if ($(this).attr("id") === "mod_barcode")
+		{
+			modHead = "3of9 Barcode_Generator";
+			modBody = "I created this barcode generator using Python's Turtle class. This was created for a Udaicty Python course.";
+			modFoot = "LINK: <a href='https://github.com/zurafuse/Barcode_Generator/' target='_blank' style='color: white'>https://github.com/zurafuse/Barcode_Generator</a>";			
+		}
 		else if ($(this).attr("id") === "mod_yosef")
 		{
 			modHead = "THE AMAZING YOSEF";
