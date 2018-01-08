@@ -32,7 +32,7 @@ for (i = 0; i < $(".modBtn").length; i++){
 		else if ($(this).attr("id") === "mod_barcode")
 		{
 			modHead = "3of9 Barcode_Generator";
-			modBody = "I created this barcode generator using Python's Turtle class. This was created for a Udaicty Python course.";
+			modBody = "I created this barcode generator using Python's Turtle class. This was created for a Udacity Python course.";
 			modFoot = "LINK: <a href='https://github.com/zurafuse/Barcode_Generator/' target='_blank' style='color: white'>https://github.com/zurafuse/Barcode_Generator</a>";			
 		}
 		else if ($(this).attr("id") === "mod_yosef")
