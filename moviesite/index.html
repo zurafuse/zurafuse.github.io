@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -7,7 +8,7 @@
     <!-- Bootstrap 3 -->
     <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap-theme.min.css">
-    <script src="jquery.js"></script>
+    <script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
     <script src="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/js/bootstrap.min.js"></script>
     <style type="text/css" media="screen">
         body {
@@ -59,14 +60,10 @@
         });
         // Start playing the video whenever the trailer modal is opened
         $(document).on('click', '.movie-tile', function (event) {
+            var embed_url = $(this).attr('data-youtube-embed')
             var trailerYouTubeId = $(this).attr('data-trailer-youtube-id')
             var sourceUrl = 'http://www.youtube.com/embed/' + trailerYouTubeId + '?autoplay=1&html5=1';
-            $("#trailer-video-container").empty().append($("<iframe></iframe>", {
-              'id': 'trailer-video',
-              'type': 'text-html',
-              'src': sourceUrl,
-              'frameborder': 0
-            }));
+            $("#trailer-video-container").empty().append($(embed_url));
         });
         // Animate in the movies when the page loads
         $(document).ready(function () {
@@ -103,17 +100,17 @@
     </div>
     <div class="container">
       
-<div class="col-md-6 col-lg-4 movie-tile text-center" data-trailer-youtube-id="KYz2wyBy3kc" data-toggle="modal" data-target="#trailer">
+<div class="col-md-6 col-lg-4 movie-tile text-center" data-youtube-embed='<iframe width="854" height="480" src="https://www.youtube.com/embed/KYz2wyBy3kc" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>' data-trailer-youtube-id="KYz2wyBy3kc" data-toggle="modal" data-target="#trailer">
     <img src="https://upload.wikimedia.org/wikipedia/en/thumb/1/13/Toy_Story.jpg/220px-Toy_Story.jpg" width="220" height="342">
     <h2>Toy Story</h2>
 </div>
 
-<div class="col-md-6 col-lg-4 movie-tile text-center" data-trailer-youtube-id="d1_JBMrrYw8" data-toggle="modal" data-target="#trailer">
+<div class="col-md-6 col-lg-4 movie-tile text-center" data-youtube-embed='<iframe width="854" height="480" src="https://www.youtube.com/embed/d1_JBMrrYw8" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>' data-trailer-youtube-id="d1_JBMrrYw8" data-toggle="modal" data-target="#trailer">
     <img src="https://upload.wikimedia.org/wikipedia/en/thumb/b/b0/Avatar-Teaser-Poster.jpg/220px-Avatar-Teaser-Poster.jpg" width="220" height="342">
     <h2>Avatar</h2>
 </div>
 
-<div class="col-md-6 col-lg-4 movie-tile text-center" data-trailer-youtube-id="pUaKcFI4BZY" data-toggle="modal" data-target="#trailer">
+<div class="col-md-6 col-lg-4 movie-tile text-center" data-youtube-embed='<iframe width="854" height="480" src="https://www.youtube.com/embed/pUaKcFI4BZY" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>' data-trailer-youtube-id="pUaKcFI4BZY" data-toggle="modal" data-target="#trailer">
     <img src="https://upload.wikimedia.org/wikipedia/en/thumb/d/d1/Cloudy_with_a_chance_of_meatballs_theataposter.jpg/220px-Cloudy_with_a_chance_of_meatballs_theataposter.jpg" width="220" height="342">
     <h2>Cloudy with a Chance of Meatballs</h2>
 </div>

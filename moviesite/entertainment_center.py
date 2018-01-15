@@ -3,7 +3,7 @@ import media
 
 toy_story = media.Movie("Toy Story", "A movie about a boy and his toys which come to life when he is not looking.",
                         "https://upload.wikimedia.org/wikipedia/en/thumb/1/13/Toy_Story.jpg/220px-Toy_Story.jpg",
-                        "https://www.youtube.com/watch?v=KYz2wyBy3kc")
+                        "https://www.youtube.com/watch?v=KYz2wyBy3kc", '<iframe width="854" height="480" src="https://www.youtube.com/embed/KYz2wyBy3kc" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>')
 
 #toy_story2 = media.Movie()
 
@@ -11,11 +11,11 @@ toy_story = media.Movie("Toy Story", "A movie about a boy and his toys which com
 
 avatar = media.Movie("Avatar", "A movie about a bunch of marines stranded on an alien planet.",
                         "https://upload.wikimedia.org/wikipedia/en/thumb/b/b0/Avatar-Teaser-Poster.jpg/220px-Avatar-Teaser-Poster.jpg",
-                        "https://www.youtube.com/watch?v=d1_JBMrrYw8")
+                        "https://www.youtube.com/watch?v=d1_JBMrrYw8", '<iframe width="854" height="480" src="https://www.youtube.com/embed/d1_JBMrrYw8" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>')
 
 meatballs = media.Movie("Cloudy with a Chance of Meatballs", "Flint Lockwood, a young science enthusiast on an island called Swallow Falls, has developed a machine capable of materializing everyone's favorite food.",
                         "https://upload.wikimedia.org/wikipedia/en/thumb/d/d1/Cloudy_with_a_chance_of_meatballs_theataposter.jpg/220px-Cloudy_with_a_chance_of_meatballs_theataposter.jpg",
-                        "https://www.youtube.com/watch?v=pUaKcFI4BZY")
+                        "https://www.youtube.com/watch?v=pUaKcFI4BZY", '<iframe width="854" height="480" src="https://www.youtube.com/embed/pUaKcFI4BZY" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>')
 
 #meatballs2 = media.Movie()
 
