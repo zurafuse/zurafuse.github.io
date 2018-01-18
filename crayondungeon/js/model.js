@@ -89,6 +89,10 @@ var player = {
 		{
 			this.attack = true;
 		}
+		if(keysDown[32] == false)
+		{
+			this.attack = false;
+		}
 		if (this.sx > 151)
 		{
 			this.sx = 0;
