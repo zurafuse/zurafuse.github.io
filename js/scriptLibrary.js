@@ -78,6 +78,12 @@ for (i = 0; i < $(".modBtn").length; i++){
 			modBody = "This is a project I worked on for a class on Udacity.com. It is an interactive map of Slapout, Alabama implementing the Google Maps API. Visit the Github page at <a href='https://github.com/zurafuse/Udacity-Neighborhood-Map/' target='_blank' style='color: black'>https://github.com/zurafuse/Udacity-Neighborhood-Map</a>.";
 			modFoot = "LINK: <a href='slapout/index.html' target='_blank' style='color: white'>https://zurafuse.github.io/slapout</a>";		
 		}
+		else if ($(this).attr("id") === "mod_movie")
+		{
+			modHead = "Movie Trailer Website";
+			modBody = "This is a project I worked on for a class on Udacity.com. This is a movie trailer site generated with Python code. Visit the Github page at <a href='https://github.com/zurafuse/Movie-Site/' target='_blank' style='color: black'>https://github.com/zurafuse/Movie-Site</a>.";
+			modFoot = "LINK: <a href='moviesite/index.html' target='_blank' style='color: white'>https://github.com/zurafuse/Movie-Site</a>";		
+		}
 		
 		$(".mod-head").html(modHead);
 		$(".mod-body").html(modBody);
