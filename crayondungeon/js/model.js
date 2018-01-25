@@ -38,9 +38,11 @@ var canvasBad = false;
 var crayonImages = {
 	player: new Image(),
 	shoot: new Image(),
+	sword: new Image(),
 	run: function(){
 		this.player.src = "images/player.png";
 		this.shoot.src = "images/shoot.png";
+		this.sword.src = "images/sword.png";
 	}
 };
 crayonImages.run();
@@ -58,6 +60,14 @@ var player = {
 	attack: false,
 	counter: 0,
 	update: function(){
+		if (this.attack == true){
+			this.sx += 50;
+			if (this.sx >= 200){
+				this.sx = 0;
+				this.sy = 0;
+				this.attack = false;
+			}
+		}
 		//use counter to handle animations that should be slower than 60 fps
 		this.counter++;
 		if (this.counter > 3)
@@ -88,6 +98,8 @@ var player = {
 		if(keysDown[32] == true)
 		{
 			this.attack = true;
+			this.sy = 200;
+			this.sx = 0;
 		}
 		if(keysDown[32] == false)
 		{
