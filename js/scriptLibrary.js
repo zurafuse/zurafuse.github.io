@@ -42,11 +42,11 @@ for (i = 0; i < $(".modBtn").length; i++){
 		
 			modFoot = "LINK TO MOBILE VERSION: <a href='https://zurafuse.github.io/yosef_mobile/' target='_blank' style='color: white'>https://zurafuse.github.io/yosef_mobile</a><br>LINK TO DESKTOP VERSION: <a href='https://zurafuse.github.io/yosef/' target='_blank' style='color: white'>https://zurafuse.github.io/yosef</a>";			
 		}
-		else if ($(this).attr("id") === "mod_kaio")
+		else if ($(this).attr("id") === "mod_crayon")
 		{
-			modHead = "KAIOMEGA";
-			modBody = "Kaiomega is a role playing video game Engine that I created using javascript. Notice its responsiveness to use on a mobile device.";
-			modFoot = "LINK: <a href='https://zurafuse.github.io/kaiomega/' target='_blank' style='color: white'>https://zurafuse.github.io/kaiomega/</a>";		
+			modHead = "Crayon Dungeon";
+			modBody = "Crayon Dungeon is a role playing video game Engine that I created using javascript. Notice its responsiveness to use on a mobile device.";
+			modFoot = "LINK: <a href='https://zurafuse.github.io/crayondungeon/' target='_blank' style='color: white'>https://zurafuse.github.io/crayondungeon//</a>";		
 		}
 		else if ($(this).attr("id") === "mod_frogger")
 		{
