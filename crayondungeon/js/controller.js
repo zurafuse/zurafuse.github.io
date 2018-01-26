@@ -7,10 +7,6 @@ window.addEventListener('keydown', function(e) {
 window.addEventListener('keyup', function(e) {
 		keysUp[e.keyCode] = true;
 		delete keysDown[e.keyCode];
-		if ((e.keyCode == 37 && dirLead == "left") || (e.keyCode == 38 && dirLead == "up") || 
-			(e.keyCode == 39 && dirLead == "right") || (e.keyCode == 40 && dirLead == "front")){
-			dirLead = "default";
-		}
 });
 
 // touch event handlers
@@ -46,7 +42,6 @@ function getTouchPos(canvasDom, touchEvent) {
 			thisYPos > crayonUI.joyStick.left.y - (crayonUI.joyStick.left.height * 0.7) && thisYPos < crayonUI.joyStick.left.y + (crayonUI.joyStick.left.height * 0.7))
 			{
 				delete keysUp[37];
-				dirLead = "left";
 				keysDown[37] = true;
 			}
 		  
@@ -54,7 +49,6 @@ function getTouchPos(canvasDom, touchEvent) {
 			thisYPos > crayonUI.joyStick.right.y - (crayonUI.joyStick.right.height * 0.7) && thisYPos < crayonUI.joyStick.right.y + (crayonUI.joyStick.right.height * 0.7))
 			{
 				delete keysUp[39];
-				dirLead = "right";
 				keysDown[39] = true;
 			}
 		  
@@ -62,7 +56,6 @@ function getTouchPos(canvasDom, touchEvent) {
 			thisYPos > crayonUI.joyStick.up.y * 0.8 && thisYPos < crayonUI.joyStick.up.y + (crayonUI.joyStick.up.height * 1.2))
 			{
 				delete keysUp[38];
-				dirLead = "up";
 				keysDown[38] = true;
 			}
 		  
@@ -70,7 +63,6 @@ function getTouchPos(canvasDom, touchEvent) {
 			thisYPos > crayonUI.joyStick.down.y - (crayonUI.joyStick.down.height * .5) && thisYPos < crayonUI.joyStick.down.y + (crayonUI.joyStick.down.height * 1.5))
 			{
 				delete keysUp[40];
-				dirLead = "front";
 				keysDown[40] = true;
 			}
 		  
@@ -121,8 +113,6 @@ function endTouchPos(canvasDom, touchEvent) {
 			{
 				delete keysDown[32];
 				keysUp[32] = true;
-			}		
-		
-			
+			}				
 	}
 }

@@ -18,7 +18,14 @@ canvas.width = window.innerWidth - 180;
 
 var keysUp = [];
 var keysDown = [];
-var dirLead = "down";
+var dir = {
+	right: false,
+	left: false,
+	up: false,
+	down: false,
+	fire: false,
+	lead: "down"
+}
 
 var gridWidth = 29;
 var gridHeight = 15;
@@ -47,19 +54,22 @@ var crayonImages = {
 };
 crayonImages.run();
 
-var player = {
-	x: 30,
-	y: 30,
-	width: sprtHtControl,
-	height: sprtHtControl,
-	sx: 0,
-	sy: 0,
-	swidth: 50,
-	sheight: 50,
-	speed: sprtHtControl * 0.15,
-	attack: false,
-	counter: 0,
-	update: function(){
+var Player = function(){
+	this.x = 30;
+	this.y =  30;
+	this.width =  sprtHtControl;
+	this.height =  sprtHtControl;
+	this.sx =  0;
+	this.sy =  0;
+	this.swidth =  50;
+	this.sheight =  50;
+	this.speed =  sprtHtControl * 0.15;
+	this.attack =  false;
+	this.counter =  0;
+}
+
+
+Player.prototype.update = function(){
 		if (this.attack == true){
 			this.sx += 50;
 			if (this.sx >= 200){
@@ -75,48 +85,66 @@ var player = {
 			this.counter = 0;
 		}
 		//determine movement based on key pressed
-		if(keysDown[39] == true)
+		if(dir.right == true)
 		{
 			this.sy = 100;
 			this.x+= this.speed;
 		}
-		if(keysDown[37] == true)
+		if(dir.left == true)
 		{
 			this.sy = 150;
 			this.x-= this.speed;
 		}
-		if(keysDown[38] == true)
+		if(dir.up == true)
 		{
 			this.sy = 50;
 			this.y-= this.speed;
 		}	
-		if(keysDown[40] == true)
+		if(dir.down == true)
 		{
 			this.sy = 0;
 			this.y+= this.speed;
 		}	
-		if(keysDown[32] == true)
+		if(dir.fire == true)
 		{
-			this.attack = true;
-			this.sy = 200;
-			this.sx = 0;
+			if (this.attack == false)
+			{
+				this.attack = true;
+				this.sx = 0;
+			}
 		}
-		if(keysDown[32] == false)
+		if (this.attack == true)
 		{
-			this.attack = false;
+			if (dir.lead == "left")
+			{
+				this.sy = 300;
+			}
+			if (dir.lead == "right")
+			{
+				this.sy = 250;				
+			}
+			if (dir.lead == "up")
+			{
+				this.sy = 350;
+			}
+			if (dir.lead == "down")
+			{
+				this.sy = 200;
+			}			
 		}
 		if (this.sx > 151)
 		{
 			this.sx = 0;
-		}
+		}	
 		//draw onto the canvas.
 		ctx.drawImage(crayonImages.player, this.sx, this.sy, this.swidth, this.sheight, this.x, this.y, this.width, this.height);
 		//if the player is moving, animate him.
-		if ((keysDown[39] == true || keysDown[37] == true || keysDown[38] == true || keysDown[40] == true) && this.counter == 3){
+		if ((dir.up == true || dir.down == true || dir.right == true || dir.left == true) && this.counter == 3){
 			this.sx += 50;
 		}
-	}
 };
+
+player = new Player();
 
 //Create the UI object.
 var crayonUI = {
