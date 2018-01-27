@@ -1,6 +1,13 @@
 var keysUp = [];
 var keysDown = [];
 
+var isCollision = function(x, y, width, height, x2, y2, width2, height2){
+	if (x + width > x2 && x < x2 + width2 && y < y2 + height2 && y + height > y2)
+	{
+		return true;
+	}
+	return false;
+};
 
 var updateControls = function(e){
 	if (e[37] == true)

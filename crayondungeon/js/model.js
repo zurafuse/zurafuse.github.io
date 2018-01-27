@@ -27,6 +27,11 @@ var dir = {
 	lead: "down"
 }
 
+var crayon = {
+	isMobile: true,
+	canvasBad: false
+};
+
 var gridWidth = 29;
 var gridHeight = 15;
 var sprtHtControl = canvas.width / gridWidth;
@@ -39,8 +44,6 @@ if (window.innerWidth < window.innerHeight)
 }
 
 //determine if the screen is on a mobile devices
-var isMobile = true;
-var canvasBad = false;
 
 var crayonImages = {
 	player: new Image(),
@@ -54,6 +57,79 @@ var crayonImages = {
 };
 crayonImages.run();
 
+var weapon = {
+	x: sprtHtControl * 9,
+	y:  sprtHtControl * 5,
+	width:  sprtHtControl,
+	height:  sprtHtControl,
+	sx:  0,
+	sy:  0,
+	swidth:  50,
+	sheight:  50,
+	exist: true,
+	img: crayonImages.sword,
+	update: function(){
+		if (isCollision(this.x, this.y, this.width, this.height,
+			player.x, player.y, player.width, player.height) == true)
+		{
+			player.sword = true;
+			this.exist = false;
+		}
+		//draw onto the canvas.
+		ctx.drawImage(this.img, this.sx, this.sy, this.swidth, this.sheight, this.x, this.y, this.width, this.height);
+	}		
+}
+
+var sword = {
+	x: 0,
+	y: 0,
+	width:  sprtHtControl,
+	height:  sprtHtControl,
+	sx:  0,
+	sy:  0,
+	swidth:  50,
+	sheight:  50,
+	img: crayonImages.sword,
+	angle: 2.2,
+	update: function(){
+		//the positioning of the sword is dependent on the player's direction.
+		if (dir.lead == "down")
+		{
+			this.angle = 2.2;
+			this.x = player.x - sprtHtControl * .15;
+			this.y = player.y + sprtHtControl * .89;
+		}
+		else if (dir.lead == "up")
+		{
+			this.angle = -1;
+			this.x = player.x + sprtHtControl * 1.2;
+			this.y = player.y + sprtHtControl * .75;
+		}
+		else if (dir.lead == "right")
+		{
+			this.angle = 3.8;
+			this.x = player.x + sprtHtControl * .88;
+			this.y = player.y + sprtHtControl * 1;
+		}
+		else if (dir.lead == "left")
+		{
+			this.angle = -.75;
+			this.x = player.x + sprtHtControl * .38;
+			this.y = player.y + sprtHtControl * .70;
+		}
+		
+		//draw the sword onto the canvas.
+		if (player.sword == true)
+		{
+			ctx.translate(this.x, this.y);
+			ctx.rotate(-this.angle + Math.PI/2.0);
+			ctx.drawImage(this.img, this.sx, this.sy, this.swidth, this.sheight, 0, 0, this.width, this.height);
+			ctx.rotate(this.angle - Math.PI/2.0);
+			ctx.translate(-this.x, -this.y);
+		}
+	}
+};
+
 var Player = function(){
 	this.x = 30;
 	this.y =  30;
@@ -64,17 +140,25 @@ var Player = function(){
 	this.swidth =  50;
 	this.sheight =  50;
 	this.speed =  sprtHtControl * 0.15;
+	this.sword = false;
 	this.attack =  false;
 	this.counter =  0;
-}
-
+};
 
 Player.prototype.update = function(){
 		if (this.attack == true){
 			this.sx += 50;
 			if (this.sx >= 200){
 				this.sx = 0;
-				this.sy = 0;
+				//once attack is complete, return character to original place on sprite map.
+				if (dir.lead == "down")
+					{this.sy = 0;}
+				else if (dir.lead == "up")
+					{this.sy = 50;}
+				else if (dir.lead == "right")
+					{this.sy = 100;}
+				else if (dir.lead == "left")
+					{this.sy = 150;}
 				this.attack = false;
 			}
 		}
@@ -161,7 +245,7 @@ var crayonUI = {
 	draw: function()
 	{
 		ctx.globalAlpha = 0.6;
-		if (isMobile == true)
+		if (crayon.isMobile == true)
 		{
 			ctx.fillStyle = "cyan";
 			//draw joy stick for mobile devices

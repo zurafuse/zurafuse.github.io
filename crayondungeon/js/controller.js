@@ -1,6 +1,6 @@
 //Input
 window.addEventListener('keydown', function(e) {
-		isMobile = false;
+		crayon.isMobile = false;
 		keysDown[e.keyCode] = true;
 		delete keysUp[e.keyCode];
 });
@@ -32,7 +32,7 @@ canvas.addEventListener("touchend", function (e) {
 
 // Get the position of a touch relative to the canvas
 function getTouchPos(canvasDom, touchEvent) {
-	isMobile = true;
+	crayon.isMobile = true;
 	for (i in touchEvent.touches)
 	{
 		var thisXPos = touchEvent.touches[i].clientX;
