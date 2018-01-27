@@ -44,8 +44,8 @@ for (i = 0; i < $(".modBtn").length; i++){
 		}
 		else if ($(this).attr("id") === "mod_crayon")
 		{
-			modHead = "Crayon Dungeon";
-			modBody = "Crayon Dungeon is a role playing video game Engine that I created using javascript. Notice its responsiveness to use on a mobile device.";
+			modHead = "Crayon Adventure";
+			modBody = "Crayon Adventure is a role playing video game Engine that I created using javascript. Notice its responsiveness to use on a mobile device.";
 			modFoot = "LINK: <a href='https://zurafuse.github.io/crayondungeon/' target='_blank' style='color: white'>https://zurafuse.github.io/crayondungeon//</a>";		
 		}
 		else if ($(this).attr("id") === "mod_frogger")
