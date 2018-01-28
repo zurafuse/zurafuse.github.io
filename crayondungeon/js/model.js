@@ -49,10 +49,12 @@ var crayonImages = {
 	player: new Image(),
 	shoot: new Image(),
 	sword: new Image(),
+	rotate: new Image(),
 	run: function(){
 		this.player.src = "images/player.png";
 		this.shoot.src = "images/shoot.png";
 		this.sword.src = "images/sword.png";
+		this.rotate.src = "images/rotate.png";
 	}
 };
 crayonImages.run();
@@ -91,6 +93,7 @@ var sword = {
 	sheight:  50,
 	img: crayonImages.sword,
 	angle: 2.2,
+	counter: 0,
 	update: function(){
 		//the positioning of the sword is dependent on the player's direction.
 		if (dir.lead == "down")
@@ -98,24 +101,66 @@ var sword = {
 			this.angle = 2.2;
 			this.x = player.x - sprtHtControl * .15;
 			this.y = player.y + sprtHtControl * .89;
+			if (player.attack == true)
+			{
+				this.counter++;
+				this.x += sprtHtControl * (this.counter * .02);
+				this.y += sprtHtControl * (this.counter * .02);
+				if (this.counter > 4)
+				{
+					this.counter = 0;
+				}
+			}
 		}
 		else if (dir.lead == "up")
 		{
 			this.angle = -1;
 			this.x = player.x + sprtHtControl * 1.2;
 			this.y = player.y + sprtHtControl * .75;
+			if (player.attack == true)
+			{
+				this.counter++;
+				this.x -= sprtHtControl * (this.counter * .02);
+				this.y -= sprtHtControl * (this.counter * .07);
+				if (this.counter > 4)
+				{
+					this.counter = 0;
+				}
+			}
 		}
 		else if (dir.lead == "right")
 		{
 			this.angle = 3.8;
 			this.x = player.x + sprtHtControl * .88;
 			this.y = player.y + sprtHtControl * 1;
+			if (player.attack == true)
+			{
+				this.angle = 3.175;
+				this.counter++;
+				this.x -= sprtHtControl * .3;
+				this.x += sprtHtControl * (this.counter * .1);
+				if (this.counter > 4)
+				{
+					this.counter = 0;
+				}
+			}
 		}
 		else if (dir.lead == "left")
 		{
 			this.angle = -.75;
 			this.x = player.x + sprtHtControl * .38;
 			this.y = player.y + sprtHtControl * .70;
+			if (player.attack == true)
+			{
+				this.angle = 0;
+				this.counter++;
+				this.x -= sprtHtControl * (this.counter * .05);
+				this.y = this.y +- sprtHtControl * .2;
+				if (this.counter > 4)
+				{
+					this.counter = 0;
+				}
+			}
 		}
 		
 		//draw the sword onto the canvas.

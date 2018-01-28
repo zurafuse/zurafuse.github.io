@@ -1,5 +1,12 @@
-var keysUp = [];
-var keysDown = [];
+var showers = [];
+var toilets = [];
+var chickens = [];
+var blocks = [];
+
+var myMusic = new Audio("sound/music.mp3");
+myMusic.loop = true;
+//myMusic.play();
+
 
 var isCollision = function(x, y, width, height, x2, y2, width2, height2){
 	if (x + width > x2 && x < x2 + width2 && y < y2 + height2 && y + height > y2)
