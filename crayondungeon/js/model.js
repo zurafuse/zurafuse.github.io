@@ -120,9 +120,10 @@ var sword = {
 				this.angle = 1.9;
 				this.counter++;
 				this.x += sprtHtControl * (this.counter * .02);
-				this.y += (sprtHtControl - 2) * (this.counter * .04);
-				if (this.counter > 4)
+				this.y += sprtHtControl * 0.02;
+				if ((this.y + this.height) - (player.y + player.height) > sprtHtControl * .75)
 				{
+					this.y = player.y + sprtHtControl * .89;
 					this.counter = 0;
 				}
 			}
