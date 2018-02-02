@@ -121,7 +121,7 @@ var sword = {
 				this.counter++;
 				this.x += sprtHtControl * (this.counter * .02);
 				this.y += sprtHtControl * 0.02;
-				if ((this.y + this.height) - (player.y + player.height) > sprtHtControl * .75)
+				if ((this.y + this.height) - (player.y + player.height) > sprtHtControl * 2)
 				{
 					this.y = player.y + sprtHtControl * .89;
 					this.counter = 0;
