@@ -2,6 +2,7 @@ var showers = [];
 var toilets = [];
 var chickens = [];
 var blocks = [];
+var backgrounds = [];
 
 var myMusic = new Audio("sound/music.mp3");
 myMusic.loop = true;
@@ -62,3 +63,11 @@ var updateControls = function(e){
 		dir.fire = false;
 	}
 };
+
+var drawBlocks = function(){
+	for (i in blocks)
+	{
+		ctx.drawImage(blocks[i].img, blocks[i].sx, blocks[i].sy, blocks[i].swidth, blocks[i].sheight, blocks[i].x, blocks[i].y, blocks[i].width, blocks[i].height);
+	}
+};
+

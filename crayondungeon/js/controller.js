@@ -72,7 +72,6 @@ function getTouchPos(canvasDom, touchEvent) {
 }
 
 function endTouchPos(canvasDom, touchEvent) {
-	console.log("touchend");
 	for (i in touchEvent.changedTouches)
 	{	
 		var thisXPos = touchEvent.changedTouches[i].clientX;

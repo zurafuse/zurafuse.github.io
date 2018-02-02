@@ -3,6 +3,7 @@ function update(){
 	{
 		ctx.clearRect(0, 0, canvas.width, canvas.height);
 		updateControls(keysDown);
+		drawBlocks();
 		if (weapon.exist == true && room == 0){weapon.update()}
 		if (dir.lead != "down"){sword.update();};
 		player.update();

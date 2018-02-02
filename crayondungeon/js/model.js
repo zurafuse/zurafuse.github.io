@@ -50,14 +50,28 @@ var crayonImages = {
 	shoot: new Image(),
 	sword: new Image(),
 	rotate: new Image(),
+	backgrounds: new Image(),
 	run: function(){
 		this.player.src = "images/player.png";
 		this.shoot.src = "images/shoot.png";
 		this.sword.src = "images/sword.png";
 		this.rotate.src = "images/rotate.png";
+		this.backgrounds.src = "images/object_tile.png";
 	}
 };
 crayonImages.run();
+
+var blockClass = function(img, sx, sy, swidth, sheight, x, y, width, height){
+	this.img = img;
+	this.sx = sx;
+	this.sy = sy;
+	this.swidth = swidth;
+	this.sheight = sheight;
+	this.x = x * sprtHtControl;
+	this.y = y * sprtHtControl;
+	this.width = width;
+	this.height = height;
+};
 
 var weapon = {
 	x: sprtHtControl * 9,
@@ -214,25 +228,75 @@ Player.prototype.update = function(){
 			this.counter = 0;
 		}
 		//determine movement based on key pressed
+		var thisCollision = false;
+		//right
 		if(dir.right == true)
 		{
 			this.sy = 100;
-			this.x+= this.speed;
+			for (i in blocks)
+			{
+				if (isCollision(this.x + 1, this.y, this.width, this.height, blocks[i].x, blocks[i].y,
+					blocks[i].width, blocks[i].height) == true)
+				{
+					thisCollision = true;
+				}
+			}
+			if (thisCollision == false)
+			{
+				this.x+= this.speed;
+			}
 		}
+		//left
 		if(dir.left == true)
 		{
 			this.sy = 150;
-			this.x-= this.speed;
+			for (i in blocks)
+			{
+				if (isCollision(this.x - 4, this.y, this.width, this.height, blocks[i].x, blocks[i].y,
+					blocks[i].width, blocks[i].height) == true)
+				{
+					thisCollision = true;
+				}
+			}
+			if (thisCollision == false)
+			{
+				this.x-= this.speed;
+			}
 		}
+		//up
 		if(dir.up == true)
 		{
 			this.sy = 50;
-			this.y-= this.speed;
-		}	
+			this.sy = 150;
+			for (i in blocks)
+			{
+				if (isCollision(this.x, this.y, this.width, this.height, blocks[i].x, blocks[i].y,
+					blocks[i].width, blocks[i].height + 4) == true)
+				{
+					thisCollision = true;
+				}
+			}
+			if (thisCollision == false)
+			{
+				this.y-= this.speed;
+			}
+		}
+		//down
 		if(dir.down == true)
 		{
 			this.sy = 0;
-			this.y+= this.speed;
+			for (i in blocks)
+			{
+				if (isCollision(this.x, this.y + 1, this.width, this.height, blocks[i].x, blocks[i].y,
+					blocks[i].width, blocks[i].height) == true)
+				{
+					thisCollision = true;
+				}
+			}
+			if (thisCollision == false)
+			{
+				this.y+= this.speed;
+			}
 		}	
 		if(dir.fire == true)
 		{
