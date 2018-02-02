@@ -121,7 +121,7 @@ var sword = {
 				this.angle = 1.9;
 				this.counter++;
 				this.x += sprtHtControl * (this.counter * .02);
-				this.y += extend;
+				this.y += this.extend;
 				if ((this.y + this.height) > player.y + player.height + (sprtHtControl * 2))
 				{
 					this.y = player.y + sprtHtControl * .89;
@@ -129,7 +129,7 @@ var sword = {
 				}
 				else
 				{
-					extend += sprtHtControl * .05;	
+					this.extend += sprtHtControl * .05;	
 				}
 			}
 		}
