@@ -145,16 +145,10 @@ var sword = {
 			{
 				this.counter++;
 				this.x -= sprtHtControl * (this.counter * .02);
-				this.y -= this.extend;
-				if (this.y + (this.range * .5) < player.y)
+				this.y -= sprtHtControl * (this.counter * .02);
+				if (counter > 4)
 				{
-					this.y = player.y - sprtHtControl * .89;
-					this.extend = 0;
 					this.counter = 0;
-				}
-				else
-				{
-					this.extend += sprtHtControl * .1;	
 				}
 			}
 		}
