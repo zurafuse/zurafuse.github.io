@@ -146,7 +146,7 @@ var sword = {
 				this.counter++;
 				this.x -= sprtHtControl * (this.counter * .02);
 				this.y -= this.extend;
-				if (this.y - this.range < player.y)
+				if (this.y + this.range < player.y)
 				{
 					this.y = player.y - sprtHtControl * .89;
 					this.extend = 0;
