@@ -21,13 +21,9 @@ window.addEventListener("touchstart", function (e) {
   canvas.dispatchEvent(mouseEvent);
 }, false);
 canvas.addEventListener("touchend", function (e) {
+  mousePos = endTouchPos(canvas, e);
   var mouseEvent = new MouseEvent("mouseup", {});
   canvas.dispatchEvent(mouseEvent);
-  	delete keysDown[38];
-  	delete keysDown[39];
-  	delete keysDown[40];
-  	delete keysDown[37];
-  	delete keysDown[32];
 }, false);
 
 // Get the position of a touch relative to the canvas
@@ -76,6 +72,7 @@ function getTouchPos(canvasDom, touchEvent) {
 }
 
 function endTouchPos(canvasDom, touchEvent) {
+	console.log("touchend");
 	for (i in touchEvent.changedTouches)
 	{	
 		var thisXPos = touchEvent.changedTouches[i].clientX;
