@@ -146,7 +146,7 @@ var sword = {
 				this.counter++;
 				this.x -= sprtHtControl * (this.counter * .02);
 				this.y -= sprtHtControl * (this.counter * .02);
-				if (counter > 4)
+				if (this.counter > 4)
 				{
 					this.counter = 0;
 				}
