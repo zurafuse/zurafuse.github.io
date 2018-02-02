@@ -118,6 +118,7 @@ var sword = {
 			this.y = player.y + sprtHtControl * .89;
 			if (player.attack == true)
 			{
+				this.y = player.y + sprtHtControl * .39; 
 				this.angle = 1.9;
 				this.counter++;
 				this.x += sprtHtControl * (this.counter * .02);
