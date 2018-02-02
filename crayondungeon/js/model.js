@@ -122,7 +122,7 @@ var sword = {
 				this.counter++;
 				this.x += sprtHtControl * (this.counter * .02);
 				this.y += this.extend;
-				if ((this.y + this.height) > player.y + player.height + (sprtHtControl * 2))
+				if ((this.y + this.height) > player.y + player.height + (sprtHtControl * .75))
 				{
 					this.y = player.y + sprtHtControl * .89;
 					this.extend = 0;
@@ -130,7 +130,7 @@ var sword = {
 				}
 				else
 				{
-					this.extend += sprtHtControl * .2;	
+					this.extend += sprtHtControl * .1;	
 				}
 			}
 		}
