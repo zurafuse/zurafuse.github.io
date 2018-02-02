@@ -125,11 +125,12 @@ var sword = {
 				if ((this.y + this.height) > player.y + player.height + (sprtHtControl * 2))
 				{
 					this.y = player.y + sprtHtControl * .89;
+					this.extend = 0;
 					this.counter = 0;
 				}
 				else
 				{
-					this.extend += sprtHtControl * .05;	
+					this.extend += sprtHtControl * .2;	
 				}
 			}
 		}
