@@ -25,6 +25,7 @@ window.addEventListener("touchstart", function (e) {
   canvas.dispatchEvent(mouseEvent);
 }, false);
 canvas.addEventListener("touchend", function (e) {
+	mousePos = endTouchPos(canvas, e);
   var mouseEvent = new MouseEvent("mouseup", {});
   canvas.dispatchEvent(mouseEvent);
   	delete keysDown[38];
