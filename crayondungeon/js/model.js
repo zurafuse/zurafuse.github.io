@@ -117,9 +117,10 @@ var sword = {
 			this.y = player.y + sprtHtControl * .89;
 			if (player.attack == true)
 			{
+				this.angle = 1.9;
 				this.counter++;
 				this.x += sprtHtControl * (this.counter * .02);
-				this.y += sprtHtControl * (this.counter * .02);
+				this.y += (sprtHtControl - 2) * (this.counter * .04);
 				if (this.counter > 4)
 				{
 					this.counter = 0;
@@ -235,7 +236,7 @@ Player.prototype.update = function(){
 			this.sy = 100;
 			for (i in blocks)
 			{
-				if (isCollision(this.x + 1, this.y, this.width, this.height, blocks[i].x, blocks[i].y,
+				if (isCollision(this.x + this.speed, this.y, this.width, this.height, blocks[i].x, blocks[i].y,
 					blocks[i].width, blocks[i].height) == true)
 				{
 					thisCollision = true;
@@ -252,7 +253,7 @@ Player.prototype.update = function(){
 			this.sy = 150;
 			for (i in blocks)
 			{
-				if (isCollision(this.x - 4, this.y, this.width, this.height, blocks[i].x, blocks[i].y,
+				if (isCollision(this.x - this.speed, this.y, this.width, this.height, blocks[i].x, blocks[i].y,
 					blocks[i].width, blocks[i].height) == true)
 				{
 					thisCollision = true;
@@ -267,11 +268,10 @@ Player.prototype.update = function(){
 		if(dir.up == true)
 		{
 			this.sy = 50;
-			this.sy = 150;
 			for (i in blocks)
 			{
 				if (isCollision(this.x, this.y, this.width, this.height, blocks[i].x, blocks[i].y,
-					blocks[i].width, blocks[i].height + 4) == true)
+					blocks[i].width, blocks[i].height + this.speed) == true)
 				{
 					thisCollision = true;
 				}
@@ -287,7 +287,7 @@ Player.prototype.update = function(){
 			this.sy = 0;
 			for (i in blocks)
 			{
-				if (isCollision(this.x, this.y + 1, this.width, this.height, blocks[i].x, blocks[i].y,
+				if (isCollision(this.x, this.y + this.speed, this.width, this.height, blocks[i].x, blocks[i].y,
 					blocks[i].width, blocks[i].height) == true)
 				{
 					thisCollision = true;
