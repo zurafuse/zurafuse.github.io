@@ -20,24 +20,19 @@ function populate(room){
 		//grass
 		for (i = 0; i < gridWidth; i++)
 		{
-			for (j = 0; j < gridHeight; j++)
-			{
-				console.log(i * sprtHtControl);
-				console.log(j * sprtHtControl);
-				backgrounds.push(new blockClass(crayonImages.backgrounds, 0, 100, 100, 100, i, j, sprtHtControl, sprtHtControl));
-			}
+			//for (j = 0; j < gridHeight; j++)
+			//{
+				console.log((i * sprtHtControl) + ", " + (0 *sprtHtControl));
+				backgrounds.push(new blockClass(crayonImages.backgrounds, 0, 100, 100, 100, i, 0, sprtHtControl, sprtHtControl));
+			//}
 		}
 		//road
 		for (i = 0; i < 20; i++)
 		{
-				console.log(i * sprtHtControl);
-				console.log(j * sprtHtControl);
 				backgrounds.push(new blockClass(crayonImages.backgrounds, 200, 0, 100, 100, i, 2, sprtHtControl, sprtHtControl));
 		}
 		for (i = 2; i < 20; i++)
 		{
-				console.log(i * sprtHtControl);
-				console.log(j * sprtHtControl);
 				backgrounds.push(new blockClass(crayonImages.backgrounds, 200, 0, 100, 100, 20, i, sprtHtControl, sprtHtControl));
 		}				
 	}
