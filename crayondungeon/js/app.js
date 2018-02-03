@@ -71,3 +71,10 @@ var drawBlocks = function(){
 	}
 };
 
+var drawBackgrounds = function(){
+	for (i in backgrounds)
+	{
+		ctx.drawImage(backgrounds[i].img, backgrounds[i].sx, backgrounds[i].sy, backgrounds[i].swidth, backgrounds[i].sheight, backgrounds[i].x.toFixed(0), backgrounds[i].y.toFixed(0), backgrounds[i].width, backgrounds[i].height);
+	}
+};
+

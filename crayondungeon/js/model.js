@@ -49,19 +49,21 @@ var crayonImages = {
 	player: new Image(),
 	shoot: new Image(),
 	sword: new Image(),
+	hammer: new Image(),
 	rotate: new Image(),
 	backgrounds: new Image(),
 	run: function(){
 		this.player.src = "images/player.png";
 		this.shoot.src = "images/shoot.png";
 		this.sword.src = "images/sword.png";
+		this.hammer.src = "images/hammer.png";
 		this.rotate.src = "images/rotate.png";
 		this.backgrounds.src = "images/object_tile.png";
 	}
 };
 crayonImages.run();
 
-var blockClass = function(img, sx, sy, swidth, sheight, x, y, width, height){
+var blockClass = function(img, sx, sy, swidth, sheight, x, y, width, height, isRock){
 	this.img = img;
 	this.sx = sx;
 	this.sy = sy;
@@ -71,6 +73,7 @@ var blockClass = function(img, sx, sy, swidth, sheight, x, y, width, height){
 	this.y = y * sprtHtControl;
 	this.width = width;
 	this.height = height;
+	this.isRock = isRock;
 };
 
 var weapon = {
@@ -96,6 +99,29 @@ var weapon = {
 	}		
 }
 
+var hammer = {
+	x: sprtHtControl * 12,
+	y:  sprtHtControl * 8,
+	width:  sprtHtControl,
+	height:  sprtHtControl,
+	sx:  0,
+	sy:  0,
+	swidth:  50,
+	sheight:  50,
+	exist: true,
+	img: crayonImages.hammer,
+	update: function(){
+		if (isCollision(this.x, this.y, this.width, this.height,
+			player.x, player.y, player.width, player.height) == true)
+		{
+			player.hammer = true;
+			this.exist = false;
+		}
+		//draw onto the canvas.
+		ctx.drawImage(this.img, this.sx, this.sy, this.swidth, this.sheight, this.x, this.y, this.width, this.height);
+	}		
+}
+
 var sword = {
 	x: 0,
 	y: 0,
@@ -107,9 +133,8 @@ var sword = {
 	sheight:  50,
 	img: crayonImages.sword,
 	angle: 2.2,
-	range: sprtHtControl * .75,
 	counter: 0,
-	extend: 0,
+	range: sprtHtControl * .75,
 	update: function(){
 		//the positioning of the sword is dependent on the player's direction.
 		if (dir.lead == "down")
@@ -123,11 +148,10 @@ var sword = {
 				this.angle = 1.9;
 				this.counter++;
 				this.x += sprtHtControl * (this.counter * .02);
-				this.y += this.extend;
-				if ((this.y + this.height) > player.y + player.height + this.range)
+				this.y += sprtHtControl * .15;
+				if (this.counter > 4)
 				{
 					this.y = player.y + sprtHtControl * .89;
-					this.extend = 0;
 					this.counter = 0;
 				}
 				else
@@ -145,7 +169,7 @@ var sword = {
 			{
 				this.counter++;
 				this.x -= sprtHtControl * (this.counter * .02);
-				this.y -= sprtHtControl * (this.counter * .02);
+				this.y -= sprtHtControl * (this.counter * .13);
 				if (this.counter > 4)
 				{
 					this.counter = 0;
@@ -210,6 +234,7 @@ var Player = function(){
 	this.sheight =  50;
 	this.speed =  sprtHtControl * 0.15;
 	this.sword = false;
+	this.hammer = false;
 	this.attack =  false;
 	this.counter =  0;
 };
@@ -249,6 +274,10 @@ Player.prototype.update = function(){
 					blocks[i].width, blocks[i].height) == true)
 				{
 					thisCollision = true;
+					if (blocks[i].isRock && player.hammer == true)
+					{
+						blocks.splice(i,1);
+					}
 				}
 			}
 			if (thisCollision == false)
@@ -266,6 +295,10 @@ Player.prototype.update = function(){
 					blocks[i].width, blocks[i].height) == true)
 				{
 					thisCollision = true;
+					if (blocks[i].isRock && player.hammer == true)
+					{
+						blocks.splice(i,1);
+					}
 				}
 			}
 			if (thisCollision == false)
@@ -283,6 +316,10 @@ Player.prototype.update = function(){
 					blocks[i].width, blocks[i].height + this.speed) == true)
 				{
 					thisCollision = true;
+					if (blocks[i].isRock && player.hammer == true)
+					{
+						blocks.splice(i,1);
+					}
 				}
 			}
 			if (thisCollision == false)
@@ -300,6 +337,10 @@ Player.prototype.update = function(){
 					blocks[i].width, blocks[i].height) == true)
 				{
 					thisCollision = true;
+					if (blocks[i].isRock && player.hammer == true)
+					{
+						blocks.splice(i,1);
+					}
 				}
 			}
 			if (thisCollision == false)
