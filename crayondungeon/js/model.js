@@ -52,6 +52,7 @@ var crayonImages = {
 	hammer: new Image(),
 	rotate: new Image(),
 	backgrounds: new Image(),
+	grass: new Image(),
 	run: function(){
 		this.player.src = "images/player.png";
 		this.shoot.src = "images/shoot.png";
@@ -59,6 +60,7 @@ var crayonImages = {
 		this.hammer.src = "images/hammer.png";
 		this.rotate.src = "images/rotate.png";
 		this.backgrounds.src = "images/object_tile.png";
+		this.grass.src = "images/grass.png";
 	}
 };
 crayonImages.run();

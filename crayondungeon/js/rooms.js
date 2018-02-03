@@ -18,22 +18,15 @@ function populate(room){
 		blocks.push(new blockClass(crayonImages.backgrounds, 100, 0, 100, 100, 7, 9, sprtHtControl, sprtHtControl, false));
 		blocks.push(new blockClass(crayonImages.backgrounds, 100, 0, 100, 100, 7, 12, sprtHtControl, sprtHtControl, false));
 		//grass
-		for (i = 0; i < gridWidth; i++)
-		{
-			//for (j = 0; j < gridHeight; j++)
-			//{
-				console.log((i * sprtHtControl) + ", " + (0 *sprtHtControl));
-				backgrounds.push(new blockClass(crayonImages.backgrounds, 0, 100, 100, 100, i, 0, sprtHtControl, sprtHtControl));
-			//}
-		}
+		backgrounds.push(new blockClass(crayonImages.grass, 0, 0, 400, 300, 0, 0, gridWidth * sprtHtControl, gridHeight * sprtHtControl, false));
 		//road
 		for (i = 0; i < 20; i++)
 		{
-				backgrounds.push(new blockClass(crayonImages.backgrounds, 200, 0, 100, 100, i, 2, sprtHtControl, sprtHtControl));
+				backgrounds.push(new blockClass(crayonImages.backgrounds, 200, 0, 100, 100, i, 2, sprtHtControl, sprtHtControl, false));
 		}
 		for (i = 2; i < 20; i++)
 		{
-				backgrounds.push(new blockClass(crayonImages.backgrounds, 200, 0, 100, 100, 20, i, sprtHtControl, sprtHtControl));
+				backgrounds.push(new blockClass(crayonImages.backgrounds, 200, 0, 100, 100, 20, i, sprtHtControl, sprtHtControl, false));
 		}				
 	}
 }
