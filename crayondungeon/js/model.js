@@ -26,7 +26,7 @@ var dir = {
 	fire: false,
 	lead: "down"
 }
-
+//determine if the screen is on a mobile devices
 var crayon = {
 	isMobile: true,
 	canvasBad: false
@@ -43,13 +43,13 @@ if (window.innerWidth < window.innerHeight)
 	canvas.height = canvas.height * 2;
 }
 
-//determine if the screen is on a mobile devices
-
 var crayonImages = {
 	player: new Image(),
 	shoot: new Image(),
 	sword: new Image(),
 	hammer: new Image(),
+	key: new Image(),
+	boat: new Image(),
 	rotate: new Image(),
 	backgrounds: new Image(),
 	grass: new Image(),
@@ -58,6 +58,8 @@ var crayonImages = {
 		this.shoot.src = "images/shoot.png";
 		this.sword.src = "images/sword.png";
 		this.hammer.src = "images/hammer.png";
+		this.key.src = "images/key.png";
+		this.boat.src = "images/boat.png";
 		this.rotate.src = "images/rotate.png";
 		this.backgrounds.src = "images/object_tile.png";
 		this.grass.src = "images/grass.png";
@@ -65,7 +67,7 @@ var crayonImages = {
 };
 crayonImages.run();
 
-var blockClass = function(img, sx, sy, swidth, sheight, x, y, width, height, isRock){
+var blockClass = function(img, sx, sy, swidth, sheight, x, y, width, height, type){
 	this.img = img;
 	this.sx = sx;
 	this.sy = sy;
@@ -75,7 +77,7 @@ var blockClass = function(img, sx, sy, swidth, sheight, x, y, width, height, isR
 	this.y = y * sprtHtControl;
 	this.width = width;
 	this.height = height;
-	this.isRock = isRock;
+	this.type = type;
 };
 
 var weapon = {
@@ -108,8 +110,8 @@ var hammer = {
 	height:  sprtHtControl,
 	sx:  0,
 	sy:  0,
-	swidth:  50,
-	sheight:  50,
+	swidth:  45,
+	sheight:  60,
 	exist: true,
 	img: crayonImages.hammer,
 	update: function(){
@@ -122,7 +124,53 @@ var hammer = {
 		//draw onto the canvas.
 		ctx.drawImage(this.img, this.sx, this.sy, this.swidth, this.sheight, this.x, this.y, this.width, this.height);
 	}		
-}
+};
+
+var key = {
+	x: sprtHtControl * 12,
+	y:  sprtHtControl * 7,
+	width:  sprtHtControl,
+	height:  sprtHtControl * .6,
+	sx:  0,
+	sy:  0,
+	swidth:  87,
+	sheight:  38,
+	exist: true,
+	img: crayonImages.key,
+	update: function(){
+		if (isCollision(this.x, this.y, this.width, this.height,
+			player.x, player.y, player.width, player.height) == true)
+		{
+			player.key = true;
+			this.exist = false;
+		}
+		//draw onto the canvas.
+		ctx.drawImage(this.img, this.sx, this.sy, this.swidth, this.sheight, this.x, this.y, this.width, this.height);
+	}		
+};
+
+var boat = {
+	x: sprtHtControl * 3,
+	y:  sprtHtControl * 3,
+	width:  sprtHtControl,
+	height:  sprtHtControl,
+	sx:  0,
+	sy:  0,
+	swidth:  87,
+	sheight:  60,
+	exist: true,
+	img: crayonImages.boat,
+	update: function(){
+		if (isCollision(this.x, this.y, this.width, this.height,
+			player.x, player.y, player.width, player.height) == true)
+		{
+			player.boat = true;
+			this.exist = false;
+		}
+		//draw onto the canvas.
+		ctx.drawImage(this.img, this.sx, this.sy, this.swidth, this.sheight, this.x, this.y, this.width, this.height);
+	}		
+};
 
 var sword = {
 	x: 0,
@@ -237,6 +285,7 @@ var Player = function(){
 	this.speed =  sprtHtControl * 0.15;
 	this.sword = false;
 	this.hammer = false;
+	this.key = false;
 	this.attack =  false;
 	this.counter =  0;
 };
@@ -276,9 +325,17 @@ Player.prototype.update = function(){
 					blocks[i].width, blocks[i].height) == true)
 				{
 					thisCollision = true;
-					if (blocks[i].isRock && player.hammer == true)
+					if (blocks[i].type == "rock" && player.hammer == true)
 					{
 						blocks.splice(i,1);
+					}
+					if (blocks[i].type == "lock" && player.key == true)
+					{
+						blocks.splice(i,1);
+					}
+					if (blocks[i].type == "water" && player.boat == true)
+					{
+						thisCollision = false;
 					}
 				}
 			}
@@ -297,9 +354,17 @@ Player.prototype.update = function(){
 					blocks[i].width, blocks[i].height) == true)
 				{
 					thisCollision = true;
-					if (blocks[i].isRock && player.hammer == true)
+					if (blocks[i].type == "rock" && player.hammer == true)
 					{
 						blocks.splice(i,1);
+					}
+					if (blocks[i].type == "lock" && player.key == true)
+					{
+						blocks.splice(i,1);
+					}
+					if (blocks[i].type == "water" && player.boat == true)
+					{
+						thisCollision = false;
 					}
 				}
 			}
@@ -318,9 +383,17 @@ Player.prototype.update = function(){
 					blocks[i].width, blocks[i].height + this.speed) == true)
 				{
 					thisCollision = true;
-					if (blocks[i].isRock && player.hammer == true)
+					if (blocks[i].type == "rock" && player.hammer == true)
 					{
 						blocks.splice(i,1);
+					}
+					if (blocks[i].type == "lock" && player.key == true)
+					{
+						blocks.splice(i,1);
+					}
+					if (blocks[i].type == "water" && player.boat == true)
+					{
+						thisCollision = false;
 					}
 				}
 			}
@@ -339,9 +412,17 @@ Player.prototype.update = function(){
 					blocks[i].width, blocks[i].height) == true)
 				{
 					thisCollision = true;
-					if (blocks[i].isRock && player.hammer == true)
+					if (blocks[i].type == "rock" && player.hammer == true)
 					{
 						blocks.splice(i,1);
+					}
+					if (blocks[i].type == "lock" && player.key == true)
+					{
+						blocks.splice(i,1);
+					}
+					if (blocks[i].type == "water" && player.boat == true)
+					{
+						thisCollision = false;
 					}
 				}
 			}

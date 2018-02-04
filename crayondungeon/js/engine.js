@@ -7,6 +7,8 @@ function update(){
 		drawBlocks();
 		if (weapon.exist == true && room == 0){weapon.update()}
 		if (hammer.exist == true && room == 0){hammer.update()}
+		if (boat.exist == true && room == 0){boat.update()}
+		if (key.exist == true && room == 0){key.update()}
 		if (dir.lead != "down"){sword.update();};
 		player.update();
 		if (dir.lead == "down"){sword.update();}
