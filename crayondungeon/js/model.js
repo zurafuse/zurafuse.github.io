@@ -314,7 +314,10 @@ Player.prototype.update = function(){
 			this.counter = 0;
 		}
 		//determine movement based on key pressed
-		var thisCollision = false;
+		var rightCollision = false;
+		var leftCollision = false;
+		var upCollision = false;
+		var downCollision = false;
 		//right
 		if(dir.right == true)
 		{
@@ -324,22 +327,22 @@ Player.prototype.update = function(){
 				if (isCollision(this.x + this.speed, this.y, this.width, this.height, blocks[i].x, blocks[i].y,
 					blocks[i].width, blocks[i].height) == true)
 				{
-					thisCollision = true;
+					rightCollision = true;
 					if (blocks[i].type == "rock" && player.hammer == true)
 					{
 						blocks.splice(i,1);
 					}
-					if (blocks[i].type == "lock" && player.key == true)
+					else if (blocks[i].type == "lock" && player.key == true)
 					{
 						blocks.splice(i,1);
 					}
-					if (blocks[i].type == "water" && player.boat == true)
+					else if (blocks[i].type == "water" && player.boat == true)
 					{
-						thisCollision = false;
+						rightCollision = false;
 					}
 				}
 			}
-			if (thisCollision == false)
+			if (rightCollision == false)
 			{
 				this.x+= this.speed;
 			}
@@ -353,22 +356,22 @@ Player.prototype.update = function(){
 				if (isCollision(this.x - this.speed, this.y, this.width, this.height, blocks[i].x, blocks[i].y,
 					blocks[i].width, blocks[i].height) == true)
 				{
-					thisCollision = true;
+					leftCollision = true;
 					if (blocks[i].type == "rock" && player.hammer == true)
 					{
 						blocks.splice(i,1);
 					}
-					if (blocks[i].type == "lock" && player.key == true)
+					else if (blocks[i].type == "lock" && player.key == true)
 					{
 						blocks.splice(i,1);
 					}
-					if (blocks[i].type == "water" && player.boat == true)
+					else if (blocks[i].type == "water" && player.boat == true)
 					{
-						thisCollision = false;
+						leftCollision = false;
 					}
 				}
 			}
-			if (thisCollision == false)
+			if (leftCollision == false)
 			{
 				this.x-= this.speed;
 			}
@@ -382,22 +385,22 @@ Player.prototype.update = function(){
 				if (isCollision(this.x, this.y, this.width, this.height, blocks[i].x, blocks[i].y,
 					blocks[i].width, blocks[i].height + this.speed) == true)
 				{
-					thisCollision = true;
+					upCollision = true;
 					if (blocks[i].type == "rock" && player.hammer == true)
 					{
 						blocks.splice(i,1);
 					}
-					if (blocks[i].type == "lock" && player.key == true)
+					else if (blocks[i].type == "lock" && player.key == true)
 					{
 						blocks.splice(i,1);
 					}
-					if (blocks[i].type == "water" && player.boat == true)
+					else if (blocks[i].type == "water" && player.boat == true)
 					{
-						thisCollision = false;
+						upCollision = false;
 					}
 				}
 			}
-			if (thisCollision == false)
+			if (upCollision == false)
 			{
 				this.y-= this.speed;
 			}
@@ -411,22 +414,22 @@ Player.prototype.update = function(){
 				if (isCollision(this.x, this.y + this.speed, this.width, this.height, blocks[i].x, blocks[i].y,
 					blocks[i].width, blocks[i].height) == true)
 				{
-					thisCollision = true;
+					downCollision = true;
 					if (blocks[i].type == "rock" && player.hammer == true)
 					{
 						blocks.splice(i,1);
 					}
-					if (blocks[i].type == "lock" && player.key == true)
+					else if (blocks[i].type == "lock" && player.key == true)
 					{
 						blocks.splice(i,1);
 					}
-					if (blocks[i].type == "water" && player.boat == true)
+					else if (blocks[i].type == "water" && player.boat == true)
 					{
-						thisCollision = false;
+						downCollision = false;
 					}
 				}
 			}
-			if (thisCollision == false)
+			if (downCollision == false)
 			{
 				this.y+= this.speed;
 			}
