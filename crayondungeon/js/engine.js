@@ -5,10 +5,10 @@ function update(){
 		updateControls(keysDown);
 		drawBackgrounds();
 		drawBlocks();
-		if (weapon.exist == true && room == 0){weapon.update()}
-		if (hammer.exist == true && room == 0){hammer.update()}
-		if (boat.exist == true && room == 0){boat.update()}
-		if (key.exist == true && room == 0){key.update()}
+		if (weapon.exist == true && room == 3){weapon.update()}
+		if (hammer.exist == true && room == 3){hammer.update()}
+		if (boat.exist == true && room == 3){boat.update()}
+		if (key.exist == true && room == 3){key.update()}
 		if (dir.lead != "down"){sword.update();};
 		player.update();
 		if (dir.lead == "down"){sword.update();}

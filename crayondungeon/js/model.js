@@ -291,6 +291,35 @@ var Player = function(){
 };
 
 Player.prototype.update = function(){
+		//if player goes off screen, go to another room
+		//go up one room
+		if (this.y < 0 - (sprtHtControl * .5))
+		{
+			this.y = sprtHtControl * (gridHeight - .5);
+			room = room + 10;
+			populate(room);
+		}
+		//go down one room
+		if (this.y > sprtHtControl * gridHeight)
+		{
+			this.y = 0 - (gridHeight * .3);
+			room = room - 10;
+			populate(room);
+		}
+		//go left one room
+		if (this.x < 0 - (sprtHtControl * .5))
+		{
+			this.x = gridWidth * (sprtHtControl - .5);
+			room = room - 1;
+			populate(room);
+		}
+		//go right one room
+		if (this.x > sprtHtControl * gridWidth)
+		{
+			this.x = 0 - (gridHeight * .3);
+			room = room + 1;
+			populate(room);
+		}
 		if (this.attack == true){
 			this.sx += 50;
 			if (this.sx >= 200){
