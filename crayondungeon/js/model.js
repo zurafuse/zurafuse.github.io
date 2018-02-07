@@ -50,9 +50,11 @@ var crayonImages = {
 	hammer: new Image(),
 	key: new Image(),
 	boat: new Image(),
+	plunger: new Image(),
 	rotate: new Image(),
 	backgrounds: new Image(),
 	grass: new Image(),
+	supertoilet: new Image(),
 	run: function(){
 		this.player.src = "images/player.png";
 		this.shoot.src = "images/shoot.png";
@@ -60,9 +62,11 @@ var crayonImages = {
 		this.hammer.src = "images/hammer.png";
 		this.key.src = "images/key.png";
 		this.boat.src = "images/boat.png";
+		this.plunger.src = "images/plunger.png";
 		this.rotate.src = "images/rotate.png";
 		this.backgrounds.src = "images/object_tile.png";
 		this.grass.src = "images/grass.png";
+		this.supertoilet.src = "images/supertoilet.png";
 	}
 };
 crayonImages.run();
@@ -80,11 +84,40 @@ var blockClass = function(img, sx, sy, swidth, sheight, x, y, width, height, typ
 	this.type = type;
 };
 
+var superToilet = {
+	x: sprtHtControl * 3,
+	y:  sprtHtControl * 3,
+	width:  sprtHtControl * 2.5,
+	height:  sprtHtControl * 2.5,
+	sx:  0,
+	sy:  0,
+	swidth:  150,
+	sheight:  150,
+	exist: true,
+	img: crayonImages.supertoilet,
+	update: function(){
+		if (isCollision(this.x, this.y, this.width, this.height,
+			player.x, player.y, player.width, player.height) == true)
+		{
+			if (player.plunger == true)
+			{
+				this.exist = false;
+			}
+			else
+			{
+				//decrease health etc
+			}
+		}
+		//draw onto the canvas.
+		ctx.drawImage(this.img, this.sx, this.sy, this.swidth, this.sheight, this.x, this.y, this.width, this.height);
+	}		
+}
+
 var weapon = {
 	x: sprtHtControl * 9,
 	y:  sprtHtControl * 5,
-	width:  sprtHtControl,
-	height:  sprtHtControl,
+	width:  sprtHtControl * 1.4,
+	height:  sprtHtControl * 1.4,
 	sx:  0,
 	sy:  0,
 	swidth:  50,
@@ -149,11 +182,34 @@ var key = {
 	}		
 };
 
+var plunger = {
+	x: sprtHtControl * 12,
+	y:  sprtHtControl * 8,
+	width:  sprtHtControl,
+	height:  sprtHtControl,
+	sx:  0,
+	sy:  0,
+	swidth:  45,
+	sheight:  60,
+	exist: true,
+	img: crayonImages.plunger,
+	update: function(){
+		if (isCollision(this.x, this.y, this.width, this.height,
+			player.x, player.y, player.width, player.height) == true)
+		{
+			player.plunger = true;
+			this.exist = false;
+		}
+		//draw onto the canvas.
+		ctx.drawImage(this.img, this.sx, this.sy, this.swidth, this.sheight, this.x, this.y, this.width, this.height);
+	}		
+};
+
 var boat = {
 	x: sprtHtControl * 3,
 	y:  sprtHtControl * 3,
-	width:  sprtHtControl,
-	height:  sprtHtControl,
+	width:  sprtHtControl * 2,
+	height:  sprtHtControl * 1.5,
 	sx:  0,
 	sy:  0,
 	swidth:  87,
@@ -285,6 +341,7 @@ var Player = function(){
 	this.speed =  sprtHtControl * 0.15;
 	this.sword = false;
 	this.hammer = false;
+	this.plunger = false;
 	this.key = false;
 	this.attack =  false;
 	this.counter =  0;

@@ -234,10 +234,10 @@ function populate(room){
 	{
 		//desert
 		backgrounds.push(new blockClass(crayonImages.backgrounds, 200, 0, 100, 100, 0, 0, gridWidth * sprtHtControl, gridHeight * sprtHtControl));		
-		//trees
+		//stone
 		for (i = 0; i < gridWidth; i++)
 		{
-			blocks.push(new blockClass(crayonImages.backgrounds, 100, 0, 100, 100, i, 0, sprtHtControl, sprtHtControl));			
+			blocks.push(new blockClass(crayonImages.backgrounds, 100, 200, 100, 100, i, 0, sprtHtControl, sprtHtControl));			
 		}
 	}
 	if (room == 32)
