@@ -114,8 +114,8 @@ var superToilet = {
 }
 
 var weapon = {
-	x: sprtHtControl * 9,
-	y:  sprtHtControl * 5,
+	x: sprtHtControl * 14.2,
+	y:  sprtHtControl * 4.5,
 	width:  sprtHtControl * 1.4,
 	height:  sprtHtControl * 1.4,
 	sx:  0,
@@ -330,8 +330,8 @@ var sword = {
 };
 
 var Player = function(){
-	this.x = 30;
-	this.y =  30;
+	this.x = sprtHtControl * 14;
+	this.y =  sprtHtControl * 7;
 	this.width =  sprtHtControl;
 	this.height =  sprtHtControl;
 	this.sx =  0;
@@ -352,9 +352,9 @@ Player.prototype.update = function(){
 		//go up one room
 		if (this.y < 0 - (sprtHtControl * .5))
 		{
-			this.y = sprtHtControl * (gridHeight - .5);
-			room = room + 10;
-			populate(room);
+				this.y = sprtHtControl * (gridHeight - .5);
+				room = room + 10;
+				populate(room);
 		}
 		//go down one room
 		if (this.y > sprtHtControl * gridHeight)
@@ -436,59 +436,67 @@ Player.prototype.update = function(){
 		//left
 		if(dir.left == true)
 		{
-			this.sy = 150;
-			for (i in blocks)
+			//The follow IF statement ensures that the player does not walk off the grid.
+			if (player.x > sprtHtControl || (room - 1 != -1 && room - 1 != 9 && room - 1 != 19 && room - 1 != 29))
 			{
-				if (isCollision(this.x - this.speed, this.y, this.width, this.height, blocks[i].x, blocks[i].y,
-					blocks[i].width, blocks[i].height) == true)
+				this.sy = 150;
+				for (i in blocks)
 				{
-					leftCollision = true;
-					if (blocks[i].type == "rock" && player.hammer == true)
+					if (isCollision(this.x - this.speed, this.y, this.width, this.height, blocks[i].x, blocks[i].y,
+						blocks[i].width, blocks[i].height) == true)
 					{
-						blocks.splice(i,1);
-					}
-					else if (blocks[i].type == "lock" && player.key == true)
-					{
-						blocks.splice(i,1);
-					}
-					else if (blocks[i].type == "water" && player.boat == true)
-					{
-						leftCollision = false;
+						leftCollision = true;
+						if (blocks[i].type == "rock" && player.hammer == true)
+						{
+							blocks.splice(i,1);
+						}
+						else if (blocks[i].type == "lock" && player.key == true)
+						{
+							blocks.splice(i,1);
+						}
+						else if (blocks[i].type == "water" && player.boat == true)
+						{
+							leftCollision = false;
+						}
 					}
 				}
-			}
-			if (leftCollision == false)
-			{
-				this.x-= this.speed;
+				if (leftCollision == false)
+				{
+					this.x-= this.speed;
+				}
 			}
 		}
 		//up
 		if(dir.up == true)
 		{
-			this.sy = 50;
-			for (i in blocks)
+			//add IF statement to prevent player from wandering off the grid.
+			if (player.y > sprtHtControl || room + 10 < 40)
 			{
-				if (isCollision(this.x, this.y, this.width, this.height, blocks[i].x, blocks[i].y,
-					blocks[i].width, blocks[i].height + this.speed) == true)
+				this.sy = 50;
+				for (i in blocks)
 				{
-					upCollision = true;
-					if (blocks[i].type == "rock" && player.hammer == true)
+					if (isCollision(this.x, this.y, this.width, this.height, blocks[i].x, blocks[i].y,
+						blocks[i].width, blocks[i].height + this.speed) == true)
 					{
-						blocks.splice(i,1);
-					}
-					else if (blocks[i].type == "lock" && player.key == true)
-					{
-						blocks.splice(i,1);
-					}
-					else if (blocks[i].type == "water" && player.boat == true)
-					{
-						upCollision = false;
+						upCollision = true;
+						if (blocks[i].type == "rock" && player.hammer == true)
+						{
+							blocks.splice(i,1);
+						}
+						else if (blocks[i].type == "lock" && player.key == true)
+						{
+							blocks.splice(i,1);
+						}
+						else if (blocks[i].type == "water" && player.boat == true)
+						{
+							upCollision = false;
+						}
 					}
 				}
-			}
-			if (upCollision == false)
-			{
-				this.y-= this.speed;
+				if (upCollision == false)
+				{
+					this.y-= this.speed;
+				}
 			}
 		}
 		//down
