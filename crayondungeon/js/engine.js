@@ -10,7 +10,7 @@ function update(){
 		if (hammer.exist == true && room == 2){hammer.update()}
 		if (plunger.exist == true && room == 14){plunger.update()}
 		if (boat.exist == true && room == 37){boat.update()}
-		if (key.exist == true && room == 4){key.update()}
+		if (key.exist == true && room == 15){key.update()}
 		if (dir.lead != "down"){sword.update();};
 		player.update();
 		if (dir.lead == "down"){sword.update();}
