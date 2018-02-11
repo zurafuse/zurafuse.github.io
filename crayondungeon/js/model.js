@@ -114,7 +114,7 @@ var superToilet = {
 }
 
 var weapon = {
-	x: sprtHtControl * 14,
+	x: sprtHtControl * 13.9,
 	y:  sprtHtControl * 4.5,
 	width:  sprtHtControl * 1.3,
 	height:  sprtHtControl * 1.3,
@@ -160,8 +160,8 @@ var hammer = {
 };
 
 var key = {
-	x: sprtHtControl * 12,
-	y:  sprtHtControl * 7,
+	x: sprtHtControl * 21,
+	y:  sprtHtControl * 12,
 	width:  sprtHtControl,
 	height:  sprtHtControl * .6,
 	sx:  0,
@@ -206,8 +206,8 @@ var plunger = {
 };
 
 var boat = {
-	x: sprtHtControl * 3,
-	y:  sprtHtControl * 3,
+	x: sprtHtControl * 2,
+	y:  sprtHtControl * 11,
 	width:  sprtHtControl * 2,
 	height:  sprtHtControl * 1.5,
 	sx:  0,
@@ -584,6 +584,26 @@ var crayonUI = {
 	draw: function()
 	{
 		ctx.globalAlpha = 0.6;
+		if (player.sword == true)
+		{
+			ctx.drawImage(crayonImages.sword, 0, 0, weapon.swidth, weapon.sheight, sprtHtControl, sprtHtControl * .5, sprtHtControl, sprtHtControl);
+		}
+		if (player.hammer == true)
+		{
+			ctx.drawImage(crayonImages.hammer, 0, 0, hammer.swidth, hammer.sheight, sprtHtControl * 3, sprtHtControl * .5, sprtHtControl, sprtHtControl);
+		}		
+		if (player.key == true)
+		{
+			ctx.drawImage(crayonImages.key, 0, 0, key.swidth, key.sheight, sprtHtControl * 5, sprtHtControl * .5, sprtHtControl, sprtHtControl);
+		}
+		if (player.boat == true)
+		{
+			ctx.drawImage(crayonImages.boat, 0, 0, boat.swidth, boat.sheight, sprtHtControl * 7, sprtHtControl * .5, sprtHtControl, sprtHtControl);
+		}	
+		if (player.plunger == true)
+		{
+			ctx.drawImage(crayonImages.plunger, 0, 0, plunger.swidth, plunger.sheight, sprtHtControl * 9, sprtHtControl * .5, sprtHtControl, sprtHtControl);
+		}			
 		if (crayon.isMobile == true)
 		{
 			ctx.fillStyle = "cyan";
