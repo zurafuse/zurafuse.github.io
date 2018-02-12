@@ -15,6 +15,8 @@ var bio =
 	skills: 
 	[
 		"Javascript",
+		"C#",
+		"Code Deployments",
 		"HTML5",
 		"CSS3",
 		"Forms development",
@@ -65,6 +67,14 @@ var education =
 			majors: ["Associate of Applied Science in Business"],
 			dates: "August 2007 - May 2009",
 			url: "http://www.columbiasouthern.edu/"		
+		},
+		{
+			name: "Western Governors University",
+			location: "Salt Lake City, UT",
+			degree: "Software Development",
+			majors: ["Bachelor of Science in Software Development"],
+			dates: "March 2018 - Present",
+			url: "http://www.wgu.edu/"		
 		}
 	],
 	onlineCourses:
@@ -157,7 +167,7 @@ var projects =
 				"images/flag_survival1.png",
 				"images/flag_survival2.png"
 			],
-			url: "http://zurafuse.com/games/flagsurvival/"
+			url: "http://zurafuse.com/flagsurvival/"
 		},
 		{
 			title: "The Amazing Yosef", 
@@ -168,7 +178,7 @@ var projects =
 				"images/yosef.png",
 				"images/yosef2.png"
 			],
-			url: "http://zurafuse.com/games/yosef/"
+			url: "http://zurafuse.com/yosef/"
 		},
 		{
 			title: "Javscript Calculator", 
@@ -179,7 +189,7 @@ var projects =
 				"images/calc.png",
 				"images/calc2.png"
 			],
-			url: "http://zurafuse.com/games/calculator/"
+			url: "http://zurafuse.com/calculator/"
 		}		
 	],
 	display: function()
