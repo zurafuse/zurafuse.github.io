@@ -242,6 +242,11 @@ function populate(room){
 	{
 		//grass
 		backgrounds.push(new blockClass(crayonImages.grass, 0, 0, 400, 300, 0, 0, gridWidth * sprtHtControl, gridHeight * sprtHtControl));		
+		//road
+		for (i = 2; i < 15; i++)
+		{
+			backgrounds.push(new blockClass(crayonImages.backgrounds, 200, 0, 100, 100, gridWidth - 1, i, sprtHtControl, sprtHtControl));
+		}
 		//trees
 		blockLine("west", "tree");
 		//water
@@ -253,8 +258,10 @@ function populate(room){
 	}
 	if (room == 21)
 	{
+		//desert
+		backgrounds.push(new blockClass(crayonImages.backgrounds, 200, 0, 100, 100, 0, 0, gridWidth * sprtHtControl, gridHeight * sprtHtControl));
 		//grass
-		backgrounds.push(new blockClass(crayonImages.grass, 0, 0, 400, 300, 0, 0, gridWidth * sprtHtControl, gridHeight * sprtHtControl));		
+		backgrounds.push(new blockClass(crayonImages.grass, 0, 0, 400, 300, 8, 5, 12 * sprtHtControl, 7 * sprtHtControl));		
 		//water
 		for (i = 0; i < gridWidth; i++)
 		{
@@ -343,11 +350,11 @@ function populate(room){
 	}
 	if (room == 30)
 	{
-		//grass
-		backgrounds.push(new blockClass(crayonImages.grass, 0, 0, 400, 300, 0, 0, gridWidth * sprtHtControl, gridHeight * sprtHtControl));		
-		//trees
-		blockLine("north", "tree");
-		blockLine("west", "tree");
+		//desert
+		backgrounds.push(new blockClass(crayonImages.backgrounds, 200, 0, 100, 100, 0, 0, gridWidth * sprtHtControl, gridHeight * sprtHtControl));		
+		//rocks
+		blockLine("north", "stone2");
+		blockLine("west", "stone2");
 		//water
 		for (i = 0; i < gridWidth; i++)
 		{
