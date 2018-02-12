@@ -86,9 +86,9 @@ var education =
 			url: "https://www.guidewire.com/products/policycenter"
 		},
 		{
-			title: "Front End Developer Course",
+			title: "Front End Developer Nanodegree",
 			school: "Udacity",
-			dates: "December 2016 - present",
+			dates: "December 2016 - April 2017",
 			url: "https://www.udacity.com/"
 		}
 	],
