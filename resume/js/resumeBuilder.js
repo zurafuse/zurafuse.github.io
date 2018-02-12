@@ -72,7 +72,7 @@ var education =
 			name: "Western Governors University",
 			location: "Salt Lake City, UT",
 			degree: "Software Development",
-			majors: ["Bachelor of Science in Software Development"],
+			majors: ["Bachelor of Science in Software Development (in progress)"],
 			dates: "March 2018 - Present",
 			url: "http://www.wgu.edu/"		
 		}
