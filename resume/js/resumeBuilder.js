@@ -124,11 +124,19 @@ var work =
 		{
 			employer: "ALFA Insurance Companies", 
 			url: "http://www.alfains.com",
-			title: "Program Analyst", 
+			title: "Programmer Analyst/Forms Developer", 
 			location: "Montgomery, AL", 
-			dates: "February 2010 - present",
-			description: "Duties include developing forms for the company, performing research and business analysis needed to do so, monitoring the SmartCommunications (Thunderhead) system and database, and writing javascript code to integrate SmartCommunications with other systems." 		
+			dates: "August 2014 - present",
+			description: "Duties include developing forms for the company, performing research and business analysis needed to do so, monitoring the SmartCommunications (Thunderhead) system and database, and writing javascript code to integrate SmartCommunications with other systems. As needed, I write .NET desktop applications to help the computer operators and the other forms developers perform specific tasks." 		
 		},
+		{
+			employer: "ALFA Insurance Companies", 
+			url: "http://www.alfains.com",
+			title: "Computer Operator", 
+			location: "Montgomery, AL", 
+			dates: "February 2011 - August 2014",
+			description: "Responsibilities for this role included running batch jobs, running backups, monitoring ALFA’s IBM mainframe, validating and printing documents, and writing programs that balanced report totals." 		
+		},		
 		{
 			employer: "Rocky Mountain Health Plans", 
 			url: "http://www.rmhp.org",
