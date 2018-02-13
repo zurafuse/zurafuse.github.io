@@ -127,7 +127,7 @@ var work =
 			title: "Programmer Analyst/Forms Developer", 
 			location: "Montgomery, AL", 
 			dates: "August 2014 - present",
-			description: "Duties include developing forms for the company, performing research and business analysis needed to do so, monitoring the SmartCommunications (Thunderhead) system and database, and writing javascript code to integrate SmartCommunications with other systems. As needed, I write .NET desktop applications to help the computer operators and the other forms developers perform specific tasks." 		
+			description: "Duties include developing forms for the company, performing research and business analysis needed to do so, monitoring the SmartCommunications (Thunderhead) system and database, and writing javascript code to integrate SmartCommunications with other systems. As needed, I write web apps and .NET desktop applications to help the computer operators and the other forms developers perform specific tasks." 		
 		},
 		{
 			employer: "ALFA Insurance Companies", 
