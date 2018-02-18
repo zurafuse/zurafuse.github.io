@@ -4,8 +4,8 @@ var chickens = [];
 var blocks = [];
 var backgrounds = [];
 
-var myMusic = new Audio("sound/music.mp3");
-myMusic.loop = true;
+//var myMusic = new Audio("sound/music.mp3");
+//myMusic.loop = true;
 //myMusic.play();
 
 

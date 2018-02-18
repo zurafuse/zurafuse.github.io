@@ -427,6 +427,11 @@ Player.prototype.update = function(){
 						rightCollision = false;
 					}
 				}
+				if (isCollision(this.x + this.speed, this.y, this.width, this.height, superToilet.x, superToilet.y,
+					superToilet.width, superToilet.height) == true && player.plunger == false && room == 5)
+				{
+					rightCollision = true;
+				}
 			}
 			if (rightCollision == false)
 			{
@@ -459,6 +464,11 @@ Player.prototype.update = function(){
 							leftCollision = false;
 						}
 					}
+				}
+				if (isCollision(this.x - this.speed, this.y, this.width, this.height, superToilet.x, superToilet.y,
+					superToilet.width, superToilet.height) == true && player.plunger == false && room == 5)
+				{
+					leftCollision = true;
 				}
 				if (leftCollision == false)
 				{
@@ -493,6 +503,11 @@ Player.prototype.update = function(){
 						}
 					}
 				}
+				if (isCollision(this.x, this.y, this.width, this.height, superToilet.x, superToilet.y,
+					superToilet.width, superToilet.height + this.speed) == true && player.plunger == false && room == 5)
+				{
+					upCollision = true;
+				}
 				if (upCollision == false)
 				{
 					this.y-= this.speed;
@@ -522,6 +537,11 @@ Player.prototype.update = function(){
 						downCollision = false;
 					}
 				}
+			}
+			if (isCollision(this.x, this.y + this.speed, this.width, this.height, superToilet.x, superToilet.y,
+				superToilet.width, superToilet.height) == true && player.plunger == false && room == 5)
+			{
+				downCollision = true;
 			}
 			if (downCollision == false)
 			{
