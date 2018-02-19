@@ -151,7 +151,7 @@ var ESquestArray = [];
 for (i = 0; i < ES_Users.length; i++)
 {
 	ESuserArray.push(new ESuser(ES_Users[i].img, ES_Users[i].img2, ES_Users[i].name, ES_Users[i].nick_name, 
-	ES_Users[i].id, ES_Users[i].money, ES_Users[i].heath, ES_Users[i].demerits, ES_Users[i].stat, 
+	ES_Users[i].id, ES_Users[i].money, ES_Users[i].health, ES_Users[i].demerits, ES_Users[i].stat, 
 	ES_Users[i].trophies, ES_Users[i].title, ES_Users[i].stars, ES_Users[i].xp));
 }
 //for each trophy, create a new "EStrophy".
