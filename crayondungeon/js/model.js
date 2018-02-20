@@ -55,6 +55,8 @@ var crayonImages = {
 	backgrounds: new Image(),
 	grass: new Image(),
 	supertoilet: new Image(),
+	gem: new Image(),
+	gemLock: new Image(),
 	run: function(){
 		this.player.src = "images/player.png";
 		this.shoot.src = "images/shoot.png";
@@ -67,9 +69,31 @@ var crayonImages = {
 		this.backgrounds.src = "images/object_tile.png";
 		this.grass.src = "images/grass.png";
 		this.supertoilet.src = "images/supertoilet.png";
+		this.gem.src = "images/gem.png";
+		this.gemLock.src = "images/gemLock.png";
 	}
 };
 crayonImages.run();
+
+var gemClass = function(x, y, room){
+	this.img = crayonImages.gem;
+	this.sx = 0;
+	this.sy = 0;
+	this.swidth = 100;
+	this.sheight = 100;
+	this.x = x * sprtHtControl;
+	this.y = y * sprtHtControl;
+	this.width = sprtHtControl * .85;
+	this.height = sprtHtControl * .85;
+	this.room = room;
+	this.update = function(){
+		this.sx += 100;
+		if (this.sx > 500)
+		{
+			this.sx = 0;
+		}
+	};
+};
 
 var blockClass = function(img, sx, sy, swidth, sheight, x, y, width, height, type){
 	this.img = img;
@@ -83,6 +107,31 @@ var blockClass = function(img, sx, sy, swidth, sheight, x, y, width, height, typ
 	this.height = height;
 	this.type = type;
 };
+
+var gemLock = {
+	x: sprtHtControl * 8,
+	y:  sprtHtControl * 3,
+	width:  sprtHtControl * 2,
+	height:  sprtHtControl * 2,
+	sx:  0,
+	sy:  0,
+	swidth:  100,
+	sheight:  100,
+	exist: true,
+	img: crayonImages.gemLock,
+	update: function(){
+		if (isCollision(this.x, this.y, this.width, this.height,
+			player.x, player.y, player.width, player.height) == true)
+		{
+			if (gems.length == 0)
+			{
+				this.exist = false;
+			}
+		}
+		//draw onto the canvas.
+		ctx.drawImage(this.img, this.sx, this.sy, this.swidth, this.sheight, this.x, this.y, this.width, this.height);
+	}		
+}
 
 var superToilet = {
 	x: sprtHtControl * 3,
@@ -432,6 +481,11 @@ Player.prototype.update = function(){
 				{
 					rightCollision = true;
 				}
+				if (isCollision(this.x + this.speed, this.y, this.width, this.height, gemLock.x, gemLock.y,
+					gemLock.width, gemLock.height) == true && gems.length > 0 && room == 6)
+				{
+					rightCollision = true;
+				}
 			}
 			if (rightCollision == false)
 			{
@@ -467,6 +521,11 @@ Player.prototype.update = function(){
 				}
 				if (isCollision(this.x - this.speed, this.y, this.width, this.height, superToilet.x, superToilet.y,
 					superToilet.width, superToilet.height) == true && player.plunger == false && room == 5)
+				{
+					leftCollision = true;
+				}
+				if (isCollision(this.x - this.speed, this.y, this.width, this.height, gemLock.x, gemLock.y,
+					gemLock.width, gemLock.height) == true && gems.length > 0 && room == 6)
 				{
 					leftCollision = true;
 				}
@@ -508,6 +567,11 @@ Player.prototype.update = function(){
 				{
 					upCollision = true;
 				}
+				if (isCollision(this.x, this.y, this.width, this.height, gemLock.x, gemLock.y,
+					gemLock.width, gemLock.height + this.speed) == true && gems.length > 0 && room == 6)
+				{
+					upCollision = true;
+				}
 				if (upCollision == false)
 				{
 					this.y-= this.speed;
@@ -540,6 +604,11 @@ Player.prototype.update = function(){
 			}
 			if (isCollision(this.x, this.y + this.speed, this.width, this.height, superToilet.x, superToilet.y,
 				superToilet.width, superToilet.height) == true && player.plunger == false && room == 5)
+			{
+				downCollision = true;
+			}
+			if (isCollision(this.x, this.y + this.speed, this.width, this.height, gemLock.x, gemLock.y,
+				gemLock.width, gemLock.height) == true && gems.length > 0 && room == 6)
 			{
 				downCollision = true;
 			}
@@ -623,7 +692,11 @@ var crayonUI = {
 		if (player.plunger == true)
 		{
 			ctx.drawImage(crayonImages.plunger, 0, 0, plunger.swidth, plunger.sheight, sprtHtControl * 9, sprtHtControl * .5, sprtHtControl, sprtHtControl);
-		}			
+		}	
+		ctx.drawImage(crayonImages.gem, 0, 0, 100, 100, sprtHtControl * 16, sprtHtControl * .5, sprtHtControl, sprtHtControl);
+		ctx.font = canvas.width * 0.035  + "px Arial";
+		ctx.fillStyle = "black";
+		ctx.fillText(" remaining : " + gems.length, sprtHtControl * 17, sprtHtControl * 1.3);	
 		if (crayon.isMobile == true)
 		{
 			ctx.fillStyle = "cyan";

@@ -2,11 +2,12 @@ var showers = [];
 var toilets = [];
 var chickens = [];
 var blocks = [];
+var gems = [];
 var backgrounds = [];
 
-//var myMusic = new Audio("sound/music.mp3");
-//myMusic.loop = true;
-//myMusic.play();
+var myMusic = new Audio("sound/music.mp3");
+myMusic.loop = true;
+myMusic.play();
 
 
 var isCollision = function(x, y, width, height, x2, y2, width2, height2){
@@ -78,3 +79,21 @@ var drawBackgrounds = function(){
 	}
 };
 
+var drawGems = function(){
+	for (i in gems)
+	{
+		if (gems[i].room == room)
+			{
+			gems[i].update();
+			ctx.drawImage(gems[i].img, gems[i].sx, gems[i].sy, gems[i].swidth, gems[i].sheight, gems[i].x.toFixed(0), gems[i].y.toFixed(0), gems[i].width, gems[i].height);
+			if (isCollision(gems[i].x, gems[i].y, gems[i].width, gems[i].height,
+				player.x, player.y, player.width, player.height) == true)
+			{
+				gems.splice(i, 1);
+			}
+		}
+	}
+};
+
+//gems
+gems.push(new gemClass(3, 4, 3), new gemClass(4, 4, 3));

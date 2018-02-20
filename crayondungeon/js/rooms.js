@@ -81,7 +81,7 @@ function populate(room){
 		for (i = 0; i < 14; i++)
 		{
 			backgrounds.push(new blockClass(crayonImages.backgrounds, 200, 0, 100, 100, 14, i, sprtHtControl, sprtHtControl));
-		}			
+		}	
 		//lock
 		blocks.push(new blockClass(crayonImages.backgrounds, 200, 100, 100, 100, 7, 10, sprtHtControl, sprtHtControl, "lock"));
 		blocks.push(new blockClass(crayonImages.backgrounds, 200, 100, 100, 100, 7, 11, sprtHtControl, sprtHtControl, "lock"));

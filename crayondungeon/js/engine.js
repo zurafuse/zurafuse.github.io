@@ -5,7 +5,9 @@ function update(){
 		updateControls(keysDown);
 		drawBackgrounds();
 		drawBlocks();
+		drawGems();
 		if (superToilet.exist == true && room == 5){superToilet.update()}
+		if (gemLock.exist == true && room == 6){gemLock.update()}
 		if (weapon.exist == true && room == 13){weapon.update()}
 		if (hammer.exist == true && room == 23){hammer.update()}
 		if (plunger.exist == true && room == 14){plunger.update()}
