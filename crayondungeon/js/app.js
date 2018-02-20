@@ -5,9 +5,9 @@ var blocks = [];
 var gems = [];
 var backgrounds = [];
 
-var myMusic = new Audio("sound/music.mp3");
-myMusic.loop = true;
-myMusic.play();
+//var myMusic = new Audio("sound/music.mp3");
+//myMusic.loop = true;
+//myMusic.play();
 
 
 var isCollision = function(x, y, width, height, x2, y2, width2, height2){
