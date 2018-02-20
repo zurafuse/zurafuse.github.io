@@ -1,0 +1,22 @@
+* {
+	-webkit-box-sixing: border-box;
+	-moz-box-sizing: border-box;
+	-ms-box-sizing: border-box;
+	box-sizing: border-box;
+	font-family: "Lato", sans-serif;
+	color: #2d3c49;
+}
+
+.avatar-name {
+	text-align: center;
+	width: 100%;
+}
+
+.title {
+	text-align: center;
+	width: 100%;
+}
+
+.players {
+	width: 100%;
+}
