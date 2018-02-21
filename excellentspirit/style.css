@@ -24,5 +24,6 @@
 .nav-bar li {
 	display: block;
 	display: inline;
-	list-style-type: none;	
+	list-style-type: none;
+	padding: 25px 50px;
 }
