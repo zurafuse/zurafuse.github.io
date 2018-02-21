@@ -6,6 +6,7 @@ function update(){
 		drawBackgrounds();
 		drawBlocks();
 		drawGems();
+		drawHearts();
 		if (superToilet.exist == true && room == 5){superToilet.update()}
 		if (gemLock.exist == true && room == 6){gemLock.update()}
 		if (weapon.exist == true && room == 13){weapon.update()}
@@ -17,6 +18,11 @@ function update(){
 		player.update();
 		if (dir.lead == "down"){sword.update();}
 		crayonUI.draw();
+		//isDead?
+		if (player.health <= 0)
+		{
+			restart();
+		}
 		requestAnimFrame(update);
 	}
 	else

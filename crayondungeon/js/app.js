@@ -1,13 +1,40 @@
 var showers = [];
 var toilets = [];
-var chickens = [];
 var blocks = [];
 var gems = [];
+var hearts = [];
 var backgrounds = [];
 
 //var myMusic = new Audio("sound/music.mp3");
 //myMusic.loop = true;
 //myMusic.play();
+
+function restart(){
+	showers = [];
+	toilets = [];
+	blocks = [];
+	gems = [];
+	hearts = [];
+	backgrounds = [];
+	room = 3;
+	weapon.exist = true;
+	plunger.exist = true;
+	boat.exist = true;
+	hammer.exist = true;
+	key.exist = true;
+	superToilet.exist = true;
+	gemLock.exist = true;
+	player.health = 100;
+	player.sword = false;
+	player.plunger = false;
+	player.boat = false;
+	player.hammer = false;
+	player.key = false;
+	player.x = sprtHtControl * 14;
+	player.y =  sprtHtControl * 7;
+	populateItems();
+	populate(room);
+};
 
 
 var isCollision = function(x, y, width, height, x2, y2, width2, height2){
@@ -95,5 +122,28 @@ var drawGems = function(){
 	}
 };
 
-//gems
-gems.push(new gemClass(3, 4, 3), new gemClass(4, 4, 3));
+var drawHearts = function(){
+	for (i in hearts)
+	{
+		if (hearts[i].room == room)
+			{
+			ctx.drawImage(hearts[i].img, hearts[i].sx, hearts[i].sy, hearts[i].swidth, hearts[i].sheight, hearts[i].x.toFixed(0), hearts[i].y.toFixed(0), hearts[i].width, hearts[i].height);
+			if (isCollision(hearts[i].x, hearts[i].y, hearts[i].width, hearts[i].height,
+				player.x, player.y, player.width, player.height) == true)
+			{
+				hearts.splice(i, 1);
+				player.health = 100;
+			}
+		}
+	}
+};
+
+
+function populateItems(){
+	//gems
+	gems.push(new gemClass(3, 4, 3), new gemClass(4, 4, 3));
+	//hearts
+	hearts.push(new heartClass(3, 7, 13), new heartClass(4, 7, 13));
+}
+
+populateItems();

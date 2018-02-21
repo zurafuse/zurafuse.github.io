@@ -57,6 +57,7 @@ var crayonImages = {
 	supertoilet: new Image(),
 	gem: new Image(),
 	gemLock: new Image(),
+	heart: new Image(),
 	run: function(){
 		this.player.src = "images/player.png";
 		this.shoot.src = "images/shoot.png";
@@ -71,6 +72,7 @@ var crayonImages = {
 		this.supertoilet.src = "images/supertoilet.png";
 		this.gem.src = "images/gem.png";
 		this.gemLock.src = "images/gemLock.png";
+		this.heart.src = "images/heart.png";
 	}
 };
 crayonImages.run();
@@ -93,6 +95,19 @@ var gemClass = function(x, y, room){
 			this.sx = 0;
 		}
 	};
+};
+
+var heartClass = function(x, y, room){
+	this.img = crayonImages.heart;
+	this.sx = 0;
+	this.sy = 0;
+	this.swidth = 100;
+	this.sheight = 100;
+	this.x = x * sprtHtControl;
+	this.y = y * sprtHtControl;
+	this.width = sprtHtControl * .85;
+	this.height = sprtHtControl * .85;
+	this.room = room;
 };
 
 var blockClass = function(img, sx, sy, swidth, sheight, x, y, width, height, type){
@@ -391,6 +406,7 @@ var Player = function(){
 	this.sword = false;
 	this.hammer = false;
 	this.plunger = false;
+	this.health = 100;
 	this.key = false;
 	this.attack =  false;
 	this.counter =  0;
@@ -523,6 +539,7 @@ Player.prototype.update = function(){
 					superToilet.width, superToilet.height) == true && player.plunger == false && room == 5)
 				{
 					leftCollision = true;
+					this.health--;
 				}
 				if (isCollision(this.x - this.speed, this.y, this.width, this.height, gemLock.x, gemLock.y,
 					gemLock.width, gemLock.height) == true && gems.length > 0 && room == 6)
@@ -692,11 +709,17 @@ var crayonUI = {
 		if (player.plunger == true)
 		{
 			ctx.drawImage(crayonImages.plunger, 0, 0, plunger.swidth, plunger.sheight, sprtHtControl * 9, sprtHtControl * .5, sprtHtControl, sprtHtControl);
-		}	
+		}
+		//draw the gem count in the UI
 		ctx.drawImage(crayonImages.gem, 0, 0, 100, 100, sprtHtControl * 16, sprtHtControl * .5, sprtHtControl, sprtHtControl);
 		ctx.font = canvas.width * 0.035  + "px Arial";
 		ctx.fillStyle = "black";
-		ctx.fillText(" remaining : " + gems.length, sprtHtControl * 17, sprtHtControl * 1.3);	
+		ctx.fillText(" remaining : " + gems.length, sprtHtControl * 17, sprtHtControl * 1.3);
+		//display the user's health in the UI
+		ctx.drawImage(crayonImages.heart, 0, 0, 100, 100, sprtHtControl * 25, sprtHtControl * .5, sprtHtControl * 1.4, sprtHtControl * 1.4);
+		ctx.font = canvas.width * 0.021  + "px Arial";
+		ctx.fillStyle = "black";
+		ctx.fillText(("00" + player.health).slice(-3), sprtHtControl * 25.18, sprtHtControl * 1.32);		
 		if (crayon.isMobile == true)
 		{
 			ctx.fillStyle = "cyan";
