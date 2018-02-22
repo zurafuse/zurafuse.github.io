@@ -21,9 +21,18 @@
 	width: 100%;
 }
 
+.nav-bar {
+	display: block;
+	position: relative;
+	margin-left: auto;
+    margin-right: auto;
+	margin: auto;
+	width: 100%;
+}
+
 .nav-bar li {
 	display: block;
 	display: inline;
-	list-style-type: none;
-	padding: 25px 50px;
+	list-style-type: none;	
+	padding: 10px 15px;
 }
