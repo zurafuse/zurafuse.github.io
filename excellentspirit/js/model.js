@@ -5,8 +5,7 @@
 var ES_Users = 
 [
 	{
-		img: "images/kaden.png",
-		img2: "images/kaden_tall.png", 
+		img: "images/kaden.png", 
 		name: "Kaden", nick_name: "Ninja Kaden",
 		id: 000,
 		money: 0,
@@ -14,13 +13,13 @@ var ES_Users =
 		demerits: 0,
 		stat : "healthy",
 		trophies: [101, 102],
+		prizes: [202],
 		title: "warrior",
 		stars: 0,
 		xp: 0
 	}, 
 	{
 		img: "images/josiah.png", 
-		img2: "images/josiah_tall.png", 
 		name: "Josiah", 
 		id: 001,
 		nick_name: "Super Yoshi",
@@ -29,6 +28,7 @@ var ES_Users =
 		demerits: 0,
 		stat : "healthy",
 		trophies: [101],
+		prizes: [],
 		title: "warrior",
 		stars: 0,
 		xp: 0
@@ -43,7 +43,7 @@ var ES_Trophies = [
 		name: "Trophy of Justice",
 		description: "Sample Trophy.",
 		id: 101,
-		img: "images/trophy1.png",
+		img: "images/trophies/trophy1.png",
 		update: function(){
 			//The "update" function of these trophies will loop through users and tasks.
 		}		
@@ -52,7 +52,7 @@ var ES_Trophies = [
 		name: "Trophy of Power",
 		description: "Sample Trophy.",
 		id: 102,
-		img: "images/trophy2.png",
+		img: "images/trophies/trophy2.png",
 		update: function(){
 			//The "update" function of these trophies will loop through users and tasks.
 		}		
@@ -64,7 +64,7 @@ var ES_Prizes = [
 		name: "Phineas and Ferb",
 		description: "Allowance to watch 2 episodes of Phineas and Ferb.",
 		id: 202,
-		img: "images/phineas.png",
+		img: "images/prizes/phineas.png",
 		cost: 0
 	}
 ];
@@ -72,8 +72,8 @@ var ES_Prizes = [
 //The update function will be called to determine if the quest is complete or not. You can assign a quest to a user.
 var ES_Quests = [
 	{
-		name: "",
-		description: "",
+		name: "Task of Cleanliness",
+		description: "Clean room",
 		id: 301,
 		complete: false,
 		img: "",
@@ -84,8 +84,8 @@ var ES_Quests = [
 		}
 	},
 	{
-		name: "",
-		description: "",
+		name: "School Journey",
+		description: "Make A on Math test today",
 		id: 302,
 		complete: false,
 		img: "",
@@ -98,17 +98,17 @@ var ES_Quests = [
 ];
 
 //This is the user class that will be used to populate the user array.
-var ESuser = function(img, imgTall, name, nickName, id, money, health, demerits, stat, trophies, title, stars, xp){
+var ESuser = function(img, name, nickName, id, money, health, demerits, stat, trophies, prizes, title, stars, xp){
 	this.health = health;
 	this.money = money;
 	this.demerits = demerits;
 	this.stat = stat;
 	this.img = img;
-	this.imgTall = imgTall;
 	this.nickName = nickName;
 	this.id = id;
 	this.name = name;
 	this.trophies = trophies;
+	this.prizes = prizes;
 	this.title = title;
 	this.level = 0;
 	this.stars = stars;
@@ -140,36 +140,3 @@ var ESquest = function(img, name, description, id, user, isComplete, awards, upd
 	this.awards = awards;
 	this.update = update;
 };
-
-//create an array for users, trophies, prizes and quests.
-var ESuserArray = [];
-var EStrophyArray = [];
-var ESprizeArray = [];
-var ESquestArray = [];
-
-//for each user, create a new "ESuser".
-for (i = 0; i < ES_Users.length; i++)
-{
-	ESuserArray.push(new ESuser(ES_Users[i].img, ES_Users[i].img2, ES_Users[i].name, ES_Users[i].nick_name, 
-	ES_Users[i].id, ES_Users[i].money, ES_Users[i].health, ES_Users[i].demerits, ES_Users[i].stat, 
-	ES_Users[i].trophies, ES_Users[i].title, ES_Users[i].stars, ES_Users[i].xp));
-}
-//for each trophy, create a new "EStrophy".
-for (i = 0; i < ES_Trophies.length; i++)
-{
-	EStrophyArray.push(new EStrophy(ES_Trophies[i].img, ES_Trophies[i].name, ES_Trophies[i].description, 
-	ES_Trophies[i].id));
-}
-//for each prize, create a new "ESprize".
-for (i = 0; i < ES_Prizes.length; i++)
-{
-	ESprizeArray.push(new ESprize(ES_Prizes[i].img, ES_Prizes[i].name, ES_Prizes[i].description, 
-	ES_Prizes[i].id, ES_Prizes[i].cost));
-}
-//for each quest, create a new "ESquest".
-for (i = 0; i < ES_Quests.length; i++)
-{
-	ESquestArray.push(new ESquest(ES_Quests[i].img, ES_Quests[i].name, ES_Quests[i].description, 
-	ES_Quests[i].id, ES_Quests[i].user, ES_Quests[i].complete, ES_Quests[i].awards, ES_Quests[i].update));
-}
-
