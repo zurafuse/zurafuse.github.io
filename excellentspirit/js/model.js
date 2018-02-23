@@ -7,7 +7,7 @@ var ES_Users =
 	{
 		img: "images/kaden.png", 
 		name: "Kaden", nick_name: "Ninja Kaden",
-		id: 000,
+		id: 001,
 		money: 0,
 		health: 100,
 		demerits: 0,
@@ -21,7 +21,7 @@ var ES_Users =
 	{
 		img: "images/josiah.png", 
 		name: "Josiah", 
-		id: 001,
+		id: 002,
 		nick_name: "Super Yoshi",
 		money: 0,
 		health: 100,
@@ -33,6 +33,12 @@ var ES_Users =
 		stars: 0,
 		xp: 0
 	}
+];
+
+//populate from database, possibly via a JSON object passed through AJAX
+var ES_Activities = [
+	{user: 001, txt: "Kaden has been awarded the Super Star Trophy.", date: "February 21, 2018 10:30 AM"}, 
+	{user: 002, txt: "Josiah has won 2 stars.", date: "February 22, 2018 1:30 PM"}
 ];
 
 //These trophies will be populated from a database, probably via AJAX call.
@@ -77,7 +83,7 @@ var ES_Quests = [
 		id: 301,
 		complete: false,
 		img: "",
-		user: 000,
+		user: 002,
 		awards: [],
 		update: function(){
 			//call this function when quest is complete, or to find out if it is complete.
@@ -139,4 +145,10 @@ var ESquest = function(img, name, description, id, user, isComplete, awards, upd
 	this.complete = isComplete;
 	this.awards = awards;
 	this.update = update;
+};
+//Activity class
+var ESactivity = function(user, txt, date){
+	this.user = user;
+	this.txt = txt;
+	this.date = date;
 };

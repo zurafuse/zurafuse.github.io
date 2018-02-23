@@ -3,6 +3,7 @@ var ESuserArray = [];
 var EStrophyArray = [];
 var ESprizeArray = [];
 var ESquestArray = [];
+var ESactivityArray = [];
 
 //for each user, create a new "ESuser".
 for (i = 0; i < ES_Users.length; i++)
@@ -29,7 +30,11 @@ for (i = 0; i < ES_Quests.length; i++)
 	ESquestArray.push(new ESquest(ES_Quests[i].img, ES_Quests[i].name, ES_Quests[i].description, 
 	ES_Quests[i].id, ES_Quests[i].user, ES_Quests[i].complete, ES_Quests[i].awards, ES_Quests[i].update));
 }
-
+//for each activity, create a new "ESactivity".
+for (i = 0; i < ES_Activities.length; i++)
+{
+	ESactivityArray.push(new ESactivity(ES_Activities[i].user, ES_Activities[i].txt, ES_Activities[i].date));
+}
 
 
 //perform an update to see if any trophies should be automatically assigned.
@@ -38,18 +43,6 @@ for (i = 0; i < ES_Trophies.length; i++)
 	ES_Trophies[i].update();
 }
 
-var viewPlayers = function(){
-	$(".container-fluid").remove();
-	$("body").append("<h2 class='title'>PLEASE SELECT A PLAYER.</h2><br><div class='container-fluid'><div class='row players'>");
-	for (i in ESuserArray)
-	{
-		$(".players").append("<div class='col-sm avatar-name' id='user" + ESuserArray[i].id + "'><h3>" + ESuserArray[i].name +
-		"</h3>" + "<h5>" + ESuserArray[i].nickName + "</h5>" + "<img src='" + ESuserArray[i].img + "' alt='Avatar' class='img-responsive'/><br></div>");	
-	}
-	$("body").append("</div></div>");
-	$(".avatar-name").click("click", function(){viewStatPage(this.id)});
-};
 
-viewPlayers();
 
 
