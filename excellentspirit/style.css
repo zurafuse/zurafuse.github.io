@@ -3,7 +3,7 @@
 	-moz-box-sizing: border-box;
 	-ms-box-sizing: border-box;
 	box-sizing: border-box;
-	font-family: "Lato", sans-serif;
+	font-family: "Impact", Impact;
 	color: black;
 	
 }
@@ -23,6 +23,8 @@ html{
 
 .title {
 	text-align: center;
+	color: white;
+	text-shadow: -1px -1px 0 black, 1px -1px 0 black, -1px 1px 0 black, 1px 1px 0 black;
 	width: 100%;
 }
 
@@ -33,6 +35,8 @@ html{
 .nav-container {
     margin: 0 auto;
     width: 100%;
+	background-color: orange;
+	padding-bottom: 15px;
     text-align: center;	
 }
 
@@ -45,8 +49,23 @@ html{
 
 .nav-bar li {
 	font-weight: bold;
+	font-size: 19pt;
 	color: white;
 	background-color: orange;
+	display: block;
+	display: inline;
+	list-style-type: none;	
+	padding: 10px 15px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.nav-bar li:hover {
+	font-weight: bold;
+	font-size: 19pt;
+	color: white;
+	text-shadow: -1px -1px 0 black, 1px -1px 0 black, -1px 1px 0 black, 1px 1px 0 black;
+	background-color: yellow;
 	display: block;
 	display: inline;
 	list-style-type: none;	
