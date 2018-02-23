@@ -4,7 +4,16 @@
 	-ms-box-sizing: border-box;
 	box-sizing: border-box;
 	font-family: "Lato", sans-serif;
-	color: #2d3c49;
+	color: black;
+	
+}
+
+html{
+	background-color: yellow;
+}
+
+.main-container {
+	background: linear-gradient(orange, yellow);
 }
 
 .avatar-name {
@@ -21,18 +30,27 @@
 	width: 100%;
 }
 
+.nav-container {
+    margin: 0 auto;
+    width: 100%;
+    text-align: center;	
+}
+
 .nav-bar {
 	display: block;
 	position: relative;
-	margin-left: auto;
-    margin-right: auto;
-	margin: auto;
-	width: 100%;
+    margin: 0;
+    padding: 0;
 }
 
 .nav-bar li {
+	font-weight: bold;
+	color: white;
+	background-color: orange;
 	display: block;
 	display: inline;
 	list-style-type: none;	
 	padding: 10px 15px;
+    margin-left: auto;
+    margin-right: auto;
 }
