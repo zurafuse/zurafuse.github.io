@@ -279,7 +279,7 @@ var plunger = {
 	y:  sprtHtControl * 8,
 	width:  sprtHtControl,
 	height:  sprtHtControl,
-	sx:  0,
+	sx:  45,
 	sy:  0,
 	swidth:  44,
 	sheight:  60,
@@ -762,7 +762,7 @@ var crayonUI = {
 		}	
 		if (player.plunger == true)
 		{
-			ctx.drawImage(crayonImages.plunger, 0, 0, plunger.swidth, plunger.sheight, sprtHtControl * 9, sprtHtControl * .5, sprtHtControl, sprtHtControl);
+			ctx.drawImage(crayonImages.plunger, 45, 0, plunger.swidth, plunger.sheight, sprtHtControl * 9, sprtHtControl * .5, sprtHtControl, sprtHtControl);
 		}
 		//draw the gem count in the UI
 		ctx.drawImage(crayonImages.gem, 0, 0, 100, 100, sprtHtControl * 16, sprtHtControl * .5, sprtHtControl, sprtHtControl);
