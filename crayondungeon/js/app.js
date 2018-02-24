@@ -1,3 +1,4 @@
+//create the arrays for multiples, enemies, and collectibles.
 var showers = [];
 var toilets = [];
 var blocks = [];
@@ -10,13 +11,25 @@ var backgrounds = [];
 //myMusic.play();
 
 function restart(){
+	//empty the arrays.
 	showers = [];
 	toilets = [];
 	blocks = [];
 	gems = [];
 	hearts = [];
 	backgrounds = [];
+	//set the room and player back to starting position.
 	room = 3;
+	player.x = sprtHtControl * 14;
+	player.y =  sprtHtControl * 7;
+	player.health = 100;
+	//remove power ups from player.
+	player.sword = false;
+	player.plunger = false;
+	player.boat = false;
+	player.hammer = false;
+	player.key = false;
+	//regenerate the power up items and large objects.
 	weapon.exist = true;
 	plunger.exist = true;
 	boat.exist = true;
@@ -24,14 +37,11 @@ function restart(){
 	key.exist = true;
 	superToilet.exist = true;
 	gemLock.exist = true;
-	player.health = 100;
-	player.sword = false;
-	player.plunger = false;
-	player.boat = false;
-	player.hammer = false;
-	player.key = false;
-	player.x = sprtHtControl * 14;
-	player.y =  sprtHtControl * 7;
+	//remove plunger image from player and revert to sword
+	sword.img = crayonImages.sword;
+	sword.swidth = 24;
+	sword.sheight = 41;
+	//Repopulate items and populate the room.
 	populateItems();
 	populate(room);
 };

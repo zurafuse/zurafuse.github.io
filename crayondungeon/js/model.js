@@ -383,8 +383,8 @@ var sword = {
 		else if (dir.lead == "right")
 		{
 			this.angle = 3.8;
-			this.x = player.x + sprtHtControl * .88;
-			this.y = player.y + sprtHtControl * 1;
+			this.x = player.x + sprtHtControl * .92;
+			this.y = player.y + sprtHtControl * 1.1;
 			if (player.attack == true)
 			{
 				this.angle = 3.175;
@@ -401,7 +401,7 @@ var sword = {
 		{
 			this.angle = -.75;
 			this.x = player.x + sprtHtControl * .38;
-			this.y = player.y + sprtHtControl * .70;
+			this.y = player.y + sprtHtControl * .55;
 			if (player.attack == true)
 			{
 				this.angle = 0;

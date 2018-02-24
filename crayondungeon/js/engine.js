@@ -34,7 +34,7 @@ function update(){
 		{
 			ctx.font = canvas.width * 0.035  + "px Arial";
 			ctx.fillStyle = "black";
-			ctx.fillText("CONGRATULATIONS! BEHOLD THE OCTAFORCE!", sprtHtControl * 4, sprtHtControl * 2.5);
+			ctx.fillText("CONGRATULATIONS! BEHOLD THE OCTAFORCE!", sprtHtControl * 3, sprtHtControl * 2.5);
 		}
 		requestAnimFrame(update);
 	}
