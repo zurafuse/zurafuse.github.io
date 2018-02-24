@@ -127,6 +127,8 @@ function populate(room){
 		blockLine("south", "tree");
 		blockLine("west", "tree");
 		blockLine("north", "stone1");
+		octaforce.message = true;
+		setTimeout(function(){octaforce.message = false;}, 4500);
 	}
 	if (room == 5)
 	{

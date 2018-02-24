@@ -9,6 +9,8 @@ function update(){
 		drawHearts();
 		if (superToilet.exist == true && room == 5){superToilet.update()}
 		if (gemLock.exist == true && room == 6){gemLock.update()}
+		if (gemLock2.exist == true && room == 16){gemLock2.update()}
+		if (room == 4){octaforce.update()}
 		if (weapon.exist == true && room == 13){weapon.update()}
 		if (hammer.exist == true && room == 23){hammer.update()}
 		if (plunger.exist == true && room == 14){plunger.update()}
@@ -22,6 +24,17 @@ function update(){
 		if (player.health <= 0)
 		{
 			restart();
+		}
+		if (isCollision(player.x, player.y, player.width, player.height, octaforce.x, octaforce.y,
+			octaforce.width, octaforce.height) == true && room == 4)
+		{
+			restart();
+		}
+		if (octaforce.message == true)
+		{
+			ctx.font = canvas.width * 0.035  + "px Arial";
+			ctx.fillStyle = "black";
+			ctx.fillText("CONGRATULATIONS! BEHOLD THE OCTAFORCE!", sprtHtControl * 4, sprtHtControl * 2.5);
 		}
 		requestAnimFrame(update);
 	}

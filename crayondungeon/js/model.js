@@ -58,6 +58,7 @@ var crayonImages = {
 	gem: new Image(),
 	gemLock: new Image(),
 	heart: new Image(),
+	octaforce: new Image(),
 	run: function(){
 		this.player.src = "images/player.png";
 		this.shoot.src = "images/shoot.png";
@@ -73,6 +74,7 @@ var crayonImages = {
 		this.gem.src = "images/gem.png";
 		this.gemLock.src = "images/gemLock.png";
 		this.heart.src = "images/heart.png";
+		this.octaforce.src = "images/octaforce.png";
 	}
 };
 crayonImages.run();
@@ -123,18 +125,18 @@ var blockClass = function(img, sx, sy, swidth, sheight, x, y, width, height, typ
 	this.type = type;
 };
 
-var gemLock = {
-	x: sprtHtControl * 8,
-	y:  sprtHtControl * 3,
-	width:  sprtHtControl * 2,
-	height:  sprtHtControl * 2,
-	sx:  0,
-	sy:  0,
-	swidth:  100,
-	sheight:  100,
-	exist: true,
-	img: crayonImages.gemLock,
-	update: function(){
+var gemLockClass = function(x, y){
+	this.x = sprtHtControl * x;
+	this.y =  sprtHtControl * y;
+	this.width =  sprtHtControl * 2;
+	this.height =  sprtHtControl * 2;
+	this.sx =  0;
+	this.sy =  0;
+	this.swidth = 100;
+	this.sheight = 100;
+	this.exist = true;
+	this.img = crayonImages.gemLock;
+	this.update = function(){
 		if (isCollision(this.x, this.y, this.width, this.height,
 			player.x, player.y, player.width, player.height) == true)
 		{
@@ -145,8 +147,11 @@ var gemLock = {
 		}
 		//draw onto the canvas.
 		ctx.drawImage(this.img, this.sx, this.sy, this.swidth, this.sheight, this.x, this.y, this.width, this.height);
-	}		
-}
+	};		
+};
+
+var gemLock = new gemLockClass(8, 3);
+var gemLock2 = new gemLockClass(10, 5);
 
 var superToilet = {
 	x: sprtHtControl * 3,
@@ -171,6 +176,29 @@ var superToilet = {
 			{
 				//decrease health etc
 			}
+		}
+		//draw onto the canvas.
+		ctx.drawImage(this.img, this.sx, this.sy, this.swidth, this.sheight, this.x, this.y, this.width, this.height);
+	}		
+}
+
+var octaforce = {
+	x: sprtHtControl * 3,
+	y:  sprtHtControl * 3,
+	width:  sprtHtControl * 3,
+	height:  sprtHtControl * 3,
+	sx:  0,
+	sy:  0,
+	swidth:  100,
+	sheight:  100,
+	exist: true,
+	message: false,
+	img: crayonImages.octaforce,
+	update: function(){
+		this.sx += 100;
+		if (this.sx > 501)
+		{
+			this.sx = 0;
 		}
 		//draw onto the canvas.
 		ctx.drawImage(this.img, this.sx, this.sy, this.swidth, this.sheight, this.x, this.y, this.width, this.height);
@@ -257,12 +285,18 @@ var plunger = {
 	sheight:  60,
 	exist: true,
 	img: crayonImages.plunger,
+	touchPlayer: function(){
+		sword.img = crayonImages.plunger;
+		sword.swidth = 44;
+		sword.sheight = 60;
+	},
 	update: function(){
 		if (isCollision(this.x, this.y, this.width, this.height,
 			player.x, player.y, player.width, player.height) == true)
 		{
 			player.plunger = true;
 			this.exist = false;
+			this.touchPlayer();
 		}
 		//draw onto the canvas.
 		ctx.drawImage(this.img, this.sx, this.sy, this.swidth, this.sheight, this.x, this.y, this.width, this.height);
@@ -492,16 +526,21 @@ Player.prototype.update = function(){
 						rightCollision = false;
 					}
 				}
-				if (isCollision(this.x + this.speed, this.y, this.width, this.height, superToilet.x, superToilet.y,
-					superToilet.width, superToilet.height) == true && player.plunger == false && room == 5)
-				{
-					rightCollision = true;
-				}
-				if (isCollision(this.x + this.speed, this.y, this.width, this.height, gemLock.x, gemLock.y,
-					gemLock.width, gemLock.height) == true && gems.length > 0 && room == 6)
-				{
-					rightCollision = true;
-				}
+			}
+			if (isCollision(this.x + this.speed, this.y, this.width, this.height, superToilet.x, superToilet.y,
+				superToilet.width, superToilet.height) == true && player.plunger == false && room == 5)
+			{
+				rightCollision = true;
+			}
+			if (isCollision(this.x + this.speed, this.y, this.width, this.height, gemLock.x, gemLock.y,
+				gemLock.width, gemLock.height) == true && gems.length > 0 && room == 6)
+			{
+				rightCollision = true;
+			}
+			if (isCollision(this.x + this.speed, this.y, this.width, this.height, gemLock2.x, gemLock2.y,
+				gemLock2.width, gemLock2.height) == true && gems.length > 0 && room == 16)
+			{
+				rightCollision = true;
 			}
 			if (rightCollision == false)
 			{
@@ -543,6 +582,11 @@ Player.prototype.update = function(){
 				}
 				if (isCollision(this.x - this.speed, this.y, this.width, this.height, gemLock.x, gemLock.y,
 					gemLock.width, gemLock.height) == true && gems.length > 0 && room == 6)
+				{
+					leftCollision = true;
+				}
+				if (isCollision(this.x - this.speed, this.y, this.width, this.height, gemLock2.x, gemLock2.y,
+					gemLock2.width, gemLock2.height) == true && gems.length > 0 && room == 16)
 				{
 					leftCollision = true;
 				}
@@ -589,6 +633,11 @@ Player.prototype.update = function(){
 				{
 					upCollision = true;
 				}
+				if (isCollision(this.x, this.y, this.width, this.height, gemLock2.x, gemLock2.y,
+					gemLock2.width, gemLock2.height + this.speed) == true && gems.length > 0 && room == 16)
+				{
+					upCollision = true;
+				}
 				if (upCollision == false)
 				{
 					this.y-= this.speed;
@@ -626,6 +675,11 @@ Player.prototype.update = function(){
 			}
 			if (isCollision(this.x, this.y + this.speed, this.width, this.height, gemLock.x, gemLock.y,
 				gemLock.width, gemLock.height) == true && gems.length > 0 && room == 6)
+			{
+				downCollision = true;
+			}
+			if (isCollision(this.x, this.y + this.speed, this.width, this.height, gemLock2.x, gemLock2.y,
+				gemLock2.width, gemLock2.height) == true && gems.length > 0 && room == 16)
 			{
 				downCollision = true;
 			}
