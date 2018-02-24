@@ -1,12 +1,26 @@
 var viewPlayers = function(){
+	var columnCount = 0;
+	var playerRow = 0;
 	$("br").remove();
 	$(".title").remove();
 	$(".container-fluid").remove();
-	$(".main-container").append("<h2 class='title'>PLEASE SELECT A PLAYER</h2><br><div class='container-fluid'><div class='row players'></div></div>");
+	$(".main-container").append("<h2 class='title'>PLEASE SELECT A PLAYER</h2><br><div class='container-fluid'><div class='row players0'></div></div>");
 	for (i in ESuserArray)
 	{
-		$(".players").append("<div class='col-sm avatar-name' id='user" + ESuserArray[i].id + "'><h3>" + ESuserArray[i].name +
-		"</h3>" + "<img src='" + ESuserArray[i].img + "' alt='Avatar' class='img-responsive'/>" + "<h5>" + ESuserArray[i].nickName + "</h5>" + "<br></div>");	
+		if (columnCount > 3)
+		{
+			columnCount = 0;
+			playerRow ++;
+			$(".container-fluid").append("<div class='row players" + playerRow +"'></div></div>");
+			$(".players" + playerRow).append("<div class='col-sm-3 avatar-col'><div class='avatar-name' id='user" + ESuserArray[i].id + "'><h3>" + ESuserArray[i].name +
+			"</h3>" + "<img src='" + ESuserArray[i].img + "' alt='Avatar' class='img-responsive player-img'/>" + "<h5>" + ESuserArray[i].nickName + "</h5>" + "</div><br></div>");
+		}
+		else
+		{
+			$(".players" + playerRow).append("<div class='col-sm-3 avatar-col'><div class='avatar-name' id='user" + ESuserArray[i].id + "'><h3>" + ESuserArray[i].name +
+			"</h3>" + "<img src='" + ESuserArray[i].img + "' alt='Avatar' class='img-responsive player-img'/>" + "<h5>" + ESuserArray[i].nickName + "</h5>" + "</div><br></div>");
+		}
+		columnCount++;
 	}
 	$(".avatar-name").click("click", function(){viewStatPage(this.id)});
 };
@@ -15,6 +29,7 @@ viewPlayers();
 
 var viewStatPage = function(user){
 	var id = Number(user.replace("user", ""));
+	console.log(user);
 	var thisUser;
 	//identify the user that we're working with
 	for (i = 0; i < ESuserArray.length; i++)
