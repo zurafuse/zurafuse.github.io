@@ -7,15 +7,16 @@ function update(){
 		drawBlocks();
 		drawGems();
 		drawHearts();
-		if (superToilet.exist == true && room == 5){superToilet.update()}
-		if (gemLock.exist == true && room == 6){gemLock.update()}
-		if (gemLock2.exist == true && room == 16){gemLock2.update()}
-		if (room == 4){octaforce.update()}
-		if (weapon.exist == true && room == 13){weapon.update()}
-		if (hammer.exist == true && room == 23){hammer.update()}
-		if (plunger.exist == true && room == 14){plunger.update()}
-		if (boat.exist == true && room == 3){boat.update()}
-		if (key.exist == true && room == 3){key.update()}
+		drawShower();
+		if (superToilet.exist == true && room == superToilet.room){superToilet.update()}
+		if (gemLock.exist == true && room == gemLock.room){gemLock.update()}
+		if (gemLock2.exist == true && room == gemLock2.room){gemLock2.update()}
+		if (room == octaforce.room){octaforce.update()}
+		if (weapon.exist == true && room == weapon.room){weapon.update()}
+		if (hammer.exist == true && room == hammer.room){hammer.update()}
+		if (plunger.exist == true && room == plunger.room){plunger.update()}
+		if (boat.exist == true && room == boat.room){boat.update()}
+		if (key.exist == true && room == key.room){key.update()}
 		if (dir.lead != "down"){sword.update();};
 		player.update();
 		if (dir.lead == "down"){sword.update();}
@@ -26,7 +27,7 @@ function update(){
 			restart();
 		}
 		if (isCollision(player.x, player.y, player.width, player.height, octaforce.x, octaforce.y,
-			octaforce.width, octaforce.height) == true && room == 4)
+			octaforce.width, octaforce.height) == true && room == octaforce.room)
 		{
 			restart();
 		}

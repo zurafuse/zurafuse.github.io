@@ -8,6 +8,11 @@ function blockLine(dir, type)
 	{
 		sx = 100;		
 	}
+	if (type == "tree2")
+	{
+		sy = 200;
+		sx = 200;		
+	}
 	else if (type == "stone1")
 	{
 		sx = 0; sy = 200;
@@ -119,6 +124,8 @@ function populate(room){
 		//stone walls
 		blockLine("east", "stone1");
 		blockLine("west", "stone1");
+		
+		showers.push(new showerClass(4, 5));
 	}
 	if (room == 4)
 	{
@@ -149,6 +156,17 @@ function populate(room){
 		//trees
 		blockLine("south", "tree");
 		blockLine("east", "tree");
+		blocks.push(new blockClass(crayonImages.backgrounds, 200, 200, 100, 100, 23, 13, sprtHtControl, sprtHtControl));
+				
+		blocks.push(new blockClass(crayonImages.backgrounds, 200, 200, 100, 100, 27, 10, sprtHtControl, sprtHtControl));
+				
+		//rocks
+		blocks.push(new blockClass(crayonImages.backgrounds, 0, 0, 100, 100, 23, 12, sprtHtControl, sprtHtControl, "rock"));
+		blocks.push(new blockClass(crayonImages.backgrounds, 0, 0, 100, 100, 23, 11, sprtHtControl, sprtHtControl, "rock"));
+		blocks.push(new blockClass(crayonImages.backgrounds, 0, 0, 100, 100, 23, 10, sprtHtControl, sprtHtControl, "rock"));
+		blocks.push(new blockClass(crayonImages.backgrounds, 0, 0, 100, 100, 24, 10, sprtHtControl, sprtHtControl, "rock"));
+		blocks.push(new blockClass(crayonImages.backgrounds, 0, 0, 100, 100, 25, 10, sprtHtControl, sprtHtControl, "rock"));	
+		blocks.push(new blockClass(crayonImages.backgrounds, 0, 0, 100, 100, 26, 10, sprtHtControl, sprtHtControl, "rock"));		
 	}
 	if (room == 10)
 	{
@@ -362,6 +380,12 @@ function populate(room){
 		{
 			blocks.push(new blockClass(crayonImages.backgrounds, 100, 100, 100, 100, i, gridHeight - 1, sprtHtControl, sprtHtControl, "water"));
 		}
+		//trees
+		blocks.push(new blockClass(crayonImages.backgrounds, 200, 200, 100, 100, 1, 5, sprtHtControl, sprtHtControl), new blockClass(crayonImages.backgrounds, 200, 200, 100, 100, 2, 5, sprtHtControl, sprtHtControl),
+		new blockClass(crayonImages.backgrounds, 200, 200, 100, 100, 3, 5, sprtHtControl, sprtHtControl), new blockClass(crayonImages.backgrounds, 200, 200, 100, 100, 4, 5, sprtHtControl, sprtHtControl),
+		new blockClass(crayonImages.backgrounds, 200, 200, 100, 100, 5, 5, sprtHtControl, sprtHtControl), new blockClass(crayonImages.backgrounds, 200, 200, 100, 100, 5, 4, sprtHtControl, sprtHtControl),
+		new blockClass(crayonImages.backgrounds, 200, 200, 100, 100, 5, 1, sprtHtControl, sprtHtControl));
+			
 	}
 	if (room == 31)
 	{

@@ -10,6 +10,42 @@ var backgrounds = [];
 //myMusic.loop = true;
 //myMusic.play();
 
+var playerStrike = function(striker, target){
+		if (dir.lead == "left" && player.sword == true)
+		{
+			if (target.x + target.width > striker.x - (striker.width * .75) && target.x + target.width < striker.x + striker.width && 
+				target.y < striker.y + striker.height && target.y + target.height > striker.y)
+			{
+				return true;
+			}
+		}
+		if (dir.lead == "right" && player.sword == true)
+		{
+			if (target.x < striker.x + striker.width + (striker.width * .75) && target.x + target.width > striker.x && 
+				target.y < striker.y + striker.height && target.y + target.height > striker.y)
+			{
+				return true;
+			}
+		}
+		if (dir.lead == "up" && player.sword == true)
+		{
+			if (target.x + target.width > striker.x && target.x < striker.x + striker.width && 
+				target.y + target.height > striker.y - (striker.height * .75) && target.y < striker.y)
+			{
+				return true;
+			}
+		}
+		if (dir.lead == "down" && player.sword == true)
+		{
+			if (target.x + target.width > striker.x && target.x < striker.x + striker.width && 
+				target.y < striker.y + striker.height + (striker.height * .75) && target.y + target.height > striker.y * 1.15)
+			{
+				return true;
+			}
+		}
+	return false;
+}
+
 function restart(){
 	//empty the arrays.
 	showers = [];
@@ -148,12 +184,19 @@ var drawHearts = function(){
 	}
 };
 
+var drawShower = function(){
+	for (i in showers)
+	{
+		showers[i].update();
+	}
+};
 
 function populateItems(){
 	//gems
-	gems.push(new gemClass(3, 4, 3), new gemClass(4, 4, 3));
+	gems.push(new gemClass(3, 4, 3), new gemClass(4, 4, 3), new gemClass(3, 11, 3), new gemClass(20, 3, 3), 
+	new gemClass(12, 6, 17), new gemClass(26, 12, 7), new gemClass(25, 12, 7));
 	//hearts
-	hearts.push(new heartClass(3, 7, 13), new heartClass(4, 7, 13));
+	hearts.push(new heartClass(3, 7, 33), new heartClass(4, 7, 13), new heartClass(12, 6, 11));
 }
 
 populateItems();
