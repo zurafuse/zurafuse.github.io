@@ -1,4 +1,31 @@
+var menu = false;
+//Toggle the Menu Button
+
+var showMenu = function(){
+	menu = true;
+	$(".nav-bar-mobile").css("display", "block");
+	$(".menu-icon-img").attr("src", "images/hide-menu-icon.png");	
+};
+
+var hideMenu = function(){
+	menu = false;
+	$(".nav-bar-mobile").css("display", "none");	
+	$(".menu-icon-img").attr("src", "images/menu-icon.png");	
+}
+
+$(".menu-icon").click("click", function(){
+	if (menu == false)
+	{
+		showMenu();
+	}
+	else
+	{
+		hideMenu();
+	}
+});
+
 var viewPlayers = function(){
+	hideMenu();
 	var columnCount = 0;
 	var playerRow = 0;
 	$("br").remove();
@@ -28,6 +55,7 @@ var viewPlayers = function(){
 viewPlayers();
 
 var viewStatPage = function(user){
+	hideMenu();
 	var id = Number(user.replace("user", ""));
 	console.log(user);
 	var thisUser;
@@ -43,7 +71,7 @@ var viewStatPage = function(user){
 	$(".title").remove();
 	$(".players").remove();
 	$(".container-fluid").remove();
-	$(".main-container").append("<div class='container-fluid'></div>");
+	$(".main-container").append("<div class='container-fluid es-container'></div>");
 	$(".container-fluid").append("<div class='row'><div class='col-sm-4'><img src='" + thisUser.img + "' alt='avatar' class='img-responsive'></div>" + 
 		"<div class='col-sm-8'><div class='row'><p>" + thisUser.name + 
 		" (" + thisUser.nickName + ")</p></div><div class='row'><p>Rank: " + thisUser.title + "</p></div>" + 
@@ -59,12 +87,13 @@ var viewStatPage = function(user){
 		$(".user-quests").click("click", function(){getQuests(thisUser)});
 }
 
-var getTrophies = function(thisUser){	
+var getTrophies = function(thisUser){
+	hideMenu();
 	//display all trophies associated with user
 	if (thisUser.trophies.length > 0)
 	{
 		$(".container-fluid").remove();
-		$(".main-container").append("<div class='container-fluid'><div class='row'><p>Trophies:</p></div></div>");
+		$(".main-container").append("<div class='container-fluid es-container'><div class='row'><p>Trophies:</p></div></div>");
 		for (i = 0; i < thisUser.trophies.length; i++)
 		{
 			for (j = 0; j < EStrophyArray.length; j++)
@@ -82,11 +111,12 @@ var getTrophies = function(thisUser){
 };
 
 var getPrizes = function(thisUser){
+	hideMenu();
 	//display all prizes associated with user
 	if (thisUser.prizes.length > 0)
 	{
 		$(".container-fluid").remove();
-		$(".main-container").append("<div class='container-fluid'><div class='row'><p>Prizes:</p></div></div>");
+		$(".main-container").append("<div class='container-fluid es-container'><div class='row'><p>Prizes:</p></div></div>");
 		for (i = 0; i < thisUser.prizes.length; i++)
 		{
 			for (j = 0; j < ESprizeArray.length; j++)
@@ -104,12 +134,13 @@ var getPrizes = function(thisUser){
 };
 
 var getQuests = function(thisUser){
+	hideMenu();
 	var isQuests = false;
 	//display all tasks assigned to user
 	if (ESquestArray.length > 0)
 	{
 		$(".container-fluid").remove();
-		$(".main-container").append("<div class='container-fluid'><div class='row'><p>Quests:</p></div></div>");
+		$(".main-container").append("<div class='container-fluid es-container'><div class='row'><p>Quests:</p></div></div>");
 		for (i = 0; i < ESquestArray.length; i++)
 		{
 				if (thisUser.id == ESquestArray[i].user)
@@ -128,10 +159,11 @@ var getQuests = function(thisUser){
 };	
 
 var viewTrophies = function(){	
+	hideMenu();
 	//display all trophies
 		$(".title").remove();
 		$(".container-fluid").remove();
-		$(".main-container").append("<div class='container-fluid'><div class='row'><p>Trophies:</p></div></div>");
+		$(".main-container").append("<div class='container-fluid es-container'><div class='row'><p>Trophies:</p></div></div>");
 			for (i = 0; i < EStrophyArray.length; i++)
 			{
 					$(".container-fluid").append("<div class='row'><img src='" + 
@@ -139,11 +171,12 @@ var viewTrophies = function(){
 			}
 };
 
-var viewPrizes = function(){	
+var viewPrizes = function(){
+	hideMenu();
 	//display all prizes
 		$(".title").remove();
 		$(".container-fluid").remove();
-		$(".main-container").append("<div class='container-fluid'><div class='row'><p>Prizes:</p></div></div>");
+		$(".main-container").append("<div class='container-fluid es-container'><div class='row'><p>Prizes:</p></div></div>");
 			for (i = 0; i < ESprizeArray.length; i++)
 			{
 					$(".container-fluid").append("<div class='row'><img src='" + 
@@ -151,11 +184,12 @@ var viewPrizes = function(){
 			}
 };
 
-var viewQuests = function(){	
+var viewQuests = function(){
+	hideMenu();
 	//display all quests
 		$(".title").remove();
 		$(".container-fluid").remove();
-		$(".main-container").append("<div class='container-fluid'><div class='row'><p>Available Quests:</p></div></div>");
+		$(".main-container").append("<div class='container-fluid es-container'><div class='row'><p>Available Quests:</p></div></div>");
 			for (i = 0; i < ESquestArray.length; i++)
 			{
 				if (ESquestArray[i].user != null && ESquestArray[i].user != undefined && ESquestArray[i].user != 0)
@@ -178,11 +212,12 @@ var viewQuests = function(){
 			}
 };
 
-var viewActivities = function(){	
+var viewActivities = function(){
+	hideMenu();
 	//display all activities
 		$(".title").remove();
 		$(".container-fluid").remove();
-		$(".main-container").append("<div class='container-fluid'><div class='row'><p>Activities:</p></div></div>");
+		$(".main-container").append("<div class='container-fluid es-container'><div class='row'><p>Activities:</p></div></div>");
 			for (i = 0; i < ESactivityArray.length; i++)
 			{
 					$(".container-fluid").append("<div class='row'>" + ESactivityArray[i].txt + " (" + ESactivityArray[i].date + ")</div>");

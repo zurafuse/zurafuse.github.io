@@ -1,3 +1,4 @@
+
 //create an array for users, trophies, prizes and quests.
 var ESuserArray = [];
 var EStrophyArray = [];
@@ -42,7 +43,5 @@ for (i = 0; i < ES_Trophies.length; i++)
 {
 	ES_Trophies[i].update();
 }
-
-
 
 
