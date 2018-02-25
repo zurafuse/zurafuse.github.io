@@ -11,7 +11,29 @@
 </head>
 <body>
 	<div class="main-container">
-		<nav><div class="nav-container"><ul class="nav-bar"><li onclick='viewPlayers()'>PLAYERS</li><li onclick='viewQuests()'>QUESTS</li><li onclick='viewPrizes()'>PRIZES</li><li onclick='viewTrophies()'>TROPHIES</li><li onclick='viewActivities()'>ACTIVITY</li></ul></div></nav>
+		<nav>
+			<div class="nav-container">
+				<button class='menu-icon'>
+					<img src='images/menu-icon.png' alt='toggle icon' class='menu-icon-img'/>
+				</button>
+				<ul class="nav-bar">
+					<li onclick='viewPlayers()'>PLAYERS</li>
+					<li onclick='viewQuests()'>QUESTS</li>
+					<li onclick='viewPrizes()'>PRIZES</li>
+					<li onclick='viewTrophies()'>TROPHIES</li>
+					<li onclick='viewActivities()'>ACTIVITY</li>
+				</ul>
+				<div class="mobile-bar">
+					<ul class="nav-bar-mobile">
+						<li onclick='viewPlayers()'>PLAYERS</li>
+						<li onclick='viewQuests()'>QUESTS</li>
+						<li onclick='viewPrizes()'>PRIZES</li>
+						<li onclick='viewTrophies()'>TROPHIES</li>
+						<li onclick='viewActivities()'>ACTIVITY</li>
+					</ul>
+				</div>
+			</div>
+		</nav>
 	</div>
 	<script src="js/model.js"></script>
 	<script src="js/app.js"></script>

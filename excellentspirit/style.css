@@ -17,6 +17,10 @@ html{
 	width: 100%;
 }
 
+.menu-icon {
+	display: none;
+}
+
 .avatar-col {
 	text-align: center;
 	width: 100%;
@@ -39,6 +43,11 @@ html{
 	color: white;
 	text-shadow: -1px -1px 0 black, 1px -1px 0 black, -1px 1px 0 black, 1px 1px 0 black;
 	width: 100%;
+	padding-top: 50px;
+}
+
+.es-container {
+	padding-top: 50px;
 }
 
 .players {
@@ -59,11 +68,22 @@ html{
     text-align: center;	
 }
 
+nav {
+	width: 100%;
+	max-width: 100%;
+	position: fixed;
+	z-index: 1;
+}
+
 .nav-bar {
 	display: block;
 	position: relative;
     margin: 0;
     padding: 0;
+}
+
+.mobile-bar {
+		display: none;
 }
 
 .nav-bar li {
@@ -98,20 +118,152 @@ html{
 	.player-img {
 		max-width: 65%;
 	}
-
+	
+	.menu-icon {
+		display: block;
+		position: fixed;
+		z-index: 2;	
+		left: 5px;
+	}
+	
+	.nav-bar {
+		display: none;
+	}
+	
+	.mobile-bar {
+		display: block;
+	}
+	
+	.nav-bar-mobile {
+		display: block;
+		position: relative;
+		margin: 0;
+		padding: 0;
+	}
+	
+	.nav-bar-mobile li {
+		font-weight: bold;
+		font-size: 19pt;
+		color: white;
+		background-color: orange;
+		display: block;
+		list-style-type: none;	
+		padding: 10px 15px;
+	}
+	
+	.nav-bar-mobile li:hover {
+		font-weight: bold;
+		font-size: 19pt;
+		color: white;
+		text-shadow: -1px -1px 0 black, 1px -1px 0 black, -1px 1px 0 black, 1px 1px 0 black;
+		background-color: yellow;
+		display: block;
+		list-style-type: none;	
+		padding: 10px 15px;
+		margin-left: auto;
+		margin-right: auto;
+	}
 }
 
-@media screen and (min-width: 481px) and (max-width: 767px)
+@media screen and (min-width: 481px) and (max-width: 700px)
 {
+	
 	.player-img {
-		max-width: 65%;
+		max-width: 75%;
+	}
+	
+	.menu-icon {
+		display: block;
+		position: fixed;
+		z-index: 2;	
+		left: 5px;
+	}
+	
+	.nav-bar {
+		display: none;
+	}
+	
+	.mobile-bar {
+		display: block;
+	}
+	
+	.nav-bar-mobile {
+		display: block;
+		position: relative;
+		margin: 0;
+		padding: 0;
+	}
+	
+	.nav-bar-mobile li {
+		font-weight: bold;
+		font-size: 19pt;
+		color: white;
+		background-color: orange;
+		display: block;
+		list-style-type: none;	
+		padding: 10px 15px;
+	}
+	
+	.nav-bar-mobile li:hover {
+		font-weight: bold;
+		font-size: 19pt;
+		color: white;
+		text-shadow: -1px -1px 0 black, 1px -1px 0 black, -1px 1px 0 black, 1px 1px 0 black;
+		background-color: yellow;
+		display: block;
+		list-style-type: none;	
+		padding: 10px 15px;
+		margin-left: auto;
+		margin-right: auto;
 	}
 
-
 }
 
-@media screen and (min-width: 768px) and (max-width: 1024px)
+@media screen and (min-width: 701px)
 {
+	
+	.menu-icon {
+		display: none;
+	}
+
+	.mobile-bar {
+		display: none;
+	}
+	
+	.nav-bar {
+		display: block;
+		position: relative;
+		margin: 0;
+		padding: 0;
+	}
+	
+	.nav-bar li {
+		font-weight: bold;
+		font-size: 19pt;
+		color: white;
+		background-color: orange;
+		display: block;
+		display: inline;
+		list-style-type: none;	
+		padding: 10px 15px;
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+	.nav-bar li:hover {
+		font-weight: bold;
+		font-size: 19pt;
+		color: white;
+		text-shadow: -1px -1px 0 black, 1px -1px 0 black, -1px 1px 0 black, 1px 1px 0 black;
+		background-color: yellow;
+		display: block;
+		display: inline;
+		list-style-type: none;	
+		padding: 10px 15px;
+		margin-left: auto;
+		margin-right: auto;
+	}
+	
 	.player-container {
 		margin-left: 2%;
 		margin-right: 2%;
