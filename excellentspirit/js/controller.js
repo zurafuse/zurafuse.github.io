@@ -78,9 +78,9 @@ var viewStatPage = function(user){
 		"<div class='row'><p>Level: " + thisUser.level + "</p></div>" + "<div class='row'><p>Experience Points: " + 
 		thisUser.xp + "</p></div>" + "<div class='row'><p>Coins: " + thisUser.money + "</p></div></div></div>" + 
 		"<div class='row'><div class='col-sm-4'><div class='row'><p>Health: " + thisUser.health + "</p></div><div class='row'><p>Stars: " + 
-		thisUser.stars + "</p></div><div class='row'><button user-prizes>Prizes (" + thisUser.prizes.length + ")</button></div><div class='row'><button user-quests>Quests</button>" + 
+		thisUser.stars + "</p></div><div class='row'><button class='user-prizes'>Prizes (" + thisUser.prizes.length + ")</button></div><div class='row'><button class='user-quests'>Quests</button>" + 
 		"</div></div><div class='col-sm-8'><div class='row'><p>Status: " + thisUser.stat + 
-		"</p></div><div class='row'><p>Demerits: " + thisUser.demerits + "</p></div><div class='row'><button user-trophies>Trophies (" + 
+		"</p></div><div class='row'><p>Demerits: " + thisUser.demerits + "</p></div><div class='row'><button class='user-trophies'>Trophies (" + 
 		thisUser.trophies.length + ")</button></div></div></div>");
 		$(".user-trophies").click("click", function(){getTrophies(thisUser)});
 		$(".user-prizes").click("click", function(){getPrizes(thisUser)});
