@@ -58,6 +58,7 @@ function populate(room){
 	chickens = [];
 	blocks = [];
 	backgrounds = [];
+	bullets = [];
 	if (room == 0)
 	{
 		//grass
@@ -124,8 +125,6 @@ function populate(room){
 		//stone walls
 		blockLine("east", "stone1");
 		blockLine("west", "stone1");
-		
-		showers.push(new showerClass(4, 5));
 	}
 	if (room == 4)
 	{
@@ -216,7 +215,8 @@ function populate(room){
 		for (i = 6; i < 15; i++)
 		{
 			backgrounds.push(new blockClass(crayonImages.backgrounds, 200, 0, 100, 100, 14, i, sprtHtControl, sprtHtControl));
-		}	
+		}
+		showers.push(new showerClass(4, 5));
 	}
 	if (room == 14)
 	{

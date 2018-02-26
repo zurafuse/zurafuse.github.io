@@ -8,6 +8,7 @@ function update(){
 		drawGems();
 		drawHearts();
 		drawShower();
+		drawBullets();
 		if (superToilet.exist == true && room == superToilet.room){superToilet.update()}
 		if (gemLock.exist == true && room == gemLock.room){gemLock.update()}
 		if (gemLock2.exist == true && room == gemLock2.room){gemLock2.update()}

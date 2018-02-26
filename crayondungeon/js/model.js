@@ -138,6 +138,7 @@ var showerClass = function(x, y){
 	this.width = sprtHtControl * 1.3;
 	this.height = sprtHtControl * 2;
 	this.counter = 0;
+	this.bulletCount = 0;
 	this.dir = "right";
 	this.update = function(){
 		if (this.dir == "left")
@@ -170,6 +171,67 @@ var showerClass = function(x, y){
 		{
 			player.health--;		
 		}
+		//face direction of player.
+		if (player.x > this.x)
+		{
+			this.dir = "right";
+		}
+		else
+		{
+			this.dir = "left";		
+		}
+		if (this.y < player.y + player.height && this.y + this.height > player.y)
+		{
+			if (this.bulletCount == 0)
+			{
+				if (this.dir == "right")
+				{
+					bullets.push(new bulletClass(this.x + this.width, this.y, this.dir));
+				}
+				else
+				{
+					bullets.push(new bulletClass(this.x, this.y, this.dir));
+				}
+			}
+			this.bulletCount++;
+			if (this.bulletCount > 25)
+			{
+				this.bulletCount = 0;
+			}
+		}
+	};
+};
+
+var bulletClass = function(x, y, dir){
+	this.x = x;
+	this.y = y + (sprtHtControl * .28);
+	this.width = sprtHtControl * .4;
+	this.height = sprtHtControl * .13;
+	this.color = "blue";
+	this.speed = sprtHtControl * .1;
+	this.update = function(){
+		ctx.fillStyle = this.color;
+		ctx.fillRect(this.x,this.y,this.width,this.height);
+		if (dir == "left")
+		{
+			this.x-= this.speed;
+		}
+		else
+		{
+			this.x+= this.speed;
+		}
+		//to save memory, remove bullet from array if it goes off the screen.
+		if (this.x < 0 || this.x > canvas.width)
+		{
+			bullets.splice(i,1)
+		}
+		//damage player
+		if (isCollision(this.x, this.y, this.width, this.height, player.x, player.y,
+			player.width, player.height) == true)
+		{
+			player.health-= 10;
+			bullets.splice(i,1);
+		}		
 	};
 };
 

@@ -5,6 +5,7 @@ var blocks = [];
 var gems = [];
 var hearts = [];
 var backgrounds = [];
+var bullets = [];
 
 //var myMusic = new Audio("sound/music.mp3");
 //myMusic.loop = true;
@@ -52,6 +53,7 @@ function restart(){
 	toilets = [];
 	blocks = [];
 	gems = [];
+	bullets = [];
 	hearts = [];
 	backgrounds = [];
 	//set the room and player back to starting position.
@@ -188,6 +190,13 @@ var drawShower = function(){
 	for (i in showers)
 	{
 		showers[i].update();
+	}
+};
+
+var drawBullets = function(){
+	for (i in bullets)
+	{
+		bullets[i].update();
 	}
 };
 
