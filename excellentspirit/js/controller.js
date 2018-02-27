@@ -76,8 +76,8 @@ var viewStatPage = function(user){
 		"<div class='col-sm-8'><div class='row stat-row'><p class='stat-text'>" + thisUser.name + 
 		" (" + thisUser.nickName + ")</p></div><div class='row stat-row'><p class='stat-text'>Rank: " + thisUser.title + "</p></div>" + 
 		"<div class='row stat-row'><p class='stat-text'>Level: " + thisUser.level + "</p></div>" + "<div class='row stat-row'><p class='stat-text'>Experience Points: " + 
-		thisUser.xp + "</p></div>" + "<div class='row stat-row'><p class='stat-text'>Coins: " + thisUser.money + "</p></div></div></div>" + 
-		"<div class='row'><div class='col-sm-4'><div class='row stat-row'><p class='stat-text'>Health: " + thisUser.health + 
+		thisUser.xp + "</p></div>" + "<div class='row stat-row'><p class='stat-text'>&#164; Coins: " + thisUser.money + "</p></div></div></div>" + 
+		"<div class='row'><div class='col-sm-4'><div class='row stat-row'><p class='stat-text'>&#9829; Health: " + thisUser.health + 
 		"</p></div><div class='row stat-row'><p class='stat-text'>&#9733 Stars: " + 
 		thisUser.stars + "</p></div><div class='row stat-row'><p class='stat-text'>Demerits: " + thisUser.demerits + "</p></div><div class='row stat-row'><p class='stat-text'>Status: " + thisUser.stat + 
 		"</p></div></div><div class='col-sm-8'><div class='row stat-row'><button class='user-quests stat-button'>Quests</button></div>" + 
@@ -95,15 +95,17 @@ var getTrophies = function(thisUser){
 	if (thisUser.trophies.length > 0)
 	{
 		$(".container-fluid").remove();
-		$(".main-container").append("<div class='container-fluid es-container'><div class='row'><p class='view-header'>Trophies:</p></div></div>");
+		$(".main-container").append("<div class='container-fluid es-container'><div class='row'><p class='view-header'>" + thisUser.name +
+		"'s Trophies:</p></div>" + 
+		"<div class='row trophy-row'></div></div>");
 		for (i = 0; i < thisUser.trophies.length; i++)
 		{
 			for (j = 0; j < EStrophyArray.length; j++)
 			{
 				if (thisUser.trophies[i] == EStrophyArray[j].id)
 				{
-					$(".container-fluid").append("<div class='row'><img src='" + 
-					EStrophyArray[j].img + "' alt='trophy' /></div>");
+					$(".trophy-row").append("<div class='col-sm'><figure><img src='" + EStrophyArray[i].img + 
+					"' alt='Trophy' /><figcaption>" + EStrophyArray[i].name + "</figcaption></figure></div>");
 				}
 			}
 		}
@@ -118,7 +120,8 @@ var getPrizes = function(thisUser){
 	if (thisUser.prizes.length > 0)
 	{
 		$(".container-fluid").remove();
-		$(".main-container").append("<div class='container-fluid es-container'><div class='row'><p class='view-header'>Prizes:</p></div>" + 
+		$(".main-container").append("<div class='container-fluid es-container'><div class='row'><p class='view-header'>" + thisUser.name +
+		"'s Prizes:</p></div>" + 
 		"<div class='row prize-row'></div></div>");
 		for (i = 0; i < thisUser.prizes.length; i++)
 		{
@@ -144,7 +147,7 @@ var getQuests = function(thisUser){
 	{
 		$(".container-fluid").remove();
 		$(".main-container").append("<div class='container-fluid es-container'><div class='row'><p class='view-header'>" + 
-		thisUser.name + "'s " + "Quests:</p></div></div>");
+		thisUser.name + "'s Quests:</p></div></div>");
 		for (i = 0; i < ESquestArray.length; i++)
 		{
 				if (thisUser.id == ESquestArray[i].user)
@@ -163,16 +166,17 @@ var getQuests = function(thisUser){
 		$(".player-return").click("click", function(){viewStatPage("user" + thisUser.id)});
 };	
 
-var viewTrophies = function(){	
+var viewTrophies = function(){
 	hideMenu();
 	//display all trophies
 		$(".title").remove();
 		$(".container-fluid").remove();
-		$(".main-container").append("<div class='container-fluid es-container'><div class='row'><p class='view-header'>Trophies:</p></div></div>");
+		$(".main-container").append("<div class='container-fluid es-container'><div class='row'><p class='view-header'>Trophies:</p></div>" + 
+		"<div class='row trophy-row'></div></div>");
 			for (i = 0; i < EStrophyArray.length; i++)
 			{
-					$(".container-fluid").append("<div class='row'><img src='" + 
-					EStrophyArray[i].img + "' alt='trophy' /></div>");
+					$(".trophy-row").append("<div class='col-sm'><figure><img src='" + EStrophyArray[i].img + 
+					"' alt='Trophy' /><figcaption>" + EStrophyArray[i].name + "</figcaption></figure></div>");
 			}
 };
 

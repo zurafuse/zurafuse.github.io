@@ -1,12 +1,11 @@
 
-
 //populate users from a database or AJAX call (preferably in JSON format).
 //For a demo, these are hardcoded for now. The "id" property will be a unique identification number, probably assigned by a database.
 var ES_Users = 
 [
 	{
 		img: "images/kaden.png", 
-		name: "Kaden", nick_name: "Ninja Kaden",
+		name: "Solomon", nick_name: "Ninja Solomon",
 		id: 001,
 		money: 0,
 		health: 100,
@@ -15,14 +14,14 @@ var ES_Users =
 		trophies: [101, 102],
 		prizes: [202, 203],
 		title: "warrior",
-		stars: 0,
+		stars: 1,
 		xp: 0
 	}, 
 	{
 		img: "images/josiah.png", 
-		name: "Josiah", 
+		name: "David", 
 		id: 002,
-		nick_name: "Super Yoshi",
+		nick_name: "Super David",
 		money: 0,
 		health: 100,
 		demerits: 0,
@@ -30,15 +29,15 @@ var ES_Users =
 		trophies: [101],
 		prizes: [203],
 		title: "warrior",
-		stars: 0,
+		stars: 2,
 		xp: 0
 	}
 ];
 
 //populate from database, possibly via a JSON object passed through AJAX
 var ES_Activities = [
-	{user: 001, txt: "Kaden has been awarded the Super Star Trophy.", date: "February 21, 2018 10:30 AM"}, 
-	{user: 002, txt: "Josiah has won 2 stars.", date: "February 22, 2018 1:30 PM"}
+	{user: 001, txt: "Solomon has been awarded the Trophy of Diligence.", date: "February 21, 2018 10:30 AM"}, 
+	{user: 002, txt: "David has won 2 stars.", date: "February 22, 2018 1:30 PM"}
 ];
 
 //These trophies will be populated from a database, probably via AJAX call.
@@ -46,7 +45,7 @@ var ES_Activities = [
 //the trophy should be automatically assigned to anyone. A user can only have one of each trophy, so check for the existence of "this" trophy before assigning its id to a user.
 var ES_Trophies = [
 	{
-		name: "Trophy of Justice",
+		name: "Trophy of Diligence",
 		description: "Sample Trophy.",
 		id: 101,
 		img: "images/trophies/trophy1.png",
@@ -55,7 +54,7 @@ var ES_Trophies = [
 		}		
 	},
 	{
-		name: "Trophy of Power",
+		name: "Integrity Award",
 		description: "Sample Trophy.",
 		id: 102,
 		img: "images/trophies/trophy2.png",

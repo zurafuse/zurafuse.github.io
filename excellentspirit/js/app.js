@@ -44,7 +44,7 @@ for (i = 0; i < ES_Trophies.length; i++)
 	ES_Trophies[i].update();
 }
 
-//function to update each user's Level based on experience points.
+//function to update each user's Level based on experience points, and status based on health.
 var updateLevel = function(user){
 	if (user.xp > 100)
 	{
@@ -57,6 +57,19 @@ var updateLevel = function(user){
 	if (user.xp > 300)
 	{
 		user.level = 3;
+	}
+	//update status based on health.
+	if (user.health < 11)
+	{
+		user.stat = "weak";
+	}
+	else
+	{
+		user.stat = "healthy";
+	}
+	if (user.health > 90)
+	{
+		user.stat = "strong";
 	}
 };
 
