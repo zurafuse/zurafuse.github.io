@@ -46,6 +46,37 @@ html{
 	padding-top: 50px;
 }
 
+.item-img {
+	margin: 8px;
+	max-width: 100%;
+}
+
+.stat-text {
+	margin-left: 25px;
+	font-family: "Impact", Impact;
+	color: black;
+	font-size: 17pt;
+}
+
+.stat-button {
+	margin: 7px;
+	margin-left: 25px;
+	font-family: "Impact", Impact;
+	color: black;
+	font-size: 17pt;	
+}
+
+.stat-row:hover {
+	background-color: yellow;
+}
+
+.view-header {
+	margin-left: 15px;
+	font-size: 20pt;
+	color: white;
+	text-shadow: -1px -1px 0 black, 1px -1px 0 black, -1px 1px 0 black, 1px 1px 0 black;
+}
+
 .es-container {
 	padding-top: 50px;
 }
