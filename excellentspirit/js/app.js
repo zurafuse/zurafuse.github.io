@@ -44,4 +44,23 @@ for (i = 0; i < ES_Trophies.length; i++)
 	ES_Trophies[i].update();
 }
 
+//function to update each user's Level based on experience points.
+var updateLevel = function(user){
+	if (user.xp > 100)
+	{
+		user.level = 1;
+	}
+	if (user.xp > 200)
+	{
+		user.level = 2;
+	}
+	if (user.xp > 300)
+	{
+		user.level = 3;
+	}
+};
 
+for (i = 0; i < ESuserArray.length; i++)
+{
+	updateLevel(ESuserArray[i]);
+}

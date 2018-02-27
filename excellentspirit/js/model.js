@@ -13,7 +13,7 @@ var ES_Users =
 		demerits: 0,
 		stat : "healthy",
 		trophies: [101, 102],
-		prizes: [202],
+		prizes: [202, 203],
 		title: "warrior",
 		stars: 0,
 		xp: 0
@@ -28,7 +28,7 @@ var ES_Users =
 		demerits: 0,
 		stat : "healthy",
 		trophies: [101],
-		prizes: [],
+		prizes: [203],
 		title: "warrior",
 		stars: 0,
 		xp: 0
@@ -71,6 +71,13 @@ var ES_Prizes = [
 		description: "Allowance to watch 2 episodes of Phineas and Ferb.",
 		id: 202,
 		img: "images/prizes/phineas.png",
+		cost: 0
+	},
+	{
+		name: "$5",
+		description: "Shop online and select a prize worth $5.",
+		id: 203,
+		img: "images/prizes/5dollars.png",
 		cost: 0
 	}
 ];

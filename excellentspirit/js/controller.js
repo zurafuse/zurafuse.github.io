@@ -73,14 +73,16 @@ var viewStatPage = function(user){
 	$(".container-fluid").remove();
 	$(".main-container").append("<div class='container-fluid es-container'></div>");
 	$(".container-fluid").append("<div class='row'><div class='col-sm-4'><img src='" + thisUser.img + "' alt='avatar' class='img-responsive'></div>" + 
-		"<div class='col-sm-8'><div class='row'><p>" + thisUser.name + 
-		" (" + thisUser.nickName + ")</p></div><div class='row'><p>Rank: " + thisUser.title + "</p></div>" + 
-		"<div class='row'><p>Level: " + thisUser.level + "</p></div>" + "<div class='row'><p>Experience Points: " + 
-		thisUser.xp + "</p></div>" + "<div class='row'><p>Coins: " + thisUser.money + "</p></div></div></div>" + 
-		"<div class='row'><div class='col-sm-4'><div class='row'><p>Health: " + thisUser.health + "</p></div><div class='row'><p>Stars: " + 
-		thisUser.stars + "</p></div><div class='row'><p>Demerits: " + thisUser.demerits + "</p></div><div class='row'><p>Status: " + thisUser.stat + 
-		"</p></div></div><div class='col-sm-8'><div class='row user-quests'><button class='user-quests'>Quests</button></div>" + 
-		"<div class='row user-prizes'><button class='user-prizes'>Prizes (" + thisUser.prizes.length + ")</button></div><div class='row user-trophies'><button class='user-trophies'>Trophies (" + 
+		"<div class='col-sm-8'><div class='row stat-row'><p class='stat-text'>" + thisUser.name + 
+		" (" + thisUser.nickName + ")</p></div><div class='row stat-row'><p class='stat-text'>Rank: " + thisUser.title + "</p></div>" + 
+		"<div class='row stat-row'><p class='stat-text'>Level: " + thisUser.level + "</p></div>" + "<div class='row stat-row'><p class='stat-text'>Experience Points: " + 
+		thisUser.xp + "</p></div>" + "<div class='row stat-row'><p class='stat-text'>Coins: " + thisUser.money + "</p></div></div></div>" + 
+		"<div class='row'><div class='col-sm-4'><div class='row stat-row'><p class='stat-text'>Health: " + thisUser.health + 
+		"</p></div><div class='row stat-row'><p class='stat-text'>&#9733 Stars: " + 
+		thisUser.stars + "</p></div><div class='row stat-row'><p class='stat-text'>Demerits: " + thisUser.demerits + "</p></div><div class='row stat-row'><p class='stat-text'>Status: " + thisUser.stat + 
+		"</p></div></div><div class='col-sm-8'><div class='row stat-row'><button class='user-quests stat-button'>Quests</button></div>" + 
+		"<div class='row'><button class='user-prizes stat-button'>Prizes (" + thisUser.prizes.length + 
+		")</button></div><div class='row stat-row'><button class='user-trophies stat-button'>Trophies (" + 
 		thisUser.trophies.length + ")</button></div></div></div>");
 		$(".user-trophies").click("click", function(){getTrophies(thisUser)});
 		$(".user-prizes").click("click", function(){getPrizes(thisUser)});
@@ -93,7 +95,7 @@ var getTrophies = function(thisUser){
 	if (thisUser.trophies.length > 0)
 	{
 		$(".container-fluid").remove();
-		$(".main-container").append("<div class='container-fluid es-container'><div class='row'><p>Trophies:</p></div></div>");
+		$(".main-container").append("<div class='container-fluid es-container'><div class='row'><p class='view-header'>Trophies:</p></div></div>");
 		for (i = 0; i < thisUser.trophies.length; i++)
 		{
 			for (j = 0; j < EStrophyArray.length; j++)
@@ -105,7 +107,7 @@ var getTrophies = function(thisUser){
 				}
 			}
 		}
-		$(".container-fluid").append("<p class='player-return'>Return to " + thisUser.name + "</p>");
+		$(".container-fluid").append("<button class='player-return stat-button'>Return to " + thisUser.name + "</button>");
 		$(".player-return").click("click", function(){viewStatPage("user" + thisUser.id)});
 	}
 };
@@ -116,19 +118,20 @@ var getPrizes = function(thisUser){
 	if (thisUser.prizes.length > 0)
 	{
 		$(".container-fluid").remove();
-		$(".main-container").append("<div class='container-fluid es-container'><div class='row'><p>Prizes:</p></div></div>");
+		$(".main-container").append("<div class='container-fluid es-container'><div class='row'><p class='view-header'>Prizes:</p></div>" + 
+		"<div class='row prize-row'></div></div>");
 		for (i = 0; i < thisUser.prizes.length; i++)
 		{
 			for (j = 0; j < ESprizeArray.length; j++)
 			{
 				if (thisUser.prizes[i] == ESprizeArray[j].id)
 				{
-					$(".container-fluid").append("<div class='row'><img src='" + 
-					ESprizeArray[j].img + "' alt='prize' /></div>");
+					$(".prize-row").append("<div class='col-sm'><img src='" + 
+					ESprizeArray[j].img + "' class='img-responsive item-img' alt='prize' /></div>");
 				}
 			}
 		}
-		$(".container-fluid").append("<p class='player-return'>Return to " + thisUser.name + "</p>");
+		$(".container-fluid").append("<button class='player-return stat-button'>Return to " + thisUser.name + "</button>");
 		$(".player-return").click("click", function(){viewStatPage("user" + thisUser.id)});
 	}
 };
@@ -140,21 +143,23 @@ var getQuests = function(thisUser){
 	if (ESquestArray.length > 0)
 	{
 		$(".container-fluid").remove();
-		$(".main-container").append("<div class='container-fluid es-container'><div class='row'><p>Quests:</p></div></div>");
+		$(".main-container").append("<div class='container-fluid es-container'><div class='row'><p class='view-header'>" + 
+		thisUser.name + "'s " + "Quests:</p></div></div>");
 		for (i = 0; i < ESquestArray.length; i++)
 		{
 				if (thisUser.id == ESquestArray[i].user)
 				{
 					isQuests = true;
-					$(".container-fluid").append("<p>" + ESquestArray[i].name + ": " + ESquestArray[i].description + "</p>");
+					$(".container-fluid").append("<p class='stat-text'>" + 
+					ESquestArray[i].name + ": " + ESquestArray[i].description + "</p>");
 				}
 		}
 	}
 	if (isQuests == false)
 	{
-		$(".main-container").append("<p>No Quests currently assigned to this user.</p>");
+		$(".main-container").append("<p class='stat-text'>No Quests currently assigned to this user.</p>");
 	}
-		$(".container-fluid").append("<p class='player-return'>Return to " + thisUser.name + "</p>");
+		$(".container-fluid").append("<button class='player-return stat-button'>Return to " + thisUser.name + "</button>");
 		$(".player-return").click("click", function(){viewStatPage("user" + thisUser.id)});
 };	
 
@@ -163,7 +168,7 @@ var viewTrophies = function(){
 	//display all trophies
 		$(".title").remove();
 		$(".container-fluid").remove();
-		$(".main-container").append("<div class='container-fluid es-container'><div class='row'><p>Trophies:</p></div></div>");
+		$(".main-container").append("<div class='container-fluid es-container'><div class='row'><p class='view-header'>Trophies:</p></div></div>");
 			for (i = 0; i < EStrophyArray.length; i++)
 			{
 					$(".container-fluid").append("<div class='row'><img src='" + 
@@ -176,11 +181,12 @@ var viewPrizes = function(){
 	//display all prizes
 		$(".title").remove();
 		$(".container-fluid").remove();
-		$(".main-container").append("<div class='container-fluid es-container'><div class='row'><p>Prizes:</p></div></div>");
+		$(".main-container").append("<div class='container-fluid es-container'><div class='row'><p class='view-header'>Prizes:</p></div>" + 
+		"<div class='row prize-row'></div></div>");
 			for (i = 0; i < ESprizeArray.length; i++)
 			{
-					$(".container-fluid").append("<div class='row'><img src='" + 
-					ESprizeArray[i].img + "' alt='prize' /></div>");
+					$(".prize-row").append("<div class='col-sm'><img src='" + 
+					ESprizeArray[i].img + "' class='img-responsive item-img' alt='prize' /></div>");
 			}
 };
 
@@ -189,7 +195,7 @@ var viewQuests = function(){
 	//display all quests
 		$(".title").remove();
 		$(".container-fluid").remove();
-		$(".main-container").append("<div class='container-fluid es-container'><div class='row'><p>Available Quests:</p></div></div>");
+		$(".main-container").append("<div class='container-fluid es-container'><div class='row'><p class='view-header'>Available Quests:</p></div></div>");
 			for (i = 0; i < ESquestArray.length; i++)
 			{
 				if (ESquestArray[i].user != null && ESquestArray[i].user != undefined && ESquestArray[i].user != 0)
@@ -202,12 +208,12 @@ var viewQuests = function(){
 							thisUser = ESuserArray[j];
 						}
 					}
-					$(".container-fluid").append("<div class='row'>" + ESquestArray[i].name + ": " + ESquestArray[i].description + 
-					", assigned to " + thisUser.name + "</div>");
+					$(".container-fluid").append("<div class='row stat-row'><p class='stat-text'>" + ESquestArray[i].name + ": " + ESquestArray[i].description + 
+					", assigned to " + thisUser.name + "</p></div>");
 				}
 				else
 				{
-					$(".container-fluid").append("<div class='row'>" + ESquestArray[i].name + ": " + ESquestArray[i].description + "</div>");					
+					$(".container-fluid").append("<div class='row stat-row'><p class='stat-text'>" + ESquestArray[i].name + ": " + ESquestArray[i].description + "</p></div>");					
 				}
 			}
 };
@@ -217,9 +223,9 @@ var viewActivities = function(){
 	//display all activities
 		$(".title").remove();
 		$(".container-fluid").remove();
-		$(".main-container").append("<div class='container-fluid es-container'><div class='row'><p>Activities:</p></div></div>");
+		$(".main-container").append("<div class='container-fluid es-container'><div class='row'><p class='view-header'>Activities:</p></div></div>");
 			for (i = 0; i < ESactivityArray.length; i++)
 			{
-					$(".container-fluid").append("<div class='row'>" + ESactivityArray[i].txt + " (" + ESactivityArray[i].date + ")</div>");
+					$(".container-fluid").append("<div class='row stat-row'><p class='stat-text'>" + ESactivityArray[i].txt + " (" + ESactivityArray[i].date + ")</p></div>");
 			}
 };
