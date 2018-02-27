@@ -87,8 +87,8 @@ for (i = 0; i < $(".modBtn").length; i++){
 		else if ($(this).attr("id") === "mod_excellent")
 		{
 			modHead = "EXCELLENT SPIRIT Behavior Application";
-			modBody = "This is a mobile app that I created to organize and track rewards for my children's behavior." + 
-			" This is currently only a front-end application, but my intent is for a user to create a model on the back-end" + 
+			modBody = "This is a web application that I created to organize and track rewards for my children's behavior." + 
+			" This is currently only a front-end app, but my intent is for a user to create a model on the back-end" + 
 			" with Python and SQL, and use Python Flask and AJAX to pass data to the front-end. Visit the Github page at <a href='https://github.com/zurafuse/ExcellentSpirit/' target='_blank' style='color: black'>https://github.com/zurafuse/ExcellentSpirit</a>.";
 			modFoot = "LINK: <a href='excellentspirit/index.html' target='_blank' style='color: white'>www.zurafuse.com/excellentspirit</a>";		
 		}
