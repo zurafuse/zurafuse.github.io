@@ -82,7 +82,15 @@ for (i = 0; i < $(".modBtn").length; i++){
 		{
 			modHead = "Movie Trailer Website";
 			modBody = "This is a project I worked on for a class on Udacity.com. This is a movie trailer site generated with Python code. Visit the Github page at <a href='https://github.com/zurafuse/Movie-Site/' target='_blank' style='color: black'>https://github.com/zurafuse/Movie-Site</a>.";
-			modFoot = "LINK: <a href='moviesite/index.html' target='_blank' style='color: white'>https://github.com/zurafuse/Movie-Site</a>";		
+			modFoot = "LINK: <a href='moviesite/index.html' target='_blank' style='color: white'>www.zurafuse.com/moviesite</a>";		
+		}
+		else if ($(this).attr("id") === "mod_excellent")
+		{
+			modHead = "EXCELLENT SPIRIT Behavior Application";
+			modBody = "This is a mobile app that I created to organize and track rewards for my children's behavior." + 
+			" This is currently only a front-end application, but my intent is for a user to create a model on the back-end" + 
+			" with Python and SQL, and use Python Flask and AJAX to pass data to the front-end. Visit the Github page at <a href='https://github.com/zurafuse/ExcellentSpirit/' target='_blank' style='color: black'>https://github.com/zurafuse/ExcellentSpirit</a>.";
+			modFoot = "LINK: <a href='excellentspirit/index.html' target='_blank' style='color: white'>www.zurafuse.com/excellentspirit</a>";		
 		}
 		
 		$(".mod-head").html(modHead);
