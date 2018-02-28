@@ -193,6 +193,13 @@ var drawShower = function(){
 	}
 };
 
+var drawToilets = function(){
+	for (i in toilets)
+	{
+		toilets[i].update();
+	}
+};
+
 var drawBullets = function(){
 	for (i in bullets)
 	{

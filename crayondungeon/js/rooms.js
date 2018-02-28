@@ -217,6 +217,7 @@ function populate(room){
 			backgrounds.push(new blockClass(crayonImages.backgrounds, 200, 0, 100, 100, 14, i, sprtHtControl, sprtHtControl));
 		}
 		showers.push(new showerClass(4, 5));
+		toilets.push(new toiletClass(8, 2, "left"));
 	}
 	if (room == 14)
 	{

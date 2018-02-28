@@ -60,6 +60,7 @@ var crayonImages = {
 	heart: new Image(),
 	octaforce: new Image(),
 	coldshower: new Image(),
+	toilets: new Image(),
 	run: function(){
 		this.player.src = "images/player.png";
 		this.shoot.src = "images/shoot.png";
@@ -77,6 +78,7 @@ var crayonImages = {
 		this.heart.src = "images/heart.png";
 		this.octaforce.src = "images/octaforce.png";
 		this.coldshower.src = "images/cold_shower.png";
+		this.toilets.src = "images/toilets.png";
 	}
 };
 crayonImages.run();
@@ -198,6 +200,87 @@ var showerClass = function(x, y){
 			{
 				this.bulletCount = 0;
 			}
+		}
+	};
+};
+
+var toiletClass = function(x, y, dir){
+	this.img = crayonImages.toilets;
+	this.sx = 0;
+	this.sy = 0;
+	this.swidth = 50;
+	this.sheight = 50;
+	this.x = x * sprtHtControl;
+	this.y = y * sprtHtControl;
+	this.width = sprtHtControl;
+	this.height = sprtHtControl;
+	this.counter = 0;
+	this.speed = sprtHtControl * .06;
+	this.dir = dir;
+	this.update = function(){
+		if (this.dir == "left")
+		{
+			this.sy = 51;
+		}
+		else
+		{
+			this.sy = 0;
+		}
+		//use counter to handle animations that should be slower than 60 fps
+		//draw onto the canvas.
+		ctx.drawImage(this.img, this.sx, this.sy, this.swidth, this.sheight, this.x, this.y, this.width, this.height);
+		this.counter++;
+		if (this.counter > 3)
+		{
+			this.counter = 0;
+		}
+		if (this.counter % 3 == 0)
+		{
+			this.sx += 50
+			if (this.sx >= 200)
+			{
+				this.sx = 0;
+			}
+		}
+		//damage player
+		if (isCollision(this.x, this.y, this.width, this.height, player.x, player.y,
+			player.width, player.height) == true)
+		{
+			player.health--;		
+		}
+		//move around
+		if (this.dir == "left")
+		{
+			this.x -= this.speed;
+		}
+		else
+		{
+			this.x += this.speed;
+		}
+		//if toilet hits a block, change course.
+		for (i in blocks)
+		{
+		if (isCollision(this.x, this.y, this.width, this.height, blocks[i].x, blocks[i].y,
+			blocks[i].width, blocks[i].height) == true)
+			{
+				if (this.dir == "left")
+				{
+					this.dir = "right";
+				}
+				else
+				{
+					this.dir = "left";
+				}
+			}
+		}
+		//if a toilet walks off the screen, reverse course.
+		if (this.x < 0)
+		{
+			this.dir = "right";
+		}
+		if (this.x > canvas.width)
+		{
+			this.dir = "left";
 		}
 	};
 };
@@ -607,7 +690,14 @@ Player.prototype.update = function(){
 					showers.splice(i, 1);
 				}
 			}
-			if (playerStrike(this, superToilet) == true && superToilet.exist == true && this.plunger == true)
+			for (i in toilets)
+			{
+				if (playerStrike(this, toilets[i]) == true)
+				{
+					toilets.splice(i, 1);
+				}
+			}
+			if (playerStrike(this, superToilet) == true && superToilet.exist == true && this.plunger == true && superToilet.room == room)
 			{
 				superToilet.exist = false;
 			}
