@@ -207,6 +207,7 @@ function populate(room){
 		backgrounds.push(new blockClass(crayonImages.grass, 0, 0, 400, 300, 0, 0, gridWidth * sprtHtControl, gridHeight * sprtHtControl));		
 		//stone wall
 		blockLine("west", "stone1");
+		blocks.push(new blockClass(crayonImages.backgrounds, 101, 201, 100, 100, 28, 14, sprtHtControl, sprtHtControl));
 		//rocks
 		blocks.push(new blockClass(crayonImages.backgrounds, 0, 0, 100, 100, 4, 4, sprtHtControl, sprtHtControl, "rock"));
 		blocks.push(new blockClass(crayonImages.backgrounds, 0, 0, 100, 100, 5, 4, sprtHtControl, sprtHtControl, "rock"));
@@ -216,13 +217,21 @@ function populate(room){
 		{
 			backgrounds.push(new blockClass(crayonImages.backgrounds, 200, 0, 100, 100, 14, i, sprtHtControl, sprtHtControl));
 		}
-		showers.push(new showerClass(4, 5));
-		toilets.push(new toiletClass(8, 2, "left"));
+		//trees
+		blocks.push(new blockClass(crayonImages.backgrounds, 101, 0, 100, 100, 9, 6, sprtHtControl, sprtHtControl));
+		blocks.push(new blockClass(crayonImages.backgrounds, 101, 0, 100, 100, 9, 7, sprtHtControl, sprtHtControl));
+		blocks.push(new blockClass(crayonImages.backgrounds, 100, 0, 100, 100, 18, 6, sprtHtControl, sprtHtControl));
+		blocks.push(new blockClass(crayonImages.backgrounds, 100, 0, 100, 100, 18, 7, sprtHtControl, sprtHtControl));
+		blocks.push(new blockClass(crayonImages.backgrounds, 201, 201, 100, 100, 6, 9, sprtHtControl, sprtHtControl));
+		blocks.push(new blockClass(crayonImages.backgrounds, 201, 201, 100, 100, 21, 9, sprtHtControl, sprtHtControl));
+
 	}
 	if (room == 14)
 	{
 		//grass
-		backgrounds.push(new blockClass(crayonImages.grass, 0, 0, 400, 300, 0, 0, gridWidth * sprtHtControl, gridHeight * sprtHtControl));		
+		backgrounds.push(new blockClass(crayonImages.grass, 0, 0, 400, 300, 0, 0, gridWidth * sprtHtControl, gridHeight * sprtHtControl));
+		//blocks
+		
 		blockLine("south", "tree");
 	}
 	if (room == 15)
@@ -340,6 +349,8 @@ function populate(room){
 			blocks.push(new blockClass(crayonImages.backgrounds, 100, 100, 100, 100, i, 0, sprtHtControl, sprtHtControl, "water"));
 			blocks.push(new blockClass(crayonImages.backgrounds, 100, 100, 100, 100, i, 1, sprtHtControl, sprtHtControl, "water"));
 		}
+		showers.push(new showerClass(4, 5));
+		toilets.push(new toiletClass(8, 2, "left"));	
 	}
 	if (room == 24)
 	{
