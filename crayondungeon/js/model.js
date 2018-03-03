@@ -348,8 +348,8 @@ var gemLock = new gemLockClass(4.5, 2, 30);
 var gemLock2 = new gemLockClass(0, 5, 6);
 
 var superToilet = {
-	x: sprtHtControl * 3,
-	y:  sprtHtControl * 3,
+	x: sprtHtControl * 1,
+	y:  sprtHtControl * 6,
 	width:  sprtHtControl * 2.5,
 	height:  sprtHtControl * 2.5,
 	sx:  0,

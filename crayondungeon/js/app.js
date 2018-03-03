@@ -75,6 +75,7 @@ function restart(){
 	key.exist = true;
 	superToilet.exist = true;
 	gemLock.exist = true;
+	gemLock2.exist = true;
 	//remove plunger image from player and revert to sword
 	sword.img = crayonImages.sword;
 	sword.swidth = 24;

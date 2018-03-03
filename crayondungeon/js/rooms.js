@@ -77,6 +77,8 @@ function populate(room){
 		//grass
 		backgrounds.push(new blockClass(crayonImages.grass, 0, 0, 400, 300, 0, 0, gridWidth * sprtHtControl, gridHeight * sprtHtControl));		
 		blockLine("south", "tree");
+		//stone walls
+		blockLine("east", "stone2");
 	}		
 	if (room == 3)
 	{
@@ -132,21 +134,94 @@ function populate(room){
 		backgrounds.push(new blockClass(crayonImages.grass, 0, 0, 400, 300, 0, 0, gridWidth * sprtHtControl, gridHeight * sprtHtControl));		
 		blockLine("south", "tree");
 		blockLine("west", "tree");
-		blockLine("north", "stone1");
+		blockLine("north", "stone2");
 		octaforce.message = true;
 		setTimeout(function(){octaforce.message = false;}, 4500);
+		//blocks
+		blocks.push(new blockClass(crayonImages.backgrounds, 100, 200, 100, 100, 28, 1, sprtHtControl, sprtHtControl));
+		blocks.push(new blockClass(crayonImages.backgrounds, 100, 200, 100, 100, 28, 2, sprtHtControl, sprtHtControl));
+		blocks.push(new blockClass(crayonImages.backgrounds, 100, 200, 100, 100, 28, 3, sprtHtControl, sprtHtControl));
+		blocks.push(new blockClass(crayonImages.backgrounds, 100, 200, 100, 100, 28, 4, sprtHtControl, sprtHtControl));
+		blocks.push(new blockClass(crayonImages.backgrounds, 100, 200, 100, 100, 28, 5, sprtHtControl, sprtHtControl));
+		blocks.push(new blockClass(crayonImages.backgrounds, 100, 200, 100, 100, 28, 8, sprtHtControl, sprtHtControl));
+		blocks.push(new blockClass(crayonImages.backgrounds, 100, 200, 100, 100, 28, 9, sprtHtControl, sprtHtControl));
+		blocks.push(new blockClass(crayonImages.backgrounds, 100, 200, 100, 100, 28, 10, sprtHtControl, sprtHtControl));
+		blocks.push(new blockClass(crayonImages.backgrounds, 100, 200, 100, 100, 28, 11, sprtHtControl, sprtHtControl));
+		blocks.push(new blockClass(crayonImages.backgrounds, 100, 200, 100, 100, 28, 12, sprtHtControl, sprtHtControl));
+		blocks.push(new blockClass(crayonImages.backgrounds, 100, 200, 100, 100, 28, 13, sprtHtControl, sprtHtControl));
+		blocks.push(new blockClass(crayonImages.backgrounds, 100, 200, 100, 100, 28, 14, sprtHtControl, sprtHtControl));
 	}
 	if (room == 5)
 	{
 		//grass
 		backgrounds.push(new blockClass(crayonImages.grass, 0, 0, 400, 300, 0, 0, gridWidth * sprtHtControl, gridHeight * sprtHtControl));		
 		blockLine("south", "tree");
+		blockLine("north", "tree2");
+		//blocks
+		blocks.push(new blockClass(crayonImages.backgrounds, 100, 200, 100, 100, 0, 1, sprtHtControl, sprtHtControl));
+		blocks.push(new blockClass(crayonImages.backgrounds, 100, 200, 100, 100, 0, 2, sprtHtControl, sprtHtControl));
+		blocks.push(new blockClass(crayonImages.backgrounds, 100, 200, 100, 100, 0, 3, sprtHtControl, sprtHtControl));
+		blocks.push(new blockClass(crayonImages.backgrounds, 100, 200, 100, 100, 0, 4, sprtHtControl, sprtHtControl));
+		blocks.push(new blockClass(crayonImages.backgrounds, 100, 200, 100, 100, 0, 5, sprtHtControl, sprtHtControl));
+		blocks.push(new blockClass(crayonImages.backgrounds, 100, 200, 100, 100, 0, 8, sprtHtControl, sprtHtControl));
+		blocks.push(new blockClass(crayonImages.backgrounds, 100, 200, 100, 100, 0, 9, sprtHtControl, sprtHtControl));
+		blocks.push(new blockClass(crayonImages.backgrounds, 100, 200, 100, 100, 0, 10, sprtHtControl, sprtHtControl));
+		blocks.push(new blockClass(crayonImages.backgrounds, 100, 200, 100, 100, 0, 11, sprtHtControl, sprtHtControl));
+		blocks.push(new blockClass(crayonImages.backgrounds, 100, 200, 100, 100, 0, 12, sprtHtControl, sprtHtControl));
+		blocks.push(new blockClass(crayonImages.backgrounds, 100, 200, 100, 100, 0, 13, sprtHtControl, sprtHtControl));
+		blocks.push(new blockClass(crayonImages.backgrounds, 100, 200, 100, 100, 0, 14, sprtHtControl, sprtHtControl));
+		blocks.push(new blockClass(crayonImages.backgrounds, 100, 200, 100, 100, 28, 0, sprtHtControl, sprtHtControl));
+		blocks.push(new blockClass(crayonImages.backgrounds, 100, 200, 100, 100, 28, 1, sprtHtControl, sprtHtControl));
+		blocks.push(new blockClass(crayonImages.backgrounds, 100, 200, 100, 100, 28, 2, sprtHtControl, sprtHtControl));
+		blocks.push(new blockClass(crayonImages.backgrounds, 100, 200, 100, 100, 28, 3, sprtHtControl, sprtHtControl));
+		blocks.push(new blockClass(crayonImages.backgrounds, 100, 200, 100, 100, 28, 4, sprtHtControl, sprtHtControl));
+		blocks.push(new blockClass(crayonImages.backgrounds, 100, 200, 100, 100, 28, 7, sprtHtControl, sprtHtControl));
+		blocks.push(new blockClass(crayonImages.backgrounds, 100, 200, 100, 100, 28, 8, sprtHtControl, sprtHtControl));
+		blocks.push(new blockClass(crayonImages.backgrounds, 100, 200, 100, 100, 28, 9, sprtHtControl, sprtHtControl));
+		blocks.push(new blockClass(crayonImages.backgrounds, 100, 200, 100, 100, 28, 10, sprtHtControl, sprtHtControl));
+		blocks.push(new blockClass(crayonImages.backgrounds, 100, 200, 100, 100, 28, 11, sprtHtControl, sprtHtControl));
+		blocks.push(new blockClass(crayonImages.backgrounds, 100, 200, 100, 100, 28, 12, sprtHtControl, sprtHtControl));
+		blocks.push(new blockClass(crayonImages.backgrounds, 100, 200, 100, 100, 28, 13, sprtHtControl, sprtHtControl));
+		blocks.push(new blockClass(crayonImages.backgrounds, 100, 200, 100, 100, 28, 14, sprtHtControl, sprtHtControl));
+		//water
+		blocks.push(new blockClass(crayonImages.backgrounds, 100, 100, 100, 100, 1, 8.7, sprtHtControl, sprtHtControl, "water"));
+		blocks.push(new blockClass(crayonImages.backgrounds, 100, 100, 100, 100, 1, 9, sprtHtControl, sprtHtControl, "water"));
+		blocks.push(new blockClass(crayonImages.backgrounds, 100, 100, 100, 100, 1, 10, sprtHtControl, sprtHtControl, "water"));
+		blocks.push(new blockClass(crayonImages.backgrounds, 100, 100, 100, 100, 1, 11, sprtHtControl, sprtHtControl, "water"));
+		blocks.push(new blockClass(crayonImages.backgrounds, 100, 100, 100, 100, 1, 12, sprtHtControl, sprtHtControl, "water"));
+		blocks.push(new blockClass(crayonImages.backgrounds, 100, 100, 100, 100, 1, 13, sprtHtControl, sprtHtControl, "water"));
+		for (i = 2; i < 28; i++)
+		{
+			blocks.push(new blockClass(crayonImages.backgrounds, 100, 100, 100, 100, i, 13, sprtHtControl, sprtHtControl, "water"));
+		}
+		//bad guys
+		showers.push(new showerClass(5, 6));
+		toilets.push(new toiletClass(8, 2, "left"), new toiletClass(8, 6, "right"), new toiletClass(8, 9, "left"));
 	}
 	if (room == 6)
 	{
 		//grass
 		backgrounds.push(new blockClass(crayonImages.grass, 0, 0, 400, 300, 0, 0, gridWidth * sprtHtControl, gridHeight * sprtHtControl));		
 		blockLine("south", "tree");
+		//tree
+		blocks.push(new blockClass(crayonImages.backgrounds, 100, 200, 100, 100, 0, 13, sprtHtControl, sprtHtControl, "tree"));
+		//water
+		for (i = 1; i < 28; i++)
+		{
+			blocks.push(new blockClass(crayonImages.backgrounds, 100, 100, 100, 100, i, 13, sprtHtControl, sprtHtControl, "water"));
+		}
+		//blocks
+		blocks.push(new blockClass(crayonImages.backgrounds, 100, 200, 100, 100, 0, 0, sprtHtControl, sprtHtControl));
+		blocks.push(new blockClass(crayonImages.backgrounds, 100, 200, 100, 100, 0, 1, sprtHtControl, sprtHtControl));
+		blocks.push(new blockClass(crayonImages.backgrounds, 100, 200, 100, 100, 0, 2, sprtHtControl, sprtHtControl));
+		blocks.push(new blockClass(crayonImages.backgrounds, 100, 200, 100, 100, 0, 3, sprtHtControl, sprtHtControl));
+		blocks.push(new blockClass(crayonImages.backgrounds, 100, 200, 100, 100, 0, 4, sprtHtControl, sprtHtControl));
+		blocks.push(new blockClass(crayonImages.backgrounds, 100, 200, 100, 100, 0, 7, sprtHtControl, sprtHtControl));
+		blocks.push(new blockClass(crayonImages.backgrounds, 100, 200, 100, 100, 0, 8, sprtHtControl, sprtHtControl));
+		blocks.push(new blockClass(crayonImages.backgrounds, 100, 200, 100, 100, 0, 9, sprtHtControl, sprtHtControl));
+		blocks.push(new blockClass(crayonImages.backgrounds, 100, 200, 100, 100, 0, 10, sprtHtControl, sprtHtControl));
+		blocks.push(new blockClass(crayonImages.backgrounds, 100, 200, 100, 100, 0, 11, sprtHtControl, sprtHtControl));
+		blocks.push(new blockClass(crayonImages.backgrounds, 100, 200, 100, 100, 0, 12, sprtHtControl, sprtHtControl));
 	}
 	if (room == 7)
 	{
@@ -195,11 +270,36 @@ function populate(room){
 		blocks.push(new blockClass(crayonImages.backgrounds, 100, 100, 100, 100, 14, 7, sprtHtControl, sprtHtControl, "water"));
 		blocks.push(new blockClass(crayonImages.backgrounds, 100, 100, 100, 100, 14, 6, sprtHtControl, sprtHtControl, "water"));
 		blocks.push(new blockClass(crayonImages.backgrounds, 100, 100, 100, 100, 14, 5, sprtHtControl, sprtHtControl, "water"));
+		//trees
+		blocks.push(new blockClass(crayonImages.backgrounds, 100, 0, 100, 100, 28, 0, sprtHtControl, sprtHtControl));
 	}
 	if (room == 12)
 	{
 		//grass
-		backgrounds.push(new blockClass(crayonImages.grass, 0, 0, 400, 300, 0, 0, gridWidth * sprtHtControl, gridHeight * sprtHtControl));		
+		backgrounds.push(new blockClass(crayonImages.grass, 0, 0, 400, 300, 0, 0, gridWidth * sprtHtControl, gridHeight * sprtHtControl));
+		//trees
+		blocks.push(new blockClass(crayonImages.backgrounds, 100, 0, 100, 100, 28, 1, sprtHtControl, sprtHtControl));
+		blocks.push(new blockClass(crayonImages.backgrounds, 100, 0, 100, 100, 28, 2, sprtHtControl, sprtHtControl));
+		blocks.push(new blockClass(crayonImages.backgrounds, 100, 0, 100, 100, 28, 3, sprtHtControl, sprtHtControl));
+		blocks.push(new blockClass(crayonImages.backgrounds, 100, 0, 100, 100, 28, 4, sprtHtControl, sprtHtControl));
+		blocks.push(new blockClass(crayonImages.backgrounds, 100, 0, 100, 100, 28, 5, sprtHtControl, sprtHtControl));
+		blocks.push(new blockClass(crayonImages.backgrounds, 100, 0, 100, 100, 28, 6, sprtHtControl, sprtHtControl));
+		blocks.push(new blockClass(crayonImages.backgrounds, 100, 0, 100, 100, 28, 7, sprtHtControl, sprtHtControl));
+		blocks.push(new blockClass(crayonImages.backgrounds, 100, 0, 100, 100, 28, 8, sprtHtControl, sprtHtControl));
+		blocks.push(new blockClass(crayonImages.backgrounds, 100, 0, 100, 100, 28, 9, sprtHtControl, sprtHtControl));
+		blocks.push(new blockClass(crayonImages.backgrounds, 100, 0, 100, 100, 28, 10, sprtHtControl, sprtHtControl));
+		blocks.push(new blockClass(crayonImages.backgrounds, 100, 0, 100, 100, 28, 11, sprtHtControl, sprtHtControl));
+		blocks.push(new blockClass(crayonImages.backgrounds, 100, 0, 100, 100, 28, 12, sprtHtControl, sprtHtControl));
+		blocks.push(new blockClass(crayonImages.backgrounds, 100, 0, 100, 100, 28, 13, sprtHtControl, sprtHtControl));
+		blocks.push(new blockClass(crayonImages.backgrounds, 100, 0, 100, 100, 28, 14, sprtHtControl, sprtHtControl));
+		for (i = 0; i < gridWidth; i++)
+		{
+			if (i < 13 || i > 16)
+			{
+				blocks.push(new blockClass(crayonImages.backgrounds, 100, 0, 100, 100, i, 0, sprtHtControl, sprtHtControl));
+			}
+		}
+		
 	}
 	if (room == 13)
 	{
@@ -238,11 +338,15 @@ function populate(room){
 	{
 		//grass
 		backgrounds.push(new blockClass(crayonImages.grass, 0, 0, 400, 300, 0, 0, gridWidth * sprtHtControl, gridHeight * sprtHtControl));		
+		//trees
+		blockLine("south", "stone2");
 	}
 	if (room == 16)
 	{
 		//grass
-		backgrounds.push(new blockClass(crayonImages.grass, 0, 0, 400, 300, 0, 0, gridWidth * sprtHtControl, gridHeight * sprtHtControl));		
+		backgrounds.push(new blockClass(crayonImages.grass, 0, 0, 400, 300, 0, 0, gridWidth * sprtHtControl, gridHeight * sprtHtControl));	
+		//blocks
+		blocks.push(new blockClass(crayonImages.backgrounds, 100, 200, 100, 100, 0, 14, sprtHtControl, sprtHtControl));		
 	}
 	if (room == 17)
 	{
@@ -298,6 +402,16 @@ function populate(room){
 			blocks.push(new blockClass(crayonImages.backgrounds, 100, 100, 100, 100, i, 0, sprtHtControl, sprtHtControl, "water"));
 			blocks.push(new blockClass(crayonImages.backgrounds, 100, 100, 100, 100, i, 1, sprtHtControl, sprtHtControl, "water"));
 		}
+		//trees
+		blocks.push(new blockClass(crayonImages.backgrounds, 100, 0, 100, 100, 28, 2, sprtHtControl, sprtHtControl));
+		blocks.push(new blockClass(crayonImages.backgrounds, 100, 0, 100, 100, 28, 3, sprtHtControl, sprtHtControl));
+		blocks.push(new blockClass(crayonImages.backgrounds, 100, 0, 100, 100, 28, 4, sprtHtControl, sprtHtControl));
+		blocks.push(new blockClass(crayonImages.backgrounds, 100, 0, 100, 100, 28, 5, sprtHtControl, sprtHtControl));
+		blocks.push(new blockClass(crayonImages.backgrounds, 100, 0, 100, 100, 28, 10, sprtHtControl, sprtHtControl));
+		blocks.push(new blockClass(crayonImages.backgrounds, 100, 0, 100, 100, 28, 11, sprtHtControl, sprtHtControl));
+		blocks.push(new blockClass(crayonImages.backgrounds, 100, 0, 100, 100, 28, 12, sprtHtControl, sprtHtControl));
+		blocks.push(new blockClass(crayonImages.backgrounds, 100, 0, 100, 100, 28, 13, sprtHtControl, sprtHtControl));
+		blocks.push(new blockClass(crayonImages.backgrounds, 100, 0, 100, 100, 28, 14, sprtHtControl, sprtHtControl));
 	}
 	if (room == 22)
 	{
