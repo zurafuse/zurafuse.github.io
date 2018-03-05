@@ -86,10 +86,44 @@ function restart(){
 };
 
 
-var isCollision = function(x, y, width, height, x2, y2, width2, height2){
-	if (x + width > x2 && x < x2 + width2 && y < y2 + height2 && y + height > y2)
+var isCollision = function(x, y, width, height, x2, y2, width2, height2, dir){
+	if (dir == undefined)
 	{
-		return true;
+		if (x + width > x2 && x < x2 + width2 && y < y2 + height2 && y + height > y2)
+		{
+			return true;
+		}
+	}
+	else
+	{
+		if (dir == "right")
+		{
+			if (x + width > x2 && x < x2 + (width2 * .75) && y < y2 + height2 && y + height > y2)
+			{
+				return true;
+			}			
+		}
+		if (dir == "left")
+		{
+			if (x + (width * .75) > x2 && x < x2 + width2 && y < y2 + height2 && y + height > y2)
+			{
+				return true;
+			}				
+		}
+		if (dir == "up")
+		{
+			if (x + width > x2 && x < x2 + width2 && y < y2 + height2 && y + (height * .75) > y2)
+			{
+				return true;
+			}				
+		}
+		if (dir == "down")
+		{
+			if (x + width > x2 && x < x2 + width2 && y < y2 + (height2 * .75) && y + height > y2)
+			{
+				return true;
+			}				
+		}
 	}
 	return false;
 };
@@ -211,7 +245,7 @@ var drawBullets = function(){
 function populateItems(){
 	//gems
 	gems.push(new gemClass(3, 4, 3), new gemClass(4, 4, 3), new gemClass(3, 11, 3), new gemClass(20, 3, 3), 
-	new gemClass(12, 6, 17), new gemClass(26, 12, 7), new gemClass(25, 12, 7));
+	new gemClass(12, 6, 17), new gemClass(26, 12, 7), new gemClass(25, 12, 7), new gemClass(17, 5, 23), new gemClass(12, 8, 23));
 	//hearts
 	hearts.push(new heartClass(3, 7, 33), new heartClass(4, 7, 13), new heartClass(12, 6, 11));
 }

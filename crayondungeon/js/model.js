@@ -278,7 +278,7 @@ var toiletClass = function(x, y, dir){
 		{
 			this.dir = "right";
 		}
-		if (this.x > canvas.width)
+		if (this.x + this.width > canvas.width)
 		{
 			this.dir = "left";
 		}
@@ -734,7 +734,7 @@ Player.prototype.update = function(){
 			for (i in blocks)
 			{
 				if (isCollision(this.x + this.speed, this.y, this.width, this.height, blocks[i].x, blocks[i].y,
-					blocks[i].width, blocks[i].height) == true)
+					blocks[i].width, blocks[i].height, "right") == true)
 				{
 					rightCollision = true;
 					if (blocks[i].type == "rock" && player.hammer == true)
@@ -781,7 +781,7 @@ Player.prototype.update = function(){
 				for (i in blocks)
 				{
 					if (isCollision(this.x - this.speed, this.y, this.width, this.height, blocks[i].x, blocks[i].y,
-						blocks[i].width, blocks[i].height) == true)
+						blocks[i].width, blocks[i].height, "left") == true)
 					{
 						leftCollision = true;
 						if (blocks[i].type == "rock" && player.hammer == true)
@@ -830,7 +830,7 @@ Player.prototype.update = function(){
 				for (i in blocks)
 				{
 					if (isCollision(this.x, this.y, this.width, this.height, blocks[i].x, blocks[i].y,
-						blocks[i].width, blocks[i].height + this.speed) == true)
+						blocks[i].width, blocks[i].height + this.speed, "up") == true)
 					{
 						upCollision = true;
 						if (blocks[i].type == "rock" && player.hammer == true)
@@ -875,7 +875,7 @@ Player.prototype.update = function(){
 			for (i in blocks)
 			{
 				if (isCollision(this.x, this.y + this.speed, this.width, this.height, blocks[i].x, blocks[i].y,
-					blocks[i].width, blocks[i].height) == true)
+					blocks[i].width, blocks[i].height, "down") == true)
 				{
 					downCollision = true;
 					if (blocks[i].type == "rock" && player.hammer == true)

@@ -20,9 +20,16 @@ window.addEventListener("touchstart", function (e) {
   });
   canvas.dispatchEvent(mouseEvent);
 }, false);
+
 canvas.addEventListener("touchend", function (e) {
   mousePos = endTouchPos(canvas, e);
   var mouseEvent = new MouseEvent("mouseup", {});
+  canvas.dispatchEvent(mouseEvent);
+}, false);
+
+canvas.addEventListener("touchmove", function (e) {
+  mousePos = moveTouchPos(canvas, e);
+  var mouseEvent = new MouseEvent("mousemove", {});
   canvas.dispatchEvent(mouseEvent);
 }, false);
 
@@ -72,6 +79,49 @@ function getTouchPos(canvasDom, touchEvent) {
 }
 
 function endTouchPos(canvasDom, touchEvent) {
+	for (i in touchEvent.changedTouches)
+	{	
+		var thisXPos = touchEvent.changedTouches[i].clientX;
+		var thisYPos = touchEvent.changedTouches[i].clientY;
+		if (thisXPos < crayonUI.joyStick.left.x + (crayonUI.joyStick.left.width * 1.3) && thisXPos > crayonUI.joyStick.left.x * 0.7 &&
+		thisYPos > crayonUI.joyStick.left.y - (crayonUI.joyStick.left.height * 0.7) && thisYPos < crayonUI.joyStick.left.y + (crayonUI.joyStick.left.height * 0.7))
+			{
+				delete keysDown[37];
+				keysUp[37] = true;
+			}
+		  
+		else if (thisXPos < crayonUI.joyStick.right.x + (crayonUI.joyStick.right.width * 1.3) && thisXPos > crayonUI.joyStick.right.x * 0.7 &&
+		thisYPos > crayonUI.joyStick.right.y - (crayonUI.joyStick.right.height * 0.7) && thisYPos < crayonUI.joyStick.right.y + (crayonUI.joyStick.right.height * 0.7))
+			{
+				delete keysDown[39];
+				keysUp[39] = true;
+			}
+		  
+		else if (thisXPos < crayonUI.joyStick.up.x + (crayonUI.joyStick.up.width * 0.8) && thisXPos > crayonUI.joyStick.up.x - (crayonUI.joyStick.up.width * 0.8) &&
+		thisYPos > crayonUI.joyStick.up.y * 0.8 && thisYPos < crayonUI.joyStick.up.y + (crayonUI.joyStick.up.height * 1.2))
+			{
+				delete keysDown[38];
+				keysUp[38] = true;
+			}
+		  
+		else if (thisXPos < crayonUI.joyStick.down.x + (crayonUI.joyStick.down.width * 1.5) && thisXPos > crayonUI.joyStick.down.x - (crayonUI.joyStick.down.width * .5) &&
+		thisYPos > crayonUI.joyStick.down.y - (crayonUI.joyStick.down.height * .5) && thisYPos < crayonUI.joyStick.down.y + (crayonUI.joyStick.down.height * 1.5))
+			{
+				delete keysDown[40];
+				keysUp[40] = true;
+			}
+		  
+		else if (thisXPos < crayonUI.joyStick.shoot.x + (crayonUI.joyStick.shoot.width * 1.5) && thisXPos > crayonUI.joyStick.shoot.x - (crayonUI.joyStick.shoot.width * .5) &&
+		thisYPos > crayonUI.joyStick.shoot.y - (crayonUI.joyStick.shoot.height * .5) && thisYPos < crayonUI.joyStick.shoot.y + (crayonUI.joyStick.shoot.height * 1.5))
+			{
+				delete keysDown[32];
+				keysUp[32] = true;
+			}
+			
+	}
+}
+
+function moveTouchPos(canvasDom, touchEvent) {
 	for (i in touchEvent.changedTouches)
 	{	
 		var thisXPos = touchEvent.changedTouches[i].clientX;

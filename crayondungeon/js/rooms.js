@@ -464,7 +464,32 @@ function populate(room){
 			blocks.push(new blockClass(crayonImages.backgrounds, 100, 100, 100, 100, i, 1, sprtHtControl, sprtHtControl, "water"));
 		}
 		showers.push(new showerClass(4, 5));
-		toilets.push(new toiletClass(8, 2, "left"));	
+		toilets.push(new toiletClass(8, 2, "left"), new toiletClass(13, 5, "right"), new toiletClass(18, 8, "left"), new toiletClass(1.5, 11, "right"));
+		//blocks
+		blocks.push(new blockClass(crayonImages.backgrounds, 101, 201, 100, 100, 8, 4, sprtHtControl, sprtHtControl),
+		new blockClass(crayonImages.backgrounds, 101, 201, 100, 100, 8, 5, sprtHtControl, sprtHtControl),
+		new blockClass(crayonImages.backgrounds, 101, 201, 100, 100, 9, 4, sprtHtControl, sprtHtControl),
+		new blockClass(crayonImages.backgrounds, 101, 201, 100, 100, 9, 5, sprtHtControl, sprtHtControl),
+		new blockClass(crayonImages.backgrounds, 101, 201, 100, 100, 14, 4, sprtHtControl, sprtHtControl),
+		new blockClass(crayonImages.backgrounds, 101, 201, 100, 100, 14, 5, sprtHtControl, sprtHtControl),
+		new blockClass(crayonImages.backgrounds, 101, 201, 100, 100, 15, 4, sprtHtControl, sprtHtControl),
+		new blockClass(crayonImages.backgrounds, 101, 201, 100, 100, 15, 5, sprtHtControl, sprtHtControl),
+		new blockClass(crayonImages.backgrounds, 101, 201, 100, 100, 20, 4, sprtHtControl, sprtHtControl),
+		new blockClass(crayonImages.backgrounds, 101, 201, 100, 100, 20, 5, sprtHtControl, sprtHtControl),
+		new blockClass(crayonImages.backgrounds, 101, 201, 100, 100, 21, 4, sprtHtControl, sprtHtControl),
+		new blockClass(crayonImages.backgrounds, 101, 201, 100, 100, 21, 5, sprtHtControl, sprtHtControl));
+		blocks.push(new blockClass(crayonImages.backgrounds, 101, 201, 100, 100, 8, 8, sprtHtControl, sprtHtControl),
+		new blockClass(crayonImages.backgrounds, 101, 201, 100, 100, 8, 9, sprtHtControl, sprtHtControl),
+		new blockClass(crayonImages.backgrounds, 101, 201, 100, 100, 9, 8, sprtHtControl, sprtHtControl),
+		new blockClass(crayonImages.backgrounds, 101, 201, 100, 100, 9, 9, sprtHtControl, sprtHtControl),
+		new blockClass(crayonImages.backgrounds, 101, 201, 100, 100, 14, 8, sprtHtControl, sprtHtControl),
+		new blockClass(crayonImages.backgrounds, 101, 201, 100, 100, 14, 9, sprtHtControl, sprtHtControl),
+		new blockClass(crayonImages.backgrounds, 101, 201, 100, 100, 15, 8, sprtHtControl, sprtHtControl),
+		new blockClass(crayonImages.backgrounds, 101, 201, 100, 100, 15, 9, sprtHtControl, sprtHtControl),
+		new blockClass(crayonImages.backgrounds, 101, 201, 100, 100, 20, 8, sprtHtControl, sprtHtControl),
+		new blockClass(crayonImages.backgrounds, 101, 201, 100, 100, 20, 9, sprtHtControl, sprtHtControl),
+		new blockClass(crayonImages.backgrounds, 101, 201, 100, 100, 21, 8, sprtHtControl, sprtHtControl),
+		new blockClass(crayonImages.backgrounds, 101, 201, 100, 100, 21, 9, sprtHtControl, sprtHtControl));
 	}
 	if (room == 24)
 	{
