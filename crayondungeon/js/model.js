@@ -1033,25 +1033,25 @@ var crayonUI = {
 		ctx.globalAlpha = 1;
 	}
 };
-crayonUI.joyStick.left.x = sprtHtControl * 1;
-crayonUI.joyStick.left.y = sprtHtControl * 11;
-crayonUI.joyStick.left.width = sprtHtControl * 1.8;
-crayonUI.joyStick.left.height = sprtHtControl * 1.8;
+crayonUI.joyStick.left.x = sprtHtControl * .7;
+crayonUI.joyStick.left.y = sprtHtControl * 10.5;
+crayonUI.joyStick.left.width = sprtHtControl * 2;
+crayonUI.joyStick.left.height = sprtHtControl * 2;
 
-crayonUI.joyStick.right.x = sprtHtControl * 6;
-crayonUI.joyStick.right.y = sprtHtControl * 11;
-crayonUI.joyStick.right.width = sprtHtControl * 1.8;
-crayonUI.joyStick.right.height = sprtHtControl * 1.8;
+crayonUI.joyStick.right.x = sprtHtControl * 7;
+crayonUI.joyStick.right.y = sprtHtControl * 10.5;
+crayonUI.joyStick.right.width = sprtHtControl * 2;
+crayonUI.joyStick.right.height = sprtHtControl * 2;
 
-crayonUI.joyStick.up.x = sprtHtControl * 4.4;
-crayonUI.joyStick.up.y = sprtHtControl * 7.5;
-crayonUI.joyStick.up.width = sprtHtControl * 1.8;
-crayonUI.joyStick.up.height = sprtHtControl * 1.8;
+crayonUI.joyStick.up.x = sprtHtControl * 5;
+crayonUI.joyStick.up.y = sprtHtControl * 6;
+crayonUI.joyStick.up.width = sprtHtControl * 2;
+crayonUI.joyStick.up.height = sprtHtControl * 2;
 
-crayonUI.joyStick.down.x = sprtHtControl * 3.5;
+crayonUI.joyStick.down.x = sprtHtControl * 4;
 crayonUI.joyStick.down.y = sprtHtControl * 12.5;
-crayonUI.joyStick.down.width = sprtHtControl * 1.8;
-crayonUI.joyStick.down.height = sprtHtControl * 1.8;
+crayonUI.joyStick.down.width = sprtHtControl * 2;
+crayonUI.joyStick.down.height = sprtHtControl * 2;
 
 crayonUI.joyStick.shoot.x = sprtHtControl * 24;
 crayonUI.joyStick.shoot.y = sprtHtControl * 10;
