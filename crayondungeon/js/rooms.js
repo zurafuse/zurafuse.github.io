@@ -500,12 +500,41 @@ function populate(room){
 		{
 			blocks.push(new blockClass(crayonImages.backgrounds, 100, 100, 100, 100, i, 0, sprtHtControl, sprtHtControl, "water"));
 			blocks.push(new blockClass(crayonImages.backgrounds, 100, 100, 100, 100, i, 1, sprtHtControl, sprtHtControl, "water"));
-		}	
+		}
+		//trees
+		blocks.push(new blockClass(crayonImages.backgrounds, 100, 0, 100, 100, 4, 4, sprtHtControl, sprtHtControl));
+		blocks.push(new blockClass(crayonImages.backgrounds, 100, 0, 100, 100, 5, 4, sprtHtControl, sprtHtControl));
+		blocks.push(new blockClass(crayonImages.backgrounds, 100, 0, 100, 100, 8, 4, sprtHtControl, sprtHtControl));
+		blocks.push(new blockClass(crayonImages.backgrounds, 100, 0, 100, 100, 9, 4, sprtHtControl, sprtHtControl));
+		blocks.push(new blockClass(crayonImages.backgrounds, 100, 0, 100, 100, 15, 4, sprtHtControl, sprtHtControl));
+		blocks.push(new blockClass(crayonImages.backgrounds, 100, 0, 100, 100, 16, 4, sprtHtControl, sprtHtControl));
+		blocks.push(new blockClass(crayonImages.backgrounds, 100, 0, 100, 100, 17, 4, sprtHtControl, sprtHtControl));
+		blocks.push(new blockClass(crayonImages.backgrounds, 100, 0, 100, 100, 22, 4, sprtHtControl, sprtHtControl));
+		//purple trees
+		for (i = 3; i < 22; i++)
+		{
+			if (i != 13 && i != 14 && i != 15)
+			{
+				blocks.push(new blockClass(crayonImages.backgrounds, 200, 200, 100, 100, i, 11, sprtHtControl, sprtHtControl));
+			}
+		}
+		//path
+		for (i = 6; i < 15; i++)
+		{
+			backgrounds.push(new blockClass(crayonImages.backgrounds, 200, 0, 100, 100, 14, i, sprtHtControl, sprtHtControl));
+		}
+		for (i = 0; i < 14; i++)
+		{
+			backgrounds.push(new blockClass(crayonImages.backgrounds, 200, 0, 100, 100, i, 6, sprtHtControl, sprtHtControl));
+		}
 	}
 	if (room == 25)
 	{
 		//grass
-		backgrounds.push(new blockClass(crayonImages.grass, 0, 0, 400, 300, 0, 0, gridWidth * sprtHtControl, gridHeight * sprtHtControl));		
+		backgrounds.push(new blockClass(crayonImages.grass, 0, 0, 400, 300, 0, 0, gridWidth * sprtHtControl, gridHeight * sprtHtControl));	
+		//water
+		blocks.push(new blockClass(crayonImages.backgrounds, 100, 100, 100, 100, 0, 0, sprtHtControl, sprtHtControl, "water"));
+		blocks.push(new blockClass(crayonImages.backgrounds, 100, 100, 100, 100, 0, 1, sprtHtControl, sprtHtControl, "water"));		
 	}
 	if (room == 26)
 	{
