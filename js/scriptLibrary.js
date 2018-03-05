@@ -40,7 +40,7 @@ for (i = 0; i < $(".modBtn").length; i++){
 			modHead = "THE AMAZING YOSEF";
 			modBody = "I created this platform game using only javascript code and some graphics that I created. I added some physics such as gravity and the ability to jump. Use the arrow keys to move around, use the UP arrow key to jump, and use space bar to shoot (Collect the blue soda to gain the power to shoot).";
 		
-			modFoot = "LINK TO MOBILE VERSION: <a href='https://zurafuse.github.io/yosef_mobile/' target='_blank' style='color: white'>https://zurafuse.github.io/yosef_mobile</a><br>LINK TO DESKTOP VERSION: <a href='https://zurafuse.github.io/yosef/' target='_blank' style='color: white'>https://zurafuse.github.io/yosef</a>";			
+			modFoot = "LINK: <a href='https://zurafuse.github.io/yosef/' target='_blank' style='color: white'>https://zurafuse.github.io/yosef</a>";			
 		}
 		else if ($(this).attr("id") === "mod_crayon")
 		{
