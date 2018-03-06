@@ -142,6 +142,7 @@ var getPrizes = function(thisUser){
 var getQuests = function(thisUser){
 	hideMenu();
 	var isQuests = false;
+	$(".stat-text").remove();
 	//display all tasks assigned to user
 	if (ESquestArray.length > 0)
 	{
