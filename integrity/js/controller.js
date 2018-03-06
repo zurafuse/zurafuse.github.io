@@ -28,7 +28,7 @@ var viewPlayers = function(){
 	hideMenu();
 	var columnCount = 0;
 	var playerRow = 0;
-	$(".stat-text").remove();
+	$(".no-quest").remove();
 	$("br").remove();
 	$(".title").remove();
 	$(".container-fluid").remove();
@@ -60,7 +60,7 @@ var viewStatPage = function(user){
 	var id = Number(user.replace("user", ""));
 	console.log(user);
 	var thisUser;
-	$(".stat-text").remove();
+	$(".no-quest").remove();
 	//identify the user that we're working with
 	for (i = 0; i < ESuserArray.length; i++)
 	{
@@ -93,7 +93,7 @@ var viewStatPage = function(user){
 
 var getTrophies = function(thisUser){
 	hideMenu();
-	$(".stat-text").remove();
+	$(".no-quest").remove();
 	//display all trophies associated with user
 	if (thisUser.trophies.length > 0)
 	{
@@ -118,7 +118,7 @@ var getTrophies = function(thisUser){
 };
 
 var getPrizes = function(thisUser){
-	$(".stat-text").remove();
+	$(".no-quest").remove();
 	hideMenu();
 	//display all prizes associated with user
 	if (thisUser.prizes.length > 0)
@@ -144,10 +144,10 @@ var getPrizes = function(thisUser){
 };
 
 var getQuests = function(thisUser){
-	$(".stat-text").remove();
+	$(".no-quest").remove();
 	hideMenu();
 	var isQuests = false;
-	$(".stat-text").remove();
+	$(".no-quest").remove();
 	//display all tasks assigned to user
 	if (ESquestArray.length > 0)
 	{
@@ -166,14 +166,14 @@ var getQuests = function(thisUser){
 	}
 	if (isQuests == false)
 	{
-		$(".main-container").append("<p class='stat-text'>No Quests currently assigned to this user.</p>");
+		$(".main-container").append("<p class='no-quest'>No Quests currently assigned to this user.</p>");
 	}
 		$(".container-fluid").append("<button class='player-return stat-button'>Return to " + thisUser.name + "</button>");
 		$(".player-return").click("click", function(){viewStatPage("user" + thisUser.id)});
 };	
 
 var viewTrophies = function(){
-	$(".stat-text").remove();
+	$(".no-quest").remove();
 	hideMenu();
 	//display all trophies
 		$(".title").remove();
@@ -188,7 +188,7 @@ var viewTrophies = function(){
 };
 
 var viewPrizes = function(){
-	$(".stat-text").remove();
+	$(".no-quest").remove();
 	hideMenu();
 	//display all prizes
 		$(".title").remove();
@@ -203,7 +203,7 @@ var viewPrizes = function(){
 };
 
 var viewQuests = function(){
-	$(".stat-text").remove();
+	$(".no-quest").remove();
 	hideMenu();
 	//display all quests
 		$(".title").remove();
@@ -232,7 +232,7 @@ var viewQuests = function(){
 };
 
 var viewActivities = function(){
-	$(".stat-text").remove();
+	$(".no-quest").remove();
 	hideMenu();
 	//display all activities
 		$(".title").remove();
