@@ -11,10 +11,10 @@ var ES_Users =
 		health: 100,
 		demerits: 0,
 		stat : "healthy",
-		trophies: [101, 102],
-		prizes: [202, 203],
-		title: "warrior",
-		stars: 1,
+		trophies: [],
+		prizes: [],
+		title: "trainee",
+		stars: 0,
 		xp: 0
 	}, 
 	{
@@ -26,18 +26,17 @@ var ES_Users =
 		health: 100,
 		demerits: 0,
 		stat : "healthy",
-		trophies: [101],
-		prizes: [203],
-		title: "warrior",
-		stars: 2,
+		trophies: [],
+		prizes: [],
+		title: "trainee",
+		stars: 0,
 		xp: 0
 	}
 ];
 
 //populate from database, possibly via a JSON object passed through AJAX
 var ES_Activities = [
-	{user: 001, txt: "Kaden has been awarded the Trophy of Diligence.", date: "February 21, 2018 10:30 AM"}, 
-	{user: 002, txt: "Josiah has won 2 stars.", date: "February 22, 2018 1:30 PM"}
+	{user: 001, txt: "Kaden and Josiah's accounts have been created.", date: "March 5, 2018 10:30 PM"}
 ];
 
 //These trophies will be populated from a database, probably via AJAX call.
@@ -45,7 +44,7 @@ var ES_Activities = [
 //the trophy should be automatically assigned to anyone. A user can only have one of each trophy, so check for the existence of "this" trophy before assigning its id to a user.
 var ES_Trophies = [
 	{
-		name: "Trophy of Diligence",
+		name: "Diligence Award",
 		description: "Sample Trophy.",
 		id: 101,
 		img: "images/trophies/trophy1.png",
@@ -54,10 +53,19 @@ var ES_Trophies = [
 		}		
 	},
 	{
-		name: "Integrity Award",
+		name: "Trophy of Integrity",
 		description: "Sample Trophy.",
 		id: 102,
 		img: "images/trophies/trophy2.png",
+		update: function(){
+			//The "update" function of these trophies will loop through users and tasks.
+		}		
+	},
+	{
+		name: "Award of Self Control",
+		description: "The Award of being able to control one's self",
+		id: 103,
+		img: "images/trophies/trophy13.png",
 		update: function(){
 			//The "update" function of these trophies will loop through users and tasks.
 		}		
@@ -84,28 +92,16 @@ var ES_Prizes = [
 //The update function will be called to determine if the quest is complete or not. You can assign a quest to a user.
 var ES_Quests = [
 	{
-		name: "Task of Cleanliness",
-		description: "Clean room",
+		name: "Quest",
+		description: "A new task is coming soon",
 		id: 301,
 		complete: false,
 		img: "",
-		user: 002,
+		user: 000,
 		awards: [],
 		update: function(){
 			//call this function when quest is complete, or to find out if it is complete.
 		}
-	},
-	{
-		name: "School Journey",
-		description: "Make A on Math test today",
-		id: 302,
-		complete: false,
-		img: "",
-		user: 001,
-		awards: [],
-		update: function(){
-			//call this function when quest is complete, or to find out if it is complete.
-		}		
 	}
 ];
 
