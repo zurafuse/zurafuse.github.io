@@ -383,7 +383,15 @@ function populate(room){
 		{
 			backgrounds.push(new blockClass(crayonImages.backgrounds, 200, 0, 100, 100, i, 6, sprtHtControl, sprtHtControl));
 		}
-		
+		//bad guys
+		showers.push(new showerClass(22, 5));
+		toilets.push(new toiletClass(2, 4, "right"), new toiletClass(7, 12, "right"));
+		//trees
+		blocks.push(new blockClass(crayonImages.backgrounds, 201, 201, 100, 100, 21, 9, sprtHtControl, sprtHtControl));
+		blocks.push(new blockClass(crayonImages.backgrounds, 201, 201, 100, 100, 11, 9, sprtHtControl, sprtHtControl));
+		blocks.push(new blockClass(crayonImages.backgrounds, 201, 201, 100, 100, 10, 4, sprtHtControl, sprtHtControl));
+		blocks.push(new blockClass(crayonImages.backgrounds, 100, 0, 100, 100, 22, 2, sprtHtControl, sprtHtControl));
+		blocks.push(new blockClass(crayonImages.backgrounds, 100, 0, 100, 100, 3, 3, sprtHtControl, sprtHtControl));
 		blockLine("south", "tree");
 	}
 	if (room == 15)
