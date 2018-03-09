@@ -245,9 +245,10 @@ var drawBullets = function(){
 function populateItems(){
 	//gems
 	gems.push(new gemClass(3, 4, 3), new gemClass(4, 4, 3), new gemClass(3, 11, 3), new gemClass(20, 3, 3), 
-	new gemClass(12, 6, 17), new gemClass(26, 12, 7), new gemClass(25, 12, 7), new gemClass(17, 5, 23), new gemClass(12, 8, 23));
+	new gemClass(12, 6, 17), new gemClass(26, 12, 7), new gemClass(25, 12, 7), new gemClass(17, 5, 23), 
+	new gemClass(12, 8, 23), new gemClass(13, 6.5, 35));
 	//hearts
-	hearts.push(new heartClass(3, 7, 33), new heartClass(4, 7, 13), new heartClass(12, 6, 11));
+	hearts.push(new heartClass(3, 7, 33), new heartClass(4, 7, 13), new heartClass(12, 6, 11), new heartClass(14, 6, 15));
 }
 
 populateItems();
