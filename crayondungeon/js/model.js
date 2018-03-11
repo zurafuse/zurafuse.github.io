@@ -15,6 +15,10 @@ document.getElementsByClassName("wrapper")[0].append(newElement);*/
 var canvas = document.getElementById('canvas');
 var ctx = canvas.getContext('2d');
 canvas.width = window.innerWidth - 180;
+if (window.innerWidth < 600)
+{
+	canvas.width = window.innerWidth * .85;	
+}
 
 var keysUp = [];
 var keysDown = [];
