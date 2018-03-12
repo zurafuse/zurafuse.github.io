@@ -72,15 +72,28 @@ function populate(room){
 		{
 			backgrounds.push(new blockClass(crayonImages.backgrounds, 200, 0, 100, 100, 3, i, sprtHtControl, sprtHtControl));
 		}
-		//tree lien
+		//tree line
 		blockLine("west", "tree");
 		blockLine("south", "tree");
+		//bad guys
+		toilets.push(new toiletClass(4, 9, "right"), new toiletClass(10, 15, "left"));
 	}
 	if (room == 1)
 	{
 		//grass
 		backgrounds.push(new blockClass(crayonImages.grass, 0, 0, 400, 300, 0, 0, gridWidth * sprtHtControl, gridHeight * sprtHtControl));		
 		blockLine("south", "tree");
+		//trees
+		blocks.push(new blockClass(crayonImages.backgrounds, 100, 0, 100, 100, 2, 2, sprtHtControl, sprtHtControl));
+		blocks.push(new blockClass(crayonImages.backgrounds, 100, 0, 100, 100, 7.5, 2, sprtHtControl, sprtHtControl));
+		blocks.push(new blockClass(crayonImages.backgrounds, 100, 0, 100, 100, 12.5, 2, sprtHtControl, sprtHtControl));
+		blocks.push(new blockClass(crayonImages.backgrounds, 100, 0, 100, 100, 18, 2, sprtHtControl, sprtHtControl));
+		blocks.push(new blockClass(crayonImages.backgrounds, 100, 0, 100, 100, 23, 2, sprtHtControl, sprtHtControl));
+		blocks.push(new blockClass(crayonImages.backgrounds, 100, 0, 100, 100, 3, 7, sprtHtControl, sprtHtControl));
+		blocks.push(new blockClass(crayonImages.backgrounds, 100, 0, 100, 100, 7, 7, sprtHtControl, sprtHtControl));
+		blocks.push(new blockClass(crayonImages.backgrounds, 100, 0, 100, 100, 18, 9, sprtHtControl, sprtHtControl));
+		blocks.push(new blockClass(crayonImages.backgrounds, 100, 0, 100, 100, 21, 9, sprtHtControl, sprtHtControl));
+		blocks.push(new blockClass(crayonImages.backgrounds, 100, 0, 100, 100, 24, 9, sprtHtControl, sprtHtControl));
 		//path
 		for (i = 0; i < 15; i++)
 		{
@@ -112,6 +125,12 @@ function populate(room){
 			backgrounds.push(new blockClass(crayonImages.backgrounds, 200, 0, 100, 100, 15, i, sprtHtControl, sprtHtControl));
 		}
 		showers.push(new showerClass(8, 6));
+		//trees
+		blocks.push(new blockClass(crayonImages.backgrounds, 100, 0, 100, 100, 4, 2, sprtHtControl, sprtHtControl));
+		blocks.push(new blockClass(crayonImages.backgrounds, 100, 0, 100, 100, 7, 2, sprtHtControl, sprtHtControl));
+		blocks.push(new blockClass(crayonImages.backgrounds, 100, 0, 100, 100, 3, 9, sprtHtControl, sprtHtControl));
+		blocks.push(new blockClass(crayonImages.backgrounds, 100, 0, 100, 100, 9, 9, sprtHtControl, sprtHtControl));
+		blocks.push(new blockClass(crayonImages.backgrounds, 100, 0, 100, 100, 15, 9, sprtHtControl, sprtHtControl));
 	}		
 	if (room == 3)
 	{
@@ -313,11 +332,22 @@ function populate(room){
 		backgrounds.push(new blockClass(crayonImages.grass, 0, 0, 400, 300, 0, 0, gridWidth * sprtHtControl, gridHeight * sprtHtControl));		
 		//trees
 		blockLine("west", "tree");
+		blocks.push(new blockClass(crayonImages.backgrounds, 100, 0, 100, 100, 7, 3, sprtHtControl, sprtHtControl));
+		blocks.push(new blockClass(crayonImages.backgrounds, 100, 0, 100, 100, 15, 3, sprtHtControl, sprtHtControl));
+		blocks.push(new blockClass(crayonImages.backgrounds, 100, 0, 100, 100, 23, 3, sprtHtControl, sprtHtControl));
+		blocks.push(new blockClass(crayonImages.backgrounds, 100, 0, 100, 100, 7, 7.5, sprtHtControl, sprtHtControl));
+		blocks.push(new blockClass(crayonImages.backgrounds, 100, 0, 100, 100, 15, 7.5, sprtHtControl, sprtHtControl));
+		blocks.push(new blockClass(crayonImages.backgrounds, 100, 0, 100, 100, 23, 7.5, sprtHtControl, sprtHtControl));
+		blocks.push(new blockClass(crayonImages.backgrounds, 100, 0, 100, 100, 7, 12, sprtHtControl, sprtHtControl));
+		blocks.push(new blockClass(crayonImages.backgrounds, 100, 0, 100, 100, 15, 12, sprtHtControl, sprtHtControl));
+		blocks.push(new blockClass(crayonImages.backgrounds, 100, 0, 100, 100, 23, 12, sprtHtControl, sprtHtControl));
 		//path
 		for (i = 0; i < 15; i++)
 		{
 			backgrounds.push(new blockClass(crayonImages.backgrounds, 200, 0, 100, 100, 3, i, sprtHtControl, sprtHtControl));
 		}
+		//bad guys
+		showers.push(new showerClass(10, 3), new showerClass(10, 7.5), new showerClass(10, 12));
 	}
 	if (room == 11)
 	{
@@ -621,7 +651,7 @@ function populate(room){
 			blocks.push(new blockClass(crayonImages.backgrounds, 100, 100, 100, 100, i, 1, sprtHtControl, sprtHtControl, "water"));
 		}
 		showers.push(new showerClass(4, 5));
-		toilets.push(new toiletClass(8, 2, "left"), new toiletClass(13, 5, "right"), new toiletClass(18, 8, "left"), new toiletClass(1.5, 11, "right"));
+		toilets.push(new toiletClass(8, 2, "left"), new toiletClass(12, 5, "right"), new toiletClass(18, 8, "left"), new toiletClass(1.5, 11, "right"));
 		//blocks
 		blocks.push(new blockClass(crayonImages.backgrounds, 101, 201, 100, 100, 8, 4, sprtHtControl, sprtHtControl),
 		new blockClass(crayonImages.backgrounds, 101, 201, 100, 100, 8, 5, sprtHtControl, sprtHtControl),
