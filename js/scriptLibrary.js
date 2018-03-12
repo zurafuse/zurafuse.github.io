@@ -46,7 +46,7 @@ for (i = 0; i < $(".modBtn").length; i++){
 		{
 			modHead = "Crayon Dungeon";
 			modBody = "Crayon Dungeon is an adventure game that I created using nothing but javascript. Save the crayon kingdom from the nightmare of Super Toilet. Notice its responsiveness to use on a mobile device." +
-				"See the code at my Github page, at <a href='https://github.com/zurafuse/Crayon-Adventure//' target='_blank' style='color: white'>https://github.com/zurafuse/Crayon-Adventure</a>";
+			" See the code at my Github page, at <a href='https://github.com/zurafuse/Crayon-Adventure//' target='_blank'>https://github.com/zurafuse/Crayon-Adventure</a>";
 			modFoot = "LINK: <a href='https://zurafuse.github.io/crayondungeon/' target='_blank' style='color: white'>https://zurafuse.github.io/crayondungeon//</a>";		
 		}
 		else if ($(this).attr("id") === "mod_frogger")
