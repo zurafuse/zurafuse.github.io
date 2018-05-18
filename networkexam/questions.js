@@ -765,3 +765,12 @@ choiced: "D. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;text",
 answer: "A"
 };
 
+examQuest[85] = {
+question: "What describes the use of multiple access points to extend user mobility?",
+choicea: "A. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;text",
+choiceb: "B. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;text",
+choicec: "C. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ESS - Extended Service Set",
+choiced: "D. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;text",
+answer: "A"
+};
+
