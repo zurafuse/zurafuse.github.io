@@ -771,6 +771,6 @@ choicea: "A. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;text",
 choiceb: "B. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;text",
 choicec: "C. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ESS - Extended Service Set",
 choiced: "D. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;text",
-answer: "A"
+answer: "C"
 };
 
