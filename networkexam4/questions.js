@@ -173,7 +173,7 @@ answer: "C"
 
 examQuest[19] = {
 question: "Gigabit Ethernet standard using short-wavelength transmitters?",
-choicea: "A. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1000BASE-LX"",
+choicea: "A. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1000BASE-LX",
 choiceb: "B. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;10GBASE-W",
 choicec: "C. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;lasers",
 choiced: "D. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1000BASE-SX",
