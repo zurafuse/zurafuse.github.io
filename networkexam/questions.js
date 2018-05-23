@@ -13,8 +13,8 @@ examQuest[1] = {
 question: "What are two advantages of subnetting?",
 choicea: "A. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;It divides the network into smaller segments, and it separates the network and subnet address from the host address.",
 choiceb: "B. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Support for any device, and isolating host bits from the network address.",
-choicec: "C. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;text",
-choiced: "D. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;text",
+choicec: "C. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;It makes administration easier, and provides more networks to work with.",
+choiced: "D. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Mork and Mindy",
 answer: "A"
 };
 
@@ -146,19 +146,19 @@ answer: "A"
 
 examQuest[16] = {
 question: "In Which 802.11 physical layer technology is Bandwidth divided into smaller subchannels? ",
-choicea: "A. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;text",
-choiceb: "B. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;text",
+choicea: "A. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Frequency Hopping",
+choiceb: "B. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;nanobots",
 choicec: "C. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Frequency division",
-choiced: "D. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;text",
+choiced: "D. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Direct Spread Spectrum",
 answer: "C"
 };
 
 examQuest[17] = {
 question: "In Which 802.11 physical layer technology is Light is utilized instead of radio waves?",
-choicea: "A. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;text",
-choiceb: "B. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;text",
+choicea: "A. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Fiber Optics",
+choiceb: "B. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;plasma",
 choicec: "C. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Infrared",
-choiced: "D. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;text",
+choiced: "D. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Solar Flare",
 answer: "C"
 };
 
@@ -182,7 +182,7 @@ answer: "B"
 
 examQuest[20] = {
 question: "How many channels are implemented in 802.11 direct-sequence spread spectrum (DSSS)? ",
-choicea: "A. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;14 (only 11 are used in North America)",
+choicea: "A. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;14",
 choiceb: "B. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;11",
 choicec: "C. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;12",
 choiced: "D. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;9",
@@ -335,37 +335,37 @@ answer: "A"
 
 examQuest[37] = {
 question: "Identify the Class A private ip address range",
-choicea: "A. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;text",
-choiceb: "B. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;text",
+choicea: "A. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;172.16.0.0-172.31.255.255",
+choiceb: "B. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;FFFFFF",
 choicec: "C. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;10.0.0.0-10.255.255.255",
-choiced: "D. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;text",
+choiced: "D. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;192.168.0.0-192.168.255.255",
 answer: "C"
 };
 
 examQuest[38] = {
 question: "Identify the Class B private ip address range",
 choicea: "A. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;172.16.0.0-172.31.255.255",
-choiceb: "B. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;text",
-choicec: "C. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;text",
-choiced: "D. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;text",
+choiceb: "B. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;10.0.0.0-10.255.255.255",
+choicec: "C. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;192.168.0.0-192.168.255.255",
+choiced: "D. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;AAAAAA",
 answer: "A"
 };
 
 examQuest[39] = {
 question: "Identify the Class C private ip address range",
 choicea: "A. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;192.168.0.0-192.168.255.255",
-choiceb: "B. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;text",
-choicec: "C. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;text",
-choiced: "D. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;text",
+choiceb: "B. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;10.0.0.0-10.255.255.255",
+choicec: "C. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;172.16.0.0-172.31.255.255",
+choiced: "D. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;FFFFFF",
 answer: "A"
 };
 
 examQuest[40] = {
-question: "What describes A section of a network separated by a bridge, switch, or router",
-choicea: "A. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;text",
+question: "What describes a section of a network separated by a bridge, switch, or router",
+choicea: "A. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;a section",
 choiceb: "B. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;a segment",
-choicec: "C. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;text",
-choiced: "D. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;text",
+choicec: "C. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;subnet",
+choiced: "D. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;supernet",
 answer: "B"
 };
 
@@ -380,10 +380,10 @@ answer: "D"
 
 examQuest[42] = {
 question: "What network topology provides access to consolidated, block level data storage like enhancing storage devices, such as disk arrays and tape libraries?",
-choicea: "A. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;text",
-choiceb: "B. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;text",
+choicea: "A. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Star Topology",
+choiceb: "B. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Fiber Optics Topology",
 choicec: "C. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Storage Area Network Topology (SAN Topology)",
-choiced: "D. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;text",
+choiced: "D. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;BUS Toplogy",
 answer: "C"
 };
 
@@ -398,100 +398,100 @@ answer: "A"
 
 examQuest[44] = {
 question: "What fiber optic problem happens when Light pulse spreads out in time",
-choicea: "A. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;text",
-choiceb: "B. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;text",
+choicea: "A. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Attenuation",
+choiceb: "B. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Microbending",
 choicec: "C. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Dispersion",
-choiced: "D. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;text",
+choiced: "D. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Macrobending",
 answer: "C"
 };
 
 examQuest[45] = {
 question: "What is a fiber optic fiber that supports many optical waveguide modes",
-choicea: "A. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;text",
-choiceb: "B. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;text",
+choicea: "A. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;singlemode fibers",
+choiceb: "B. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Macrobending",
 choicec: "C. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;multimode fibers",
-choiced: "D. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;text",
+choiced: "D. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;laser beams!",
 answer: "C"
 };
 
 examQuest[46] = {
 question: "What fiber optic problem happens when Loss caused by mechanical stress",
 choicea: "A. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Microbending",
-choiceb: "B. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;text",
-choicec: "C. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;text",
-choiced: "D. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;text",
+choiceb: "B. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Macrobending",
+choicec: "C. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Attenuation",
+choiced: "D. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Lasers",
 answer: "A"
 };
 
 examQuest[47] = {
 question: "What fiber optic problem describes Loss of power as light is propagated",
-choicea: "A. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;text",
-choiceb: "B. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;text",
-choicec: "C. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;text",
+choicea: "A. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Microbending",
+choiceb: "B. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Macrobending",
+choicec: "C. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Dispersion",
 choiced: "D. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Attenuation",
 answer: "D"
 };
 
 examQuest[48] = {
 question: "What fiber optic problem happens when Light escapes into the cladding",
-choicea: "A. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;text",
-choiceb: "B. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;text",
-choicec: "C. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;text",
+choicea: "A. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Microbending",
+choiceb: "B. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Ninjas",
+choicec: "C. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Dispersion",
 choiced: "D. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Macrobending",
 answer: "D"
 };
 
 examQuest[49] = {
 question: "Which OSI layer Establishes, manages, and terminates the connections",
-choicea: "A. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;text",
-choiceb: "B. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Session (layer 5)",
-choicec: "C. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;text",
-choiced: "D. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;text",
+choicea: "A. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Application (Layer 7)",
+choiceb: "B. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Session (Layer 5)",
+choicec: "C. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Presentation (Layer 6)",
+choiced: "D. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Transport (Layer 4)",
 answer: "B"
 };
 
 examQuest[50] = {
 question: "Which layer Provides message integrity between source and destination",
-choicea: "A. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;text",
+choicea: "A. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Presentation (Layer 6)",
 choiceb: "B. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Transport (Layer 4)",
-choicec: "C. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;text",
-choiced: "D. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;text",
+choicec: "C. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Session (Layer 5)",
+choiced: "D. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;cream layer",
 answer: "B"
 };
 
 examQuest[51] = {
 question: "Which OSI layer Structures the message and translates from one code to another if necessary",
 choicea: "A. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Presentation",
-choiceb: "B. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;text",
-choicec: "C. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;text",
-choiced: "D. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;text",
+choiceb: "B. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Transport (Layer 4)",
+choicec: "C. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Session (Layer 5)",
+choiced: "D. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;cream layer",
 answer: "A"
 };
 
 examQuest[52] = {
 question: "Which OSI layer Interprets user requests and determines the information needed to support the request?",
 choicea: "A. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Application Layer (layer 7)",
-choiceb: "B. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;text",
-choicec: "C. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;text",
-choiced: "D. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;text",
+choiceb: "B. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Session (Layer 5)",
+choicec: "C. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Presentation (Layer 6)",
+choiced: "D. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Transport (Layer 4)",
 answer: "A"
 };
 
 examQuest[53] = {
 question: "What network Provides connectivity within a very limited area",
-choicea: "A. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;text",
-choiceb: "B. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;text",
+choicea: "A. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Wide Area Network (WAN)",
+choiceb: "B. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Campus Area Network (CAN)",
 choicec: "C. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Local area network (LAN)",
-choiced: "D. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;text",
+choiced: "D. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;WGU",
 answer: "C"
 };
 
 examQuest[54] = {
 question: "The EIA/TIA568-B.2 specifies which aspects of UTP cabling components?",
-choicea: "A. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;text",
+choicea: "A. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Equipment standards and Certifications",
 choiceb: "B. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Transmissions and Cabling hardware",
 choicec: "C. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Measurement tools and System set-up",
-choiced: "D. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;text",
+choiced: "D. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;aliens",
 answer: "B"
 };
 
@@ -507,9 +507,9 @@ answer: "B"
 examQuest[56] = {
 question: "At which layer of the OSI model is the network address used?",
 choicea: "A. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Layer 3",
-choiceb: "B. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;text",
-choicec: "C. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;text",
-choiced: "D. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;text",
+choiceb: "B. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Layer 2",
+choicec: "C. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Layer 7",
+choiced: "D. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Layer 1",
 answer: "A"
 };
 
@@ -533,63 +533,63 @@ answer: "A"
 
 examQuest[59] = {
 question: "What topology describes when The devices form a loop with each device having two neighbors?",
-choicea: "A. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;text",
-choiceb: "B. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;text",
+choicea: "A. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Star",
+choiceb: "B. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Mesh",
 choicec: "C. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Ring",
-choiced: "D. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;text",
+choiced: "D. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Bus",
 answer: "C"
 };
 
 examQuest[60] = {
 question: "What network Uses the telecommunications network to connect over a large geographical area",
-choicea: "A. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;text",
+choicea: "A. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Local area network (LAN)",
 choiceb: "B. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Wide area network (WAN)",
-choicec: "C. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;text",
-choiced: "D. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;text",
+choicec: "C. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Campus area network (CAN)",
+choiced: "D. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;dude",
 answer: "B"
 };
 
 examQuest[61] = {
 question: "What network Interconnects LANs within a urban area",
 choicea: "A. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Metropolitan area network (MAN)",
-choiceb: "B. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;text",
-choicec: "C. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;text",
-choiced: "D. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;text",
+choiceb: "B. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Local area network (LAN)",
+choicec: "C. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Wide area network (WAN)",
+choiced: "D. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Campus area network (CAN)",
 answer: "A"
 };
 
 examQuest[62] = {
 question: "What topology describes when All devices see the traffic and wait for a pause to transmit.",
-choicea: "A. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;text",
-choiceb: "B. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;text",
+choicea: "A. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Mesh",
+choiceb: "B. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Ring",
 choicec: "C. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Bus",
-choiced: "D. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;text",
+choiced: "D. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Star",
 answer: "C"
 };
 
 examQuest[63] = {
 question: "What topology describes A hub provides the network connectivity",
-choicea: "A. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;text",
+choicea: "A. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Bus",
 choiceb: "B. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Star",
-choicec: "C. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;text",
-choiced: "D. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;text",
+choicec: "C. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Mesh",
+choiced: "D. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Ring",
 answer: "B"
 };
 
 examQuest[64] = {
 question: "What topology describes when Each device is directly connected to every other device",
 choicea: "A. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Mesh",
-choiceb: "B. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;text",
-choicec: "C. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;text",
-choiced: "D. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;text",
+choiceb: "B. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Ring",
+choicec: "C. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Star",
+choiced: "D. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Bus",
 answer: "A"
 };
 
 examQuest[65] = {
 question: "What describes Breaking down networks into smaller networks",
-choicea: "A. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;text",
-choiceb: "B. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;text",
-choicec: "C. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;text",
+choicea: "A. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Supernetting",
+choiceb: "B. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Dispersion",
+choicec: "C. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Distribution",
 choiced: "D. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Subnetting",
 answer: "D"
 };
@@ -650,10 +650,10 @@ answer: "A"
 
 examQuest[72] = {
 question: "What describes a Notation specifying the number of bits set to 1 to make up a subnet mask",
-choicea: "A. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;CIDR (Classless Interdomain Routing)",
-choiceb: "B. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;text",
-choicec: "C. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;text",
-choiced: "D. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;text",
+choicea: "A. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;CIDR",
+choiceb: "B. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;CRC",
+choicec: "C. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;subnetting",
+choiced: "D. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;supernetting",
 answer: "A"
 };
 
