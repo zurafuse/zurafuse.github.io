@@ -316,487 +316,290 @@ answer: "C"
 };
 
 examQuest[35] = {
-question: "What is the process for a computer to get an IP in DHCP mode?",
-choicea: "A. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;text",
-choiceb: "B. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;text",
-choicec: "C. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;text",
-choiced: "D. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;text",
-answer: "x"
+question: "What describes 10GB Ethernet?",
+choicea: "A. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;10GE",
+choiceb: "B. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;100GE",
+choicec: "C. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;10BASE-FL",
+choiced: "D. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;fast",
+answer: "A"
 };
 
 examQuest[36] = {
 question: "What is DHCP?",
-choicea: "A. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;text",
-choiceb: "B. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;text",
-choicec: "C. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;text",
-choiced: "D. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;text",
-answer: "x"
+choicea: "A. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Dang Hogs Cutting Peanuts",
+choiceb: "B. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Dynamic Host Control Protocol",
+choicec: "C. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Dynamic Host Configuration Protocol",
+choiced: "D. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Developers Holding Cups and Plates",
+answer: "C"
 };
 
 examQuest[37] = {
 question: "What is the difference between a static and Dynamic IP?",
-choicea: "A. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;text",
-choiceb: "B. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;text",
-choicec: "C. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;text",
-choiced: "D. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;text",
-answer: "x"
+choicea: "A. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;a dynamic IP is already set. A static IP is assigned at connection time.",
+choiceb: "B. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;they are both ninjas",
+choicec: "C. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;a dynamic IP is assigned automatically. A static IP is already set.",
+choiced: "D. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;a dynamic IP is assigned by the vendor. A static IP is set by the router.",
+answer: "C"
 };
 
 examQuest[38] = {
 question: "How many hexadecimal digits in a MAC address?",
-choicea: "A. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;text",
-choiceb: "B. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;text",
-choicec: "C. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;text",
-choiced: "D. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;text",
-answer: "x"
+choicea: "A. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;5",
+choiceb: "B. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;12",
+choicec: "C. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;16",
+choiced: "D. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;8",
+answer: "B"
 };
 
 examQuest[39] = {
 question: "What to the first 6 digits identify in a MAC address?",
-choicea: "A. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;text",
-choiceb: "B. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;text",
-choicec: "C. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;text",
-choiced: "D. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;text",
-answer: "x"
+choicea: "A. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;unique id number",
+choiceb: "B. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Vendor number",
+choicec: "C. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;IP address",
+choiced: "D. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;phone number",
+answer: "B"
 };
 
 examQuest[40] = {
 question: "How many classes in an IP?",
-choicea: "A. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;text",
-choiceb: "B. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;text",
-choicec: "C. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;text",
-choiced: "D. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;text",
-answer: "x"
+choicea: "A. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;6",
+choiceb: "B. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;4",
+choicec: "C. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;5",
+choiced: "D. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;3",
+answer: "C"
 };
 
 examQuest[41] = {
 question: "What is a Classless IP address?",
-choicea: "A. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;text",
-choiceb: "B. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;text",
-choicec: "C. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;text",
-choiced: "D. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;text",
-answer: "x"
+choicea: "A. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;AES",
+choiceb: "B. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;IEEE",
+choicec: "C. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;CIDR",
+choiced: "D. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;CRC",
+answer: "C"
 };
 
 examQuest[42] = {
-question: "How many parts is an IP divided into?",
-choicea: "A. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;text",
-choiceb: "B. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;text",
-choicec: "C. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;text",
-choiced: "D. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;text",
-answer: "x"
+question: "How many octets is an IP divided into?",
+choicea: "A. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;6",
+choiceb: "B. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;8",
+choicec: "C. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;3",
+choiced: "D. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;4",
+answer: "D"
 };
 
 examQuest[43] = {
-question: "How many bits in each part of an IP?",
-choicea: "A. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;text",
-choiceb: "B. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;text",
-choicec: "C. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;text",
-choiced: "D. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;text",
-answer: "x"
+question: "How many bits in each octet of an IP?",
+choicea: "A. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;8",
+choiceb: "B. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;16",
+choicec: "C. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;32",
+choiced: "D. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;4",
+answer: "A"
 };
 
 examQuest[44] = {
-question: "What is a Private IP?",
-choicea: "A. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;text",
-choiceb: "B. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;text",
-choicec: "C. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;text",
-choiced: "D. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;text",
-answer: "x"
+question: "What describes 1000Mbps over twisted-pair?",
+choicea: "A. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1000BaseT",
+choiceb: "B. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1000BaseFX",
+choicec: "C. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;10BASEG-T",
+choiced: "D. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;fast",
+answer: "A"
 };
 
 examQuest[45] = {
-question: "What is a Public IP?",
-choicea: "A. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;text",
-choiceb: "B. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;text",
-choicec: "C. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;text",
-choiced: "D. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;text",
-answer: "x"
+question: "What describes 1000Mbps over fiber?",
+choicea: "A. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1000BaseT",
+choiceb: "B. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;100BaseFX",
+choicec: "C. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;10BASEG-T",
+choiced: "D. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1000BaseFX",
+answer: "D"
 };
+
 
 examQuest[46] = {
 question: "What is a WAN?",
-choicea: "A. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;text",
-choiceb: "B. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;text",
-choicec: "C. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;text",
-choiced: "D. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;text",
-answer: "x"
+choicea: "A. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;dinosaurs",
+choiceb: "B. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;a network that coverages a wide geographical area",
+choicec: "C. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;a network that covers a small geographical area",
+choiced: "D. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;logical subnetwork that can group together a collection of devices from different physical LANs",
+answer: "B"
 };
 
 examQuest[47] = {
 question: "What is a LAN?",
-choicea: "A. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;text",
-choiceb: "B. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;text",
-choicec: "C. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;text",
-choiced: "D. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;text",
-answer: "x"
+choicea: "A. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;dinosaurs",
+choiceb: "B. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;a network that coverages a wide geographical area",
+choicec: "C. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;a network that covers a small geographical area",
+choiced: "D. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;logical subnetwork that can group together a collection of devices from different physical LANs",
+answer: "C"
 };
 
 examQuest[48] = {
 question: "What is a VLAN?",
-choicea: "A. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;text",
-choiceb: "B. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;text",
-choicec: "C. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;text",
-choiced: "D. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;text",
-answer: "x"
+choicea: "A. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;dinosaurs",
+choiceb: "B. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;a network that coverages a wide geographical area",
+choicec: "C. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;a network that covers a small geographical area",
+choiced: "D. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;logical subnetwork that can group together a collection of devices from different physical LANs",
+answer: "D"
 };
 
 examQuest[49] = {
-question: "What is a WLAN?",
-choicea: "A. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;text",
-choiceb: "B. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;text",
-choicec: "C. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;text",
-choiced: "D. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;text",
-answer: "x"
+question: "What describes 100Mbps over fiber?",
+choicea: "A. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;100BaseFL",
+choiceb: "B. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;10BaseFX",
+choicec: "C. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;100BaseFX",
+choiced: "D. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;100BaseG-T",
+answer: "C"
 };
 
 examQuest[50] = {
 question: "This standard can provide data transfer rates up to 54Mbps up to 150 feet. It operates at 2.4GHz.",
-choicea: "A. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;text",
+choicea: "A. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;802.11b",
 choiceb: "B. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;802.11g",
-choicec: "C. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;text",
-choiced: "D. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;text",
+choicec: "C. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;802.11n",
+choiced: "D. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;802.11ac",
 answer: "B"
 };
 
 examQuest[51] = {
 question: "This standard provides data transfer rates up to 4 x 802.11g speeds (200+Mbps). It operates either at 2.4GHz or 5GHz.",
 choicea: "A. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;802.11n",
-choiceb: "B. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;text",
-choicec: "C. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;text",
-choiced: "D. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;text",
+choiceb: "B. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;802.11g",
+choicec: "C. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;802.11b",
+choiced: "D. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;802.11ac",
 answer: "A"
 };
 
 examQuest[52] = {
 question: "This is the latest wireless standard. It provides single-station data transfer rates of 500Mbps and operates in the 5GHz frequency band.",
-choicea: "A. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;text",
-choiceb: "B. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;text",
-choicec: "C. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;text",
+choicea: "A. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;802.11n",
+choiceb: "B. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;802.11g",
+choicec: "C. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;802.11b",
 choiced: "D. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;802.11ac",
 answer: "D"
 };
 
 examQuest[53] = {
 question: "This standard can provide data transfer rates up to 11Mbps with ranges of 100-150 feet. It operates at 2.4GHz.",
-choicea: "A. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;text",
-choiceb: "B. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;text",
+choicea: "A. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;802.11n",
+choiceb: "B. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;802.11g",
 choicec: "C. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;802.11b",
-choiced: "D. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;text",
+choiced: "D. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;802.11ac",
 answer: "C"
 };
 
 examQuest[54] = {
 question: "This standard can provide data transfer rates up to 54Mbps and an operating range up to 75 feet. It operates at 5GHz.",
-choicea: "A. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;text",
+choicea: "A. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;802.11n",
 choiceb: "B. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;802.11a",
-choicec: "C. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;text",
-choiced: "D. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;text",
+choicec: "C. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;802.11b",
+choiced: "D. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;802.11ac",
 answer: "B"
 };
 
 examQuest[55] = {
-question: "Which device does x",
-choicea: "A. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;text",
-choiceb: "B. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;text",
-choicec: "C. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;text",
-choiced: "D. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;router",
-answer: "D"
-};
-
-examQuest[56] = {
-question: "Describe a USB",
-choicea: "A. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;text",
-choiceb: "B. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;text",
-choicec: "C. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;text",
-choiced: "D. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;text",
-answer: "x"
-};
-
-examQuest[57] = {
-question: "What does an Access Point do?",
-choicea: "A. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;text",
-choiceb: "B. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;text",
-choicec: "C. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;text",
-choiced: "D. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;text",
-answer: "x"
-};
-
-examQuest[58] = {
-question: "What x",
-choicea: "A. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;text",
-choiceb: "B. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;SSID",
-choicec: "C. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;text",
-choiced: "D. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;text",
-answer: "B"
-};
-
-examQuest[59] = {
-question: "What is a VPN?",
-choicea: "A. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;text",
-choiceb: "B. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;text",
-choicec: "C. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;text",
-choiced: "D. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;text",
-answer: "x"
-};
-
-examQuest[60] = {
-question: "What does a VPN do?",
-choicea: "A. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;text",
-choiceb: "B. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;text",
-choicec: "C. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;text",
-choiced: "D. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;text",
-answer: "x"
-};
-
-examQuest[61] = {
-question: "If browsing from a public wifi, how can a VPN help secure your connection?",
-choicea: "A. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;text",
-choiceb: "B. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;text",
-choicec: "C. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;text",
-choiced: "D. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;text",
-answer: "x"
-};
-
-examQuest[62] = {
-question: "How do you perform an ARP request?",
-choicea: "A. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;text",
-choiceb: "B. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;text",
-choicec: "C. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;text",
-choiced: "D. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;text",
-answer: "x"
-};
-
-examQuest[63] = {
-question: "What does ARP stand for?",
-choicea: "A. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;text",
-choiceb: "B. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;text",
-choicec: "C. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;text",
-choiced: "D. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;text",
-answer: "x"
-};
-
-examQuest[64] = {
-question: "text",
-choicea: "A. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;text",
-choiceb: "B. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;text",
-choicec: "C. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;text",
-choiced: "D. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;text",
-answer: "x"
-};
-
-examQuest[65] = {
-question: "What is a subnet?",
-choicea: "A. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;text",
-choiceb: "B. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;text",
-choicec: "C. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;text",
-choiced: "D. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;text",
-answer: "x"
-};
-
-examQuest[66] = {
-question: "What is a Gateway?",
-choicea: "A. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;text",
-choiceb: "B. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;text",
-choicec: "C. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;text",
-choiced: "D. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;text",
-answer: "x"
-};
-
-examQuest[67] = {
-question: "What does “Request timed out” mean when you use the Ping command?",
-choicea: "A. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;text",
-choiceb: "B. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;text",
-choicec: "C. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;text",
-choiced: "D. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;text",
-answer: "x"
-};
-
-examQuest[68] = {
-question: "How can you setup a continuous Ping?",
-choicea: "A. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;text",
-choiceb: "B. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;text",
-choicec: "C. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;text",
-choiced: "D. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;text",
-answer: "x"
-};
-
-examQuest[69] = {
-question: "How many packets are sent to test connection using the Ping command?",
-choicea: "A. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;text",
-choiceb: "B. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;text",
-choicec: "C. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;text",
-choiced: "D. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;text",
-answer: "x"
-};
-
-examQuest[70] = {
-question: "What information does an ipconfig /all command get you?",
-choicea: "A. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;text",
-choiceb: "B. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;text",
-choicec: "C. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;text",
-choiced: "D. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;text",
-answer: "x"
-};
-
-examQuest[71] = {
-question: "What information does an ipconfig command get you?",
-choicea: "A. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;text",
-choiceb: "B. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;text",
-choicec: "C. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;text",
-choiced: "D. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;text",
-answer: "x"
-};
-
-examQuest[72] = {
-question: "What does Ping do?",
-choicea: "A. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;text",
-choiceb: "B. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;text",
-choicec: "C. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;text",
-choiced: "D. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;text",
-answer: "x"
-};
-
-examQuest[73] = {
-question: "What protocol does ping use?",
-choicea: "A. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;text",
-choiceb: "B. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;text",
-choicec: "C. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;text",
-choiced: "D. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;text",
-answer: "x"
-};
-
-examQuest[74] = {
-question: "How many wires in an RJ45?",
-choicea: "A. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;text",
-choiceb: "B. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;text",
-choicec: "C. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;text",
-choiced: "D. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;text",
-answer: "x"
-};
-
-examQuest[75] = {
-question: "How many pairs in an RJ45?",
-choicea: "A. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;text",
-choiceb: "B. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;text",
-choicec: "C. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;text",
-choiced: "D. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;text",
-answer: "x"
-};
-
-examQuest[76] = {
-question: "What is a link integrity test?",
-choicea: "A. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;text",
-choiceb: "B. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;text",
-choicec: "C. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;text",
-choiced: "D. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;text",
-answer: "x"
-};
-
-examQuest[77] = {
-question: "If the link light is off when you connect a CAT5e cable to your computer what does that mean?",
-choicea: "A. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;text",
-choiceb: "B. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;text",
-choicec: "C. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;text",
-choiced: "D. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;text",
-answer: "x"
-};
-
-examQuest[78] = {
-question: "What is the difference between type A and type B in CAT5e cable?",
-choicea: "A. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;text",
-choiceb: "B. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;text",
-choicec: "C. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;text",
-choiced: "D. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;text",
-answer: "x"
-};
-
-examQuest[79] = {
-question: "What describes 10Mbps over coaxial cable up to 185 m, also called ThinNet (seldom used anymore)",
-choicea: "A. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;text",
-choiceb: "B. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;text",
-choicec: "C. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;10Base2",
-choiced: "D. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;text",
-answer: "C"
-};
-
-examQuest[80] = {
-question: "What describes 10Mbps over coaxial cable up to 500 m, also called ThickNet (seldom used anymore)",
-choicea: "A. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;10Base5",
-choiceb: "B. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;text",
-choicec: "C. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;text",
-choiced: "D. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;text",
+question: "What describes 100Mbps over twisted-pair (also called Fast Ethernet)",
+choicea: "A. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;100BaseT",
+choiceb: "B. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;100BaseFX",
+choicec: "C. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;10BASEG-T",
+choiced: "D. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1000BaseFX",
 answer: "A"
 };
 
-examQuest[81] = {
+examQuest[56] = {
+question: "What describes 10Mbps over 850 nm multimode fiber-optic cable?",
+choicea: "A. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;10BaseFL",
+choiceb: "B. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;100BaseFX",
+choicec: "C. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;10BASEG-T",
+choiced: "D. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1000BaseFX",
+answer: "A"
+};
+
+examQuest[57] = {
+question: "How can you setup a continuous Ping?",
+choicea: "A. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ping # -a",
+choiceb: "B. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;netstat -a",
+choicec: "C. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ping # -t",
+choiced: "D. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ipconfig",
+answer: "C"
+};
+
+examQuest[58] = {
+question: "What information does an ipconfig /all command get you?",
+choicea: "A. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;The location of the dragon balls",
+choiceb: "B. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Everything except the Gateway address",
+choicec: "C. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;A bunch of stuff including MAC addresses",
+choiced: "D. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;everything",
+answer: "C"
+};
+
+examQuest[59] = {
+question: "What protocol does ping use?",
+choicea: "A. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;IGMP",
+choiceb: "B. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;TCP",
+choicec: "C. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ICMP",
+choiced: "D. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;police",
+answer: "C"
+};
+
+examQuest[60] = {
+question: "How many wires in an RJ45?",
+choicea: "A. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;4",
+choiceb: "B. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;8",
+choicec: "C. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;6",
+choiced: "D. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;12",
+answer: "B"
+};
+
+examQuest[61] = {
+question: "How many pairs in an RJ45?",
+choicea: "A. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;12",
+choiceb: "B. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;8",
+choicec: "C. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;4",
+choiced: "D. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;6",
+answer: "C"
+};
+
+examQuest[62] = {
+question: "What is a link integrity test?",
+choicea: "A. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Make sure cable has correct number of connectors",
+choiceb: "B. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Verifies the cords were manufactured correctly",
+choicec: "C. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;transceivers send link pulses over the segment to verify link integrity",
+choiced: "D. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ninjas",
+answer: "C"
+};
+
+examQuest[63] = {
+question: "What describes 10Mbps over multimode fiber-optic cable?",
+choicea: "A. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;10BaseT",
+choiceb: "B. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;10Base2",
+choicec: "C. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;10BaseF",
+choiced: "D. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;10Base5",
+answer: "C"
+};
+
+examQuest[64] = {
 question: "What describes 10Mbps over twisted-pair?",
-choicea: "A. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;text",
-choiceb: "B. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;text",
-choicec: "C. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;text",
+choicea: "A. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;10Base5",
+choiceb: "B. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;10Base2",
+choicec: "C. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;10BaseF",
 choiced: "D. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;10BaseT",
 answer: "D"
 };
 
-examQuest[82] = {
-question: "What describes 10Mbps over multimode fiber-optic cable?",
-choicea: "A. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;text",
-choiceb: "B. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;text",
+examQuest[65] = {
+question: "What describes 10Mbps over coaxial cable up to 185 m, also called ThinNet (seldom used anymore)",
+choicea: "A. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;10Base5",
+choiceb: "B. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;10BaseG",
+choicec: "C. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;10Base2",
+choiced: "D. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;10BaseT",
+answer: "C"
+};
+
+examQuest[66] = {
+question: "What describes 10Mbps over coaxial cable up to 500 m, also called ThickNet (seldom used anymore)",
+choicea: "A. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;10Base5",
+choiceb: "B. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;10Base2",
 choicec: "C. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;10BaseF",
-choiced: "D. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;text",
-answer: "C"
-};
-
-examQuest[83] = {
-question: "What describes 10Mbps over 850 nm multimode fiber-optic cable?",
-choicea: "A. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;10BaseFL",
-choiceb: "B. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;text",
-choicec: "C. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;text",
-choiced: "D. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;text",
-answer: "A"
-};
-
-examQuest[84] = {
-question: "What describes 100Mbps over twisted-pair (also called Fast Ethernet)",
-choicea: "A. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;100BaseT",
-choiceb: "B. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;text",
-choicec: "C. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;text",
-choiced: "D. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;text",
-answer: "A"
-};
-
-examQuest[85] = {
-question: "What describes 100Mbps over fiber?",
-choicea: "A. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;text",
-choiceb: "B. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;text",
-choicec: "C. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;100BaseFX",
-choiced: "D. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;text",
-answer: "C"
-};
-
-examQuest[86] = {
-question: "What describes 1000Mbps over twisted-pair?",
-choicea: "A. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1000BaseT",
-choiceb: "B. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;text",
-choicec: "C. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;text",
-choiced: "D. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;text",
-answer: "A"
-};
-
-examQuest[87] = {
-question: "What describes 1000Mbps over fiber?",
-choicea: "A. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;text",
-choiceb: "B. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;text",
-choicec: "C. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;text",
-choiced: "D. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1000BaseFX",
-answer: "D"
-};
-
-examQuest[88] = {
-question: "What describes 10GB Ethernet?",
-choicea: "A. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;10GE",
-choiceb: "B. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;text",
-choicec: "C. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;text",
-choiced: "D. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;text",
+choiced: "D. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;10BaseG",
 answer: "A"
 };
