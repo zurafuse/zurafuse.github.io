@@ -21,7 +21,7 @@ answer: "A"
 examQuest[02] = {
 question: "What are ports?",
 choicea: "A. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Time Travel",
-choiceb: "B. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;The interface for software applications",
+choiceb: "B. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;The interface for a spaceship",
 choicec: "C. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;The interface for the networking devices",
 choiced: "D. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Security protocol",
 answer: "C"
@@ -83,8 +83,8 @@ answer: "C"
 
 examQuest[09] = {
 question: "Is half-duplex faster than full-duplex?",
-choicea: "A. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Yes",
-choiceb: "B. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;No",
+choicea: "A. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;No",
+choiceb: "B. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Yes",
 choicec: "C. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Pizza",
 choiced: "D. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ninjas",
 answer: "A"
@@ -534,7 +534,7 @@ answer: "B"
 examQuest[59] = {
 question: "What port is SMTP on?",
 choicea: "A. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;22",
-choiceb: "B. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;443",
+choiceb: "B. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;25",
 choicec: "C. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;80",
 choiced: "D. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;20 or 21",
 answer: "A"
