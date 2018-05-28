@@ -603,3 +603,12 @@ choicec: "C. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;10BaseF",
 choiced: "D. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;10BaseG",
 answer: "A"
 };
+
+examQuest[67] = {
+question: "What OSI layer is an Access Point at?",
+choicea: "A. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Layer 3 Device",
+choiceb: "B. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Layer 2 Device",
+choicec: "C. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Layer 1 Device",
+choiced: "D. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Layer 5 Device",
+answer: "B"
+};
