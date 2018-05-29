@@ -38,7 +38,7 @@ answer: "D"
 
 examQuest[4] = {
 question: "What is the Class A IP address range?",
-choicea: "A. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;0.0.0.0-126.255.255.255",
+choicea: "A. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;0.0.0.0-127.255.255.255",
 choiceb: "B. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;0.0.0.0-223.255.255.255",
 choicec: "C. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;192.0.0.0-126.255.255.255",
 choiced: "D. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;10.0.0.0-126.255.255.255",
