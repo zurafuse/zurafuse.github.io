@@ -34,6 +34,14 @@
 <h3>Understand ACLs</h3>
 <br>
 
+<h3>Packet Acknowledgement</h3>
+<p>In an SYN ACK packet, Host B replies with a SYN ACK packet. The ACK is an acknowledgement that Host B received the packet from Host A. A number is attached to the ACK with a value of (x + 1) that should be the sum of the SEQ# from packet 1 plus the length (LEN) of packet 1. What does this mean? 
+This acknowledgement notifies Host A that the packet (packet 1) was received.<br>
+Explaining how a host knows whether a data packet was not received, 
+The host looks at the ACK number and SEQ number in the packet. If a SYN ACK packet has an ACK number that is the SEQ number (of the previous packet) plus 1, then that indicates that the previous packet was received.  
+READ Pages 242 to 243 in PDF</p>
+<br>
+
 <h3>Access Points</h3>
 <p>The access point connects wireless devices together and is the connection point between wireless devices and a wired LAN.</p>
 <br>
