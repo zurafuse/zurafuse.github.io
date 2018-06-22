@@ -11,7 +11,7 @@ var bio =
 		github: "https://github.com/zurafuse/",
 		location: "Wetumpka, AL"
 	},
-	welcomeMessage: "Document specialist with a focus on forms development, front end web development, and program analysis.",
+	welcomeMessage: "Software Developer with a focus on forms development, front end web development, and program analysis.",
 	skills: 
 	[
 		"Javascript",
@@ -124,10 +124,18 @@ var work =
 		{
 			employer: "ALFA Insurance Companies", 
 			url: "http://www.alfains.com",
-			title: "Programmer Analyst/Forms Developer", 
+			title: "Software Engineer/Programmer Analyst", 
 			location: "Montgomery, AL", 
-			dates: "August 2014 - present",
+			dates: "September 2016 - present",
 			description: "Duties include developing forms for the company, performing research and business analysis needed to do so, monitoring the SmartCommunications (Thunderhead) system and database, and writing javascript code to integrate SmartCommunications with other systems. As needed, I write web apps and .NET desktop applications to help the computer operators and the other forms developers perform specific tasks." 		
+		},
+		{
+			employer: "ALFA Insurance Companies", 
+			url: "http://www.alfains.com",
+			title: "Forms Developer", 
+			location: "Montgomery, AL", 
+			dates: "August 2014 - September 2016",
+			description: "Required tasks included developing hundreds of documents, research analysis, and writing javascript code to to insert logic into the forms."
 		},
 		{
 			employer: "ALFA Insurance Companies", 
