@@ -1,12 +1,12 @@
 var examQuest = [];
 
 examQuest[0] = {
-question: "What two results occur in a subnetted network?",
-choicea: "A. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Bytes are borrowed from the network field to identify subnets, and the network has smaller, more manageable segments.",
-choiceb: "B. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Bits are borrowed from the network field to identify subnets, and the network has smaller, more manageable segments.",
-choicec: "C. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Bits are borrowed from the host field to identify subnets, and the host has smaller, more manageable segments.",
-choiced: "D. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Bitcoins are stolen from the network, and a host of multi-level marketers storm your system.",
-answer: "B"
+question: "Three steps in preparation for exam:",
+choicea: "A. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Content from Gary",
+choiceb: "B. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Security section of Ucertify",
+choicec: "C. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Quizes",
+choiced: "D. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Continue forward and don't worry.",
+answer: "D"
 };
 
 examQuest[1] = {
@@ -763,4 +763,13 @@ choiceb: "B. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Access point",
 choicec: "C. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;energy beam",
 choiced: "D. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Switch",
 answer: "A"
+};
+
+examQuest[85] = {
+question: "What two results occur in a subnetted network?",
+choicea: "A. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Bytes are borrowed from the network field to identify subnets, and the network has smaller, more manageable segments.",
+choiceb: "B. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Bits are borrowed from the network field to identify subnets, and the network has smaller, more manageable segments.",
+choicec: "C. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Bits are borrowed from the host field to identify subnets, and the host has smaller, more manageable segments.",
+choiced: "D. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Bitcoins are stolen from the network, and a host of multi-level marketers storm your system.",
+answer: "B"
 };
