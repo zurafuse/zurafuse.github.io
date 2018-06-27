@@ -537,7 +537,7 @@ choicea: "A. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;22",
 choiceb: "B. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;25",
 choicec: "C. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;80",
 choiced: "D. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;20 or 21",
-answer: "A"
+answer: "B"
 };
 
 examQuest[60] = {
