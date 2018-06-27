@@ -1,12 +1,12 @@
 var examQuest = [];
 
 examQuest[0] = {
-question: "What describes the use of multiple access points to extend user mobility?",
-choicea: "A. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;router",
-choiceb: "B. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;switch",
-choicec: "C. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ESS - Extended Service Set",
-choiced: "D. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Bridge",
-answer: "C"
+question: "Three steps in preparation for exam:",
+choicea: "A. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Content from Gary",
+choiceb: "B. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Security section of Ucertify",
+choicec: "C. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Quizes",
+choiced: "D. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Continue forward and don't worry.",
+answer: "D"
 };
 
 examQuest[1] = {
@@ -611,4 +611,13 @@ choiceb: "B. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Layer 2 Device",
 choicec: "C. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Layer 1 Device",
 choiced: "D. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Layer 5 Device",
 answer: "B"
+};
+
+examQuest[68] = {
+question: "What describes the use of multiple access points to extend user mobility?",
+choicea: "A. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;router",
+choiceb: "B. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;switch",
+choicec: "C. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ESS - Extended Service Set",
+choiced: "D. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Bridge",
+answer: "C"
 };
