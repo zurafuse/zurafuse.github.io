@@ -1,12 +1,12 @@
 var examQuest = [];
 
 examQuest[0] = {
-question: "What does opening a port do?",
-choicea: "A. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;blocks information from flowing through the port",
-choiceb: "B. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;allows information to flow though the port",
-choicec: "C. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Connects the Application Layer with packets",
-choiced: "D. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;There's candy inside",
-answer: "B"
+question: "Three steps in preparation for exam:",
+choicea: "A. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Content from Gary",
+choiceb: "B. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Security section of Ucertify",
+choicec: "C. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Quizes",
+choiced: "D. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Continue forward and don't worry.",
+answer: "D"
 };
 
 examQuest[1] = {
@@ -304,4 +304,13 @@ choiceb: "B. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;155.52",
 choicec: "C. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;9.95328 Gbps",
 choiced: "D. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;51.840 Mbps",
 answer: "C"
+};
+
+examQuest[34] = {
+question: "What does opening a port do?",
+choicea: "A. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;blocks information from flowing through the port",
+choiceb: "B. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;allows information to flow though the port",
+choicec: "C. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Connects the Application Layer with packets",
+choiced: "D. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;There's candy inside",
+answer: "B"
 };
