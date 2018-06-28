@@ -242,171 +242,345 @@ choicec: "C. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;100GHz",
 choiced: "D. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2GHz-66GHz",
 answer: "D"
 };
-/*
+
 examQuest[27] = {
-question: "text",
-choicea: "A. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;text",
-choiceb: "B. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;text",
-choicec: "C. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;text",
-choiced: "D. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;text",
-answer: "X"
+question: "ARIN",
+choicea: "A. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;American Registry for Internet Names",
+choiceb: "B. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;American Registry for IP Numbers",
+choicec: "C. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;American Registry for Internet Numbers",
+choiced: "D. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;American Registry for IP Names",
+answer: "C"
 };
 
-examQuest[#] = {
-question: "text",
-choicea: "A. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;text",
-choiceb: "B. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;text",
-choicec: "C. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;text",
-choiced: "D. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;text",
-answer: "X"
+examQuest[28] = {
+question: "SONET",
+choicea: "A. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Synchronous optical network",
+choiceb: "B. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Synchronous optical numbers",
+choicec: "C. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Security optical network",
+choiced: "D. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Security optical numbers",
+answer: "A"
 };
 
-
-
-
-ARIN
-American Registry for Internet Numbers
-
-
-SONET
-Synchronous optical network
-
-
-PATCH CABLE
-A patch cable (item G) is used to make the physical connection from the computer to the wall plate. A patch cable is a short cable used to make the physical connection between networking equipment. There is a 100-meter overall length limitation of the cable run from the telecommunications closet to the networking device in the work area. This includes the length of the patch cables at each end plus the cable run. A general rule of thumb is to allow 90 meters for the cable run from the telecommunications closet to the work area (item E). This allows 5 meters of cable length for the work area and 5 meters for the patch cables in the telecommunications closet (item D) and the work area (item G). Figure 2-5 shows an example of the insides of a telecommunications closet.
-
-
-ports
-DNS port is 53
-Telnet port is 23
-L2TP port is 1701
-POP3 port is 110
-
-Fraggle
-Denial of Service (DOS) attack in which spoofed UPD packets are sent to a network's broadcast address.
-
-
-On a network what is the broadcast address?
-logical address at which all devices connected to a multiple-access communications network are enabled to receive datagrams
-
-
-What is a network address?
-any logical or physical address that uniquely distinguishes a network node or device over a computer or telecommunications network
-
-
-Layout of Ethernet frame?
-Preamble, Start Frame Delimiter, Destination MAC address, Source MAC address, Length Type, Data, Pad, Frame check sequence
-
-
-What does the Frame check sequence do in an Ethernet frame?
-A 4-byte CRC value used for error detection. The CRC is performed on the bits from the destination MAC address through the Pad fields. If an error is detected, the frame is discarded.
-
-
-If you want to subnet a class C network into four subnets, the subnet mask used should be what?
-255.255.255.192
-
-
-the Equipment Room
-Cabling that interconnects telecommunication closets in the same building and between buildings
-
-
-NEXT
-A measure of the level of crosstalk or signal coupling within the cable, with a high NEXT (dB) value being desirable.
-
-
-Backbone cabling
-the cabling that interconnects telecommunication closets, equipment rooms, and cabling entrances in the same building and between buildings
-
-
-
-
-
-ACL
-An Access List. A basic form of firewall protection. Assists in Packet Filtering.
-
-
-
-IPSEC
-encrypts for VPN tunnels.
-
-
-Dispersion Types
-chromatic dispersion: The broadening of a pulse due to different propagation velocities of the spectral components of the light pulse.
-
-polarized dispersion: The broadening of a pulse due to the different propagation velocities of the X and Y polarization components of the light pulse.
-
-modal dispersion: The broadening of a pulse due to different path lengths taken through the fiber by different modes.
-
-
-Which layer uses hardware to handle switching functions?
-Layer 3 switches
-
-
-TKIP
-a wireless protocol not used by IPSEC
-
-
-Smurf attack
-a distributed denial-of-service attack in which large numbers of Internet Control Message Protocol (ICMP) packets with the intended victim's spoofed source IP are broadcast to a computer network using an IP broadcast address.
-
-spoofing attack
-when a malicious party impersonates another device or user on a network in order to launch attacks against network hosts, steal data, spread malware or bypass access controls.
-
-
-Two types of shielded twisted pair used today:
-straight-through: wires connect to same pins
-
-cross-connect: wires connect to different pins. Transmit and receiver wire pairs are crossed.
-
-
-PPP
-the de facto standard in dial-up VPNs.
-
-Store-and-Forward:
-In this mode, the entire frame of data is received before any decision is made regarding forwarding the data packet to its destination.
-
-cut-through:
-In this mode, the data packet is forwarded to the destination as soon as the destination MAC address has been read. This minimizes the switch latency; however, no error detection is provided by the switch. There are two forms of cut-through switching—Fast-Forward and Fragment Free.
-
-
-The Network File System (NFS)
-a client/server application that lets a computer user view and optionally store and update files on a remote computer as though they were on the user's own computer. The NFS protocol is one of several distributed file system standards for network-attached storage (NAS). This runs on the session layer of the OSI model.
-
-
-Fiber wavelengths
-Multimode wavelength: 850 and 1300 nm
-
-Singlemode wavelength: 1310 and 1550 nm
-
-Fiber to the home: 1600-1625 nm
-
-
-Auto Negotiation
-Automatically setups network stuff. Relies on fast link pulses to do the job. Chooses the lower data rate when connecting things.
-
-
-Bridge
-a computer networking device that creates a single aggregate network from multiple communication networks or network segments. This function is called network bridging. ... In the OSI model, bridging is performed in the data link layer (layer 2), below the network layer (layer 3).
-
-Router
-allows connection to hosts and networks outside the LAN
-
-Switch
-Forwards a frame it receives directly out the port associated with its destination address
-
-Hub
-Broadcasts the data it receives to all devices connected to its ports
-
-Gateway
-Describes the networking device that enables hosts in a LAN to connect to networks (and hosts) outside the LAN
-
-
-
-
-antennas
-An omni (omni-directional antenna) has a 360 degree pattern and supports a 2Mbps data rate up to 7 km from the antenna and supports an 11Mbps data rate at a maximum distance of 2 km.
-
-The Yagi antenna has a directional radiation pattern. It supports a 2Mbps data rate for a maximum of 12 km, and supports an 11Mbps data rate up to 7.5 km.
-
-A dish antenna is a parabolic reflector. These antennas provide extremely high directional gain. These have a 38 km range at 2Mbps, an 18 km range at 11Mbps, and a high cost.
-*/
+examQuest[29] = {
+question: "Denial of Service (DOS) attack in which spoofed UPD packets are sent to a network's broadcast address.",
+choicea: "A. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Smurf",
+choiceb: "B. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Distributed Denial of Service Attack",
+choicec: "C. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Spoofing",
+choiced: "D. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Fraggle",
+answer: "D"
+};
+
+examQuest[30] = {
+question: "If you want to subnet a class C network into four subnets, the subnet mask used should be what?",
+choicea: "A. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;255.255.255.255",
+choiceb: "B. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;255.255.255.254",
+choicec: "C. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;255.255.255.192",
+choiced: "D. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;255.255.255.252",
+answer: "C"
+};
+
+examQuest[31] = {
+question: "What is used to make the physical connection from the computer to the wall plate? It is short and is used to make the physical connection between networking equipment. There is a 100-meter overall length limitation of the cable run from the telecommunications closet to the networking device in the work area. This includes the length of the patch cables at each end plus the cable run. A general rule of thumb is to allow 90 meters for the cable run from the telecommunications closet to the work area. This allows 5 meters of cable length for the work area and 5 meters for the # cables in the telecommunications closet and the work area.",
+choicea: "A. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;horizontal cable",
+choiceb: "B. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;telecommunications cable",
+choicec: "C. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;vertical cable",
+choiced: "D. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;patch cable",
+answer: "D"
+};
+
+examQuest[32] = {
+question: "DNS port",
+choicea: "A. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;110",
+choiceb: "B. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1701",
+choicec: "C. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;53",
+choiced: "D. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;23",
+answer: "C"
+};
+
+examQuest[33] = {
+question: "L2TP",
+choicea: "A. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;110",
+choiceb: "B. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1701",
+choicec: "C. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;53",
+choiced: "D. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;23",
+answer: "B"
+};
+
+examQuest[34] = {
+question: "POP3",
+choicea: "A. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;110",
+choiceb: "B. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1701",
+choicec: "C. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;53",
+choiced: "D. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;23",
+answer: "A"
+};
+
+examQuest[35] = {
+question: "Telnet",
+choicea: "A. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;110",
+choiceb: "B. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1701",
+choicec: "C. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;53",
+choiced: "D. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;23",
+answer: "D"
+};
+
+examQuest[36] = {
+question: "ACL",
+choicea: "A. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Alients Cleaning Laundry",
+choiceb: "B. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;An Access List. A basic form of firewall protection. Assists in Packet Filtering",
+choicec: "C. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Alabama Central Library",
+choiced: "D. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;dude",
+answer: "B"
+};
+
+examQuest[37] = {
+question: "the de facto standard in dial-up VPNs.",
+choicea: "A. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;IKE",
+choiceb: "B. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;TKIP",
+choicec: "C. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;L2TP",
+choiced: "D. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;PPP",
+answer: "D"
+};
+
+examQuest[38] = {
+question: "the cabling that interconnects telecommunication closets, equipment rooms, and cabling entrances in the same building and between buildings",
+choicea: "A. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Backbone cabling",
+choiceb: "B. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Horizontal cabling",
+choicec: "C. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Patch cabling",
+choiced: "D. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Vertical cabling",
+answer: "A"
+};
+
+examQuest[39] = {
+question: "A measure of the level of crosstalk or signal coupling within the cable, with a high dB value being desirable.",
+choicea: "A. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;PNEXT",
+choiceb: "B. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Alien Crosstalk",
+choicec: "C. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;electricity",
+choiced: "D. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;NEXT",
+answer: "D"
+};
+
+examQuest[40] = {
+question: "encrypts for VPN tunnels.",
+choicea: "A. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;PPP",
+choiceb: "B. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;IKE",
+choicec: "C. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;IPSEC",
+choiced: "D. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;hash",
+answer: "C"
+};
+
+examQuest[41] = {
+question: "Automatically setups network stuff. Relies on fast link pulses to do the job. Chooses the lower data rate when connecting things.",
+choicea: "A. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Auto Installation",
+choiceb: "B. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Auto Negotiation",
+choicec: "C. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Aging Time",
+choiced: "D. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Content Addressable Memory",
+answer: "B"
+};
+
+examQuest[42] = {
+question: "The broadening of a pulse due to different propagation velocities of the spectral components of the light pulse.",
+choicea: "A. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;chromatic dispersion",
+choiceb: "B. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;polarized dispersion",
+choicec: "C. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;modal dispersion",
+choiced: "D. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;nuclear fusion",
+answer: "A"
+};
+
+examQuest[43] = {
+question: "The broadening of a pulse due to the different propagation velocities of the X and Y polarization components of the light pulse.",
+choicea: "A. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;chromatic dispersion",
+choiceb: "B. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;polarized dispersion",
+choicec: "C. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;modal dispersion",
+choiced: "D. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;nuclear fusion",
+answer: "B"
+};
+
+examQuest[44] = {
+question: "The broadening of a pulse due to different path lengths taken through the fiber by different modes.",
+choicea: "A. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;chromatic dispersion",
+choiceb: "B. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;polarized dispersion",
+choicec: "C. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;modal dispersion",
+choiced: "D. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;nuclear fusion",
+answer: "C"
+};
+
+examQuest[45] = {
+question: "Smurf attack",
+choicea: "A. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;a distributed denial-of-service attack in which large numbers of Internet Group Message Protocol (IGMP) packets with the intended victim's spoofed source IP are broadcast to a computer network using an IP broadcast address.",
+choiceb: "B. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;a distributed denial-of-service attack in which large numbers of Internet Control Message Protocol (ICMP) packets with the intended victim's spoofed source IP are broadcast to a computer network using an IP broadcast address.",
+choicec: "C. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;a distributed denial-of-service attack in which large numbers of Internet Control Message Protocol (ICMP) packets with the intended victim's spoofed MAC address are broadcast to a computer network using a MAC broadcast address.",
+choiced: "D. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;a village attack by small blue creatures.",
+answer: "B"
+};
+
+examQuest[46] = {
+question: "Which layer uses hardware to handle switching functions?",
+choicea: "A. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Layer 2 switches",
+choiceb: "B. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Layer 1 switches",
+choicec: "C. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Layer 3 switches",
+choiced: "D. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;chocolate layer",
+answer: "C"
+};
+
+examQuest[47] = {
+question: "allows connection to hosts and networks outside the LAN",
+choicea: "A. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Hub",
+choiceb: "B. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Gateway",
+choicec: "C. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Router",
+choiced: "D. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Bridge",
+answer: "C"
+};
+
+examQuest[48] = {
+question: "Multimode wavelength",
+choicea: "A. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;850 and 1300 nm",
+choiceb: "B. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1310 and 1550 nm",
+choicec: "C. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1600-1625 nm",
+choiced: "D. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;lasers",
+answer: "A"
+};
+
+examQuest[49] = {
+question: "Singlemode wavelength",
+choicea: "A. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;850 and 1300 nm",
+choiceb: "B. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1600-1625 nm",
+choicec: "C. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1310 and 1550 nm",
+choiced: "D. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;lasers",
+answer: "C"
+};
+
+examQuest[50] = {
+question: "when a malicious party impersonates another device or user on a network in order to launch attacks against network hosts, steal data, spread malware or bypass access controls.",
+choicea: "A. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;spoofing attack",
+choiceb: "B. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;smurf attack",
+choicec: "C. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;SYN flood",
+choiced: "D. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;social engineering",
+answer: "A"
+};
+
+examQuest[51] = {
+question: "Fiber to the home",
+choicea: "A. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1600-1625 nm",
+choiceb: "B. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1310 and 1550 nm",
+choicec: "C. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;850 and 1300 nm",
+choiced: "D. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;lasers",
+answer: "A"
+};
+
+examQuest[52] = {
+question: "Broadcasts the data it receives to all devices connected to its ports",
+choicea: "A. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Hub",
+choiceb: "B. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Gateway",
+choicec: "C. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Router",
+choiced: "D. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Switch",
+answer: "A"
+};
+
+examQuest[53] = {
+question: "Two types of shielded twisted pair used today",
+choicea: "A. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Fast-Forward and fragment-free",
+choiceb: "B. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;straight-through and cross connect",
+choicec: "C. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;store and forward and cut-through",
+choiced: "D. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Bert and Ernie",
+answer: "B"
+};
+
+examQuest[54] = {
+question: "Forwards a frame it receives directly out the port associated with its destination address",
+choicea: "A. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Hub",
+choiceb: "B. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Gateway",
+choicec: "C. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Router",
+choiced: "D. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Switch",
+answer: "D"
+};
+
+examQuest[55] = {
+question: "has a 360 degree pattern and supports a 2Mbps data rate up to 7 km from the antenna and supports an 11Mbps data rate at a maximum distance of 2 km.",
+choicea: "A. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;dish",
+choiceb: "B. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;yagi",
+choicec: "C. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;omni",
+choiced: "D. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Charter",
+answer: "C"
+};
+
+examQuest[56] = {
+question: "a parabolic reflector. These antennas provide extremely high directional gain. These have a 38 km range at 2Mbps, an 18 km range at 11Mbps, and a high cost.",
+choicea: "A. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;dish",
+choiceb: "B. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;yagi",
+choicec: "C. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;omni",
+choiced: "D. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Charter",
+answer: "A"
+};
+
+examQuest[57] = {
+question: "has a directional radiation pattern. It supports a 2Mbps data rate for a maximum of 12 km, and supports an 11Mbps data rate up to 7.5 km.",
+choicea: "A. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;dish",
+choiceb: "B. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;yagi",
+choicec: "C. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;omni",
+choiced: "D. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Charter",
+answer: "B"
+};
+
+examQuest[58] = {
+question: "What is a network address?",
+choicea: "A. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;any physical address that uniquely distinguishes a network node or device over a network",
+choiceb: "B. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;any logical or physical address that uniquely distinguishes a network node or device over a computer or telecommunications network",
+choicec: "C. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Kermit",
+choiced: "D. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;map",
+answer: "B"
+};
+
+examQuest[59] = {
+question: "a computer networking device that creates a single aggregate network from multiple communication networks or network segments. This function is called network bridging. ... In the OSI model, bridging is performed in the data link layer (layer 2), below the network layer (layer 3).",
+choicea: "A. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Hub",
+choiceb: "B. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Bridge",
+choicec: "C. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Router",
+choiced: "D. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Switch",
+answer: "B"
+};
+
+examQuest[60] = {
+question: "Describes the networking device that enables hosts in a LAN to connect to networks (and hosts) outside the LAN",
+choicea: "A. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Gateway",
+choiceb: "B. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Bridge",
+choicec: "C. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Router",
+choiced: "D. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Switch",
+answer: "A"
+};
+
+examQuest[61] = {
+question: "In this mode, the entire frame of data is received before any decision is made regarding forwarding the data packet to its destination.",
+choicea: "A. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Fast-Forward",
+choiceb: "B. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Cut-Through",
+choicec: "C. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Straight-Through",
+choiced: "D. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Store-and-Forward",
+answer: "D"
+};
+
+examQuest[62] = {
+question: "On a network what is the broadcast address?",
+choicea: "A. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;physical address at which all devices connected to a multiple-access communications network are enabled to receive datagrams",
+choiceb: "B. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;logical address at which all devices connected to a multiple-access communications network are enabled to receive packets",
+choicec: "C. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;logical address at which all devices connected to a multiple-access communications network are enabled to receive datagrams",
+choiced: "D. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;physical address at which all devices connected to a multiple-access communications network are enabled to receive packets",
+answer: "C"
+};
+
+examQuest[63] = {
+question: "Cabling that interconnects telecommunication closets in the same building and between buildings",
+choicea: "A. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Telecommunications Closet",
+choiceb: "B. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Horizontal Cabling",
+choicec: "C. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Patch Cabling",
+choiced: "D. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;the Equipment Room",
+answer: "D"
+};
+
+examQuest[64] = {
+question: "In this mode, the data packet is forwarded to the destination as soon as the destination MAC address has been read. This minimizes the switch latency; however, no error detection is provided by the switch. There are two forms of cut-through switching—Fast-Forward and Fragment Free.",
+choicea: "A. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Store-and-Forward",
+choiceb: "B. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;cut-through",
+choicec: "C. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;straight-through",
+choiced: "D. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;speed",
+answer: "B"
+};
