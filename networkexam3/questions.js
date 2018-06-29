@@ -1,12 +1,12 @@
 var examQuest = [];
 
 examQuest[0] = {
-question: "Three steps in preparation for exam:",
-choicea: "A. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Content from Gary",
-choiceb: "B. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Security section of Ucertify",
-choicec: "C. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Quizes",
-choiced: "D. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Continue forward and don't worry.",
-answer: "D"
+question: "What is War driving?",
+choicea: "A. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Packet Sniffing on a secure network",
+choiceb: "B. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Backdoor penetration",
+choicec: "C. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Using wireless equipment to detect wireless management packets",
+choiced: "D. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;freedom",
+answer: "C"
 };
 
 examQuest[01] = {
@@ -682,13 +682,4 @@ choiceb: "B. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;5-20 miles",
 choicec: "C. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1 mile",
 choiced: "D. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;3-10 miles",
 answer: "D"
-};
-
-examQuest[76] = {
-question: "What is War driving?",
-choicea: "A. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Packet Sniffing on a secure network",
-choiceb: "B. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Backdoor penetration",
-choicec: "C. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Using wireless equipment to detect wireless management packets",
-choiced: "D. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;freedom",
-answer: "C"
 };
