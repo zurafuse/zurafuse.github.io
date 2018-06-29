@@ -1,12 +1,12 @@
 var examQuest = [];
 
 examQuest[0] = {
-question: "Three steps in preparation for exam:",
-choicea: "A. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Content from Gary",
-choiceb: "B. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Security section of Ucertify",
-choicec: "C. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Quizes",
-choiced: "D. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Continue forward and don't worry.",
-answer: "D"
+question: "In this mode, the data packet is forwarded to the destination as soon as the destination MAC address has been read. This minimizes the switch latency; however, no error detection is provided by the switch. There are two forms of cut-through switching—Fast-Forward and Fragment Free.",
+choicea: "A. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Store-and-Forward",
+choiceb: "B. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;cut-through",
+choicec: "C. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;straight-through",
+choiced: "D. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;speed",
+answer: "B"
 };
 
 examQuest[1] = {
@@ -574,13 +574,4 @@ choiceb: "B. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Horizontal Cabling",
 choicec: "C. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Patch Cabling",
 choiced: "D. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;the Equipment Room",
 answer: "D"
-};
-
-examQuest[64] = {
-question: "In this mode, the data packet is forwarded to the destination as soon as the destination MAC address has been read. This minimizes the switch latency; however, no error detection is provided by the switch. There are two forms of cut-through switching—Fast-Forward and Fragment Free.",
-choicea: "A. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Store-and-Forward",
-choiceb: "B. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;cut-through",
-choicec: "C. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;straight-through",
-choiced: "D. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;speed",
-answer: "B"
 };
