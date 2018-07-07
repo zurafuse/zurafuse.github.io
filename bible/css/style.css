@@ -1,1 +1,205 @@
+* {
+	-webkit-box-sixing: border-box;
+	-moz-box-sizing: border-box;
+	-ms-box-sizing: border-box;
+	box-sizing: border-box;
+	font-family: "Lato", sans-serif;
+	color: #2d3c49;
+ /* outline: 1px solid red !important; */
+}
+
+body {
+	margin-left: 8%;
+	margin-right: 8%;
+}
+
+.bible-menu {
+	font-size: 17pt;
+}
+
+.bible-dropdown {
+	padding-top: 20px;
+}
+
+.link-color {
+	color: #2d3c49 !important;
+}
+
+.header-bottom-border {
+	margin-top: 0;
+	padding-bottom: 5px;
+	border-bottom: solid;
+	border-color: #7d97ad;
+}
+
+
+.side-menu {
+	color: #2d3c49;
+	text-decoration: none;
+}
+
+.head-align {
+	text-align: right;
+}
+
+.top-padding {
+	padding-top: 20px;
+}
+
+.social-padding {
+	padding: 15px 5px 15px 15px;
+}
+
+.pad-my-stuff {
+	padding: 3px;
+}
+
+.pad-my-stuff2 {
+	padding: 9px;
+}
+
+.lightGrey {
+	color: #7d97ad;
+}
+
+.pic-desc {
+	font-size: 20pt;
+	text-align: center;
+	color: #2d3c49;
+}
+
+.pic-desc > a {
+	color: #2d3c49;
+}
+
+.pic-link {
+	text-align: center;
+	padding-bottom: 30px;
+	font-size: 12pt;
+	word-wrap: break-word;
+}
+
+.pic-link > a {
+	color: #2d3c49 !important;
+}
+
+.icons {
+	border: solid 5px;
+	border-color: white;
+}
+
+.icons:hover {
+	border: solid 5px;
+	border-color: #02b3e4;
+}
+
+.social-icons {
+	background-color: white;
+	text-decoration: none;
+}
+
+.social-icons:hover {
+	background-color: #ddd;
+}
+
+.no-dec {
+	text-decoration: none !important;
+}
+
+.social-links1 {
+	display: flex;
+}
+
+.social-links2 {
+	display: none;
+}
+
+.no-padding {
+	padding: 0 !important;
+	margin: 0 3px !important;
+}
+
+@media screen and (max-width: 480px)
+{
+	body {
+		margin-left: 0;
+		margin-right: 0;
+		max-width: 94%;
+	}
+	
+	.bible-dropdown {
+		padding-top: 2px;
+	}
+	
+	.head-align {
+		text-align: left;
+		font-size: 16pt;
+	}
+
+	.social-links1 {
+		display: none;
+	}
+	
+	.social-links2 {
+		display: flex;
+	}
+
+	.icons {
+		border: solid 5px;
+		border-color: white;
+		width: 75%;
+	}
+
+	.icons:hover {
+		border: solid 5px;
+		border-color: #02b3e4;
+	}
+	
+}
+
+@media screen and (min-width: 481px) and (max-width: 767px)
+{
+	body {
+		margin-left: 4%;
+		margin-right: 4%;
+	}
+	
+	.bible-dropdown {
+		padding-top: 2px;
+	}
+
+	.head-align {
+		text-align: left;
+	}
+
+	.social-links1 {
+		display: none;
+	}
+	
+	.social-links2 {
+		display: flex;
+	}
+	
+		.icons {
+		border: solid 5px;
+		border-color: white;
+		width: 80%;
+	}
+
+	.icons:hover {
+		border: solid 5px;
+		border-color: #02b3e4;
+	}
+
+}
+
+@media screen and (min-width: 768px) and (max-width: 1024px)
+{
+	body {
+		margin-left: 2%;
+		margin-right: 2%;
+	}
+
+}
+
 
