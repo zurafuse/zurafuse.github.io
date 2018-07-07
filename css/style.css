@@ -222,7 +222,17 @@ body {
 		text-decoration: none;
 		font-size: 12pt !important;
 	}
-	
+	.icons {
+		border: solid 5px;
+		border-color: white;
+		width: 80%
+	}
+
+	.icons:hover {
+		border: solid 5px;
+		border-color: #02b3e4;
+		width: 80%
+	}	
 }
 
 @media screen and (min-width: 481px) and (max-width: 767px)
@@ -243,6 +253,17 @@ body {
 	.social-links2 {
 		display: flex;
 	}
+	.icons {
+		border: solid 5px;
+		border-color: white;
+		width: 80%
+	}
+
+	.icons:hover {
+		border: solid 5px;
+		border-color: #02b3e4;
+		width: 80%
+	}	
 
 }
 
