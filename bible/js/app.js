@@ -58,14 +58,14 @@ $( ".books-class" ).on("click", function() {
 	window.location.href = "bible.html?" + $(this).text();
 });
 
-setTimout(function(){
+setTimeout(function(){
 	$(".books-class").off("click");
 	$( ".books-class" ).on("click", function() {
 		window.location.href = "bible.html?" + $(this).text();
 	});
 });
 
-setTimout(function(){
+setTimeout(function(){
 	$(".books-class").off("click");
 	$( ".books-class" ).on("click", function() {
 		window.location.href = "bible.html?" + $(this).text();
