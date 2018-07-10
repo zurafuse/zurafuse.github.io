@@ -53,7 +53,6 @@ function displayVerses(chapter){
 	}
 }
 
-$(".chapters").click(function(){
-	console.log("click");
-	//console.log($(this).val);
+$( ".chapters" ).click(function() {
+  alert( "Handler for .click() called." );
 });
