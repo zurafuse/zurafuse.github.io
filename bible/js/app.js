@@ -54,20 +54,19 @@ function displayVerses(chapter){
 }
 
 $( ".chapters" ).on("click", function() {
-  //displayVerses(book.CHAPTER[]);
-	console.log($(this).text());
+  displayVerses(book.CHAPTER[parseInt($(this).text().replace("CHAPTER ", ""))]);
 });
 
 setTimeout(function(){
 	$(".chapters").off("click");
 	$( ".chapters" ).on("click", function() {
-  	console.log($(this).text());
+	displayVerses(book.CHAPTER[parseInt($(this).text().replace("CHAPTER ", ""))]);
 	});
 }, 500);
 
 setTimeout(function(){
 	$(".chapters").off("click");
 	$( ".chapters" ).on("click", function() {
-  	console.log($(this).text());
+  	displayVerses(book.CHAPTER[parseInt($(this).text().replace("CHAPTER ", ""))]);
 	});
 }, 1300);
