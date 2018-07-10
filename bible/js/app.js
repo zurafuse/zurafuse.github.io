@@ -57,13 +57,13 @@ $( ".chapters" ).on("click", function() {
   alert( "Handler for .click() called." );
 });
 
-setTimeOut(function(){
+setTimeout(function(){
 	$( ".chapters" ).on("click", function() {
   	alert( "Handler for .click() called." );
 	});
 }, 500);
 
-setTimeOut(function(){
+setTimeout(function(){
 	$( ".chapters" ).on("click", function() {
   	alert( "Handler for .click() called." );
 	});
