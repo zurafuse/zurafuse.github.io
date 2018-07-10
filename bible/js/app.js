@@ -1,4 +1,5 @@
 var book = "";
+var bookChapter;
 
 //Populate Bible menu with books.
 for (i = 0; i < Torah.BOOKS.length; i++)
@@ -54,19 +55,22 @@ function displayVerses(chapter){
 }
 
 $( ".chapters" ).on("click", function() {
-  displayVerses(Torah.BOOKS[0].CHAPTER[parseInt($(this).text().replace("CHAPTER ", ""))]);
+  var chaptVal = parseInt($(this).text().replace("CHAPTER ", "")) - 1;
+  displayVerses(Torah.BOOKS[0].CHAPTER[chaptVal]);
 });
 
 setTimeout(function(){
 	$(".chapters").off("click");
 	$( ".chapters" ).on("click", function() {
-	displayVerses(Torah.BOOKS[0].CHAPTER[parseInt($(this).text().replace("CHAPTER ", ""))]);
+	var chaptVal = parseInt($(this).text().replace("CHAPTER ", "")) - 1;
+	displayVerses(Torah.BOOKS[0].CHAPTER[chaptVal]);
 	});
 }, 500);
 
 setTimeout(function(){
 	$(".chapters").off("click");
 	$( ".chapters" ).on("click", function() {
-  	displayVerses(Torah.BOOKS[0].CHAPTER[parseInt($(this).text().replace("CHAPTER ", ""))]);
+	var chaptVal = parseInt($(this).text().replace("CHAPTER ", "")) - 1;
+  	displayVerses(Torah.BOOKS[0].CHAPTER[chaptVal]);
 	});
 }, 1300);
