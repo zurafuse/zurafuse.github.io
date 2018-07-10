@@ -59,13 +59,15 @@ $( ".chapters" ).on("click", function() {
 });
 
 setTimeout(function(){
+	$(".chapters").off("click");
 	$( ".chapters" ).on("click", function() {
   	console.log($(this).text());
 	});
 }, 500);
 
 setTimeout(function(){
+	$(".chapters").off("click");
 	$( ".chapters" ).on("click", function() {
   	console.log($(this).text());
 	});
-}, 1000);
+}, 1300);
