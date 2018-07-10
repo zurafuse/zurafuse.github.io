@@ -55,17 +55,17 @@ function displayVerses(chapter){
 
 $( ".chapters" ).on("click", function() {
   //displayVerses(book.CHAPTER[]);
-	console.log($(this).val);
+	console.log($(this).text());
 });
 
 setTimeout(function(){
 	$( ".chapters" ).on("click", function() {
-  	console.log($(this).val);
+  	console.log($(this).text());
 	});
 }, 500);
 
 setTimeout(function(){
 	$( ".chapters" ).on("click", function() {
-  	console.log($(this).val);
+  	console.log($(this).text());
 	});
 }, 1000);
