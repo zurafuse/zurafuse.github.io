@@ -56,3 +56,15 @@ function displayVerses(chapter){
 $( ".chapters" ).on("click", function() {
   alert( "Handler for .click() called." );
 });
+
+setTimeOut(function(){
+	$( ".chapters" ).on("click", function() {
+  	alert( "Handler for .click() called." );
+	});
+}, 500);
+
+setTimeOut(function(){
+	$( ".chapters" ).on("click", function() {
+  	alert( "Handler for .click() called." );
+	});
+}, 1000);
