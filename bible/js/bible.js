@@ -1,7 +1,5 @@
 var pageparam = window.location.search.substring(1).replace("%20", " ");
 console.log(pageparam);
-var book = "";
-var section = "";
 
 //Populate Bible menu with books, depending on what input parameter was passed to the page.
 if (pageparam == "all" || pageparam == null || pageparam == undefined || pageparam == "")
@@ -87,6 +85,7 @@ else if (pageparam == "Psalms")
 else if (pageparam == "Jude" || pageparam == "Obadiah" || 
 	pageparam == "2 John" || pageparam == "3 John" || pageparam == "Philemon")
 	{
+		book = pageparam;
 		if (pageparam != "Obadiah")
 		{
 			for (i = 0; i < NewTestament.BOOKS.length; i++)
@@ -111,7 +110,7 @@ else if (pageparam == "Jude" || pageparam == "Obadiah" ||
 
 else
 {
-	var book = pageparam;
+	book = pageparam;
 	var trigger = false;
 	//find defined book
 	if (trigger == false)
