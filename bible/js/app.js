@@ -1,3 +1,4 @@
+var book = "";
 
 //Populate Bible menu with books.
 for (i = 0; i < Torah.BOOKS.length; i++)
@@ -48,6 +49,10 @@ function displayVerses(chapter){
 	$(".book-list").append("<h2>CHAPTER " + chapter.cnumber + "</h2>");
 	for (k = 0; k < chapter.VERS.length; k++)
 	{
-		$(".book-list").append("<li>" + chapter.VERS[k].vnumber + " " + chapter.VERS[k].text + "</li>");
+		$(".book-list").append("<li class='chapters'>" + chapter.VERS[k].vnumber + " " + chapter.VERS[k].text + "</li>");
 	}
 }
+
+$(".chapters").click(function(){
+	console.log($(this).val);
+});
