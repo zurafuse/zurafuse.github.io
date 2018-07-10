@@ -54,17 +54,18 @@ function displayVerses(chapter){
 }
 
 $( ".chapters" ).on("click", function() {
-  alert( "Handler for .click() called." );
+  //displayVerses(book.CHAPTER[]);
+	console.log($(this).val);
 });
 
 setTimeout(function(){
 	$( ".chapters" ).on("click", function() {
-  	alert( "Handler for .click() called." );
+  	console.log($(this).val);
 	});
 }, 500);
 
 setTimeout(function(){
 	$( ".chapters" ).on("click", function() {
-  	alert( "Handler for .click() called." );
+  	console.log($(this).val);
 	});
 }, 1000);
