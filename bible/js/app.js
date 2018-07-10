@@ -53,8 +53,6 @@ function displayVerses(chapter){
 	}
 }
 
-setTimeout(function(){
-$( ".chapters" ).click(function() {
+$( ".chapters" ).on("click", function() {
   alert( "Handler for .click() called." );
 });
-}, 1000);
