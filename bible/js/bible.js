@@ -6,29 +6,29 @@ if (pageparam == "all" || pageparam == null || pageparam == undefined || pagepar
 {
 	for (i = 0; i < Torah.BOOKS.length; i++)
 	{
-		$(".book-list").append("<li>" + Torah.BOOKS[i].bname + "</li>");
+		$(".book-list").append("<li class="books-class">" + Torah.BOOKS[i].bname + "</li>");
 	}
 	
 	for (i = 0; i < Prophets.BOOKS.length; i++)
 	{
-		$(".book-list").append("<li>" + Prophets.BOOKS[i].bname + "</li>");
+		$(".book-list").append("<li class="books-class">" + Prophets.BOOKS[i].bname + "</li>");
 	}
 	
 	$(".book-list").append("<li>Psalms</li>");
 	
 	for (i = 0; i < Ketuvim.BOOKS.length; i++)
 	{
-		$(".book-list").append("<li>" + Ketuvim.BOOKS[i].bname + "</li>");
+		$(".book-list").append("<li class="books-class">" + Ketuvim.BOOKS[i].bname + "</li>");
 	}
 	
 	for (i = 0; i < Gospel.BOOKS.length; i++)
 	{
-		$(".book-list").append("<li>" + Gospel.BOOKS[i].bname + "</li>");
+		$(".book-list").append("<li class="books-class">" + Gospel.BOOKS[i].bname + "</li>");
 	}
 	
 	for (i = 0; i < NewTestament.BOOKS.length; i++)
 	{
-		$(".book-list").append("<li>" + NewTestament.BOOKS[i].bname + "</li>");
+		$(".book-list").append("<li class="books-class">" + NewTestament.BOOKS[i].bname + "</li>");
 	}	
 }
 
@@ -36,7 +36,7 @@ else if (pageparam == "torah")
 {
 	for (i = 0; i < Torah.BOOKS.length; i++)
 	{
-		$(".book-list").append("<li>" + Torah.BOOKS[i].bname + "</li>");
+		$(".book-list").append("<li class="books-class">" + Torah.BOOKS[i].bname + "</li>");
 	}	
 }
 
@@ -44,7 +44,7 @@ else if (pageparam == "prophets")
 {
 	for (i = 0; i < Prophets.BOOKS.length; i++)
 	{
-		$(".book-list").append("<li>" + Prophets.BOOKS[i].bname + "</li>");
+		$(".book-list").append("<li class="books-class">" + Prophets.BOOKS[i].bname + "</li>");
 	}	
 }
 
@@ -58,7 +58,7 @@ else if (pageparam == "ketuvim")
 {
 	for (i = 0; i < Ketuvim.BOOKS.length; i++)
 	{
-		$(".book-list").append("<li>" + Ketuvim.BOOKS[i].bname + "</li>");
+		$(".book-list").append("<li class="books-class">" + Ketuvim.BOOKS[i].bname + "</li>");
 	}	
 }
 
@@ -66,7 +66,7 @@ else if (pageparam == "gospels")
 {
 	for (i = 0; i < Gospel.BOOKS.length; i++)
 	{
-		$(".book-list").append("<li>" + Gospel.BOOKS[i].bname + "</li>");
+		$(".book-list").append("<li class="books-class">" + Gospel.BOOKS[i].bname + "</li>");
 	}	
 }
 
@@ -74,7 +74,7 @@ else if (pageparam == "nt")
 {
 	for (i = 0; i < NewTestament.BOOKS.length; i++)
 	{
-		$(".book-list").append("<li>" + NewTestament.BOOKS[i].bname + "</li>");
+		$(".book-list").append("<li class="books-class">" + NewTestament.BOOKS[i].bname + "</li>");
 	}		
 }
 
