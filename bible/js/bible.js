@@ -119,6 +119,7 @@ else
 		{
 			if (Torah.BOOKS[i].bname == book)
 			{
+				bookChapter = Torah.BOOKS[i];
 				displayChapters(Torah.BOOKS[i]);
 				trigger = true;
 			}
@@ -131,6 +132,7 @@ else
 		{
 			if (Prophets.BOOKS[i].bname == book)
 			{
+				bookChapter = Prophets.BOOKS[i];
 				displayChapters(Prophets.BOOKS[i]);
 				trigger = true;
 			}
@@ -143,6 +145,7 @@ else
 		{
 			if (Ketuvim.BOOKS[i].bname == book)
 			{
+				bookChapter = Ketuvim.BOOKS[i];
 				displayChapters(Ketuvim.BOOKS[i]);
 				trigger = true;
 			}
@@ -155,6 +158,7 @@ else
 		{
 			if (Gospel.BOOKS[i].bname == book)
 			{
+				bookChapter = Gospel.BOOKS[i];
 				displayChapters(Gospel.BOOKS[i]);
 				trigger = true;
 			}
@@ -167,6 +171,7 @@ else
 		{
 			if (NewTestament.BOOKS[i].bname == book)
 			{
+				bookChapter = NewTestament.BOOKS[i];
 				displayChapters(NewTestament.BOOKS[i]);
 				trigger = true;
 			}
