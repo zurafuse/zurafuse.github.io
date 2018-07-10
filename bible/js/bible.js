@@ -50,6 +50,7 @@ else if (pageparam == "prophets")
 
 else if (pageparam == "psalms")
 {
+	bookChapter = Psalms.BOOKS;
 	displayChapters(Psalms.BOOKS);	
 }
 
