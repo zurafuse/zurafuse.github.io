@@ -38,6 +38,10 @@ $(".bible-menu").change(function() {
 	}
 });
 
+$( ".books-class" ).on("click", function() {
+	window.location.href = "bible.html?" + $(this).text();
+});
+
 function displayChapters(biblebook){
 	$(".book-list").append("<h2>" + biblebook.bname + "</h2>");
 	for (j = 0; j < biblebook.CHAPTER.length; j++)
