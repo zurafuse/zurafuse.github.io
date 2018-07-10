@@ -56,14 +56,14 @@ function displayVerses(chapter){
 
 $( ".chapters" ).on("click", function() {
   var chaptVal = parseInt($(this).text().replace("CHAPTER ", "")) - 1;
-  displayVerses(Torah.BOOKS[0].CHAPTER[chaptVal]);
+  displayVerses(bookChapter.CHAPTER[chaptVal]);
 });
 
 setTimeout(function(){
 	$(".chapters").off("click");
 	$( ".chapters" ).on("click", function() {
 	var chaptVal = parseInt($(this).text().replace("CHAPTER ", "")) - 1;
-	displayVerses(Torah.BOOKS[0].CHAPTER[chaptVal]);
+	displayVerses(bookChapter.CHAPTER[chaptVal]);
 	});
 }, 500);
 
@@ -71,6 +71,6 @@ setTimeout(function(){
 	$(".chapters").off("click");
 	$( ".chapters" ).on("click", function() {
 	var chaptVal = parseInt($(this).text().replace("CHAPTER ", "")) - 1;
-  	displayVerses(Torah.BOOKS[0].CHAPTER[chaptVal]);
+  	displayVerses(bookChapter.CHAPTER[chaptVal]);
 	});
 }, 1300);
