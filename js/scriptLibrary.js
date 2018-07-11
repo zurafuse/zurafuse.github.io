@@ -85,6 +85,12 @@ for (i = 0; i < $(".modBtn").length; i++){
 			modBody = "This is a project I worked on for a class on Udacity.com. This is a movie trailer site generated with Python code. Visit the Github page at <a href='https://github.com/zurafuse/Movie-Site/' target='_blank' style='color: black'>https://github.com/zurafuse/Movie-Site</a>.";
 			modFoot = "LINK: <a href='moviesite/index.html' target='_blank' style='color: white'>www.zurafuse.com/moviesite</a>";		
 		}
+		else if ($(this).attr("id") === "mod_bible")
+		{
+			modHead = "Bible App Website";
+			modBody = "This project is a Bible translation that I am working on (it will probably be years before it is complete, if ever). Visit the Github page at <a href='https://github.com/zurafuse/BibleApp' target='_blank' style='color: black'>https://github.com/zurafuse/BibleApp</a>.";
+			modFoot = "LINK: <a href='bible/index.html' target='_blank' style='color: white'>www.zurafuse.com/bible</a>";		
+		}
 		else if ($(this).attr("id") === "mod_excellent")
 		{
 			modHead = "EXCELLENT SPIRIT Behavior Application";
