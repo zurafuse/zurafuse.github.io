@@ -1496,15 +1496,15 @@ var Torah = {
               },
               {
                 "vnumber": "18",
-                "text": "And Melchizedek king of Salem brought forth bread and wine: and he was the priest of the most high God."
+                "text": "And Melchizedek king of Salem brought forth bread and wine: and he was the priest of EL ELYON (God Most High)."
               },
               {
                 "vnumber": "19",
-                "text": "And he blessed him, and said, Blessed be Abram of the most high God, possessor of heaven and earth:"
+                "text": "And he blessed him, and said, Blessed be Abram of EL ELYON, possessor of heaven and earth:"
               },
               {
                 "vnumber": "20",
-                "text": "And blessed be the most high God, which hath delivered thine enemies into thy hand. And he gave him tithes of all."
+                "text": "And blessed be EL ELYON, who has delivered thine enemies into thy hand. And he gave him tithes of all."
               },
               {
                 "vnumber": "21",
@@ -1512,7 +1512,7 @@ var Torah = {
               },
               {
                 "vnumber": "22",
-                "text": "And Abram said to the king of Sodom, I have lift up mine hand unto the LORD, the most high God, the possessor of heaven and earth,"
+                "text": "And Abram said to the king of Sodom, I have lifted up my hand unto YAHWEH EL ELYON, the possessor of heaven and earth,"
               },
               {
                 "vnumber": "23",
@@ -18541,7 +18541,7 @@ var Torah = {
               },
               {
                 "vnumber": "4",
-                "text": "He hath said, which heard the words of God, which saw the vision of the Almighty, falling into a trance, but having his eyes open:"
+                "text": "He has said, who heard the words of God, who saw the vision of SHADDAI, falling into a trance, but having his eyes open:"
               },
               {
                 "vnumber": "5",
@@ -18589,7 +18589,7 @@ var Torah = {
               },
               {
                 "vnumber": "16",
-                "text": "He hath said, which heard the words of God, and knew the knowledge of the most High, which saw the vision of the Almighty, falling into a trance, but having his eyes open:"
+                "text": "He hath said, which heard the words of God, and knew the knowledge of ELYON, who saw the vision of SHADDAI, falling into a trance, but having his eyes open:"
               },
               {
                 "vnumber": "17",
@@ -24032,7 +24032,7 @@ var Torah = {
               },
               {
                 "vnumber": "8",
-                "text": "When the most High divided to the nations their inheritance, when he separated the sons of Adam, he set the bounds of the people according to the number of the children of Israel."
+                "text": "When ELYON divided to the nations their inheritance, when he separated the sons of Adam, he set the bounds of the people according to the number of the children of Israel."
               },
               {
                 "vnumber": "9",
