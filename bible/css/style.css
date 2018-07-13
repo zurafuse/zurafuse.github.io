@@ -17,11 +17,11 @@ ul {
 	list-style-type:none;	
 }
 
-.books-class, .chapters {
+.books-class, .chapters, .verses {
 	font-size: 16pt;
 }
 
-.books-class:hover, .chapters:hover {
+.books-class:hover, .chapters:hover, .verses:hover {
 	font-size: 16pt;
 	background-color: #ddd;
 }
