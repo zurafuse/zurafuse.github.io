@@ -17,8 +17,8 @@ ul {
 	list-style-type:none;	
 }
 
-bible-books, chapters {
-	font-size: 16pt;	
+books-class, chapters {
+	font-size: 16pt;
 }
 
 .bible-menu {
