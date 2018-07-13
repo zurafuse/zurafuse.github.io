@@ -32,6 +32,7 @@ ul {
 	color: white;
 	background-color: #17591e;
 	text-align: center;
+	box-shadow: 5px 10px 18px #17591e;
 }
 
 .next {
@@ -41,6 +42,7 @@ ul {
 	color: white;
 	background-color: #2c518c;
 	text-align: center;
+	box-shadow: 5px 10px 18px #2c518c;
 }
 
 .books-class:hover, .chapters:hover, .verses:hover {
