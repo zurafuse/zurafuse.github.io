@@ -27,12 +27,20 @@ ul {
 
 .previous {
 	padding-top: 12pt;	
+	padding-bottom: 12pt;
+	font-weight: bold;
+	color: white;
 	background-color: #b8edb6;
+	text-align: center;
 }
 
 .next {
 	padding-top: 12pt;
-	background-color: #c1c9f2;
+	padding-bottom: 12pt;
+	font-weight: bold;
+	color: white;
+	background-color: #2c518c;
+	text-align: center;
 }
 
 .books-class:hover, .chapters:hover, .verses:hover {
