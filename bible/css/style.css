@@ -30,7 +30,7 @@ ul {
 	padding-bottom: 12pt;
 	font-weight: bold;
 	color: white;
-	background-color: #b8edb6;
+	background-color: #17591e;
 	text-align: center;
 }
 
@@ -50,6 +50,7 @@ ul {
 
 .previous:hover, .next:hover {
 	font-size: 16pt;
+	color: black;
 	background-color: #ddd;
 }
 
