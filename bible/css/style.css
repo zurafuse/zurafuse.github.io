@@ -21,6 +21,10 @@ ul {
 	font-size: 16pt;
 }
 
+.verses {
+	padding-top: 8pt;	
+}
+
 .books-class:hover, .chapters:hover, .verses:hover {
 	font-size: 16pt;
 	background-color: #ddd;
