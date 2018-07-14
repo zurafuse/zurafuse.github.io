@@ -88,7 +88,7 @@ for (i = 0; i < $(".modBtn").length; i++){
 		else if ($(this).attr("id") === "mod_bible")
 		{
 			modHead = "Bible App Website";
-			modBody = "This project is a Bible translation that I am working on (it will probably be years before it is complete, if ever). Visit the Github page at <a href='https://github.com/zurafuse/BibleApp' target='_blank' style='color: black'>https://github.com/zurafuse/BibleApp</a>.";
+			modBody = "The site was created using jQuery. Each section of the Bible is a JSON object that is parsed according to your selection. This project is a Bible translation that I am working on (it will probably be years before it is complete, if ever). Visit the Github page at <a href='https://github.com/zurafuse/BibleApp' target='_blank' style='color: black'>https://github.com/zurafuse/BibleApp</a>.";
 			modFoot = "LINK: <a href='bible/index.html' target='_blank' style='color: white'>www.zurafuse.com/bible</a>";		
 		}
 		else if ($(this).attr("id") === "mod_excellent")
