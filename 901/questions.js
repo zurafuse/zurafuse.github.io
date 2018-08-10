@@ -64,7 +64,7 @@ answer: "C"
  };
  
 examQuest[7] = {
-question: "What is 802.11ac backward compatible with?",
+question: "What is 802.11n backward compatible with?",
 choicea: "A. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;a, n, g",
 choiceb: "B. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;a, b, g",
 choicec: "C. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;b, g",
