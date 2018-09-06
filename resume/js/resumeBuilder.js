@@ -14,13 +14,10 @@ var bio =
 	welcomeMessage: "Software Developer with a focus on forms development, front end web development, and program analysis.",
 	skills: 
 	[
-		"Javascript",
 		"C#",
-		"Code Deployments",
-		"HTML5",
-		"CSS3",
+		"Javascript, jQuery, HTML5 and CSS3",
+		"JIRA, Code Deployments, and SDLC",
 		"Forms development",
-		"XML",
 		"Business and program analysis"
 	],
 	biopic: "images/biopic.jpg",
