@@ -1,1 +1,50 @@
-
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8"/>
+<title>IT Foundations Test Quiz</title>
+<link rel = "stylesheet" style = "text/css" href = "style.css">
+</head>
+<script src = "questions.js"></script>
+<script src = "scriptLibrary.js"></script>
+<body onload="startUp()">
+	<header>
+		<h1 id="myHead">IT Foundations Test Quiz</h1>
+		<br>
+	</header>
+	<div id="question section">
+		<p id="questnum"></p>
+		<p id="question"></p>
+	</div>
+	<br>
+	<div id="choices">
+		<input type="radio" name="multchoice" value="A" id="choicea"/>
+		<label id="choice1"></label>
+		<br>
+		<br>
+		<input type="radio" name="multchoice" value="B" id="choiceb"/>
+		<label id="choice2"></label>		
+		<br>
+		<br>
+		<input type="radio" name="multchoice" value="C" id="choicec"/>
+		<label id="choice3"></label>		
+		<br>
+		<br>
+		<input type="radio" name="multchoice" value="D" id="choiced"/>
+		<label id="choice4"></label>	
+	</div>
+	<br>
+	<div id="answer">
+	</div>
+	<br>
+	<footer>
+		<table>
+			<tr>
+				<td id="clearCol"><button type="button" id="clearButton" onclick="startOver()">START OVER</button></td>
+				<td><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p></td>
+				<td id="submitCol"><button type="button" id="theButton" onclick="questSubmit()">SUBMIT</button></td>
+			</tr>
+		</table>
+	</footer>
+</body>
+</html>
