@@ -252,5 +252,86 @@ choiced: "D. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;System Configuration",
 answer: "C"
  };
  
+ examQuest[32] = {
+question: "What ipconfig switch Displays full configuration information?",
+choicea: "A. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;/release",
+choiceb: "B. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;/?",
+choicec: "C. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;/all",
+choiced: "D. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;/showclassid",
+answer: "C"
+ };
+ 
+  examQuest[33] = {
+question: "What ipconfig switch will Release the IPv4 address for the specified adapter?",
+choicea: "A. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;/renew",
+choiceb: "B. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;/release",
+choicec: "C. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;/all",
+choiced: "D. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;/showclassid",
+answer: "B"
+ };
+ 
+ examQuest[34] = {
+question: "What SFC switch Scans integrity of all protected system files and repairs files with problems when possible?",
+choicea: "A. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;/SCANNOW",
+choiceb: "B. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;/VERIFYONLY",
+choicec: "C. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;/SCANFILE",
+choiced: "D. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;/SCANOS",
+answer: "A"
+ };
+ 
+ examQuest[35] = {
+question: "What ipconfig switch Displays all the dhcp class IDs allowed for adapter?",
+choicea: "A. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;/renew",
+choiceb: "B. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;/showclassid6",
+choicec: "C. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;/showclass",
+choiced: "D. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;/showclassid",
+answer: "D"
+ };
+ examQuest[36] = {
+question: "What chkdsk command Fixes errors on the disk?",
+choicea: "A. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;/a",
+choiceb: "B. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;/f",
+choicec: "C. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;/i",
+choiced: "D. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;/s",
+answer: "B"
+ };
+ 
+ examQuest[37] = {
+question: "What chkdsk command Displays the full path and name of every file on the disk On FAT/FAT32?",
+choicea: "A. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;/a",
+choiceb: "B. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;/s",
+choicec: "C. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;/v",
+choiced: "D. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;/f",
+answer: "C"
+ };
+ 
+ examQuest[38] = {
+question: "What ipconfig switch will Release the IPv6 address for the specified adapter?",
+choicea: "A. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;/release6",
+choiceb: "B. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;/renew",
+choicec: "C. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;/IPv6",
+choiced: "D. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;/release",
+answer: "A"
+ };
+ 
+ examQuest[39] = {
+question: "What SFC switch Scans integrity of the referenced file, repairs file if problems are identified. Specify full path <file>?",
+choicea: "A. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;/SCANNOW",
+choiceb: "B. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;/SCAN",
+choicec: "C. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;/SCANOS",
+choiced: "D. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;/SCANFILE",
+answer: "D"
+ };
+ 
+ examQuest[40] = {
+question: "What chkdsk switch Skips checking of cycles within the folder structure? (NTFS only)",
+choicea: "A. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;/A",
+choiceb: "B. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;/F",
+choicec: "C. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;/S",
+choiced: "D. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;/C",
+answer: "D"
+ };
+ 
+ 
 
  
