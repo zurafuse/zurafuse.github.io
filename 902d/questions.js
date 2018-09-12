@@ -297,7 +297,7 @@ answer: "B"
  };
  
  examQuest[37] = {
-question: "What chkdsk command Displays the full path and name of every file on the disk On FAT/FAT32?",
+question: "What chkdsk command Displays the full path and name of every file on the disk On FAT/FAT32 and Displays cleanup messages if any on NTFS?",
 choicea: "A. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;/a",
 choiceb: "B. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;/s",
 choicec: "C. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;/v",
