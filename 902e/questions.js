@@ -169,3 +169,75 @@ choicec: "C. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;/lease",
 choiced: "D. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;/registerdns",
 answer: "D"
  };
+
+examQuest[19] = {
+question: "In what order do boot steps process?",
+choicea: "A. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;BCD, BOOTMGR, WINLOAD.EXE, WINRESUME.EXE, System Files, and NTOSKRNL.EXE.",
+choiceb: "B. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;BOOTMGR, BCD, WINLOAD.EXE, WINRESUME.EXE, NTOSKRNL.EXE, and System Files.",
+choicec: "C. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;MBR, BCD, BOOTMGR, WINRESUME.EXE, WINLOAD.EXE, NTOSKRNL.EXE, and System Files.",
+choiced: "D. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;System Files, BOOTMGR, WINRESUME.EXE, BCD, WINLOAD.EXE, and NTOSKRNL.EXE",
+answer: "B"
+ };
+
+examQuest[20] = {
+question: "bootstraps the system. In other words, this file starts the loading of an OS on the computer. It replaces NTLDR (used in previous operating systems) and is responsible for switching from real to protected mode during the boot process. The latter mode provides memory protection, multitasking, and other features that you expect from the operating system.",
+choicea: "A. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;NTOSKRNL.EXE",
+choiceb: "B. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;WINLOAD.EXE",
+choicec: "C. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;BCD (The Boot Configuration Data file)",
+choiced: "D. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;BOOTMGR: Windows Boot Manager (BOOTMGR)",
+answer: "D"
+ };
+ 
+examQuest[21] = {
+question: "The Windows OS kernel.",
+choicea: "A. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;NTOSKRNL.EXE",
+choiceb: "B. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;BCD (The Boot Configuration Data file)",
+choicec: "C. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;WINLOAD.EXE",
+choiced: "D. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;MBR",
+answer: "A"
+ };
+ 
+examQuest[22] = {
+question: "If the system is not starting fresh but resuming a previous session, then this is called by the BOOTMGR.",
+choicea: "A. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;NTOSKRNL.EXE",
+choiceb: "B. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;BCD (The Boot Configuration Data file)",
+choicec: "C. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;WINLOAD.EXE",
+choiced: "D. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;WINRESUME.EXE",
+answer: "D"
+ };
+ 
+examQuest[23] = {
+question: "The solution to a corrupted kernel file",
+choicea: "A. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;boot Windows Vista, press F8 to go to boot screen, and enter bootrec /fixmbr in the command line.",
+choiceb: "B. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Run Windows Update to repair.",
+choicec: "C. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;chkdsk /r",
+choiced: "D. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;boot from a startup disk and replace the file from the setup disks or CD.",
+answer: "D"
+ };
+ 
+examQuest[24] = {
+question: "holds information about OSs installed on the computer, such as the location of the OS files.",
+choicea: "A. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;MBR",
+choiceb: "B. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;WINRESUME.EXE",
+choicec: "C. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;BCD (The Boot Configuration Data file)",
+choiced: "D. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;WINLOAD.EXE",
+answer: "C"
+ };
+ 
+examQuest[25] = {
+question: "In addition to the previously listed files, Windows needs a number of files from its system directories (for example, SYSTEM and SYSTEM32), such as the hardware abstraction layer (HAL.DLL), session manager (SMSS.EXE), user session (WINLOGON.EXE), and security subsystem (LSASS.EXE).",
+choicea: "A. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;NTOSKRNL.EXE",
+choiceb: "B. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;System files",
+choicec: "C. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;WINRESUME.EXE",
+choiced: "D. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;WINLOAD.EXE",
+answer: "B"
+ };
+ 
+examQuest[26] = {
+question: "The program used to boot Windows Vista. It loads the operating system kernel (NTOSKRNL.EXE).",
+choicea: "A. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;System files",
+choiceb: "B. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;WINRESUME.EXE",
+choicec: "C. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;NTOSKRNL.EXE",
+choiced: "D. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;WINLOAD.EXE",
+answer: "D"
+ };
