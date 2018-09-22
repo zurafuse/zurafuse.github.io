@@ -402,7 +402,7 @@ choicea: "A. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;/ScanOS",
 choiceb: "B. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;/Scannow",
 choicec: "C. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;/Scanall",
 choiced: "D. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;/Scan",
-answer: "S"
+answer: "A"
  };
  
  examQuest[45] = {
