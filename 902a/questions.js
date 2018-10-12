@@ -69,7 +69,7 @@ choicea: "A. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;250000 MB",
 choiceb: "B. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;256000 MB",
 choicec: "C. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;256000 GB",
 choiced: "D. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;512000 MB",
-answer: "B"
+answer: "C"
  };
  
 examQuest[8] = {
