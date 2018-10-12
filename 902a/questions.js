@@ -6,7 +6,7 @@ choicea: "A. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;500000 MB",
 choiceb: "B. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;512000 GB",
 choicec: "C. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;512000 MB",
 choiced: "D. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;500000 GB",
-answer: "C"
+answer: "B"
  };
 
 examQuest[1] = {
