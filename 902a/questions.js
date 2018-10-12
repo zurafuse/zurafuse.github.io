@@ -254,7 +254,7 @@ answer: "B"
  
  examQuest[28] = {
 question: "Quiet mode. You won't be asked whether you're sure you want to delete the specified directory when you use /S.",
-choicea: "A. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;RD /Q [drive:][path]",
+choicea: "A. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;RD /D [drive:][path]",
 choiceb: "B. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;RD /S [drive:][path]",
 choicec: "C. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;RD /Q [drive:][path]",
 choiced: "D. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;destroy",
