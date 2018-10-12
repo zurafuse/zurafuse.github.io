@@ -419,7 +419,7 @@ question: "Which of the following Windows tools is used to resolve file system i
 choicea: "A. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;defrag",
 choiceb: "B. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;chkdsk",
 choicec: "C. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;format",
-choiced: "D. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;sfc",
+choiced: "D. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Task Manager",
 answer: "B"
  };
  
