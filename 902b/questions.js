@@ -289,7 +289,7 @@ answer: "B"
  };
  
 examQuest[32] = {
-question: "FORMAT switch Zero every sector on the volume. After that, the volume will be overwritten 'count' times using a different random number each time.  If 'count' is zero, no additional overwrites are made after zeroing every sector.  This switch is ignored when /Q is specified."
+question: "FORMAT switch Zero every sector on the volume. After that, the volume will be overwritten 'count' times using a different random number each time.  If 'count' is zero, no additional overwrites are made after zeroing every sector.  This switch is ignored when /Q is specified.",
 choicea: "A. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;/T:count",
 choiceb: "B. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;/E:count",
 choicec: "C. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;/V:count",
