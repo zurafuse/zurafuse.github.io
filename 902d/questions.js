@@ -234,7 +234,25 @@ choiced: "D. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;vi",
 answer: "D"
  };
  
- examQuest[30] = {
+examQuest[26] = {
+question: "What SFC switch Scans integrity of the referenced file, repairs file if problems are identified. Specify full path <file>?",
+choicea: "A. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;/SCANNOW",
+choiceb: "B. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;/SCAN",
+choicec: "C. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;/SCANOS",
+choiced: "D. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;/SCANFILE",
+answer: "D"
+ };
+ 
+ examQuest[27] = {
+question: "What chkdsk switch Skips checking of cycles within the folder structure? (NTFS only)",
+choicea: "A. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;/A",
+choiceb: "B. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;/F",
+choicec: "C. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;/S",
+choiced: "D. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;/C",
+answer: "D"
+ };
+ 
+ examQuest[28] = {
 question: "Linux command to convert and copy a file.",
 choicea: "A. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;extend",
 choiceb: "B. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;xcopy",
@@ -242,6 +260,25 @@ choicec: "C. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;dd",
 choiced: "D. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;cf",
 answer: "C"
  };
+ 
+ examQuest[29] = {
+question: "What chkdsk command Displays the full path and name of every file on the disk On FAT/FAT32 and Displays cleanup messages if any on NTFS?",
+choicea: "A. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;/a",
+choiceb: "B. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;/s",
+choicec: "C. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;/v",
+choiced: "D. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;/f",
+answer: "C"
+ };
+ 
+ examQuest[30] = {
+question: "What ipconfig switch will Release the IPv6 address for the specified adapter?",
+choicea: "A. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;/release6",
+choiceb: "B. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;/renew",
+choicec: "C. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;/IPv6",
+choiced: "D. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;/release",
+answer: "A"
+ };
+ 
  
  examQuest[31] = {
 question: "What does CTRL SHIFT ESC pull up?",
@@ -296,41 +333,9 @@ choiced: "D. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;/s",
 answer: "B"
  };
  
- examQuest[37] = {
-question: "What chkdsk command Displays the full path and name of every file on the disk On FAT/FAT32 and Displays cleanup messages if any on NTFS?",
-choicea: "A. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;/a",
-choiceb: "B. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;/s",
-choicec: "C. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;/v",
-choiced: "D. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;/f",
-answer: "C"
- };
+
  
- examQuest[38] = {
-question: "What ipconfig switch will Release the IPv6 address for the specified adapter?",
-choicea: "A. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;/release6",
-choiceb: "B. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;/renew",
-choicec: "C. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;/IPv6",
-choiced: "D. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;/release",
-answer: "A"
- };
- 
- examQuest[39] = {
-question: "What SFC switch Scans integrity of the referenced file, repairs file if problems are identified. Specify full path <file>?",
-choicea: "A. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;/SCANNOW",
-choiceb: "B. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;/SCAN",
-choicec: "C. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;/SCANOS",
-choiced: "D. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;/SCANFILE",
-answer: "D"
- };
- 
- examQuest[40] = {
-question: "What chkdsk switch Skips checking of cycles within the folder structure? (NTFS only)",
-choicea: "A. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;/A",
-choiceb: "B. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;/F",
-choicec: "C. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;/S",
-choiced: "D. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;/C",
-answer: "D"
- };
+
  
  
 
