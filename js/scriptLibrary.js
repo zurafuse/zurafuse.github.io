@@ -99,6 +99,13 @@ for (i = 0; i < $(".modBtn").length; i++){
 			" with Python and SQL, and use Python Flask and AJAX to pass data to the front-end. Visit the Github page at <a href='https://github.com/zurafuse/ExcellentSpirit/' target='_blank' style='color: black'>https://github.com/zurafuse/ExcellentSpirit</a>.";
 			modFoot = "LINK: <a href='excellentspirit/index.html' target='_blank' style='color: white'>www.zurafuse.com/excellentspirit</a>";		
 		}
+		else if ($(this).attr("id") === "mod_meme")
+		{
+			modHead = "Meme Generator";
+			modBody = "This is a very simple meme generator that I created while attending the Udacity Front End Web Developer course." + 
+				" It primarily uses JavaScript to update the divs.";
+			modFoot = "LINK: <a href='meme/index.html' target='_blank' style='color: white'>www.zurafuse.com/meme</a>";		
+		}
 		
 		$(".mod-head").html(modHead);
 		$(".mod-body").html(modBody);
