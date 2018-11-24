@@ -1,11 +1,12 @@
-
     function textChangeListener (evt) {
       var id = evt.target.id;
       var text = evt.target.value;
       
       if (id == "topLineText") {
         window.topLineText = text;
-      } else {
+      } else if (id == "fontSizeText")  {
+		fontSize = text;	  
+	  } else {
         window.bottomLineText = text;
       }
       
@@ -13,23 +14,30 @@
     }
     
     function redrawMeme(image, topLine, bottomLine) {
+		
       // Get Canvas2DContext
       var canvas = document.querySelector('canvas');
       var ctx = canvas.getContext("2d");
+	  var thisFontSize = 40;
+		if (fontSize != null && fontSize != undefined && fontSize > 7) {
+		thisFontSize = fontSize;
+	}
+
 	  ctx.clearRect(0, 0, canvas.width, canvas.height);
 	  if (image != null)
 	  {
 		ctx.drawImage(image, 0, 0, canvas.width, canvas.height);
 	  }
+	  
 	  ctx.textAlign = "center";
-	  ctx.font = "30px Impact";
+	  ctx.font = thisFontSize + "px Impact";
 	  ctx.strokeStyle = "black";
 	  ctx.fillStyle = "white";
 
 	  if (topLine != null)
 	  {
-		ctx.fillText(topLineText, canvas.width * 0.5, 36);
-		ctx.strokeText(topLineText, canvas.width * 0.5, 36);
+		ctx.fillText(topLineText, canvas.width * 0.5, 50);
+		ctx.strokeText(topLineText, canvas.width * 0.5, 50);
 	  }
 	  if (bottomLine != null)
 	  {
@@ -69,9 +77,14 @@
     
     window.topLineText = "";
     window.bottomLineText = "";
+	
+	var fontSize = document.getElementById('fontSizeText');
     var input1 = document.getElementById('topLineText');
     var input2 = document.getElementById('bottomLineText');
+	
 	input1.oninput = textChangeListener;
 	input2.oninput = textChangeListener;
+	fontSize.oninput = textChangeListener;
+	
     document.getElementById('file').addEventListener('change', handleFileSelect, false);
     document.querySelector('button').addEventListener('click', saveFile, false);
