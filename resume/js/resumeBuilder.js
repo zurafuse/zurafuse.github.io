@@ -121,7 +121,7 @@ var work =
 		{
 			employer: "ALFA Insurance Companies", 
 			url: "http://www.alfains.com",
-			title: "Software Engineer/Programmer Analyst", 
+			title: "Software Engineer", 
 			location: "Montgomery, AL", 
 			dates: "September 2016 - present",
 			description: "Duties include developing forms for the company, performing research and business analysis needed to do so, monitoring the SmartCommunications (Thunderhead) system and database, and writing javascript code to integrate SmartCommunications with other systems. As needed, I write web apps and .NET desktop applications to help the computer operators and the other forms developers perform specific tasks. In 2018, I assisted with the company's implementation of an e-signature solution, DocuSign." 		
@@ -129,7 +129,7 @@ var work =
 		{
 			employer: "ALFA Insurance Companies", 
 			url: "http://www.alfains.com",
-			title: "Forms Developer", 
+			title: "Form Developer", 
 			location: "Montgomery, AL", 
 			dates: "August 2014 - September 2016",
 			description: "Required tasks included developing hundreds of documents, research analysis, and writing javascript code to to insert logic into the forms."
