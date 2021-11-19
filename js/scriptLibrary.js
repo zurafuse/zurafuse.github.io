@@ -27,7 +27,7 @@ for (i = 0; i < $(".modBtn").length; i++){
 		{
 			modHead = "FLAG SURVIVAL JAVASCRIPT GAME";
 			modBody = "I created this game using pure javascript code. Use the arrow keys to move and the space bar to shoot.";
-			modFoot = "LINK: <a href='https://zurafuse.github.io/flagsurvival/' target='_blank' style='color: white'>https://zurafuse.github.io/flagsurvival</a>";			
+			modFoot = "LINK: <a href='/flagsurvival' target='_blank' style='color: white'>www.zurafuse.com/flagsurvival</a>";			
 		}
 		else if ($(this).attr("id") === "mod_barcode")
 		{
@@ -40,20 +40,20 @@ for (i = 0; i < $(".modBtn").length; i++){
 			modHead = "THE AMAZING YOSEF";
 			modBody = "I created this platform game using only javascript code and some graphics that I created. I added some physics such as gravity and the ability to jump. Use the arrow keys to move around, use the UP arrow key to jump, and use space bar to shoot (Collect the blue soda to gain the power to shoot).";
 		
-			modFoot = "LINK: <a href='https://zurafuse.github.io/yosef/' target='_blank' style='color: white'>https://zurafuse.github.io/yosef</a>";			
+			modFoot = "LINK: <a href='/yosef' target='_blank' style='color: white'>www.zurafuse.com/yosef</a>";			
 		}
 		else if ($(this).attr("id") === "mod_crayon")
 		{
 			modHead = "Crayon Dungeon";
 			modBody = "Crayon Dungeon is an adventure game that I created using nothing but javascript. Save the crayon kingdom from the nightmare of Super Toilet. Notice its responsiveness to use on a mobile device." +
 			" See the code at my Github page, at <a href='https://github.com/zurafuse/Crayon-Adventure//' target='_blank'>https://github.com/zurafuse/Crayon-Adventure</a>";
-			modFoot = "LINK: <a href='https://zurafuse.github.io/crayondungeon/' target='_blank' style='color: white'>https://zurafuse.github.io/crayondungeon//</a>";		
+			modFoot = "LINK: <a href='/crayondungeon' target='_blank' style='color: white'>www.zurafuse.com/crayondungeon//</a>";		
 		}
 		else if ($(this).attr("id") === "mod_frogger")
 		{
 			modHead = "FROGGER CLONE";
 			modBody = "I created this javascript game for a Udacity class that I was taking. Graphics and engine provided by Udacity.com";
-			modFoot = "LINK: <a href='https://zurafuse.github.io/frogger/' target='_blank' style='color: white'>https://zurafuse.github.io/frogger</a>";		
+			modFoot = "LINK: <a href='/frogger' target='_blank' style='color: white'>www.zurafuse.com/frogger</a>";		
 		}
 		else if ($(this).attr("id") === "mod_calc")
 		{
@@ -65,25 +65,25 @@ for (i = 0; i < $(".modBtn").length; i++){
 		{
 			modHead = "TIM HORTON'S RESUME";
 			modBody = "View my online resume to get an idea of past experience, where I have been and what I have done. References provided upon request.";
-			modFoot = "LINK: <a href='https://zurafuse.github.io/resume' target='_blank' style='color: white'>https://zurafuse.github.io/resume</a>";			
+			modFoot = "LINK: <a href='/resume' target='_blank' style='color: white'>www.zurafuse.com/resume</a>";			
 		}
 		else if ($(this).attr("id") === "mod_fruitfrog")
 		{
 			modHead = "FRUIT FROGS";
 			modBody = "I created this game with javascript to make my kids laugh. Feed the frogs by dragging the fruit over to them. Destroy enemies by tapping them.";
-			modFoot = "LINK: <a href='https://zurafuse.github.io/fruitfrogs/' target='_blank' style='color: white'>https://zurafuse.github.io/fruitfrogs</a>";			
+			modFoot = "LINK: <a href='/fruitfrogs' target='_blank' style='color: white'>www.zurafuse.com/fruitfrogs</a>";			
 		}
 		else if ($(this).attr("id") === "mod_map")
 		{
 			modHead = "NEIGHBORHOOD MAP OF SLAPOUT";
 			modBody = "This is a project I worked on for a class on Udacity.com. It is an interactive map of Slapout, Alabama implementing the Google Maps API. Visit the Github page at <a href='https://github.com/zurafuse/Udacity-Neighborhood-Map/' target='_blank' style='color: black'>https://github.com/zurafuse/Udacity-Neighborhood-Map</a>.";
-			modFoot = "LINK: <a href='https://zurafuse.github.io/slapout' target='_blank' style='color: white'>https://zurafuse.github.io/slapout</a>";		
+			modFoot = "LINK: <a href='/slapout' target='_blank' style='color: white'>www.zurafuse.com/slapout</a>";		
 		}
 		else if ($(this).attr("id") === "mod_movie")
 		{
 			modHead = "Movie Trailer Website";
 			modBody = "This is a project I worked on for a class on Udacity.com. This is a movie trailer site generated with Python code. Visit the Github page at <a href='https://github.com/zurafuse/Movie-Site/' target='_blank' style='color: black'>https://github.com/zurafuse/Movie-Site</a>.";
-			modFoot = "LINK: <a href='https://zurafuse.github.io/moviesite' target='_blank' style='color: white'>https://zurafuse.github.io/moviesite</a>";		
+			modFoot = "LINK: <a href='/moviesite' target='_blank' style='color: white'>www.zurafuse.com/moviesite</a>";		
 		}
 		else if ($(this).attr("id") === "mod_bible")
 		{
@@ -97,7 +97,7 @@ for (i = 0; i < $(".modBtn").length; i++){
 			modBody = "This is a web application that I created as a reward system for my children's behavior. Prizes and trophies can be awarded, and experiences points and stars are earned." + 
 			" I created this application in Node.js in an interface that might remind them of a video game. Eventually, I want to turn Honor Blast into a Learning Management System (LMS)." + 
 			" Visit the Github page at <a href='https://github.com/zurafuse/honorblast/' target='_blank' style='color: black'>https://github.com/zurafuse/HonorBlast</a>.";
-			modFoot = "DEMO: <a href='http://honorblast-env.txrk8eppcp.us-east-1.elasticbeanstalk.com' target='_blank' style='color: white'>http://honorblast-env.txrk8eppcp.us-east-1.elasticbeanstalk.com</a>";		
+			modFoot = "Instructions for installation are also available at: <a href='https://github.com/zurafuse/honorblast/' target='_blank' style='color: black'>https://github.com/zurafuse/HonorBlast</a>.";		
 		}
 		else if ($(this).attr("id") === "mod_meme")
 		{
@@ -110,7 +110,37 @@ for (i = 0; i < $(".modBtn").length; i++){
 		{
 			modHead = "Math Adventure";
 			modBody = "This is a game that I created to teach my children the Multiplication tables. I used only JavaScript to create this game. See the code for this game <a href='https://github.com/zurafuse/Math-Adventure'>Here.</a>"
-			modFoot = "LINK: <a href='https://zurafuse.github.io/mathadventure/mathgame.html' target='_blank' style='color: white'>https://zurafuse.github.io/mathadventure/mathgame.html</a>";		
+			modFoot = "LINK: <a href='/mathadventure/mathgame.html' target='_blank' style='color: white'>wwww.zurafuse.com/mathadventure/mathgame.html</a>";		
+		}
+		else if ($(this).attr("id") === "mod_blocky")
+		{
+			modHead = "Blocky's Adventure";
+			modBody = "This is a game created only in JavaScript. It is currently hosted in AWS. Use the arrow keys to move and space bar to jump, or if you are using a mobile device, use the on-screen buttons. See the code for this game <a href='https://github.com/zurafuse/Blocky'>Here.</a>"
+			modFoot = "LINK: <a href='http://blockygame.zurafuse.com.s3-website-us-east-1.amazonaws.com/' target='_blank' style='color: white'>http://blockygame.zurafuse.com.s3-website-us-east-1.amazonaws.com/</a>";		
+		}
+		else if ($(this).attr("id") === "mod_moment")
+		{
+			modHead = "Moment Master";
+			modBody = "Moment Master is a time management tool that gives users the ability to create new projects. You can enter the number of estimated hours for the project, the project’s start date, the project’s status, and a description. You can also generate a time sheet for employees."
+			modFoot = "LINK: <a href='https://github.com/zurafuse/momentmaster' target='_blank' style='color: white'>https://github.com/zurafuse/momentmaster</a>";		
+		}
+		else if ($(this).attr("id") === "mod_term")
+		{
+			modHead = "Term Manager";
+			modBody = "Term Manager is a mobile application built with Xamarin. It is designed to manage college courses taken for each semester or term."
+			modFoot = "LINK: <a href='https://github.com/zurafuse/TermManager' target='_blank' style='color: white'>https://github.com/zurafuse/TermManager</a>";		
+		}
+		else if ($(this).attr("id") === "mod_inventory")
+		{
+			modHead = "Inventory Manager";
+			modBody = "Inventory Manager was built in C# as a school project, as an example of using a user interface to add, delete, and modify existing items."
+			modFoot = "LINK: <a href='https://github.com/zurafuse/InventoryManagement' target='_blank' style='color: white'>https://github.com/zurafuse/InventoryManagement</a>";		
+		}
+		else if ($(this).attr("id") === "mod_roster")
+		{
+			modHead = "Class Roster";
+			modBody = "This is a class roster program built in C++ as a project for school."
+			modFoot = "LINK: <a href='https://github.com/zurafuse/ClassRoster' target='_blank' style='color: white'>https://github.com/zurafuse/ClassRoster</a>";		
 		}
 		
 		$(".mod-head").html(modHead);
