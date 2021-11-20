@@ -27,7 +27,7 @@ for (i = 0; i < $(".modBtn").length; i++){
 		{
 			modHead = "FLAG SURVIVAL JAVASCRIPT GAME";
 			modBody = "I created this game using pure javascript code. Use the arrow keys to move and the space bar to shoot.";
-			modFoot = "LINK: <a href='/flagsurvival' target='_blank' style='color: white'>www.zurafuse.com/flagsurvival</a>";			
+			modFoot = "LINK: <a href='/flagsurvival' target='_blank' style='color: white'>zurafuse.github.io/flagsurvival</a>";			
 		}
 		else if ($(this).attr("id") === "mod_barcode")
 		{
@@ -40,20 +40,20 @@ for (i = 0; i < $(".modBtn").length; i++){
 			modHead = "THE AMAZING YOSEF";
 			modBody = "I created this platform game using only javascript code and some graphics that I created. I added some physics such as gravity and the ability to jump. Use the arrow keys to move around, use the UP arrow key to jump, and use space bar to shoot (Collect the blue soda to gain the power to shoot).";
 		
-			modFoot = "LINK: <a href='/yosef' target='_blank' style='color: white'>www.zurafuse.com/yosef</a>";			
+			modFoot = "LINK: <a href='/yosef' target='_blank' style='color: white'>zurafuse.github.io/yosef</a>";			
 		}
 		else if ($(this).attr("id") === "mod_crayon")
 		{
 			modHead = "Crayon Dungeon";
 			modBody = "Crayon Dungeon is an adventure game that I created using nothing but javascript. Save the crayon kingdom from the nightmare of Super Toilet. Notice its responsiveness to use on a mobile device." +
 			" See the code at my Github page, at <a href='https://github.com/zurafuse/Crayon-Adventure//' target='_blank'>https://github.com/zurafuse/Crayon-Adventure</a>";
-			modFoot = "LINK: <a href='/crayondungeon' target='_blank' style='color: white'>www.zurafuse.com/crayondungeon//</a>";		
+			modFoot = "LINK: <a href='/crayondungeon' target='_blank' style='color: white'>zurafuse.github.io/crayondungeon//</a>";		
 		}
 		else if ($(this).attr("id") === "mod_frogger")
 		{
 			modHead = "FROGGER CLONE";
 			modBody = "I created this javascript game for a Udacity class that I was taking. Graphics and engine provided by Udacity.com";
-			modFoot = "LINK: <a href='/frogger' target='_blank' style='color: white'>www.zurafuse.com/frogger</a>";		
+			modFoot = "LINK: <a href='/frogger' target='_blank' style='color: white'>zurafuse.github.io/frogger</a>";		
 		}
 		else if ($(this).attr("id") === "mod_calc")
 		{
@@ -71,13 +71,13 @@ for (i = 0; i < $(".modBtn").length; i++){
 		{
 			modHead = "FRUIT FROGS";
 			modBody = "I created this game with javascript to make my kids laugh. Feed the frogs by dragging the fruit over to them. Destroy enemies by tapping them.";
-			modFoot = "LINK: <a href='/fruitfrogs' target='_blank' style='color: white'>www.zurafuse.com/fruitfrogs</a>";			
+			modFoot = "LINK: <a href='/fruitfrogs' target='_blank' style='color: white'>zurafuse.github.io/fruitfrogs</a>";			
 		}
 		else if ($(this).attr("id") === "mod_map")
 		{
 			modHead = "NEIGHBORHOOD MAP OF SLAPOUT";
 			modBody = "This is a project I worked on for a class on Udacity.com. It is an interactive map of Slapout, Alabama implementing the Google Maps API. Visit the Github page at <a href='https://github.com/zurafuse/Udacity-Neighborhood-Map/' target='_blank' style='color: black'>https://github.com/zurafuse/Udacity-Neighborhood-Map</a>.";
-			modFoot = "LINK: <a href='/slapout' target='_blank' style='color: white'>www.zurafuse.com/slapout</a>";		
+			modFoot = "LINK: <a href='/slapout' target='_blank' style='color: white'>zurafuse.github.io/slapout</a>";		
 		}
 		else if ($(this).attr("id") === "mod_movie")
 		{
@@ -116,7 +116,7 @@ for (i = 0; i < $(".modBtn").length; i++){
 		{
 			modHead = "Blocky's Adventure";
 			modBody = "This is a game created only in JavaScript. It is currently hosted in AWS. Use the arrow keys to move and space bar to jump, or if you are using a mobile device, use the on-screen buttons. See the code for this game <a href='https://github.com/zurafuse/Blocky'>Here.</a>"
-			modFoot = "LINK: <a href='http://blockygame.zurafuse.com.s3-website-us-east-1.amazonaws.com/' target='_blank' style='color: white'>http://blockygame.zurafuse.com.s3-website-us-east-1.amazonaws.com/</a>";		
+			modFoot = "LINK: <a href='/blocky' target='_blank' style='color: white'>zurafuse.github.io/blocky</a>";		
 		}
 		else if ($(this).attr("id") === "mod_moment")
 		{
