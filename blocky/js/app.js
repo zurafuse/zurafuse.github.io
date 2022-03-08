@@ -28,7 +28,11 @@ var pictures = {
 		mushroom: new Image(),
 		palm: new Image(),
 		tree: new Image(),
-		house: new Image()
+		house: new Image(),
+		bush: new Image(),
+		mountain: new Image(),
+		snowmountain: new Image(),
+		earth: new Image()
 	},
 	objects: {
 		plane: new Image(),
@@ -68,6 +72,10 @@ var pictures = {
 		this.objects.flagicon.src = "images/flagicon.png";
 		this.objects.gems.src = "images/gems.png";
 		this.objects.sign.src = "images/sign.png";
+		this.backgrounds.bush.src = "images/bush.png";
+		this.backgrounds.mountain.src = "images/mountain.png";
+		this.backgrounds.snowmountain.src = "images/snowmountain.png";
+		this.backgrounds.earth.src = "images/earth.png";
 	},
 	drawBackgrounds: function(pics){
 		//draw sky
@@ -96,17 +104,78 @@ var pictures = {
 		pics.forEach(function(pic){
 			pic.draw();
 		});
+		//star backgrounds on moon
+		if (Level == 26 || Level == 27 || Level == 28)
+		{
+			this.drawStars();
+		}
 	}, 
 	drawGems: function(pics){
 		//draw gems
 		pics.forEach(function(pic){
 			pic.draw();
 		});
-	}	
+	},
+	drawStars: function(){
+		var starSet = [
+			{x: 4, y: 1, size: 1.5, color: "white"}, {x: 5, y: 4, size: 2, color: "white"}, {x: 15, y: 4, size: 2, color: "red"},	
+			{x: 25, y: 2, size: 2, color: "white"},	{x: 6, y: 5, size: 2, color: "blue"}, {x: 18, y: 8, size: 5, color: "white"},
+			{x: 1, y: 3, size: 2, color: "white"}, {x: 1.2, y: 3.5, size: 1.5, color: "white"}, {x: 1, y: 4, size: 1.5, color: "white"},
+			{x: 1.5, y: 5, size: 1.5, color: "white"}, {x: 1.8, y: 8, size: 3, color: "white"},{x: 2, y: 2, size: 2, color: "white"},
+			{x: 2, y: 1, size: 2, color: "white"},{x: 2.2, y: 3.5, size: 2, color: "white"},{x: 2.1, y: 5, size: 2, color: "white"},
+			{x: 2.5, y: 6, size: 1.5, color: "white"}, {x: 2.25, y: 7, size: 2, color: "white"}, {x: 2, y: 4, size: 1.5, color: "white"},
+			{x: 2.1, y: 8, size: 1.5, color: "white"}, {x: 3, y: 5, size: 3, color: "white"}, {x: 3.5, y: 2, size: 3, color: "white"},
+			{x: 3.2, y: 7, size: 3, color: "white"}, {x: 3, y: 5, size: 2, color: "white"}, {x: 3.1, y: 1, size: 1.5, color: "white"},
+			{x: 3, y: 2, size: 2, color: "white"}, {x: 3.3, y: 8, size: 2, color: "white"}, {x: 3, y: 6, size: 3, color: "white"},
+			{x: 3.7, y: 7.5, size: 1.5, color: "white"}, {x: 3, y: 9, size: 2, color: "white"}, {x: 3.8, y: 5, size: 1.5, color: "white"},
+			{x: 3, y: 10, size: 2, color: "white"}, {x: 3.1, y: 4, size: 2, color: "white"}, {x: 3, y: 11, size: 2, color: "white"},
+			{x: 3.2, y: 3, size: 2, color: "white"}, {x: 5, y: 5.5, size: 1.5, color: "white"}, {x: 5.5, y: 2.5, size: 1.5, color: "white"},
+			{x: 5.2, y: 7.5, size: 3, color: "white"}, {x: 5, y: 5.5, size: 2, color: "white"}, {x: 5.1, y: 1.5, size: 3, color: "white"},
+			{x: 5.3, y: 8.5, size: 1.5, color: "white"}, {x: 5, y: 6.5, size: 1.5, color: "white"}, {x: 5.7, y: 7, size: 2, color: "white"},
+			{x: 5.8, y: 5.5, size: 1.5, color: "white"}, {x: 5.1, y: 4.5, size: 2, color: "white"}, {x: 5.2, y: 3.5, size: 1.5, color: "white"},
+			{x: 7, y: 1, size: 2, color: "white"}, {x: 8, y: 2, size: 1.5, color: "white"},	{x: 6.2, y: 3, size: 2, color: "white"},
+			{x: 8, y: 4, size: 1.5, color: "white"}, {x: 7.1, y: 5, size: 1.5, color: "white"},	{x: 8, y: 7, size: 2, color: "white"},
+			{x: 6.5, y: 8, size: 1.5, color: "white"}, {x: 8.8, y: 9, size: 2, color: "white"}, {x: 7.1, y: 10, size: 1.5, color: "white"},
+			{x: 8.2, y: 11, size: 2, color: "white"}, {x: 9, y: 1, size: 2, color: "white"}, {x: 9.5, y: 2, size: 1.5, color: "white"},
+			{x: 10.2, y: 3, size: 2, color: "white"}, {x: 12, y: 4, size: 3, color: "white"}, {x: 11.1, y: 5, size: 1.5, color: "white"},
+			{x: 9, y: 7, size: 2, color: "white"}, {x: 9.5, y: 8, size: 1.5, color: "white"}, {x: 12.8, y: 9, size: 2, color: "white"},
+			{x: 10.1, y: 10, size: 1.5, color: "white"}, {x: 9.2, y: 11, size: 3, color: "white"}, {x: 13, y: 1, size: 2, color: "white"},
+			{x: 15, y: 2.5, size: 1.5, color: "white"}, {x: 12, y: 4, size: 2, color: "white"}, {x: 13, y: 6.1, size: 3, color: "white"},
+			{x: 13, y: 8.3, size: 3, color: "white"}, {x: 15, y: 9.4, size: 1.5, color: "white"}, 
+			{x: 13, y: 10, size: 3, color: "white"}, {x: 16, y: 11, size: 2, color: "white"},
+			{x: 16, y: 1, size: 1.5, color: "white"},{x: 17, y: 2, size: 2, color: "white"},{x: 18, y: 3, size: 2.5, color: "white"},
+			{x: 19, y: 4, size: 1.5, color: "white"},{x: 21, y: 5, size: 2, color: "white"},
+			{x: 18, y: 6, size: 2.5, color: "white"},{x: 20, y: 7, size: 2, color: "white"},
+			{x: 19, y: 9, size: 3, color: "white"},	{x: 21, y: 10, size: 2.5, color: "white"},{x: 18, y: 11, size: 3, color: "white"},
+			{x: 22, y: 1, size: 1.5, color: "white"}, {x: 24, y: 2, size: 2, color: "white"},{x: 23, y: 3, size: 2.5, color: "white"},
+			{x: 22, y: 4, size: 1.5, color: "white"},{x: 24, y: 5, size: 2, color: "white"},{x: 22, y: 6, size: 2.5, color: "white"},
+			{x: 23, y: 7, size: 2, color: "white"},	{x: 22, y: 9, size: 3, color: "white"},
+			{x: 24, y: 10, size: 2.5, color: "white"}, {x: 22, y: 11, size: 3, color: "white"},			
+			{x: 25, y: 2.5, size: 1.5, color: "white"},
+			{x: 28, y: 3.4, size: 2, color: "white"},
+			{x: 27, y: 4.4, size: 2.5, color: "white"},
+			{x: 25, y: 5.8, size: 1.5, color: "white"},
+			{x: 26, y: 6.4, size: 2, color: "white"},
+			{x: 28, y: 7, size: 2.5, color: "white"},
+			{x: 27, y: 8, size: 2, color: "white"},
+			{x: 25, y: 9.5, size: 3, color: "white"},
+			{x: 26, y: 10.3, size: 2.5, color: "white"}				
+			
+		];
+		for (var i = 0; i < starSet.length; i++)
+		{
+			context.beginPath();
+			context.fillStyle = starSet[i].color;
+			context.arc(gridWidth * starSet[i].x, gridWidth * starSet[i].y, gridWidth * (starSet[i].size * 0.01), 0, 2 * Math.PI);
+			context.fill();
+			context.closePath();
+		}
+			
+	}
 };
 pictures.setPics();
 
-const gravity = gridWidth * 0.3;
+var gravity = gridWidth * 0.3;
 
 
 var Objects = {
@@ -416,7 +485,7 @@ var player = {
 					this.x+=this.speed;
 				}
 				else{
-					if (Level != 30){
+					if (Level != 28){
 						newLevel("right");
 					}
 				}
@@ -426,7 +495,7 @@ var player = {
 					this.x-=this.speed; 
 				}
 				else{
-					if (Level != 1){
+					if (Level != 1 && Level !=26){
 						newLevel("left");
 					}
 				}
